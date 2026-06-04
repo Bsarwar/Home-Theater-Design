@@ -38,26 +38,18 @@ export default function Navbar() {
         <Link href="/" data-testid="nav-logo">
           <div className="flex items-center gap-3 cursor-pointer">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Film strip body */}
-              <rect x="5" y="2" width="22" height="28" rx="1.5" stroke="hsl(38,75%,52%)" strokeWidth="1.5" fill="none"/>
-              {/* Left sprocket strip */}
-              <rect x="5" y="2" width="5" height="28" rx="1.5" fill="hsl(38,75%,52%)" opacity="0.18"/>
-              {/* Right sprocket strip */}
-              <rect x="22" y="2" width="5" height="28" rx="1.5" fill="hsl(38,75%,52%)" opacity="0.18"/>
-              {/* Left sprocket holes */}
-              <rect x="6.5" y="5.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="6.5" y="10.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="6.5" y="15.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="6.5" y="20.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="6.5" y="25" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              {/* Right sprocket holes */}
-              <rect x="23.5" y="5.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="23.5" y="10.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="23.5" y="15.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="23.5" y="20.5" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              <rect x="23.5" y="25" width="2" height="2.5" rx="0.3" fill="hsl(38,75%,52%)"/>
-              {/* Diagonal slash */}
-              <line x1="11" y1="8" x2="21" y2="24" stroke="hsl(38,75%,52%)" strokeWidth="1.8" strokeLinecap="round"/>
+              <rect x="4" y="4" width="24" height="24" rx="1.5" stroke="hsl(38,75%,52%)" strokeWidth="1.5" fill="none"/>
+              <rect x="4" y="5" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+              <rect x="4" y="21" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+              <rect x="6.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="12" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="17.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="23" y="6.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="6.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="12" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="17.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="23" y="22.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="7" y="13" width="18" height="7" rx="0.5" stroke="hsl(38,75%,52%)" strokeWidth="1" fill="hsl(38,75%,52%)" opacity="0.08"/>
             </svg>
             <div>
               <span className="font-serif text-lg font-semibold tracking-wider text-[hsl(38_20%_88%)]">
