@@ -1,16 +1,38 @@
+import { useState } from "react";
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
 export default function Footer() {
+  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "" });
+  const [sent, setSent] = useState(false);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setSent(true);
+  }
+
   return (
     <footer className="bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]" data-testid="footer">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+
+          {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 border border-[hsl(38_75%_52%)] flex items-center justify-center">
-                <div className="w-4 h-4 bg-[hsl(38_75%_52%)]" />
-              </div>
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="24" height="24" rx="1.5" stroke="hsl(38,75%,52%)" strokeWidth="1.5" fill="none"/>
+                <rect x="4" y="5" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+                <rect x="4" y="21" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+                <rect x="6.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="12" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="17.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="23" y="6.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="6.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="12" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="17.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="23" y="22.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+                <rect x="7" y="13" width="18" height="7" rx="0.5" stroke="hsl(38,75%,52%)" strokeWidth="1" fill="hsl(38,75%,52%)" opacity="0.08"/>
+              </svg>
               <div>
                 <span className="font-serif text-base font-semibold tracking-wider text-[hsl(38_20%_88%)]">
                   HOME CINEMA GROUP
@@ -37,6 +59,7 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Services */}
           <div>
             <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
@@ -50,6 +73,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Company */}
           <div>
             <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-6">Company</h4>
             <ul className="space-y-3">
@@ -68,23 +92,61 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Quick Quote Form */}
           <div>
-            <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-6">Contact</h4>
-            <ul className="space-y-4">
-              <li className="flex gap-3 text-[hsl(38_10%_55%)] text-sm">
-                <MapPin size={14} className="mt-0.5 shrink-0 text-[hsl(38_75%_52%)]" />
-                <span>1800 Tysons Blvd, Suite 300<br />McLean, VA 22102</span>
-              </li>
-              <li className="flex gap-3 text-[hsl(38_10%_55%)] text-sm">
-                <Phone size={14} className="mt-0.5 shrink-0 text-[hsl(38_75%_52%)]" />
-                <a href="tel:+17036251714" className="hover:text-[hsl(38_75%_52%)] transition-colors duration-200">(703) 625-1714</a>
-              </li>
-              <li className="flex gap-3 text-[hsl(38_10%_55%)] text-sm">
-                <Mail size={14} className="mt-0.5 shrink-0 text-[hsl(38_75%_52%)]" />
-                <a href="mailto:info@homecinemagroup.com" className="hover:text-[hsl(38_75%_52%)] transition-colors duration-200">info@homecinemagroup.com</a>
-              </li>
-            </ul>
+            <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-2">Quick Quote</h4>
+            <p className="text-[hsl(38_10%_45%)] text-xs mb-5 leading-relaxed">Receive a free consultation for your home theater project.</p>
+
+            {sent ? (
+              <div className="border border-[hsl(38_75%_52%/0.3)] bg-[hsl(38_75%_52%/0.05)] p-5 text-center">
+                <p className="text-[hsl(38_75%_52%)] text-sm font-medium mb-1">Thank you!</p>
+                <p className="text-[hsl(38_10%_55%)] text-xs">We'll be in touch within one business day.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    value={form.firstName}
+                    onChange={(e) => setForm((f) => ({ ...f, firstName: e.target.value }))}
+                    required
+                    className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    value={form.lastName}
+                    onChange={(e) => setForm((f) => ({ ...f, lastName: e.target.value }))}
+                    required
+                    className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                  />
+                </div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  value={form.email}
+                  onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                  required
+                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  value={form.phone}
+                  onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
+                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                />
+                <button
+                  type="submit"
+                  className="w-full bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold py-3 hover:bg-[hsl(38_75%_60%)] transition-colors duration-200"
+                >
+                  Get a Free Quote
+                </button>
+              </form>
+            )}
           </div>
+
         </div>
       </div>
 
