@@ -140,9 +140,7 @@ export default function Home() {
                 Cinema.<br />
                 <span className="italic text-[hsl(38_75%_52%)]">Perfected.</span>
               </h1>
-              <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">
-                We design and build bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.
-              </p>
+              <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">We design and build award winning bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.</p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/projects" data-testid="hero-cta-projects">
                   <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
@@ -259,7 +257,7 @@ export default function Home() {
               At Home Cinema Group, we specialize in bespoke home theaters that elevate your living space. We seamlessly blend state-of-the-art technology with inspired design to create custom entertainment environments that look as incredible as they perform.
             </p>
             <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
-              Don't just watch a movie — live it. Discover the power of true cinematic immersion, exceptional acoustic performance, and breathtaking visuals tailored uniquely to you.
+              Don't just watch a movie — live it. Discover the power of true cinematic immersion, exceptional acoustic performance, and breathtaking visuals—all brought to life through custom lighting and tailored acoustical designs.
             </p>
             <Link href="/contact" data-testid="services-cta">
               <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
