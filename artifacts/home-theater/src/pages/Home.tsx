@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
+import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -204,16 +205,9 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
 
           {/* Left laurel */}
-          <svg width="56" height="96" viewBox="0 0 56 96" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-75">
-            <path d="M 38 94 C 32 76 20 54 12 32 C 8 18 9 7 13 2" stroke="white" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
-            <g transform="translate(35,84) rotate(-22)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
-            <g transform="translate(30,72) rotate(-35)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
-            <g transform="translate(24,59) rotate(-48)"><path d="M 0 0 C -2.5 -3.8 -14 -3.8 -17 0 C -14 3.8 -2.5 3.8 0 0Z" fill="white"/></g>
-            <g transform="translate(17,47) rotate(-60)"><path d="M 0 0 C -2 -3.5 -13 -3.5 -16 0 C -13 3.5 -2 3.5 0 0Z" fill="white"/></g>
-            <g transform="translate(13,35) rotate(-70)"><path d="M 0 0 C -2 -3.2 -12 -3.2 -15 0 C -12 3.2 -2 3.2 0 0Z" fill="white"/></g>
-            <g transform="translate(11,23) rotate(-78)"><path d="M 0 0 C -1.8 -3 -11 -3 -13 0 C -11 3 -1.8 3 0 0Z" fill="white"/></g>
-            <g transform="translate(12,12) rotate(-84)"><path d="M 0 0 C -1.5 -2.5 -10 -2.5 -12 0 C -10 2.5 -1.5 2.5 0 0Z" fill="white"/></g>
-          </svg>
+          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen" }}>
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+          </div>
 
           {/* Stats */}
           <div className="flex flex-1 items-center justify-center divide-x divide-[hsl(220_15%_20%)]">
@@ -232,16 +226,9 @@ export default function Home() {
           </div>
 
           {/* Right laurel (mirrored) */}
-          <svg width="56" height="96" viewBox="0 0 56 96" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-75" style={{ transform: "scaleX(-1)" }}>
-            <path d="M 38 94 C 32 76 20 54 12 32 C 8 18 9 7 13 2" stroke="white" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
-            <g transform="translate(35,84) rotate(-22)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
-            <g transform="translate(30,72) rotate(-35)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
-            <g transform="translate(24,59) rotate(-48)"><path d="M 0 0 C -2.5 -3.8 -14 -3.8 -17 0 C -14 3.8 -2.5 3.8 0 0Z" fill="white"/></g>
-            <g transform="translate(17,47) rotate(-60)"><path d="M 0 0 C -2 -3.5 -13 -3.5 -16 0 C -13 3.5 -2 3.5 0 0Z" fill="white"/></g>
-            <g transform="translate(13,35) rotate(-70)"><path d="M 0 0 C -2 -3.2 -12 -3.2 -15 0 C -12 3.2 -2 3.2 0 0Z" fill="white"/></g>
-            <g transform="translate(11,23) rotate(-78)"><path d="M 0 0 C -1.8 -3 -11 -3 -13 0 C -11 3 -1.8 3 0 0Z" fill="white"/></g>
-            <g transform="translate(12,12) rotate(-84)"><path d="M 0 0 C -1.5 -2.5 -10 -2.5 -12 0 C -10 2.5 -1.5 2.5 0 0Z" fill="white"/></g>
-          </svg>
+          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen", transform: "scaleX(-1)" }}>
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+          </div>
 
         </div>
       </section>
