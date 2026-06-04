@@ -208,7 +208,6 @@ export default function Home() {
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(38_75%_52%/0.4)] to-transparent" />
       </section>
-
       {/* STATS BAR */}
       <section className="bg-[hsl(220_15%_10%)] border-y border-[hsl(220_15%_16%)]">
         <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
@@ -241,7 +240,6 @@ export default function Home() {
 
         </div>
       </section>
-
       {/* SERVICES OVERVIEW */}
       <section data-testid="services-section" className="bg-[hsl(220_15%_5%)]">
         {/* Ticker bar */}
@@ -301,15 +299,14 @@ export default function Home() {
           </div>
         </FadeIn>
       </section>
-
       {/* WHY HCG */}
       <section className="py-0 bg-[hsl(220_15%_7%)]" data-testid="why-hcg-section">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row min-h-[420px] border-x border-[hsl(220_15%_14%)]">
           {/* Left: heading + body */}
-          <div className="lg:w-[30%] shrink-0 flex flex-col justify-center px-8 py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
+          <div className="lg:w-[30%] shrink-0 flex flex-col justify-center pl-[35px] pr-[35px] py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Services</span>
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">WHAT WE DO</span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl font-light text-[hsl(38_20%_90%)] leading-tight mb-6">
               Tailored Solutions for<br />
@@ -353,7 +350,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* FEATURED PROJECTS */}
       <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="projects-section">
         <div className="max-w-7xl mx-auto px-6">
@@ -406,7 +402,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* BRAND PARTNERS */}
       <section className="py-16 border-y border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
@@ -427,7 +422,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* PROCESS */}
       <section className="py-24 md:py-36" data-testid="process-section">
         <div className="max-w-7xl mx-auto px-6">
@@ -460,7 +454,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* TESTIMONIALS */}
       <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="testimonials-section">
         <div className="max-w-7xl mx-auto px-6">
@@ -500,7 +493,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-24 md:py-36 relative overflow-hidden" data-testid="cta-section">
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, hsl(38 75% 52% / 0.08) 0%, transparent 70%)" }} />
