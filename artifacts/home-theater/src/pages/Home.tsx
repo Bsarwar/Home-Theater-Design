@@ -270,8 +270,6 @@ export default function Home() {
                 ) : (
                   <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
                 )}
-                {/* overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 {/* label */}
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white text-sm font-medium leading-tight">{card.title}</p>
