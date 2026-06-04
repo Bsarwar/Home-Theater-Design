@@ -46,9 +46,6 @@ const projects = [
   { title: "Palm Beach Estate", type: "Private Cinema", location: "Palm Beach, FL", gradient: "from-slate-900 via-amber-950 to-slate-900" },
   { title: "Miami Penthouse", type: "Whole-Home AV", location: "Miami, FL", gradient: "from-gray-900 via-zinc-800 to-gray-900" },
   { title: "Malibu Compound", type: "Outdoor Theater", location: "Malibu, CA", gradient: "from-slate-800 via-gray-900 to-slate-900" },
-  { title: "Aspen Retreat", type: "Smart Home + Cinema", location: "Aspen, CO", gradient: "from-zinc-900 via-stone-800 to-zinc-900" },
-  { title: "Manhattan Loft", type: "Screening Room", location: "New York, NY", gradient: "from-gray-900 via-neutral-800 to-gray-900" },
-  { title: "Hamptons Villa", type: "Multi-Zone Audio", location: "Hamptons, NY", gradient: "from-slate-900 via-amber-900 to-slate-900" },
 ];
 
 const testimonials = [
