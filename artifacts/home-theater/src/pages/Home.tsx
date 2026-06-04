@@ -268,7 +268,7 @@ export default function Home() {
         </FadeIn>
       </section>
       {/* WHY HCG */}
-      <section className="py-0 bg-[hsl(220_15%_7%)]" data-testid="why-hcg-section">
+      <section className="py-0 bg-[#16181d] ml-[0px] mr-[0px] pt-[30px] pb-[30px]" data-testid="why-hcg-section">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row min-h-[420px] border-x border-[hsl(220_15%_14%)]">
           {/* Left: heading + body */}
           <div className="lg:w-[30%] shrink-0 flex flex-col justify-center pl-[35px] pr-[35px] py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
