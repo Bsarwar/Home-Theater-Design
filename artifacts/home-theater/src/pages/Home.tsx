@@ -403,7 +403,7 @@ export default function Home() {
         </div>
       </section>
       {/* TESTIMONIALS */}
-      <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="testimonials-section">
+      <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)] pt-[80px] pb-[80px]" data-testid="testimonials-section">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="max-w-2xl mb-20">
