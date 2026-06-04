@@ -201,20 +201,52 @@ export default function Home() {
 
       {/* STATS BAR */}
       <section className="bg-[hsl(220_15%_10%)] border-y border-[hsl(220_15%_16%)]">
-        <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { value: "500+", label: "Projects Completed" },
-            { value: "18", label: "Years of Excellence" },
-            { value: "98%", label: "Client Satisfaction" },
-            { value: "12", label: "Industry Awards" },
-          ].map((stat, i) => (
-            <FadeIn key={stat.label} delay={i * 100}>
-              <div className="text-center" data-testid={`stat-${i}`}>
-                <div className="font-serif text-4xl text-[hsl(38_75%_52%)] mb-1">{stat.value}</div>
-                <div className="text-[hsl(38_10%_55%)] text-xs tracking-[0.15em] uppercase">{stat.label}</div>
-              </div>
-            </FadeIn>
-          ))}
+        <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
+
+          {/* Left laurel */}
+          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-60">
+            <path d="M52 64 C44 56 34 46 28 32 C24 22 24 12 28 6" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
+            <ellipse cx="44" cy="56" rx="7" ry="3.5" transform="rotate(-40 44 56)" fill="white" opacity="0.7"/>
+            <ellipse cx="37" cy="48" rx="7" ry="3.5" transform="rotate(-50 37 48)" fill="white" opacity="0.7"/>
+            <ellipse cx="32" cy="40" rx="7" ry="3.5" transform="rotate(-55 32 40)" fill="white" opacity="0.7"/>
+            <ellipse cx="29" cy="31" rx="6.5" ry="3" transform="rotate(-62 29 31)" fill="white" opacity="0.7"/>
+            <ellipse cx="28" cy="22" rx="6" ry="3" transform="rotate(-70 28 22)" fill="white" opacity="0.7"/>
+            <ellipse cx="29" cy="13" rx="5.5" ry="2.8" transform="rotate(-78 29 13)" fill="white" opacity="0.7"/>
+            <ellipse cx="49" cy="60" rx="6" ry="3" transform="rotate(-25 49 60)" fill="white" opacity="0.5"/>
+            <ellipse cx="42" cy="52" rx="6" ry="3" transform="rotate(-35 42 52)" fill="white" opacity="0.5"/>
+            <ellipse cx="35" cy="44" rx="6" ry="3" transform="rotate(-42 35 44)" fill="white" opacity="0.5"/>
+          </svg>
+
+          {/* Stats */}
+          <div className="flex flex-1 items-center justify-center divide-x divide-[hsl(220_15%_20%)]">
+            {[
+              { value: "18", label: "Years in Business" },
+              { value: "98%", label: "Client Satisfaction" },
+              { value: "12", label: "Industry Awards" },
+            ].map((stat, i) => (
+              <FadeIn key={stat.label} delay={i * 100}>
+                <div className="text-center px-8 md:px-12" data-testid={`stat-${i}`}>
+                  <div className="font-serif text-4xl text-[hsl(38_75%_52%)] mb-1">{stat.value}</div>
+                  <div className="text-[hsl(38_10%_55%)] text-xs tracking-[0.15em] uppercase">{stat.label}</div>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          {/* Right laurel (mirrored) */}
+          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-60" style={{ transform: "scaleX(-1)" }}>
+            <path d="M52 64 C44 56 34 46 28 32 C24 22 24 12 28 6" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
+            <ellipse cx="44" cy="56" rx="7" ry="3.5" transform="rotate(-40 44 56)" fill="white" opacity="0.7"/>
+            <ellipse cx="37" cy="48" rx="7" ry="3.5" transform="rotate(-50 37 48)" fill="white" opacity="0.7"/>
+            <ellipse cx="32" cy="40" rx="7" ry="3.5" transform="rotate(-55 32 40)" fill="white" opacity="0.7"/>
+            <ellipse cx="29" cy="31" rx="6.5" ry="3" transform="rotate(-62 29 31)" fill="white" opacity="0.7"/>
+            <ellipse cx="28" cy="22" rx="6" ry="3" transform="rotate(-70 28 22)" fill="white" opacity="0.7"/>
+            <ellipse cx="29" cy="13" rx="5.5" ry="2.8" transform="rotate(-78 29 13)" fill="white" opacity="0.7"/>
+            <ellipse cx="49" cy="60" rx="6" ry="3" transform="rotate(-25 49 60)" fill="white" opacity="0.5"/>
+            <ellipse cx="42" cy="52" rx="6" ry="3" transform="rotate(-35 42 52)" fill="white" opacity="0.5"/>
+            <ellipse cx="35" cy="44" rx="6" ry="3" transform="rotate(-42 35 44)" fill="white" opacity="0.5"/>
+          </svg>
+
         </div>
       </section>
 
