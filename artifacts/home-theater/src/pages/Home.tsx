@@ -318,6 +318,38 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* PROCESS */}
+      <section className="py-24 md:py-36" data-testid="process-section">
+        <div className="max-w-7xl mx-auto px-6">
+          <FadeIn>
+            <div className="max-w-2xl mb-20">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
+                <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Process</span>
+              </div>
+              <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
+                From Vision<br />
+                <span className="italic">to Reality</span>
+              </h2>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {processSteps.map((step, i) => (
+              <FadeIn key={step.num} delay={i * 100}>
+                <div data-testid={`process-step-${i}`} className="relative">
+                  {i < processSteps.length - 1 && (
+                    <div className="hidden md:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-[hsl(38_75%_52%/0.4)] to-transparent" />
+                  )}
+                  <div className="text-[hsl(38_75%_52%)] font-serif text-5xl font-light mb-4">{step.num}</div>
+                  <h3 className="text-[hsl(38_20%_88%)] font-medium text-sm tracking-wide uppercase mb-3">{step.title}</h3>
+                  <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{step.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* FEATURED PROJECTS */}
       <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="projects-section">
         <div className="max-w-7xl mx-auto px-6">
@@ -385,38 +417,6 @@ export default function Home() {
                 >
                   {brand}
                 </span>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* PROCESS */}
-      <section className="py-24 md:py-36" data-testid="process-section">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeIn>
-            <div className="max-w-2xl mb-20">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-                <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Process</span>
-              </div>
-              <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
-                From Vision<br />
-                <span className="italic">to Reality</span>
-              </h2>
-            </div>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {processSteps.map((step, i) => (
-              <FadeIn key={step.num} delay={i * 100}>
-                <div data-testid={`process-step-${i}`} className="relative">
-                  {i < processSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-[hsl(38_75%_52%/0.4)] to-transparent" />
-                  )}
-                  <div className="text-[hsl(38_75%_52%)] font-serif text-5xl font-light mb-4">{step.num}</div>
-                  <h3 className="text-[hsl(38_20%_88%)] font-medium text-sm tracking-wide uppercase mb-3">{step.title}</h3>
-                  <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{step.desc}</p>
-                </div>
               </FadeIn>
             ))}
           </div>
