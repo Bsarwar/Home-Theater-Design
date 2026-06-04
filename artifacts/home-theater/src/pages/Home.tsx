@@ -326,6 +326,7 @@ export default function Home() {
                 { title: "Media Rooms",          gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
                 { title: "TV Walls",             gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
                 { title: "Sound Isolation",      gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
+                { title: "Star Panel Ceiling",   gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
               ].map((card, i) => (
                 <FadeIn key={card.title} delay={i * 70}>
                   <div className="relative overflow-hidden group cursor-pointer" style={{ aspectRatio: "4/3" }}>
