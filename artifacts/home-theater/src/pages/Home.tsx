@@ -1,6 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronDown, Play, Star, Award, Users, Home as HomeIcon, Volume2, Wifi, Monitor } from "lucide-react";
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Home as HomeIcon, Volume2, Wifi, Monitor } from "lucide-react";
+import heroImg1 from "@assets/LMp4_1780573575270.jpg";
+import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
+
+const heroSlides = [
+  { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
+  { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
+];
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -62,7 +69,30 @@ const processSteps = [
 
 export default function Home() {
   const [heroReady, setHeroReady] = useState(false);
-  useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
+  const [slide, setSlide] = useState(0);
+  const [prevSlide, setPrevSlide] = useState<number | null>(null);
+  const [transitioning, setTransitioning] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const goToSlide = (next: number) => {
+    if (transitioning || next === slide) return;
+    setPrevSlide(slide);
+    setTransitioning(true);
+    setSlide(next);
+    setTimeout(() => { setPrevSlide(null); setTransitioning(false); }, 900);
+  };
+
+  const nextSlide = () => goToSlide((slide + 1) % heroSlides.length);
+  const prevSlideFn = () => goToSlide((slide - 1 + heroSlides.length) % heroSlides.length);
+
+  useEffect(() => {
+    setTimeout(() => setHeroReady(true), 100);
+  }, []);
+
+  useEffect(() => {
+    timerRef.current = setTimeout(nextSlide, 5500);
+    return () => { if (timerRef.current) clearTimeout(timerRef.current); };
+  }, [slide]);
 
   return (
     <div className="bg-[hsl(220_15%_7%)]">
@@ -70,38 +100,43 @@ export default function Home() {
       <section
         data-testid="hero-section"
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ background: "radial-gradient(ellipse at 60% 40%, hsl(220 20% 12%) 0%, hsl(220 15% 5%) 70%)" }}
       >
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute inset-0" style={{
-            backgroundImage: "linear-gradient(135deg, transparent 40%, hsl(38 75% 52% / 0.03) 100%)",
-          }} />
-          <div
-            className="absolute top-0 right-0 w-1/2 h-full opacity-20"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&q=80')",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              maskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(to left, rgba(0,0,0,0.6) 0%, transparent 100%)",
-            }}
-          />
+        {/* SLIDER IMAGES */}
+        <div className="absolute inset-0">
+          {heroSlides.map((s, i) => (
+            <div
+              key={i}
+              className="absolute inset-0 transition-opacity duration-900"
+              style={{ opacity: i === slide ? 1 : (i === prevSlide ? 0 : 0) }}
+            >
+              <img
+                src={s.src}
+                alt={s.caption}
+                className="w-full h-full object-cover"
+                style={{ transition: "opacity 0.9s ease" }}
+              />
+            </div>
+          ))}
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-[hsl(220_15%_5%/0.72)]" />
+          {/* Gradient — stronger on left so text is always readable */}
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to right, hsl(220 15% 5% / 0.85) 0%, hsl(220 15% 5% / 0.4) 60%, transparent 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 5% / 0.6) 0%, transparent 50%)" }} />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-20">
+        {/* CONTENT */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-32 w-full">
           <div className="max-w-3xl">
-            <div
-              className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
-            >
+            <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
                 <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase font-medium">Since 2005</span>
               </div>
-              <h1 className="font-serif text-6xl md:text-8xl font-light leading-[0.9] text-[hsl(38_20%_90%)] mb-8">
+              <h1 className="font-serif text-6xl md:text-8xl font-light leading-[0.9] text-white mb-8 drop-shadow-2xl">
                 Cinema.<br />
                 <span className="italic text-[hsl(38_75%_52%)]">Perfected.</span>
               </h1>
-              <p className="text-[hsl(38_10%_60%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light">
+              <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">
                 We design and install bespoke home theaters and whole-home AV systems for clients who refuse to compromise on the extraordinary.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -112,7 +147,7 @@ export default function Home() {
                   </span>
                 </Link>
                 <Link href="/contact" data-testid="hero-cta-contact">
-                  <span className="inline-flex items-center gap-3 px-8 py-4 border border-[hsl(38_20%_88%/0.25)] text-[hsl(38_20%_88%)] text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-300">
+                  <span className="inline-flex items-center gap-3 px-8 py-4 border border-white/30 text-white text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-300">
                     Get a Quote
                   </span>
                 </Link>
@@ -120,9 +155,49 @@ export default function Home() {
             </div>
           </div>
 
-          <div
-            className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${heroReady ? "opacity-100" : "opacity-0"}`}
-          >
+          {/* SLIDER CONTROLS */}
+          <div className={`absolute bottom-10 left-6 right-6 flex items-end justify-between transition-all duration-1000 delay-500 ${heroReady ? "opacity-100" : "opacity-0"}`}>
+            {/* Caption + dots */}
+            <div className="flex items-center gap-6">
+              <div className="flex gap-2">
+                {heroSlides.map((_, i) => (
+                  <button
+                    key={i}
+                    data-testid={`hero-dot-${i}`}
+                    onClick={() => goToSlide(i)}
+                    className={`transition-all duration-300 ${i === slide ? "w-8 h-1 bg-[hsl(38_75%_52%)]" : "w-4 h-1 bg-white/30 hover:bg-white/60"}`}
+                    aria-label={`Go to slide ${i + 1}`}
+                  />
+                ))}
+              </div>
+              <span className="text-white/50 text-xs tracking-[0.15em] uppercase hidden sm:block">
+                {heroSlides[slide].caption}
+              </span>
+            </div>
+
+            {/* Prev / Next */}
+            <div className="flex gap-2">
+              <button
+                data-testid="hero-prev"
+                onClick={prevSlideFn}
+                className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                data-testid="hero-next"
+                onClick={nextSlide}
+                className="w-10 h-10 border border-white/20 flex items-center justify-center text-white/60 hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200"
+                aria-label="Next slide"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </div>
+
+          {/* Scroll indicator */}
+          <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${heroReady ? "opacity-100" : "opacity-0"}`}>
             <ChevronDown className="text-[hsl(38_75%_52%)] animate-bounce" size={24} />
           </div>
         </div>
