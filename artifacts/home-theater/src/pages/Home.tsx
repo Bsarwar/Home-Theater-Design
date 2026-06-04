@@ -253,7 +253,7 @@ export default function Home() {
         <div className="border-b border-[hsl(220_15%_14%)]" />
 
         {/* 6-up image cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 px-6 pt-10 pb-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 px-10 pt-10 pb-2 max-w-5xl mx-auto">
           {serviceCards.map((card, i) => (
             <FadeIn key={card.title} delay={i * 60}>
               <div
@@ -270,6 +270,8 @@ export default function Home() {
                 ) : (
                   <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
                 )}
+                {/* overlay */}
+                <div className="absolute inset-0 bg-black/65" />
                 {/* label */}
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white text-sm font-medium leading-tight">{card.title}</p>
