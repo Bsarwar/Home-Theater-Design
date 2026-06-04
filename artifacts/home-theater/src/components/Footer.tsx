@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
 export default function Footer() {
-  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "" });
+  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", service: "" });
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
@@ -137,6 +137,19 @@ export default function Footer() {
                   onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
                   className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
                 />
+                <select
+                  value={form.service}
+                  onChange={(e) => setForm((f) => ({ ...f, service: e.target.value }))}
+                  required
+                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200 appearance-none"
+                  style={{ color: form.service ? "hsl(38,10%,75%)" : "hsl(38,10%,35%)" }}
+                >
+                  <option value="" disabled>Service Interested In</option>
+                  <option value="Theater Room">Theater Room</option>
+                  <option value="Media Room">Media Room</option>
+                  <option value="TV Walls">TV Walls</option>
+                  <option value="Custom Project">Custom Project</option>
+                </select>
                 <button
                   type="submit"
                   className="w-full bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold py-3 hover:bg-[hsl(38_75%_60%)] transition-colors duration-200"
