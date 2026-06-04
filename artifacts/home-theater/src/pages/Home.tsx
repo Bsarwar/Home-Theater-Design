@@ -117,12 +117,8 @@ export default function Home() {
               />
             </div>
           ))}
-          {/* Dark overlay — light tint only */}
-          <div className="absolute inset-0 bg-[hsl(220_15%_5%/0.25)]" />
-          {/* Gradient — left side only for text legibility */}
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to right, hsl(220 15% 5% / 0.70) 0%, hsl(220 15% 5% / 0.20) 50%, transparent 100%)" }} />
-          {/* Bottom fade so controls remain readable */}
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, hsl(220 15% 5% / 0.45) 0%, transparent 35%)" }} />
+          {/* Solid dark overlay at 60% */}
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         {/* CONTENT */}
