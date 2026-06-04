@@ -284,7 +284,7 @@ export default function Home() {
 
           {/* Right: service image cards + link */}
           <div className="lg:w-[70%] flex flex-col">
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 p-2 flex-1">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 flex-1">
               {[
                 { title: "Home Theater Design", image: heroImg1 },
                 { title: "Dedicated Theaters",  image: heroImg2 },
@@ -301,7 +301,7 @@ export default function Home() {
                       <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
                     )}
                     <div className="absolute inset-0 bg-black/60 rounded-tl-[1px] rounded-tr-[1px] rounded-br-[1px] rounded-bl-[1px]" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                    <div className="absolute bottom-0 left-0 right-0 p-3 text-center">
                       <p className="text-white text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
                     </div>
                   </div>
