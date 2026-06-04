@@ -204,17 +204,15 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
 
           {/* Left laurel */}
-          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-60">
-            <path d="M52 64 C44 56 34 46 28 32 C24 22 24 12 28 6" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
-            <ellipse cx="44" cy="56" rx="7" ry="3.5" transform="rotate(-40 44 56)" fill="white" opacity="0.7"/>
-            <ellipse cx="37" cy="48" rx="7" ry="3.5" transform="rotate(-50 37 48)" fill="white" opacity="0.7"/>
-            <ellipse cx="32" cy="40" rx="7" ry="3.5" transform="rotate(-55 32 40)" fill="white" opacity="0.7"/>
-            <ellipse cx="29" cy="31" rx="6.5" ry="3" transform="rotate(-62 29 31)" fill="white" opacity="0.7"/>
-            <ellipse cx="28" cy="22" rx="6" ry="3" transform="rotate(-70 28 22)" fill="white" opacity="0.7"/>
-            <ellipse cx="29" cy="13" rx="5.5" ry="2.8" transform="rotate(-78 29 13)" fill="white" opacity="0.7"/>
-            <ellipse cx="49" cy="60" rx="6" ry="3" transform="rotate(-25 49 60)" fill="white" opacity="0.5"/>
-            <ellipse cx="42" cy="52" rx="6" ry="3" transform="rotate(-35 42 52)" fill="white" opacity="0.5"/>
-            <ellipse cx="35" cy="44" rx="6" ry="3" transform="rotate(-42 35 44)" fill="white" opacity="0.5"/>
+          <svg width="56" height="96" viewBox="0 0 56 96" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-75">
+            <path d="M 38 94 C 32 76 20 54 12 32 C 8 18 9 7 13 2" stroke="white" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+            <g transform="translate(35,84) rotate(-22)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
+            <g transform="translate(30,72) rotate(-35)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
+            <g transform="translate(24,59) rotate(-48)"><path d="M 0 0 C -2.5 -3.8 -14 -3.8 -17 0 C -14 3.8 -2.5 3.8 0 0Z" fill="white"/></g>
+            <g transform="translate(17,47) rotate(-60)"><path d="M 0 0 C -2 -3.5 -13 -3.5 -16 0 C -13 3.5 -2 3.5 0 0Z" fill="white"/></g>
+            <g transform="translate(13,35) rotate(-70)"><path d="M 0 0 C -2 -3.2 -12 -3.2 -15 0 C -12 3.2 -2 3.2 0 0Z" fill="white"/></g>
+            <g transform="translate(11,23) rotate(-78)"><path d="M 0 0 C -1.8 -3 -11 -3 -13 0 C -11 3 -1.8 3 0 0Z" fill="white"/></g>
+            <g transform="translate(12,12) rotate(-84)"><path d="M 0 0 C -1.5 -2.5 -10 -2.5 -12 0 C -10 2.5 -1.5 2.5 0 0Z" fill="white"/></g>
           </svg>
 
           {/* Stats */}
@@ -234,17 +232,15 @@ export default function Home() {
           </div>
 
           {/* Right laurel (mirrored) */}
-          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-60" style={{ transform: "scaleX(-1)" }}>
-            <path d="M52 64 C44 56 34 46 28 32 C24 22 24 12 28 6" stroke="white" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
-            <ellipse cx="44" cy="56" rx="7" ry="3.5" transform="rotate(-40 44 56)" fill="white" opacity="0.7"/>
-            <ellipse cx="37" cy="48" rx="7" ry="3.5" transform="rotate(-50 37 48)" fill="white" opacity="0.7"/>
-            <ellipse cx="32" cy="40" rx="7" ry="3.5" transform="rotate(-55 32 40)" fill="white" opacity="0.7"/>
-            <ellipse cx="29" cy="31" rx="6.5" ry="3" transform="rotate(-62 29 31)" fill="white" opacity="0.7"/>
-            <ellipse cx="28" cy="22" rx="6" ry="3" transform="rotate(-70 28 22)" fill="white" opacity="0.7"/>
-            <ellipse cx="29" cy="13" rx="5.5" ry="2.8" transform="rotate(-78 29 13)" fill="white" opacity="0.7"/>
-            <ellipse cx="49" cy="60" rx="6" ry="3" transform="rotate(-25 49 60)" fill="white" opacity="0.5"/>
-            <ellipse cx="42" cy="52" rx="6" ry="3" transform="rotate(-35 42 52)" fill="white" opacity="0.5"/>
-            <ellipse cx="35" cy="44" rx="6" ry="3" transform="rotate(-42 35 44)" fill="white" opacity="0.5"/>
+          <svg width="56" height="96" viewBox="0 0 56 96" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0 opacity-75" style={{ transform: "scaleX(-1)" }}>
+            <path d="M 38 94 C 32 76 20 54 12 32 C 8 18 9 7 13 2" stroke="white" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+            <g transform="translate(35,84) rotate(-22)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
+            <g transform="translate(30,72) rotate(-35)"><path d="M 0 0 C -2.5 -4 -14 -4 -18 0 C -14 4 -2.5 4 0 0Z" fill="white"/></g>
+            <g transform="translate(24,59) rotate(-48)"><path d="M 0 0 C -2.5 -3.8 -14 -3.8 -17 0 C -14 3.8 -2.5 3.8 0 0Z" fill="white"/></g>
+            <g transform="translate(17,47) rotate(-60)"><path d="M 0 0 C -2 -3.5 -13 -3.5 -16 0 C -13 3.5 -2 3.5 0 0Z" fill="white"/></g>
+            <g transform="translate(13,35) rotate(-70)"><path d="M 0 0 C -2 -3.2 -12 -3.2 -15 0 C -12 3.2 -2 3.2 0 0Z" fill="white"/></g>
+            <g transform="translate(11,23) rotate(-78)"><path d="M 0 0 C -1.8 -3 -11 -3 -13 0 C -11 3 -1.8 3 0 0Z" fill="white"/></g>
+            <g transform="translate(12,12) rotate(-84)"><path d="M 0 0 C -1.5 -2.5 -10 -2.5 -12 0 C -10 2.5 -1.5 2.5 0 0Z" fill="white"/></g>
           </svg>
 
         </div>
