@@ -28,9 +28,9 @@ export default function Navbar() {
   return (
     <header
       data-testid="navbar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-white/20 ${
         scrolled
-          ? "bg-[hsl(220_15%_7%/0.97)] shadow-2xl border-b border-[hsl(220_15%_16%)]"
+          ? "bg-[hsl(220_15%_7%/0.97)] shadow-2xl"
           : "bg-transparent"
       }`}
     >
