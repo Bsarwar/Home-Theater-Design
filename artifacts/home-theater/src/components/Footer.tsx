@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed mb-6">
-              Premium home theater design and installation. Crafting extraordinary cinematic experiences for discerning clients since 2005.
+              Luxury home theater design and construction. Building extraordinary cinematic spaces across Virginia, DC, Maryland, and beyond — since 2005.
             </p>
             <div className="flex gap-4">
               {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (
@@ -40,7 +40,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              {["Home Theater Design", "Whole-Home Audio", "Smart Home", "Outdoor Cinema", "Commercial Screening", "Maintenance Plans"].map((item) => (
+              {["Theater Design", "Custom Construction", "Projection & Display", "Cinema Audio", "Cinema Lighting", "Seating & Interiors"].map((item) => (
                 <li key={item}>
                   <Link href="/services">
                     <span className="text-[hsl(38_10%_55%)] text-sm hover:text-[hsl(38_75%_52%)] transition-colors duration-200 cursor-pointer">{item}</span>
@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex gap-3 text-[hsl(38_10%_55%)] text-sm">
                 <MapPin size={14} className="mt-0.5 shrink-0 text-[hsl(38_75%_52%)]" />
-                <span>1200 Brickell Ave, Suite 800<br />Miami, FL 33131</span>
+                <span>1800 Tysons Blvd, Suite 300<br />McLean, VA 22102</span>
               </li>
               <li className="flex gap-3 text-[hsl(38_10%_55%)] text-sm">
                 <Phone size={14} className="mt-0.5 shrink-0 text-[hsl(38_75%_52%)]" />
@@ -91,7 +91,7 @@ export default function Footer() {
       <div className="border-t border-[hsl(220_15%_12%)] py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[hsl(38_10%_40%)] text-xs tracking-wide">
-            &copy; {new Date().getFullYear()} Home Cinema Group. All rights reserved.
+            &copy; {new Date().getFullYear()} Home Cinema Group — a Lifestyle Solution Company. All rights reserved.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service"].map((item) => (

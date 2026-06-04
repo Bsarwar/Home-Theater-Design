@@ -24,12 +24,11 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 }
 
 const projectTypes = [
-  "Custom Home Theater",
-  "Whole-Home Audio",
-  "Smart Home Automation",
-  "Outdoor Cinema",
+  "New Home Theater — Full Design & Build",
+  "Basement Theater Conversion",
+  "Existing Room Renovation",
   "Commercial Screening Room",
-  "Service / Maintenance",
+  "Consultation / Design Only",
   "Other / Not Sure",
 ];
 
@@ -65,7 +64,7 @@ export default function Contact() {
               <span className="italic text-[hsl(38_75%_52%)]">Touch</span>
             </h1>
             <p className="text-[hsl(38_10%_60%)] text-xl max-w-xl leading-relaxed">
-              Every extraordinary installation begins with a conversation. Tell us about your vision — we'll handle the rest.
+              Every extraordinary theater begins with a conversation. Tell us about your vision — we serve clients across Virginia, DC, Maryland, and beyond.
             </p>
           </div>
         </div>
@@ -198,7 +197,7 @@ export default function Contact() {
               <h3 className="font-serif text-xl text-[hsl(38_20%_90%)] mb-6">Contact Information</h3>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, label: "Address", value: "1200 Brickell Ave, Suite 800\nMiami, FL 33131" },
+                  { icon: MapPin, label: "Address", value: "1800 Tysons Blvd, Suite 300\nMcLean, VA 22102" },
                   { icon: Phone, label: "Phone", value: "(305) 987-6543" },
                   { icon: Mail, label: "Email", value: "info@homecinemagroup.com" },
                   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am – 6pm\nSat: By appointment" },
@@ -223,7 +222,7 @@ export default function Contact() {
                 Every inquiry receives a personal response — not a form letter. Our design team will review your project and respond with a thoughtful assessment within one business day.
               </p>
               <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">
-                Initial consultations are always complimentary, with no obligation.
+                We offer complimentary in-home consultations across Virginia, DC, and Maryland — with no obligation.
               </p>
             </div>
 

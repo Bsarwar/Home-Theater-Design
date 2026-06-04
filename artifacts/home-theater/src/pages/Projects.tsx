@@ -26,21 +26,21 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const filters = ["All", "Home Theater", "Whole-Home AV", "Smart Home", "Outdoor", "Commercial"];
+const filters = ["All", "Private Cinema", "Screening Room", "Basement Build", "Commercial"];
 
 const projects = [
-  { title: "Palm Beach Oceanfront Estate", type: "Home Theater", location: "Palm Beach, FL", year: "2024", size: "18-Seat Private Cinema", gradient: "from-amber-950 via-stone-900 to-slate-900", featured: true, image: portfolioImg1 },
-  { title: "Award-Winning Theater — CE Pro 2024", type: "Home Theater", location: "Private Residence", year: "2024", size: "CE Pro Home of the Year — Best Home Theater", gradient: "from-slate-900 via-zinc-800 to-gray-900", featured: true, image: portfolioImg2 },
-  { title: "Malibu Coastal Compound", type: "Outdoor", location: "Malibu, CA", year: "2023", size: "Oceanfront Terrace Cinema", gradient: "from-gray-900 via-slate-800 to-zinc-900", featured: false },
-  { title: "Aspen Mountain Retreat", type: "Smart Home", location: "Aspen, CO", year: "2023", size: "12,000 sq ft Mountain Home", gradient: "from-zinc-900 via-stone-800 to-slate-900", featured: false },
-  { title: "Manhattan Upper East Townhouse", type: "Home Theater", location: "New York, NY", year: "2023", size: "12-Seat Screening Room", gradient: "from-gray-900 via-neutral-800 to-gray-900", featured: false },
-  { title: "Hamptons Waterfront Villa", type: "Whole-Home AV", location: "Hamptons, NY", year: "2023", size: "22-Zone Audio System", gradient: "from-slate-900 via-amber-900 to-slate-900", featured: false },
-  { title: "Beverly Hills Modern Estate", type: "Smart Home", location: "Beverly Hills, CA", year: "2022", size: "Full Automation — 18 Systems", gradient: "from-zinc-900 via-gray-800 to-zinc-900", featured: false },
-  { title: "Four Seasons Private Villa", type: "Commercial", location: "Cabo San Lucas, MX", year: "2022", size: "14-Seat Hospitality Cinema", gradient: "from-amber-950 via-zinc-900 to-slate-900", featured: false },
-  { title: "Fisher Island Residence", type: "Home Theater", location: "Miami Beach, FL", year: "2022", size: "8-Seat Intimate Theater", gradient: "from-slate-800 via-stone-900 to-zinc-900", featured: false },
-  { title: "Greenwich Estate", type: "Whole-Home AV", location: "Greenwich, CT", year: "2021", size: "30+ Zone Estate System", gradient: "from-gray-900 via-slate-800 to-gray-900", featured: false },
-  { title: "Laguna Beach Cliffside Home", type: "Outdoor", location: "Laguna Beach, CA", year: "2021", size: "Infinity Pool Cinema", gradient: "from-zinc-900 via-amber-950 to-slate-900", featured: false },
-  { title: "Chicago Tribune Tower Penthouse", type: "Smart Home", location: "Chicago, IL", year: "2021", size: "Luxury High-Rise Automation", gradient: "from-slate-900 via-gray-800 to-slate-900", featured: false },
+  { title: "Great Falls Estate", type: "Private Cinema", location: "Great Falls, VA", year: "2024", size: "14-Seat Private Cinema — Full Build", gradient: "from-amber-950 via-stone-900 to-slate-900", featured: true, image: portfolioImg1 },
+  { title: "Award-Winning Theater — CE Pro 2024", type: "Private Cinema", location: "Northern Virginia", year: "2024", size: "CE Pro Home of the Year — Best Home Theater", gradient: "from-slate-900 via-zinc-800 to-gray-900", featured: true, image: portfolioImg2 },
+  { title: "Georgetown Rowhouse", type: "Screening Room", location: "Washington, DC", year: "2023", size: "10-Seat Dedicated Screening Room", gradient: "from-gray-900 via-slate-800 to-zinc-900", featured: false },
+  { title: "Bethesda Estate", type: "Private Cinema", location: "Bethesda, MD", year: "2023", size: "16-Seat Home Cinema — Room-Within-Room Build", gradient: "from-zinc-900 via-stone-800 to-slate-900", featured: false },
+  { title: "McLean Colonial", type: "Basement Build", location: "McLean, VA", year: "2023", size: "Full Basement Theater — Framing to Finish", gradient: "from-gray-900 via-neutral-800 to-gray-900", featured: false },
+  { title: "Chevy Chase Manor", type: "Screening Room", location: "Chevy Chase, MD", year: "2023", size: "8-Seat Luxury Screening Room", gradient: "from-slate-900 via-amber-900 to-slate-900", featured: false },
+  { title: "Vienna Estate", type: "Private Cinema", location: "Vienna, VA", year: "2022", size: "12-Seat Cinema — Custom Millwork & Star Ceiling", gradient: "from-zinc-900 via-gray-800 to-zinc-900", featured: false },
+  { title: "Old Town Penthouse", type: "Commercial", location: "Alexandria, VA", year: "2022", size: "Private Screening Lounge — 20-Seat Commercial Build", gradient: "from-amber-950 via-zinc-900 to-slate-900", featured: false },
+  { title: "Falls Church Residence", type: "Basement Build", location: "Falls Church, VA", year: "2022", size: "Finished Basement — 6-Seat Family Cinema", gradient: "from-slate-800 via-stone-900 to-zinc-900", featured: false },
+  { title: "Potomac Manor", type: "Private Cinema", location: "Potomac, MD", year: "2021", size: "18-Seat Estate Cinema — Full Design & Build", gradient: "from-gray-900 via-slate-800 to-gray-900", featured: false },
+  { title: "Leesburg Farmhouse", type: "Screening Room", location: "Leesburg, VA", year: "2021", size: "Converted Barn Theater — Custom Acoustic Build", gradient: "from-zinc-900 via-amber-950 to-slate-900", featured: false },
+  { title: "Capitol Hill Townhouse", type: "Basement Build", location: "Washington, DC", year: "2021", size: "Urban Basement Theater — 6-Seat Build", gradient: "from-slate-900 via-gray-800 to-slate-900", featured: false },
 ];
 
 export default function Projects() {
@@ -66,7 +66,7 @@ export default function Projects() {
               <span className="italic text-[hsl(38_75%_52%)]">Portfolio</span>
             </h1>
             <p className="text-[hsl(38_10%_60%)] text-xl max-w-xl leading-relaxed">
-              Over 500 extraordinary installations across North America and beyond. Every project is unique — every result, exceptional.
+              Luxury home theaters designed and built across Virginia, DC, Maryland, and beyond. Every project is unique — every result, extraordinary.
             </p>
           </div>
         </div>
@@ -157,10 +157,10 @@ export default function Projects() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeIn>
             <h2 className="font-serif text-4xl md:text-5xl text-[hsl(38_20%_90%)] mb-6">
-              Ready to Start Your Project?
+              Ready to Build Yours?
             </h2>
             <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">
-              Every great project begins with a conversation. Let us understand your vision.
+              Every great theater begins with a conversation. We serve clients across Virginia, DC, Maryland, and beyond.
             </p>
             <Link href="/contact" data-testid="projects-cta">
               <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">

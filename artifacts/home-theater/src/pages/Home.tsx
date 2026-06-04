@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Home as HomeIcon, Volume2, Wifi, Monitor } from "lucide-react";
+import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 
@@ -36,32 +36,32 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 }
 
 const services = [
-  { icon: Monitor, title: "Custom Home Theaters", desc: "Immersive screening rooms engineered to your space — from intimate 4-seaters to 20-person private cinemas." },
-  { icon: Volume2, title: "Whole-Home Audio", desc: "Multi-zone audio systems delivering concert-quality sound in every room, indoors and out." },
-  { icon: Wifi, title: "Smart Home Control", desc: "One-touch command of lighting, climate, security, shades, and entertainment from any device." },
-  { icon: HomeIcon, title: "Outdoor Cinema", desc: "Weatherproof screens and all-weather audio that bring the cinematic experience to your backyard or terrace." },
+  { icon: Layers, title: "Theater Design", desc: "Full architectural and cinematic design — from concept drawings and acoustic modeling to detailed 3D renderings of your finished space." },
+  { icon: Hammer, title: "Custom Construction", desc: "We build your theater from the ground up: framing, soundproofing, isolation, drywall, and custom millwork — all under one roof." },
+  { icon: Monitor, title: "Projection & Display", desc: "4K and 8K laser projection, motorized screens, and LED walls calibrated to reference-grade picture quality." },
+  { icon: Volume2, title: "Cinema Audio", desc: "Dolby Atmos and immersive surround systems engineered specifically for your room's acoustics and dimensions." },
 ];
 
 const projects = [
-  { title: "Palm Beach Estate", type: "Private Cinema", location: "Palm Beach, FL", gradient: "from-slate-900 via-amber-950 to-slate-900" },
-  { title: "Miami Penthouse", type: "Whole-Home AV", location: "Miami, FL", gradient: "from-gray-900 via-zinc-800 to-gray-900" },
-  { title: "Malibu Compound", type: "Outdoor Theater", location: "Malibu, CA", gradient: "from-slate-800 via-gray-900 to-slate-900" },
+  { title: "Great Falls Estate", type: "Private Cinema", location: "Great Falls, VA", gradient: "from-slate-900 via-amber-950 to-slate-900" },
+  { title: "Georgetown Townhouse", type: "Dedicated Theater", location: "Washington, DC", gradient: "from-gray-900 via-zinc-800 to-gray-900" },
+  { title: "McLean Residence", type: "Luxury Screening Room", location: "McLean, VA", gradient: "from-slate-800 via-gray-900 to-slate-900" },
 ];
 
 const testimonials = [
-  { quote: "Home Cinema Group transformed our basement into a world-class screening room. Every detail was considered — the acoustics, the lighting, the seating. It feels like a private AMC.", name: "James Hartwell", title: "CEO, Hartwell Capital", rating: 5 },
-  { quote: "The smart home integration they designed is flawless. One touch and the entire house responds. Our guests are consistently amazed. Worth every penny.", name: "Sarah & Michael Chen", title: "Residence, Palm Beach", rating: 5 },
-  { quote: "We've worked with AV companies across the country — none come close to the craftsmanship and attention to detail that this team delivers. Exceptional.", name: "David Rosenthal", title: "Architect, DR Studio", rating: 5 },
+  { quote: "Home Cinema Group built us an extraordinary private theater in our Great Falls home. The acoustic design, the picture quality, the craftsmanship — it is simply beyond anything we imagined.", name: "Robert & Jennifer Ashford", title: "Private Residence, Great Falls, VA", rating: 5 },
+  { quote: "From the first design meeting to the final calibration, the team was meticulous, professional, and genuinely passionate. Our theater is the showpiece of our home.", name: "Mark Donovan", title: "Private Residence, McLean, VA", rating: 5 },
+  { quote: "We interviewed four theater builders. Home Cinema Group was the only team that truly understood what we wanted. The finished result exceeded every expectation.", name: "Sarah Whitmore", title: "Principal, Whitmore Architecture — Washington, DC", rating: 5 },
 ];
 
-const brands = ["Sony", "Samsung", "Dolby", "JBL", "Crestron", "Lutron", "Control4", "Klipsch", "Epson", "Sonos"];
+const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen", "Screen Innovations", "Paradigm", "Anthem", "Seymour"];
 
 const processSteps = [
-  { num: "01", title: "Consultation", desc: "We meet on-site or virtually to understand your vision, space, and lifestyle requirements." },
-  { num: "02", title: "Design", desc: "Our engineers produce detailed 3D renderings, acoustic modeling, and full system schematics." },
-  { num: "03", title: "Installation", desc: "Our certified technicians handle every cable, bracket, and calibration with surgical precision." },
-  { num: "04", title: "Calibration", desc: "ISF-certified calibrators tune every display and THX-trained engineers tune every speaker." },
-  { num: "05", title: "Handover", desc: "We walk you through your system, ensure you're comfortable, and remain your AV partner for life." },
+  { num: "01", title: "Consultation", desc: "We visit your home, assess the space, and get to know your vision — whether you're starting from scratch or finishing a basement." },
+  { num: "02", title: "Design", desc: "Our team produces architectural drawings, acoustic models, 3D renderings, and full material specifications tailored to your space." },
+  { num: "03", title: "Construction", desc: "We build your theater from the ground up — framing, soundproofing, isolation, and custom millwork executed to exacting standards." },
+  { num: "04", title: "Systems & Calibration", desc: "We install projection, audio, and lighting, then calibrate every element to reference-grade performance." },
+  { num: "05", title: "Handover", desc: "We walk you through your finished theater and remain your dedicated partner for years to come." },
 ];
 
 export default function Home() {
@@ -131,7 +131,7 @@ export default function Home() {
                 <span className="italic text-[hsl(38_75%_52%)]">Perfected.</span>
               </h1>
               <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">
-                We design and install bespoke home theaters and whole-home AV systems for clients who refuse to compromise on the extraordinary.
+                We design and build bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/projects" data-testid="hero-cta-projects">
@@ -228,8 +228,8 @@ export default function Home() {
                 <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">What We Do</span>
               </div>
               <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
-                Engineering<br />
-                <span className="italic">Experiences</span>
+                Built for<br />
+                <span className="italic">Pure Cinema</span>
               </h2>
             </div>
           </FadeIn>
@@ -424,7 +424,7 @@ export default function Home() {
               <span className="italic text-[hsl(38_75%_52%)]">Pure Cinema?</span>
             </h2>
             <p className="text-[hsl(38_10%_60%)] text-lg max-w-xl mx-auto mb-12 leading-relaxed">
-              Schedule a complimentary consultation with our design team and discover what's possible for your home.
+              Schedule a complimentary in-home consultation with our design team and discover what's possible for your space — in Virginia, DC, Maryland, and beyond.
             </p>
             <Link href="/contact" data-testid="cta-get-quote">
               <span className="inline-flex items-center gap-3 px-10 py-5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300 shadow-2xl">
