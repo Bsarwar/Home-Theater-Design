@@ -198,7 +198,7 @@ export default function Contact() {
               <div className="space-y-5">
                 {[
                   { icon: MapPin, label: "Address", value: "1800 Tysons Blvd, Suite 300\nMcLean, VA 22102" },
-                  { icon: Phone, label: "Phone", value: "(305) 987-6543" },
+                  { icon: Phone, label: "Phone", value: "(703) 625-1714" },
                   { icon: Mail, label: "Email", value: "info@homecinemagroup.com" },
                   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am – 6pm\nSat: By appointment" },
                 ].map((item) => {
