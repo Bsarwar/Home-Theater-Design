@@ -402,26 +402,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* BRAND PARTNERS */}
-      <section className="py-16 border-y border-[hsl(220_15%_14%)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeIn>
-            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-10">Our Trusted Partners</p>
-          </FadeIn>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-            {brands.map((brand, i) => (
-              <FadeIn key={brand} delay={i * 50}>
-                <span
-                  data-testid={`brand-${brand.toLowerCase()}`}
-                  className="text-[hsl(38_10%_38%)] text-sm tracking-[0.2em] uppercase font-medium hover:text-[hsl(38_75%_52%)] transition-colors duration-300 cursor-default"
-                >
-                  {brand}
-                </span>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* TESTIMONIALS */}
       <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="testimonials-section">
         <div className="max-w-7xl mx-auto px-6">
