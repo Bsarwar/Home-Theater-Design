@@ -214,7 +214,7 @@ export default function Footer() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm font-bold py-3 hover:bg-[hsl(38_75%_60%)] transition-colors duration-200 mt-1"
+                  className="w-full bg-[hsl(38_75%_52%)] border border-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm font-bold py-3 hover:bg-[hsl(38_75%_60%)] hover:border-[hsl(38_75%_60%)] transition-colors duration-200 mt-1"
                 >
                   Submit
                 </button>
