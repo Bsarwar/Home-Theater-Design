@@ -304,9 +304,9 @@ export default function Home() {
 
       {/* WHY HCG */}
       <section className="py-0 bg-[hsl(220_15%_7%)]" data-testid="why-hcg-section">
-        <div className="flex flex-col lg:flex-row min-h-[480px]">
+        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row min-h-[420px] border-x border-[hsl(220_15%_14%)]">
           {/* Left: heading + body */}
-          <div className="lg:w-5/12 flex flex-col justify-center px-10 py-16 lg:py-20 lg:pr-16 border-r border-[hsl(220_15%_14%)]">
+          <div className="lg:w-[30%] shrink-0 flex flex-col justify-center px-8 py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
               <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Why Choose HCG</span>
@@ -321,7 +321,7 @@ export default function Home() {
           </div>
 
           {/* Right: 2×3 feature cards */}
-          <div className="lg:w-7/12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y divide-x divide-[hsl(220_15%_14%)]">
+          <div className="lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y divide-x divide-[hsl(220_15%_14%)]">
             {[
               { icon: Layers,  title: "Bespoke Design",          desc: "Every theater is designed from scratch around your space, lifestyle, and vision." },
               { icon: Hammer,  title: "Master Craftsmanship",    desc: "Precision and artistry are built into every phase of our installations." },
