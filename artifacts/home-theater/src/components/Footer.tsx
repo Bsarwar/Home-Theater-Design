@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
 
           {/* Get in Touch Form */}
-          <div className="border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_8%)] p-6">
+          <div className="border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_8%)] p-6 border-t-[#e09d298a] border-r-[#e09d298a] border-b-[#e09d298a] border-l-[#e09d298a] pl-[24px] pr-[24px] ml-[0px] mr-[0px] mt-[0px] mb-[0px]">
             <h3 className="font-serif text-2xl font-semibold text-[hsl(38_20%_90%)] mb-1">Get in Touch</h3>
             <p className="text-[hsl(38_10%_50%)] text-xs leading-relaxed mb-5">
               Receive a Free Quote for Your Home Theater Project
@@ -224,7 +224,6 @@ export default function Footer() {
 
         </div>
       </div>
-
       <div className="border-t border-[hsl(220_15%_12%)] py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[hsl(38_10%_40%)] text-xs tracking-wide">
