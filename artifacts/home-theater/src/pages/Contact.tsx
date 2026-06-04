@@ -234,7 +234,7 @@ export default function Contact() {
 
             <div className="p-6 bg-[hsl(38_75%_52%/0.07)] border border-[hsl(38_75%_52%/0.2)]">
               <p className="text-[hsl(38_75%_52%)] text-xs tracking-[0.15em] uppercase mb-2">Prefer to call?</p>
-              <a href="tel:+13059876543" data-testid="contact-phone-link" className="font-serif text-2xl text-[hsl(38_20%_90%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200">(703)625-1714</a>
+              <a href="tel:+13059876543" data-testid="contact-phone-link" className="font-serif text-2xl text-[hsl(38_20%_90%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200">(703) 625-1714</a>
               <p className="text-[hsl(38_10%_50%)] text-xs mt-1">Mon–Fri, 9am – 6pm EST</p>
             </div>
           </FadeIn>
