@@ -309,11 +309,11 @@ export default function Home() {
           <div className="lg:w-[30%] shrink-0 flex flex-col justify-center px-8 py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Why Choose HCG</span>
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Services</span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl font-light text-[hsl(38_20%_90%)] leading-tight mb-6">
-              Why Homeowners &amp; Design Professionals<br />
-              <span className="italic text-[hsl(38_75%_52%)]">Trust Home Cinema Group</span>
+              Tailored Solutions for<br />
+              <span className="italic text-[hsl(38_75%_52%)]">Your Next Project</span>
             </h2>
           </div>
 
