@@ -50,21 +50,21 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-[hsl(225_50%_7%)]">
+    <div className="bg-[hsl(220_15%_7%)]">
       {/* HERO */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 40% 50%, hsl(225 55% 12%) 0%, hsl(225 50% 5%) 70%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 40% 50%, hsl(220 20% 12%) 0%, hsl(220 15% 5%) 70%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-12 bg-[hsl(210_25%_72%)]" />
-              <span className="text-[hsl(210_25%_72%)] text-xs tracking-[0.3em] uppercase">Let's Talk</span>
+              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Let's Talk</span>
             </div>
-            <h1 className="font-serif text-6xl md:text-8xl font-light text-[hsl(210_15%_92%)] leading-tight mb-6">
+            <h1 className="font-serif text-6xl md:text-8xl font-light text-[hsl(38_20%_90%)] leading-tight mb-6">
               Get in<br />
-              <span className="italic text-[hsl(210_25%_72%)]">Touch</span>
+              <span className="italic text-[hsl(38_75%_52%)]">Touch</span>
             </h1>
-            <p className="text-[hsl(210_10%_60%)] text-xl max-w-xl leading-relaxed">
+            <p className="text-[hsl(38_10%_60%)] text-xl max-w-xl leading-relaxed">
               Every extraordinary installation begins with a conversation. Tell us about your vision — we'll handle the rest.
             </p>
           </div>
@@ -76,27 +76,27 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-5 gap-12">
           {/* FORM */}
           <FadeIn className="lg:col-span-3">
-            <div className="border border-[hsl(225_35%_16%)] p-8 md:p-12">
+            <div className="border border-[hsl(220_15%_16%)] p-8 md:p-12">
               {submitted ? (
                 <div className="py-16 text-center">
-                  <div className="w-16 h-16 border border-[hsl(210_25%_72%)] flex items-center justify-center mx-auto mb-6">
-                    <div className="w-6 h-6 bg-[hsl(210_25%_72%)]" />
+                  <div className="w-16 h-16 border border-[hsl(38_75%_52%)] flex items-center justify-center mx-auto mb-6">
+                    <div className="w-6 h-6 bg-[hsl(38_75%_52%)]" />
                   </div>
-                  <h2 className="font-serif text-3xl text-[hsl(210_15%_92%)] mb-4">Thank You</h2>
-                  <p className="text-[hsl(210_10%_60%)] leading-relaxed">
+                  <h2 className="font-serif text-3xl text-[hsl(38_20%_90%)] mb-4">Thank You</h2>
+                  <p className="text-[hsl(38_10%_60%)] leading-relaxed">
                     We've received your inquiry and will be in touch within one business day. We look forward to learning more about your vision.
                   </p>
                 </div>
               ) : (
                 <>
-                  <h2 className="font-serif text-2xl text-[hsl(210_15%_92%)] mb-2">Send a Message</h2>
-                  <p className="text-[hsl(210_10%_55%)] text-sm mb-8">Fill in the form below and we'll respond within one business day.</p>
+                  <h2 className="font-serif text-2xl text-[hsl(38_20%_90%)] mb-2">Send a Message</h2>
+                  <p className="text-[hsl(38_10%_55%)] text-sm mb-8">Fill in the form below and we'll respond within one business day.</p>
 
                   <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
-                        <label className="block text-[hsl(210_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
-                          Full Name <span className="text-[hsl(210_25%_72%)]">*</span>
+                        <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                          Full Name <span className="text-[hsl(38_75%_52%)]">*</span>
                         </label>
                         <input
                           data-testid="input-name"
@@ -106,12 +106,12 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="Your name"
-                          className="w-full bg-[hsl(225_45%_10%)] border border-[hsl(225_35%_18%)] text-[hsl(210_15%_87%)] px-4 py-3 text-sm outline-none focus:border-[hsl(210_25%_72%)] transition-colors placeholder-[hsl(210_10%_35%)]"
+                          className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
                         />
                       </div>
                       <div>
-                        <label className="block text-[hsl(210_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
-                          Email Address <span className="text-[hsl(210_25%_72%)]">*</span>
+                        <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                          Email Address <span className="text-[hsl(38_75%_52%)]">*</span>
                         </label>
                         <input
                           data-testid="input-email"
@@ -121,13 +121,13 @@ export default function Contact() {
                           onChange={handleChange}
                           required
                           placeholder="you@email.com"
-                          className="w-full bg-[hsl(225_45%_10%)] border border-[hsl(225_35%_18%)] text-[hsl(210_15%_87%)] px-4 py-3 text-sm outline-none focus:border-[hsl(210_25%_72%)] transition-colors placeholder-[hsl(210_10%_35%)]"
+                          className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-[hsl(210_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                      <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
                         Phone Number
                       </label>
                       <input
@@ -137,13 +137,13 @@ export default function Contact() {
                         value={form.phone}
                         onChange={handleChange}
                         placeholder="(305) 000-0000"
-                        className="w-full bg-[hsl(225_45%_10%)] border border-[hsl(225_35%_18%)] text-[hsl(210_15%_87%)] px-4 py-3 text-sm outline-none focus:border-[hsl(210_25%_72%)] transition-colors placeholder-[hsl(210_10%_35%)]"
+                        className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
                       />
                     </div>
 
                     <div className="relative">
-                      <label className="block text-[hsl(210_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
-                        Project Type <span className="text-[hsl(210_25%_72%)]">*</span>
+                      <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                        Project Type <span className="text-[hsl(38_75%_52%)]">*</span>
                       </label>
                       <div className="relative">
                         <select
@@ -152,20 +152,20 @@ export default function Contact() {
                           value={form.projectType}
                           onChange={handleChange}
                           required
-                          className="w-full bg-[hsl(225_45%_10%)] border border-[hsl(225_35%_18%)] text-[hsl(210_15%_87%)] px-4 py-3 text-sm outline-none focus:border-[hsl(210_25%_72%)] transition-colors appearance-none cursor-pointer"
+                          className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors appearance-none cursor-pointer"
                         >
                           <option value="" disabled>Select a project type</option>
                           {projectTypes.map((pt) => (
                             <option key={pt} value={pt}>{pt}</option>
                           ))}
                         </select>
-                        <ChevronDown size={14} className="absolute right-4 top-1/2 -translate-y-1/2 text-[hsl(210_10%_45%)] pointer-events-none" />
+                        <ChevronDown size={14} className="absolute right-4 top-1/2 -translate-y-1/2 text-[hsl(38_10%_45%)] pointer-events-none" />
                       </div>
                     </div>
 
                     <div>
-                      <label className="block text-[hsl(210_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
-                        Tell Us About Your Project <span className="text-[hsl(210_25%_72%)]">*</span>
+                      <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                        Tell Us About Your Project <span className="text-[hsl(38_75%_52%)]">*</span>
                       </label>
                       <textarea
                         data-testid="textarea-message"
@@ -175,14 +175,14 @@ export default function Contact() {
                         required
                         rows={5}
                         placeholder="Describe your space, vision, and any specific requirements..."
-                        className="w-full bg-[hsl(225_45%_10%)] border border-[hsl(225_35%_18%)] text-[hsl(210_15%_87%)] px-4 py-3 text-sm outline-none focus:border-[hsl(210_25%_72%)] transition-colors resize-none placeholder-[hsl(210_10%_35%)]"
+                        className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors resize-none placeholder-[hsl(38_10%_35%)]"
                       />
                     </div>
 
                     <button
                       data-testid="button-submit"
                       type="submit"
-                      className="w-full py-4 bg-[hsl(210_25%_72%)] text-[hsl(225_50%_7%)] text-sm tracking-[0.2em] uppercase font-bold hover:bg-[hsl(210_25%_82%)] transition-colors duration-300"
+                      className="w-full py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold hover:bg-[hsl(38_75%_60%)] transition-colors duration-300"
                     >
                       Send Inquiry
                     </button>
@@ -194,8 +194,8 @@ export default function Contact() {
 
           {/* SIDEBAR INFO */}
           <FadeIn delay={200} className="lg:col-span-2 space-y-8">
-            <div className="border border-[hsl(225_35%_16%)] p-8">
-              <h3 className="font-serif text-xl text-[hsl(210_15%_92%)] mb-6">Contact Information</h3>
+            <div className="border border-[hsl(220_15%_16%)] p-8">
+              <h3 className="font-serif text-xl text-[hsl(38_20%_90%)] mb-6">Contact Information</h3>
               <div className="space-y-5">
                 {[
                   { icon: MapPin, label: "Address", value: "1200 Brickell Ave, Suite 800\nMiami, FL 33131" },
@@ -206,10 +206,10 @@ export default function Contact() {
                   const Icon = item.icon;
                   return (
                     <div key={item.label} className="flex gap-4" data-testid={`contact-info-${item.label.toLowerCase()}`}>
-                      <Icon size={16} className="text-[hsl(210_25%_72%)] mt-0.5 shrink-0" />
+                      <Icon size={16} className="text-[hsl(38_75%_52%)] mt-0.5 shrink-0" />
                       <div>
-                        <div className="text-[hsl(210_10%_50%)] text-[10px] tracking-[0.2em] uppercase mb-0.5">{item.label}</div>
-                        <div className="text-[hsl(210_15%_82%)] text-sm whitespace-pre-line">{item.value}</div>
+                        <div className="text-[hsl(38_10%_50%)] text-[10px] tracking-[0.2em] uppercase mb-0.5">{item.label}</div>
+                        <div className="text-[hsl(38_20%_80%)] text-sm whitespace-pre-line">{item.value}</div>
                       </div>
                     </div>
                   );
@@ -217,22 +217,22 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="border border-[hsl(225_35%_16%)] p-8">
-              <h3 className="font-serif text-xl text-[hsl(210_15%_92%)] mb-4">Our Promise</h3>
-              <p className="text-[hsl(210_10%_55%)] text-sm leading-relaxed mb-4">
+            <div className="border border-[hsl(220_15%_16%)] p-8">
+              <h3 className="font-serif text-xl text-[hsl(38_20%_90%)] mb-4">Our Promise</h3>
+              <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed mb-4">
                 Every inquiry receives a personal response — not a form letter. Our design team will review your project and respond with a thoughtful assessment within one business day.
               </p>
-              <p className="text-[hsl(210_10%_55%)] text-sm leading-relaxed">
+              <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">
                 Initial consultations are always complimentary, with no obligation.
               </p>
             </div>
 
-            <div className="p-6 bg-[hsl(210_25%_72%/0.07)] border border-[hsl(210_25%_72%/0.2)]">
-              <p className="text-[hsl(210_25%_72%)] text-xs tracking-[0.15em] uppercase mb-2">Prefer to call?</p>
-              <a href="tel:+13059876543" data-testid="contact-phone-link" className="font-serif text-2xl text-[hsl(210_15%_92%)] hover:text-[hsl(210_25%_72%)] transition-colors duration-200">
+            <div className="p-6 bg-[hsl(38_75%_52%/0.07)] border border-[hsl(38_75%_52%/0.2)]">
+              <p className="text-[hsl(38_75%_52%)] text-xs tracking-[0.15em] uppercase mb-2">Prefer to call?</p>
+              <a href="tel:+13059876543" data-testid="contact-phone-link" className="font-serif text-2xl text-[hsl(38_20%_90%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200">
                 (305) 987-6543
               </a>
-              <p className="text-[hsl(210_10%_50%)] text-xs mt-1">Mon–Fri, 9am – 6pm EST</p>
+              <p className="text-[hsl(38_10%_50%)] text-xs mt-1">Mon–Fri, 9am – 6pm EST</p>
             </div>
           </FadeIn>
         </div>

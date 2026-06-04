@@ -30,21 +30,21 @@ export default function Navbar() {
       data-testid="navbar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-white/20 ${
         scrolled
-          ? "bg-[hsl(225_50%_7%/0.97)] shadow-2xl"
+          ? "bg-[hsl(220_15%_7%/0.97)] shadow-2xl"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" data-testid="nav-logo">
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-8 h-8 border border-[hsl(210_25%_72%)] flex items-center justify-center">
-              <div className="w-4 h-4 bg-[hsl(210_25%_72%)]" />
+            <div className="w-8 h-8 border border-[hsl(38_75%_52%)] flex items-center justify-center">
+              <div className="w-4 h-4 bg-[hsl(38_75%_52%)]" />
             </div>
             <div>
-              <span className="font-serif text-lg font-semibold tracking-wider text-[hsl(210_15%_90%)]">
+              <span className="font-serif text-lg font-semibold tracking-wider text-[hsl(38_20%_88%)]">
                 HOME CINEMA
               </span>
-              <span className="block text-[10px] tracking-[0.3em] text-[hsl(210_25%_72%)] uppercase">
+              <span className="block text-[10px] tracking-[0.3em] text-[hsl(38_75%_52%)] uppercase">
                 Group
               </span>
             </div>
@@ -57,8 +57,8 @@ export default function Navbar() {
               <span
                 className={`text-sm tracking-[0.12em] uppercase font-medium transition-colors duration-200 cursor-pointer ${
                   location === link.href
-                    ? "text-[hsl(210_25%_72%)]"
-                    : "text-[hsl(210_10%_60%)] hover:text-[hsl(210_15%_90%)]"
+                    ? "text-[hsl(38_75%_52%)]"
+                    : "text-[hsl(38_10%_60%)] hover:text-[hsl(38_20%_88%)]"
                 }`}
               >
                 {link.label}
@@ -66,7 +66,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contact" data-testid="nav-cta">
-            <span className="ml-4 px-6 py-2.5 bg-[hsl(210_25%_72%)] text-[hsl(225_50%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(210_25%_82%)] transition-colors duration-200">
+            <span className="ml-4 px-6 py-2.5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-200">
               Get a Quote
             </span>
           </Link>
@@ -74,7 +74,7 @@ export default function Navbar() {
 
         <button
           data-testid="nav-mobile-toggle"
-          className="md:hidden text-[hsl(210_15%_90%)] p-2"
+          className="md:hidden text-[hsl(38_20%_88%)] p-2"
           onClick={() => setMenuOpen((v) => !v)}
           aria-label="Toggle menu"
         >
@@ -83,14 +83,14 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-[hsl(225_50%_7%)] border-t border-[hsl(225_35%_16%)] px-6 py-6 flex flex-col gap-4">
+        <div className="md:hidden bg-[hsl(220_15%_7%)] border-t border-[hsl(220_15%_16%)] px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} data-testid={`nav-mobile-${link.label.toLowerCase()}`}>
               <span
                 className={`block text-sm tracking-[0.12em] uppercase font-medium py-2 cursor-pointer ${
                   location === link.href
-                    ? "text-[hsl(210_25%_72%)]"
-                    : "text-[hsl(210_10%_60%)]"
+                    ? "text-[hsl(38_75%_52%)]"
+                    : "text-[hsl(38_10%_60%)]"
                 }`}
               >
                 {link.label}
@@ -98,7 +98,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link href="/contact">
-            <span className="mt-2 inline-block px-6 py-3 bg-[hsl(210_25%_72%)] text-[hsl(225_50%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer">
+            <span className="mt-2 inline-block px-6 py-3 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer">
               Get a Quote
             </span>
           </Link>
