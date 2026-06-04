@@ -315,31 +315,40 @@ export default function Home() {
               Why Homeowners &amp; Design Professionals<br />
               <span className="italic text-[hsl(38_75%_52%)]">Trust Home Cinema Group</span>
             </h2>
-            <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">
-              Our reputation isn't just earned — it's honored. We've become the premier home theater company across Virginia, DC, and Maryland by delivering exceptional designs, white-glove service, and long-term support. We work closely with homeowners, interior designers, and custom builders, and our commitment to excellence is unwavering.
-            </p>
           </div>
 
-          {/* Right: 2×3 feature cards */}
-          <div className="lg:w-[70%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y divide-x divide-[hsl(220_15%_14%)]">
-            {[
-              { icon: Layers,  title: "Bespoke Design",          desc: "Every theater is designed from scratch around your space, lifestyle, and vision." },
-              { icon: Hammer,  title: "Master Craftsmanship",    desc: "Precision and artistry are built into every phase of our installations." },
-              { icon: Users,   title: "White-Glove Service",     desc: "From design to delivery and beyond, we're with you at every step." },
-              { icon: Monitor, title: "Cinematic Technology",    desc: "We specify and integrate only the world's finest AV equipment and systems." },
-              { icon: Award,   title: "CEDIA Certified",         desc: "Our technicians are factory-trained and continuously certified to stay ahead." },
-              { icon: Volume2, title: "Acoustic Perfection",     desc: "Expert acoustic design and calibration for reference-grade sound in every room." },
-            ].map(({ icon: Icon, title, desc }, i) => (
-              <FadeIn key={title} delay={i * 80}>
-                <div className="flex flex-col items-center text-center px-8 py-10 bg-[hsl(220_15%_9%)] hover:bg-[hsl(220_15%_11%)] transition-colors duration-300 h-full">
-                  <div className="w-12 h-12 border border-[hsl(38_75%_52%/0.5)] flex items-center justify-center mb-5">
-                    <Icon size={20} className="text-[hsl(38_75%_52%)]" strokeWidth={1.25} />
+          {/* Right: service image cards + link */}
+          <div className="lg:w-[70%] flex flex-col">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 p-2 flex-1">
+              {[
+                { title: "Home Theater Design", image: heroImg1 },
+                { title: "Dedicated Theaters",  image: heroImg2 },
+                { title: "Media Rooms",          gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
+                { title: "TV Walls",             gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
+                { title: "Sound Isolation",      gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
+              ].map((card, i) => (
+                <FadeIn key={card.title} delay={i * 70}>
+                  <div className="relative overflow-hidden group cursor-pointer" style={{ aspectRatio: "4/3" }}>
+                    {"image" in card && card.image ? (
+                      <img src={card.image} alt={card.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    ) : (
+                      <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
+                    )}
+                    <div className="absolute inset-0 bg-black/60" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3">
+                      <p className="text-white text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
+                    </div>
                   </div>
-                  <h3 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-3">{title}</h3>
-                  <p className="text-[hsl(38_10%_52%)] text-xs leading-relaxed">{desc}</p>
-                </div>
-              </FadeIn>
-            ))}
+                </FadeIn>
+              ))}
+            </div>
+            <div className="px-4 pb-4 pt-2 border-t border-[hsl(220_15%_14%)]">
+              <Link href="/services">
+                <span className="inline-flex items-center gap-2 text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase font-medium cursor-pointer hover:gap-4 transition-all duration-300">
+                  Explore All Services <ArrowRight size={12} />
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
