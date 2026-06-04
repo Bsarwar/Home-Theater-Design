@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Youtube, Linkedin, ChevronDown } from "lucide-react";
+
+const inputCls = "bg-[hsl(220_15%_11%)] border border-[hsl(220_15%_22%)] text-[hsl(38_10%_80%)] placeholder-[hsl(38_10%_38%)] text-sm px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200";
 
 export default function Footer() {
-  const [form, setForm] = useState({ firstName: "", lastName: "", email: "", phone: "", service: "" });
+  const [form, setForm] = useState({
+    firstName: "", lastName: "",
+    projectType: "",
+    streetAddress: "", email: "",
+    phone: "", zipCode: "",
+    subscribe: false,
+  });
   const [sent, setSent] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
@@ -92,10 +100,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Quick Quote Form */}
-          <div>
-            <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-2">Quick Quote</h4>
-            <p className="text-[hsl(38_10%_45%)] text-xs mb-5 leading-relaxed">Receive a free consultation for your home theater project.</p>
+          {/* Get in Touch Form */}
+          <div className="border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_8%)] p-6">
+            <h3 className="font-serif text-2xl font-semibold text-[hsl(38_20%_90%)] mb-1">Get in Touch</h3>
+            <p className="text-[hsl(38_10%_50%)] text-xs leading-relaxed mb-5">
+              Receive a Free Quote for Your Home Theater Project
+            </p>
 
             {sent ? (
               <div className="border border-[hsl(38_75%_52%/0.3)] bg-[hsl(38_75%_52%/0.05)] p-5 text-center">
@@ -103,7 +113,8 @@ export default function Footer() {
                 <p className="text-[hsl(38_10%_55%)] text-xs">We'll be in touch within one business day.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-2.5">
+                {/* First / Last */}
                 <div className="grid grid-cols-2 gap-2">
                   <input
                     type="text"
@@ -111,7 +122,7 @@ export default function Footer() {
                     value={form.firstName}
                     onChange={(e) => setForm((f) => ({ ...f, firstName: e.target.value }))}
                     required
-                    className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                    className={inputCls}
                   />
                   <input
                     type="text"
@@ -119,42 +130,93 @@ export default function Footer() {
                     value={form.lastName}
                     onChange={(e) => setForm((f) => ({ ...f, lastName: e.target.value }))}
                     required
-                    className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
+                    className={inputCls}
                   />
                 </div>
-                <input
-                  type="email"
-                  placeholder="Email Address"
-                  value={form.email}
-                  onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                  required
-                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  value={form.phone}
-                  onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
-                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_10%_75%)] placeholder-[hsl(38_10%_35%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200"
-                />
-                <select
-                  value={form.service}
-                  onChange={(e) => setForm((f) => ({ ...f, service: e.target.value }))}
-                  required
-                  className="bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-xs px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200 appearance-none"
-                  style={{ color: form.service ? "hsl(38,10%,75%)" : "hsl(38,10%,35%)" }}
-                >
-                  <option value="" disabled>Service Interested In</option>
-                  <option value="Theater Room">Theater Room</option>
-                  <option value="Media Room">Media Room</option>
-                  <option value="TV Walls">TV Walls</option>
-                  <option value="Custom Project">Custom Project</option>
-                </select>
+
+                {/* Project Type */}
+                <div className="relative">
+                  <select
+                    value={form.projectType}
+                    onChange={(e) => setForm((f) => ({ ...f, projectType: e.target.value }))}
+                    required
+                    className={`${inputCls} appearance-none pr-8`}
+                    style={{ color: form.projectType ? "hsl(38,10%,80%)" : "hsl(38,10%,38%)" }}
+                  >
+                    <option value="" disabled>Project Type:</option>
+                    <option value="Theater Room">Theater Room</option>
+                    <option value="Media Room">Media Room</option>
+                    <option value="TV Walls">TV Walls</option>
+                    <option value="Custom Project">Custom Project</option>
+                  </select>
+                  <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-[hsl(38_10%_45%)] pointer-events-none" />
+                </div>
+
+                {/* Street / Email */}
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    type="text"
+                    placeholder="Street Address"
+                    value={form.streetAddress}
+                    onChange={(e) => setForm((f) => ({ ...f, streetAddress: e.target.value }))}
+                    className={inputCls}
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email Address"
+                    value={form.email}
+                    onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                    required
+                    className={inputCls}
+                  />
+                </div>
+
+                {/* Phone / Zip */}
+                <div className="grid grid-cols-2 gap-2">
+                  <input
+                    type="tel"
+                    placeholder="Phone"
+                    value={form.phone}
+                    onChange={(e) => setForm((f) => ({ ...f, phone: e.target.value }))}
+                    className={inputCls}
+                  />
+                  <input
+                    type="text"
+                    placeholder="Zip Code"
+                    value={form.zipCode}
+                    onChange={(e) => setForm((f) => ({ ...f, zipCode: e.target.value }))}
+                    className={inputCls}
+                  />
+                </div>
+
+                {/* Checkbox */}
+                <label className="flex items-start gap-2.5 cursor-pointer group pt-1">
+                  <div className="relative mt-0.5 shrink-0">
+                    <input
+                      type="checkbox"
+                      checked={form.subscribe}
+                      onChange={(e) => setForm((f) => ({ ...f, subscribe: e.target.checked }))}
+                      className="sr-only"
+                    />
+                    <div className={`w-4 h-4 border flex items-center justify-center transition-colors duration-200 ${form.subscribe ? "bg-[hsl(38_75%_52%)] border-[hsl(38_75%_52%)]" : "bg-[hsl(220_15%_11%)] border-[hsl(220_15%_28%)]"}`}>
+                      {form.subscribe && (
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                          <path d="M1 4L3.5 6.5L9 1" stroke="hsl(220,15%,7%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                      )}
+                    </div>
+                  </div>
+                  <span className="text-[hsl(38_10%_50%)] text-xs leading-relaxed group-hover:text-[hsl(38_10%_65%)] transition-colors duration-200">
+                    I would like to learn more about HCG's home theater services.
+                  </span>
+                </label>
+
+                {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold py-3 hover:bg-[hsl(38_75%_60%)] transition-colors duration-200"
+                  className="w-full bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm font-bold py-3 hover:bg-[hsl(38_75%_60%)] transition-colors duration-200 mt-1"
                 >
-                  Get a Free Quote
+                  Submit
                 </button>
               </form>
             )}
