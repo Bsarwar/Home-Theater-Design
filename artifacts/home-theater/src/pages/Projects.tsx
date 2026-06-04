@@ -241,11 +241,11 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col max-h-[90vh]"
+        className="relative w-full bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col max-h-[95vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
