@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -65,8 +65,12 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
+          <a href="tel:+13059876543" className="flex items-center gap-2 text-[hsl(38_10%_60%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200">
+            <Phone size={13} strokeWidth={1.5} />
+            <span className="text-xs tracking-[0.08em] font-medium">(305) 987-6543</span>
+          </a>
           <Link href="/contact" data-testid="nav-cta">
-            <span className="ml-4 px-6 py-2.5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-200">
+            <span className="ml-2 px-6 py-2.5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-200">
               Get a Quote
             </span>
           </Link>
