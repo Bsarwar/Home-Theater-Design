@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Phone, Mail, MapPin, Clock, ChevronDown } from "lucide-react";
+import { useSEO } from "@/hooks/useSEO";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,6 +34,12 @@ const projectTypes = [
 ];
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Home Cinema Group — Free Home Theater Consultation | McLean, VA",
+    description: "Ready to build your dream home theater? Contact our McLean, VA design team for a free consultation. Serving Virginia, DC, Maryland, and beyond.",
+    canonical: "https://homecinemagroup.com/contact",
+    ogImage: "https://homecinemagroup.com/opengraph.jpg",
+  });
   const [heroReady, setHeroReady] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", phone: "", projectType: "", message: "" });

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Armchair, ArrowRight, CheckCircle } from "lucide-react";
 
 function useInView(threshold = 0.1) {
@@ -70,6 +71,12 @@ const services = [
 ];
 
 export default function Services() {
+  useSEO({
+    title: "Home Theater Design & Construction Services | Home Cinema Group",
+    description: "From custom theater design and projection systems to cinema audio, lighting, and seating — explore our full suite of luxury home theater services.",
+    canonical: "https://homecinemagroup.com/services",
+    ogImage: "https://homecinemagroup.com/opengraph.jpg",
+  });
   const [heroReady, setHeroReady] = useState(false);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 

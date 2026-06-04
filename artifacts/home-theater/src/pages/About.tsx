@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
 
 function useInView(threshold = 0.1) {
@@ -85,6 +86,12 @@ const values = [
 ];
 
 export default function About() {
+  useSEO({
+    title: "About Home Cinema Group — Luxury Home Theater Specialists Since 2005",
+    description: "Since 2005, Home Cinema Group has been designing and building extraordinary home theaters across Virginia, DC, and Maryland. CEDIA-certified, award-winning craftsmanship.",
+    canonical: "https://homecinemagroup.com/about",
+    ogImage: "https://homecinemagroup.com/opengraph.jpg",
+  });
   const [heroReady, setHeroReady] = useState(false);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 
