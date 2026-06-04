@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
-import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -202,12 +201,33 @@ export default function Home() {
 
       {/* STATS BAR */}
       <section className="bg-[hsl(220_15%_10%)] border-y border-[hsl(220_15%_16%)]">
-        <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
+        <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-center gap-4 md:gap-8">
 
-          {/* Left laurel */}
-          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
-          </div>
+          {/* Left laurel branch */}
+          <svg width="68" height="116" viewBox="0 0 68 116" fill="none" className="shrink-0">
+            {/* Stem */}
+            <path d="M 50 114 C 43 90 30 63 17 36 C 12 22 11 10 14 3" stroke="hsl(38,75%,52%)" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+            {/* Outer leaves (pointing left/outward) */}
+            <g transform="translate(49,106) rotate(158)"><path d="M 0 0 C 2 -3.8 20 -3.8 22 0 C 20 3.8 2 3.8 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(45,95) rotate(147)"><path d="M 0 0 C 2 -4.2 22 -4.2 24 0 C 22 4.2 2 4.2 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(40,84) rotate(136)"><path d="M 0 0 C 2 -4.5 23 -4.5 25 0 C 23 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(34,72) rotate(124)"><path d="M 0 0 C 2 -4.5 24 -4.5 26 0 C 24 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(27,60) rotate(112)"><path d="M 0 0 C 2 -4.5 24 -4.5 26 0 C 24 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(21,48) rotate(101)"><path d="M 0 0 C 2 -4.2 22 -4.2 24 0 C 22 4.2 2 4.2 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(16,36) rotate(92)"><path d="M 0 0 C 2 -4 21 -4 23 0 C 21 4 2 4 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(14,24) rotate(85)"><path d="M 0 0 C 1.5 -3.5 19 -3.5 21 0 C 19 3.5 1.5 3.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(13,13) rotate(80)"><path d="M 0 0 C 1.5 -3 17 -3 19 0 C 17 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            {/* Inner leaves (pointing right/inward, smaller) */}
+            <g transform="translate(47,100) rotate(-20)"><path d="M 0 0 C 1.5 -3 15 -3 17 0 C 15 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(43,89) rotate(-33)"><path d="M 0 0 C 1.5 -3.2 16 -3.2 18 0 C 16 3.2 1.5 3.2 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(37,78) rotate(-45)"><path d="M 0 0 C 1.5 -3.2 16 -3.2 18 0 C 16 3.2 1.5 3.2 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(31,66) rotate(-57)"><path d="M 0 0 C 1.5 -3 16 -3 18 0 C 16 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(24,54) rotate(-68)"><path d="M 0 0 C 1.5 -3 15 -3 17 0 C 15 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(18,42) rotate(-78)"><path d="M 0 0 C 1.5 -2.8 14 -2.8 16 0 C 14 2.8 1.5 2.8 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(15,30) rotate(-87)"><path d="M 0 0 C 1.5 -2.8 13 -2.8 15 0 C 13 2.8 1.5 2.8 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            {/* Berry at base */}
+            <circle cx="51" cy="111" r="2.5" fill="hsl(38,75%,52%)"/>
+          </svg>
 
           {/* Stats */}
           <div className="flex flex-1 items-center justify-center divide-x divide-[hsl(220_15%_20%)]">
@@ -225,10 +245,27 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Right laurel (mirrored) */}
-          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen", transform: "scaleX(-1)" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
-          </div>
+          {/* Right laurel branch (mirrored) */}
+          <svg width="68" height="116" viewBox="0 0 68 116" fill="none" className="shrink-0" style={{ transform: "scaleX(-1)" }}>
+            <path d="M 50 114 C 43 90 30 63 17 36 C 12 22 11 10 14 3" stroke="hsl(38,75%,52%)" strokeWidth="1.3" fill="none" strokeLinecap="round"/>
+            <g transform="translate(49,106) rotate(158)"><path d="M 0 0 C 2 -3.8 20 -3.8 22 0 C 20 3.8 2 3.8 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(45,95) rotate(147)"><path d="M 0 0 C 2 -4.2 22 -4.2 24 0 C 22 4.2 2 4.2 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(40,84) rotate(136)"><path d="M 0 0 C 2 -4.5 23 -4.5 25 0 C 23 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(34,72) rotate(124)"><path d="M 0 0 C 2 -4.5 24 -4.5 26 0 C 24 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(27,60) rotate(112)"><path d="M 0 0 C 2 -4.5 24 -4.5 26 0 C 24 4.5 2 4.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(21,48) rotate(101)"><path d="M 0 0 C 2 -4.2 22 -4.2 24 0 C 22 4.2 2 4.2 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(16,36) rotate(92)"><path d="M 0 0 C 2 -4 21 -4 23 0 C 21 4 2 4 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(14,24) rotate(85)"><path d="M 0 0 C 1.5 -3.5 19 -3.5 21 0 C 19 3.5 1.5 3.5 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(13,13) rotate(80)"><path d="M 0 0 C 1.5 -3 17 -3 19 0 C 17 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)"/></g>
+            <g transform="translate(47,100) rotate(-20)"><path d="M 0 0 C 1.5 -3 15 -3 17 0 C 15 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(43,89) rotate(-33)"><path d="M 0 0 C 1.5 -3.2 16 -3.2 18 0 C 16 3.2 1.5 3.2 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(37,78) rotate(-45)"><path d="M 0 0 C 1.5 -3.2 16 -3.2 18 0 C 16 3.2 1.5 3.2 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(31,66) rotate(-57)"><path d="M 0 0 C 1.5 -3 16 -3 18 0 C 16 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(24,54) rotate(-68)"><path d="M 0 0 C 1.5 -3 15 -3 17 0 C 15 3 1.5 3 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(18,42) rotate(-78)"><path d="M 0 0 C 1.5 -2.8 14 -2.8 16 0 C 14 2.8 1.5 2.8 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <g transform="translate(15,30) rotate(-87)"><path d="M 0 0 C 1.5 -2.8 13 -2.8 15 0 C 13 2.8 1.5 2.8 0 0Z" fill="hsl(38,75%,52%)" opacity="0.65"/></g>
+            <circle cx="51" cy="111" r="2.5" fill="hsl(38,75%,52%)"/>
+          </svg>
 
         </div>
       </section>
