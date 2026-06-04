@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
-import laurelAward from "@assets/laurel_award.png";
+import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -202,10 +202,12 @@ export default function Home() {
 
       {/* STATS BAR */}
       <section className="bg-[hsl(220_15%_10%)] border-y border-[hsl(220_15%_16%)]">
-        <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-center gap-4 md:gap-8">
+        <div className="max-w-5xl mx-auto px-6 py-8 flex items-center justify-center gap-6 md:gap-10">
 
           {/* Left laurel */}
-          <img src={laurelAward} alt="" className="shrink-0 w-28 h-28 object-contain" />
+          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen" }}>
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+          </div>
 
           {/* Stats */}
           <div className="flex flex-1 items-center justify-center divide-x divide-[hsl(220_15%_20%)]">
@@ -224,7 +226,9 @@ export default function Home() {
           </div>
 
           {/* Right laurel (mirrored) */}
-          <img src={laurelAward} alt="" className="shrink-0 w-28 h-28 object-contain" style={{ transform: "scaleX(-1)" }} />
+          <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen", transform: "scaleX(-1)" }}>
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+          </div>
 
         </div>
       </section>
