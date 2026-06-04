@@ -42,10 +42,10 @@ export default function Navbar() {
             </div>
             <div>
               <span className="font-serif text-lg font-semibold tracking-wider text-[hsl(38_20%_88%)]">
-                HOME CINEMA
+                HOME CINEMA GROUP
               </span>
-              <span className="block text-[10px] tracking-[0.3em] text-[hsl(38_75%_52%)] uppercase">
-                Group
+              <span className="block text-[9px] tracking-[0.18em] text-[hsl(38_75%_52%)] uppercase">
+                a Lifestyle Solution Company
               </span>
             </div>
           </div>
