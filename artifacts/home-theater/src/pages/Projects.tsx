@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { ArrowRight, MapPin, Tag } from "lucide-react";
+import portfolioImg1 from "@assets/LMp4_1780573575270.jpg";
+import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -27,8 +29,8 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 const filters = ["All", "Home Theater", "Whole-Home AV", "Smart Home", "Outdoor", "Commercial"];
 
 const projects = [
-  { title: "Palm Beach Oceanfront Estate", type: "Home Theater", location: "Palm Beach, FL", year: "2024", size: "18-Seat Private Cinema", gradient: "from-amber-950 via-stone-900 to-slate-900", featured: true },
-  { title: "Brickell Penthouse", type: "Whole-Home AV", location: "Miami, FL", year: "2024", size: "6,200 sq ft Penthouse", gradient: "from-slate-900 via-zinc-800 to-gray-900", featured: true },
+  { title: "Palm Beach Oceanfront Estate", type: "Home Theater", location: "Palm Beach, FL", year: "2024", size: "18-Seat Private Cinema", gradient: "from-amber-950 via-stone-900 to-slate-900", featured: true, image: portfolioImg1 },
+  { title: "Award-Winning Theater — CE Pro 2024", type: "Home Theater", location: "Private Residence", year: "2024", size: "CE Pro Home of the Year — Best Home Theater", gradient: "from-slate-900 via-zinc-800 to-gray-900", featured: true, image: portfolioImg2 },
   { title: "Malibu Coastal Compound", type: "Outdoor", location: "Malibu, CA", year: "2023", size: "Oceanfront Terrace Cinema", gradient: "from-gray-900 via-slate-800 to-zinc-900", featured: false },
   { title: "Aspen Mountain Retreat", type: "Smart Home", location: "Aspen, CO", year: "2023", size: "12,000 sq ft Mountain Home", gradient: "from-zinc-900 via-stone-800 to-slate-900", featured: false },
   { title: "Manhattan Upper East Townhouse", type: "Home Theater", location: "New York, NY", year: "2023", size: "12-Seat Screening Room", gradient: "from-gray-900 via-neutral-800 to-gray-900", featured: false },
@@ -100,16 +102,29 @@ export default function Projects() {
                   data-testid={`project-item-${i}`}
                   className="group border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.4)] transition-all duration-300 cursor-pointer"
                 >
-                  <div className={`bg-gradient-to-br ${project.gradient} h-52 relative overflow-hidden`}>
-                    <div className="absolute inset-0 flex items-center justify-center opacity-20">
-                      <div className="w-24 h-24 border border-[hsl(38_75%_52%)] rounded-full" />
-                    </div>
+                  <div className={`h-52 relative overflow-hidden ${!("image" in project && project.image) ? `bg-gradient-to-br ${project.gradient}` : ""}`}>
+                    {"image" in project && project.image ? (
+                      <>
+                        <img
+                          src={project.image as string}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_7%)] via-[hsl(220_15%_7%/0.2)] to-transparent" />
+                      </>
+                    ) : (
+                      <>
+                        <div className="absolute inset-0 flex items-center justify-center opacity-20">
+                          <div className="w-24 h-24 border border-[hsl(38_75%_52%)] rounded-full" />
+                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_7%)] via-transparent to-transparent opacity-60" />
+                      </>
+                    )}
                     {project.featured && (
-                      <div className="absolute top-3 left-3 px-3 py-1 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-[10px] tracking-[0.2em] uppercase font-bold">
+                      <div className="absolute top-3 left-3 px-3 py-1 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-[10px] tracking-[0.2em] uppercase font-bold z-10">
                         Featured
                       </div>
                     )}
-                    <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_7%)] via-transparent to-transparent opacity-60" />
                   </div>
                   <div className="p-6 bg-[hsl(220_15%_9%)]">
                     <div className="flex items-center gap-2 mb-2">
