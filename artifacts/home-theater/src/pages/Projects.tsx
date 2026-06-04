@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Link } from "wouter";
-import { ArrowRight, MapPin, Tag } from "lucide-react";
+import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/LMp4_1780573575270.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
 
@@ -26,26 +26,335 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
+type GalleryItem = { src: string; label: string } | { gradient: string; label: string };
+
+type Project = {
+  title: string;
+  type: string;
+  location: string;
+  year: string;
+  size: string;
+  gradient: string;
+  featured: boolean;
+  image?: string;
+  gallery: GalleryItem[];
+};
+
 const filters = ["All", "Private Cinema", "Screening Room", "Basement Build", "Commercial"];
 
-const projects = [
-  { title: "Great Falls Estate", type: "Private Cinema", location: "Great Falls, VA", year: "2024", size: "14-Seat Private Cinema — Full Build", gradient: "from-amber-950 via-stone-900 to-slate-900", featured: true, image: portfolioImg1 },
-  { title: "Award-Winning Theater — CE Pro 2024", type: "Private Cinema", location: "Northern Virginia", year: "2024", size: "CE Pro Home of the Year — Best Home Theater", gradient: "from-slate-900 via-zinc-800 to-gray-900", featured: true, image: portfolioImg2 },
-  { title: "Georgetown Rowhouse", type: "Screening Room", location: "Washington, DC", year: "2023", size: "10-Seat Dedicated Screening Room", gradient: "from-gray-900 via-slate-800 to-zinc-900", featured: false },
-  { title: "Bethesda Estate", type: "Private Cinema", location: "Bethesda, MD", year: "2023", size: "16-Seat Home Cinema — Room-Within-Room Build", gradient: "from-zinc-900 via-stone-800 to-slate-900", featured: false },
-  { title: "McLean Colonial", type: "Basement Build", location: "McLean, VA", year: "2023", size: "Full Basement Theater — Framing to Finish", gradient: "from-gray-900 via-neutral-800 to-gray-900", featured: false },
-  { title: "Chevy Chase Manor", type: "Screening Room", location: "Chevy Chase, MD", year: "2023", size: "8-Seat Luxury Screening Room", gradient: "from-slate-900 via-amber-900 to-slate-900", featured: false },
-  { title: "Vienna Estate", type: "Private Cinema", location: "Vienna, VA", year: "2022", size: "12-Seat Cinema — Custom Millwork & Star Ceiling", gradient: "from-zinc-900 via-gray-800 to-zinc-900", featured: false },
-  { title: "Old Town Penthouse", type: "Commercial", location: "Alexandria, VA", year: "2022", size: "Private Screening Lounge — 20-Seat Commercial Build", gradient: "from-amber-950 via-zinc-900 to-slate-900", featured: false },
-  { title: "Falls Church Residence", type: "Basement Build", location: "Falls Church, VA", year: "2022", size: "Finished Basement — 6-Seat Family Cinema", gradient: "from-slate-800 via-stone-900 to-zinc-900", featured: false },
-  { title: "Potomac Manor", type: "Private Cinema", location: "Potomac, MD", year: "2021", size: "18-Seat Estate Cinema — Full Design & Build", gradient: "from-gray-900 via-slate-800 to-gray-900", featured: false },
-  { title: "Leesburg Farmhouse", type: "Screening Room", location: "Leesburg, VA", year: "2021", size: "Converted Barn Theater — Custom Acoustic Build", gradient: "from-zinc-900 via-amber-950 to-slate-900", featured: false },
-  { title: "Capitol Hill Townhouse", type: "Basement Build", location: "Washington, DC", year: "2021", size: "Urban Basement Theater — 6-Seat Build", gradient: "from-slate-900 via-gray-800 to-slate-900", featured: false },
+const projects: Project[] = [
+  {
+    title: "Great Falls Estate",
+    type: "Private Cinema",
+    location: "Great Falls, VA",
+    year: "2024",
+    size: "14-Seat Private Cinema — Full Build",
+    gradient: "from-amber-950 via-stone-900 to-slate-900",
+    featured: true,
+    image: portfolioImg1,
+    gallery: [
+      { src: portfolioImg1, label: "Main Theater" },
+      { src: portfolioImg1, label: "Rear Seating" },
+      { src: portfolioImg1, label: "Screen Wall" },
+      { gradient: "from-amber-950 via-stone-900 to-slate-900", label: "Projection Booth" },
+    ],
+  },
+  {
+    title: "Award-Winning Theater — CE Pro 2024",
+    type: "Private Cinema",
+    location: "Northern Virginia",
+    year: "2024",
+    size: "CE Pro Home of the Year — Best Home Theater",
+    gradient: "from-slate-900 via-zinc-800 to-gray-900",
+    featured: true,
+    image: portfolioImg2,
+    gallery: [
+      { src: portfolioImg2, label: "Full Room View" },
+      { src: portfolioImg2, label: "Screen & Stage" },
+      { gradient: "from-slate-900 via-zinc-800 to-gray-900", label: "Acoustic Panels" },
+      { gradient: "from-zinc-800 via-slate-900 to-gray-900", label: "Seating Detail" },
+    ],
+  },
+  {
+    title: "Georgetown Rowhouse",
+    type: "Screening Room",
+    location: "Washington, DC",
+    year: "2023",
+    size: "10-Seat Dedicated Screening Room",
+    gradient: "from-gray-900 via-slate-800 to-zinc-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-gray-900 via-slate-800 to-zinc-900", label: "Main Room" },
+      { gradient: "from-slate-800 via-gray-900 to-zinc-900", label: "Screen Wall" },
+      { gradient: "from-zinc-900 via-slate-800 to-gray-900", label: "Side View" },
+    ],
+  },
+  {
+    title: "Bethesda Estate",
+    type: "Private Cinema",
+    location: "Bethesda, MD",
+    year: "2023",
+    size: "16-Seat Home Cinema — Room-Within-Room Build",
+    gradient: "from-zinc-900 via-stone-800 to-slate-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-zinc-900 via-stone-800 to-slate-900", label: "Main Room" },
+      { gradient: "from-stone-800 via-zinc-900 to-slate-900", label: "Entry Lobby" },
+      { gradient: "from-slate-900 via-stone-800 to-zinc-900", label: "Rear Row" },
+    ],
+  },
+  {
+    title: "McLean Colonial",
+    type: "Basement Build",
+    location: "McLean, VA",
+    year: "2023",
+    size: "Full Basement Theater — Framing to Finish",
+    gradient: "from-gray-900 via-neutral-800 to-gray-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-gray-900 via-neutral-800 to-gray-900", label: "Finished Theater" },
+      { gradient: "from-neutral-800 via-gray-900 to-neutral-900", label: "Framing Stage" },
+      { gradient: "from-gray-900 via-neutral-900 to-gray-800", label: "Complete View" },
+    ],
+  },
+  {
+    title: "Chevy Chase Manor",
+    type: "Screening Room",
+    location: "Chevy Chase, MD",
+    year: "2023",
+    size: "8-Seat Luxury Screening Room",
+    gradient: "from-slate-900 via-amber-900 to-slate-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-slate-900 via-amber-900 to-slate-900", label: "Main Room" },
+      { gradient: "from-amber-900 via-slate-900 to-amber-950", label: "Seating" },
+      { gradient: "from-slate-900 via-amber-950 to-slate-900", label: "Screen Detail" },
+    ],
+  },
+  {
+    title: "Vienna Estate",
+    type: "Private Cinema",
+    location: "Vienna, VA",
+    year: "2022",
+    size: "12-Seat Cinema — Custom Millwork & Star Ceiling",
+    gradient: "from-zinc-900 via-gray-800 to-zinc-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-zinc-900 via-gray-800 to-zinc-900", label: "Star Ceiling" },
+      { gradient: "from-gray-800 via-zinc-900 to-gray-900", label: "Millwork Detail" },
+      { gradient: "from-zinc-900 via-gray-900 to-zinc-800", label: "Full Room" },
+    ],
+  },
+  {
+    title: "Old Town Penthouse",
+    type: "Commercial",
+    location: "Alexandria, VA",
+    year: "2022",
+    size: "Private Screening Lounge — 20-Seat Commercial Build",
+    gradient: "from-amber-950 via-zinc-900 to-slate-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-amber-950 via-zinc-900 to-slate-900", label: "Screening Lounge" },
+      { gradient: "from-zinc-900 via-amber-950 to-slate-900", label: "Bar Area" },
+      { gradient: "from-slate-900 via-zinc-900 to-amber-950", label: "Seating Layout" },
+    ],
+  },
+  {
+    title: "Falls Church Residence",
+    type: "Basement Build",
+    location: "Falls Church, VA",
+    year: "2022",
+    size: "Finished Basement — 6-Seat Family Cinema",
+    gradient: "from-slate-800 via-stone-900 to-zinc-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-slate-800 via-stone-900 to-zinc-900", label: "Family Theater" },
+      { gradient: "from-stone-900 via-slate-800 to-zinc-900", label: "Screen View" },
+      { gradient: "from-zinc-900 via-stone-900 to-slate-800", label: "Side Aisle" },
+    ],
+  },
+  {
+    title: "Potomac Manor",
+    type: "Private Cinema",
+    location: "Potomac, MD",
+    year: "2021",
+    size: "18-Seat Estate Cinema — Full Design & Build",
+    gradient: "from-gray-900 via-slate-800 to-gray-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-gray-900 via-slate-800 to-gray-900", label: "Estate Cinema" },
+      { gradient: "from-slate-800 via-gray-900 to-slate-900", label: "Upper Tier" },
+      { gradient: "from-gray-900 via-slate-900 to-slate-800", label: "Lower Row" },
+    ],
+  },
+  {
+    title: "Leesburg Farmhouse",
+    type: "Screening Room",
+    location: "Leesburg, VA",
+    year: "2021",
+    size: "Converted Barn Theater — Custom Acoustic Build",
+    gradient: "from-zinc-900 via-amber-950 to-slate-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-zinc-900 via-amber-950 to-slate-900", label: "Barn Theater" },
+      { gradient: "from-amber-950 via-zinc-900 to-slate-900", label: "Acoustic Panels" },
+      { gradient: "from-slate-900 via-amber-950 to-zinc-900", label: "Beam Ceiling" },
+    ],
+  },
+  {
+    title: "Capitol Hill Townhouse",
+    type: "Basement Build",
+    location: "Washington, DC",
+    year: "2021",
+    size: "Urban Basement Theater — 6-Seat Build",
+    gradient: "from-slate-900 via-gray-800 to-slate-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-slate-900 via-gray-800 to-slate-900", label: "Urban Theater" },
+      { gradient: "from-gray-800 via-slate-900 to-gray-900", label: "Screen Close-Up" },
+      { gradient: "from-slate-900 via-gray-900 to-gray-800", label: "Rear View" },
+    ],
+  },
 ];
+
+function GalleryModal({ project, onClose }: { project: Project; onClose: () => void }) {
+  const [active, setActive] = useState(0);
+
+  const prev = useCallback(() => setActive((i) => (i - 1 + project.gallery.length) % project.gallery.length), [project.gallery.length]);
+  const next = useCallback(() => setActive((i) => (i + 1) % project.gallery.length), [project.gallery.length]);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    }
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose, prev, next]);
+
+  const current = project.gallery[active];
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-4xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col max-h-[90vh]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className="flex items-start justify-between px-6 py-4 border-b border-[hsl(220_15%_14%)] shrink-0">
+          <div>
+            <div className="flex items-center gap-2 mb-1">
+              <Tag size={10} className="text-[hsl(38_75%_52%)]" />
+              <span className="text-[hsl(38_75%_52%)] text-[10px] tracking-[0.2em] uppercase">{project.type}</span>
+              <span className="text-[hsl(38_10%_40%)] text-[10px]">· {project.year}</span>
+            </div>
+            <h2 className="font-serif text-xl text-[hsl(38_20%_90%)]">{project.title}</h2>
+            <div className="flex items-center gap-1 text-[hsl(38_10%_50%)] text-xs mt-1">
+              <MapPin size={10} />
+              <span>{project.location}</span>
+              <span className="text-[hsl(38_10%_35%)] mx-1">·</span>
+              <span>{project.size}</span>
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            className="text-[hsl(38_10%_45%)] hover:text-[hsl(38_20%_88%)] transition-colors duration-200 p-1 mt-1 shrink-0"
+          >
+            <X size={18} />
+          </button>
+        </div>
+
+        {/* Main Image */}
+        <div className="relative flex-1 min-h-0 overflow-hidden" style={{ minHeight: "340px", maxHeight: "500px" }}>
+          {"src" in current ? (
+            <img
+              src={current.src}
+              alt={current.label}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className={`w-full h-full bg-gradient-to-br ${current.gradient} flex items-center justify-center`}>
+              <div className="text-center opacity-30">
+                <Images size={48} className="text-[hsl(38_75%_52%)] mx-auto mb-3" />
+                <p className="text-[hsl(38_10%_60%)] text-sm tracking-widest uppercase">{current.label}</p>
+              </div>
+            </div>
+          )}
+
+          {/* Overlay gradient bottom */}
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[hsl(220_15%_7%)] to-transparent" />
+
+          {/* Image label */}
+          <div className="absolute bottom-4 left-6 text-[hsl(38_10%_60%)] text-xs tracking-widest uppercase">
+            {current.label}
+          </div>
+
+          {/* Counter */}
+          <div className="absolute bottom-4 right-6 text-[hsl(38_10%_45%)] text-xs tabular-nums">
+            {active + 1} / {project.gallery.length}
+          </div>
+
+          {/* Prev / Next */}
+          {project.gallery.length > 1 && (
+            <>
+              <button
+                onClick={prev}
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/60 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_70%)] hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200"
+              >
+                <ChevronLeft size={18} />
+              </button>
+              <button
+                onClick={next}
+                className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center bg-black/60 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_70%)] hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </>
+          )}
+        </div>
+
+        {/* Thumbnails */}
+        {project.gallery.length > 1 && (
+          <div className="flex gap-2 px-6 py-4 border-t border-[hsl(220_15%_14%)] overflow-x-auto scrollbar-none shrink-0">
+            {project.gallery.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`shrink-0 w-16 h-12 relative overflow-hidden border-2 transition-all duration-200 ${
+                  active === i
+                    ? "border-[hsl(38_75%_52%)]"
+                    : "border-[hsl(220_15%_18%)] opacity-60 hover:opacity-90 hover:border-[hsl(220_15%_28%)]"
+                }`}
+              >
+                {"src" in item ? (
+                  <img src={item.src} alt={item.label} className="w-full h-full object-cover" />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${item.gradient}`} />
+                )}
+                {active === i && (
+                  <div className="absolute inset-x-0 bottom-0 h-0.5 bg-[hsl(38_75%_52%)]" />
+                )}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [heroReady, setHeroReady] = useState(false);
+  const [openProject, setOpenProject] = useState<Project | null>(null);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 
   const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.type === activeFilter);
@@ -100,13 +409,14 @@ export default function Projects() {
               <FadeIn key={project.title} delay={Math.min(i * 60, 400)}>
                 <div
                   data-testid={`project-item-${i}`}
+                  onClick={() => setOpenProject(project)}
                   className="group border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.4)] transition-all duration-300 cursor-pointer"
                 >
-                  <div className={`h-52 relative overflow-hidden ${!("image" in project && project.image) ? `bg-gradient-to-br ${project.gradient}` : ""}`}>
-                    {"image" in project && project.image ? (
+                  <div className={`h-52 relative overflow-hidden ${!project.image ? `bg-gradient-to-br ${project.gradient}` : ""}`}>
+                    {project.image ? (
                       <>
                         <img
-                          src={project.image as string}
+                          src={project.image}
                           alt={project.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
@@ -125,6 +435,11 @@ export default function Projects() {
                         Featured
                       </div>
                     )}
+                    {/* Gallery count badge */}
+                    <div className="absolute bottom-3 right-3 flex items-center gap-1.5 bg-black/60 px-2.5 py-1 border border-[hsl(220_15%_22%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <Images size={10} className="text-[hsl(38_75%_52%)]" />
+                      <span className="text-[hsl(38_10%_70%)] text-[10px] tracking-wide">{project.gallery.length} Photos</span>
+                    </div>
                   </div>
                   <div className="p-6 bg-[hsl(220_15%_9%)]">
                     <div className="flex items-center gap-2 mb-2">
@@ -170,6 +485,11 @@ export default function Projects() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Gallery Modal */}
+      {openProject && (
+        <GalleryModal project={openProject} onClose={() => setOpenProject(null)} />
+      )}
     </div>
   );
 }
