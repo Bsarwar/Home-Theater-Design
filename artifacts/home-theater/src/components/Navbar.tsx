@@ -37,9 +37,20 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" data-testid="nav-logo">
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-8 h-8 border border-[hsl(38_75%_52%)] flex items-center justify-center">
-              <div className="w-4 h-4 bg-[hsl(38_75%_52%)]" />
-            </div>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="24" height="24" rx="1.5" stroke="hsl(38,75%,52%)" strokeWidth="1.5" fill="none"/>
+              <rect x="4" y="5" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+              <rect x="4" y="21" width="24" height="6" fill="hsl(38,75%,52%)" opacity="0.12"/>
+              <rect x="6.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="12" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="17.5" y="6.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="23" y="6.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="6.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="12" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="17.5" y="22.5" width="3" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="23" y="22.5" width="2.5" height="3" rx="0.4" fill="hsl(38,75%,52%)"/>
+              <rect x="7" y="13" width="18" height="7" rx="0.5" stroke="hsl(38,75%,52%)" strokeWidth="1" fill="hsl(38,75%,52%)" opacity="0.08"/>
+            </svg>
             <div>
               <span className="font-serif text-lg font-semibold tracking-wider text-[hsl(38_20%_88%)]">
                 HOME CINEMA GROUP
