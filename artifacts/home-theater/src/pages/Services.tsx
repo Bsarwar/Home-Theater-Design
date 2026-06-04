@@ -30,7 +30,7 @@ const services = [
     title: "Custom Home Theater Design & Build",
     desc: "Our signature offering: a fully engineered, acoustically optimized screening room designed from the ground up for your space and tastes. We handle architecture, acoustics, seating, projection or LED wall, audio calibration, and lighting design.",
     features: ["4K/8K Laser Projection & LED Walls", "Dolby Atmos & Auro-3D Audio", "Acoustic treatment & room modeling", "Custom seating & millwork integration", "Dedicated server & streaming setup", "ISF & THX calibration"],
-    gradient: "from-amber-950 to-slate-900",
+    gradient: "from-blue-950 to-slate-900",
   },
   {
     icon: Volume2,
@@ -74,21 +74,21 @@ export default function Services() {
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 
   return (
-    <div className="bg-[hsl(220_15%_7%)]">
+    <div className="bg-[hsl(225_50%_7%)]">
       {/* HERO */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 50%, hsl(220 20% 12%) 0%, hsl(220 15% 5%) 70%)" }} />
+        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 50%, hsl(225 55% 12%) 0%, hsl(225 50% 5%) 70%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">What We Offer</span>
+              <div className="h-px w-12 bg-[hsl(210_25%_72%)]" />
+              <span className="text-[hsl(210_25%_72%)] text-xs tracking-[0.3em] uppercase">What We Offer</span>
             </div>
-            <h1 className="font-serif text-6xl md:text-8xl font-light text-[hsl(38_20%_90%)] leading-tight mb-6">
+            <h1 className="font-serif text-6xl md:text-8xl font-light text-[hsl(210_15%_92%)] leading-tight mb-6">
               Our<br />
-              <span className="italic text-[hsl(38_75%_52%)]">Services</span>
+              <span className="italic text-[hsl(210_25%_72%)]">Services</span>
             </h1>
-            <p className="text-[hsl(38_10%_60%)] text-xl max-w-xl leading-relaxed">
+            <p className="text-[hsl(210_10%_60%)] text-xl max-w-xl leading-relaxed">
               Six disciplines. One philosophy: no compromise. Every project is engineered, not assembled.
             </p>
           </div>
@@ -104,22 +104,22 @@ export default function Services() {
               <FadeIn key={svc.title} delay={i * 60}>
                 <div
                   data-testid={`service-item-${i}`}
-                  className="border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300"
+                  className="border border-[hsl(225_35%_14%)] overflow-hidden hover:border-[hsl(210_25%_72%/0.3)] transition-colors duration-300"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-5">
                     <div className={`lg:col-span-2 bg-gradient-to-br ${svc.gradient} p-10 flex flex-col justify-between min-h-[220px]`}>
-                      <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
+                      <Icon className="text-[hsl(210_25%_72%)]" size={32} strokeWidth={1.2} />
                       <div>
-                        <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
-                        <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
+                        <div className="text-[hsl(210_25%_72%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
+                        <h2 className="font-serif text-2xl md:text-3xl text-[hsl(210_15%_92%)] leading-tight">{svc.title}</h2>
                       </div>
                     </div>
-                    <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)]">
-                      <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-8">{svc.desc}</p>
+                    <div className="lg:col-span-3 p-10 bg-[hsl(225_45%_9%)]">
+                      <p className="text-[hsl(210_10%_60%)] leading-relaxed mb-8">{svc.desc}</p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                         {svc.features.map((f) => (
-                          <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
-                            <CheckCircle size={13} className="text-[hsl(38_75%_52%)] shrink-0" />
+                          <div key={f} className="flex items-center gap-2 text-sm text-[hsl(210_10%_65%)]">
+                            <CheckCircle size={13} className="text-[hsl(210_25%_72%)] shrink-0" />
                             {f}
                           </div>
                         ))}
@@ -134,17 +134,17 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
+      <section className="py-20 bg-[hsl(225_50%_5%)] border-t border-[hsl(225_35%_14%)]">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <FadeIn>
-            <h2 className="font-serif text-4xl md:text-5xl text-[hsl(38_20%_90%)] mb-6">
+            <h2 className="font-serif text-4xl md:text-5xl text-[hsl(210_15%_92%)] mb-6">
               Not sure what you need?
             </h2>
-            <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">
+            <p className="text-[hsl(210_10%_60%)] mb-10 leading-relaxed">
               Our design consultants will assess your space and recommend the perfect solution — no commitment required.
             </p>
             <Link href="/contact" data-testid="services-cta">
-              <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
+              <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(210_25%_72%)] text-[hsl(225_50%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(210_25%_82%)] transition-colors duration-300">
                 Book a Free Consultation <ArrowRight size={14} />
               </span>
             </Link>
