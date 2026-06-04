@@ -37,11 +37,13 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const services = [
-  { icon: Layers, title: "Theater Design", desc: "Full architectural and cinematic design — from concept drawings and acoustic modeling to detailed 3D renderings of your finished space." },
-  { icon: Hammer, title: "Custom Construction", desc: "We build your theater from the ground up: framing, soundproofing, isolation, drywall, and custom millwork — all under one roof." },
-  { icon: Monitor, title: "Projection & Display", desc: "4K and 8K laser projection, motorized screens, and LED walls calibrated to reference-grade picture quality." },
-  { icon: Volume2, title: "Cinema Audio", desc: "Dolby Atmos and immersive surround systems engineered specifically for your room's acoustics and dimensions." },
+const serviceCards = [
+  { title: "Theater Design", gradient: "from-slate-900 via-teal-950 to-slate-900" },
+  { title: "Lighting & Control", gradient: "from-amber-950 via-stone-900 to-zinc-900" },
+  { title: "Home Theater", image: heroImg1 },
+  { title: "Cinema Audio", gradient: "from-red-950 via-zinc-900 to-slate-900" },
+  { title: "Smart Automation", gradient: "from-blue-950 via-slate-900 to-gray-900" },
+  { title: "Seating & Interiors", image: heroImg2 },
 ];
 
 const projects = [
@@ -241,47 +243,67 @@ export default function Home() {
       </section>
 
       {/* SERVICES OVERVIEW */}
-      <section className="py-24 md:py-36" data-testid="services-section">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeIn>
-            <div className="max-w-2xl mb-20">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-                <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">What We Do</span>
+      <section data-testid="services-section" className="bg-[hsl(220_15%_5%)]">
+        {/* Ticker bar */}
+        <div className="border-b border-[hsl(220_15%_14%)] py-4 overflow-hidden">
+          <p className="text-center text-[hsl(38_10%_50%)] text-xs tracking-[0.25em] uppercase">
+            Design&nbsp;&nbsp;·&nbsp;&nbsp;Consultation&nbsp;&nbsp;·&nbsp;&nbsp;Installation&nbsp;&nbsp;·&nbsp;&nbsp;VA&nbsp;&nbsp;·&nbsp;&nbsp;MD&nbsp;&nbsp;·&nbsp;&nbsp;DC and Beyond
+          </p>
+        </div>
+        <div className="border-b border-[hsl(220_15%_14%)]" />
+
+        {/* 6-up image cards */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+          {serviceCards.map((card, i) => (
+            <FadeIn key={card.title} delay={i * 60}>
+              <div
+                data-testid={`service-card-${i}`}
+                className="relative overflow-hidden group cursor-pointer"
+                style={{ aspectRatio: "3/4" }}
+              >
+                {"image" in card && card.image ? (
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                ) : (
+                  <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
+                )}
+                {/* overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                {/* label */}
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <p className="text-white text-sm font-medium leading-tight">{card.title}</p>
+                </div>
+                {/* right border separator */}
+                {i < serviceCards.length - 1 && (
+                  <div className="absolute inset-y-0 right-0 w-px bg-[hsl(220_15%_18%)]" />
+                )}
               </div>
-              <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
-                Built for<br />
-                <span className="italic">Pure Cinema</span>
-              </h2>
-            </div>
-          </FadeIn>
+            </FadeIn>
+          ))}
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[hsl(220_15%_14%)]">
-            {services.map((svc, i) => {
-              const Icon = svc.icon;
-              return (
-                <FadeIn key={svc.title} delay={i * 80}>
-                  <div
-                    data-testid={`service-card-${i}`}
-                    className="bg-[hsl(220_15%_7%)] p-8 group hover:bg-[hsl(220_15%_10%)] transition-colors duration-300"
-                  >
-                    <Icon className="text-[hsl(38_75%_52%)] mb-6" size={24} strokeWidth={1.5} />
-                    <h3 className="font-serif text-xl text-[hsl(38_20%_88%)] mb-3 group-hover:text-[hsl(38_75%_52%)] transition-colors duration-300">{svc.title}</h3>
-                    <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{svc.desc}</p>
-                  </div>
-                </FadeIn>
-              );
-            })}
-          </div>
-
-          <FadeIn delay={400} className="mt-10">
+        {/* Statement */}
+        <FadeIn>
+          <div className="max-w-3xl mx-auto px-6 py-24 text-center">
+            <h2 className="font-serif text-4xl md:text-5xl italic text-[hsl(38_20%_90%)] leading-tight mb-10">
+              HCG — Redefining Home Entertainment
+            </h2>
+            <p className="text-[hsl(38_10%_58%)] text-sm md:text-base leading-relaxed mb-6">
+              Home Cinema Group (HCG), a Lifestyle Solutions Company, specializes in custom home theaters — where cutting-edge technology, inspired design, and immersive performance come together seamlessly. With Home Cinema Group, you're not just building a home theater — you're transforming how you experience film. Our expertly crafted designs deliver exceptional sound, stunning visuals, and true cinematic immersion.
+            </p>
+            <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
+              As a trusted home theater company in NoVA, DC, and Maryland, we're proud to be recognized with numerous industry awards for our work.
+            </p>
             <Link href="/services" data-testid="services-learn-more">
               <span className="inline-flex items-center gap-2 text-[hsl(38_75%_52%)] text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:gap-4 transition-all duration-300">
                 Explore All Services <ArrowRight size={14} />
               </span>
             </Link>
-          </FadeIn>
-        </div>
+          </div>
+        </FadeIn>
       </section>
 
       {/* FEATURED PROJECTS */}
