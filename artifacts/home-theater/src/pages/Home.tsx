@@ -256,14 +256,14 @@ export default function Home() {
               HCG — Redefining Home Entertainment
             </h2>
             <p className="text-[hsl(38_10%_58%)] text-sm md:text-base leading-relaxed mb-6">
-              Home Cinema Group (HCG), a Lifestyle Solutions Company, specializes in custom home theaters — where cutting-edge technology, inspired design, and immersive performance come together seamlessly. With Home Cinema Group, you're not just building a home theater — you're transforming how you experience film. Our expertly crafted designs deliver exceptional sound, stunning visuals, and true cinematic immersion.
+              At Home Cinema Group, we specialize in bespoke home theaters that elevate your living space. We seamlessly blend state-of-the-art technology with inspired design to create custom entertainment environments that look as incredible as they perform.
             </p>
             <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
-              As a trusted home theater company in NoVA, DC, and Maryland, we're proud to be recognized with numerous industry awards for our work.
+              Don't just watch a movie — live it. Discover the power of true cinematic immersion, exceptional acoustic performance, and breathtaking visuals tailored uniquely to you.
             </p>
-            <Link href="/services" data-testid="services-learn-more">
-              <span className="inline-flex items-center gap-2 text-[hsl(38_75%_52%)] text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:gap-4 transition-all duration-300">
-                Explore All Services <ArrowRight size={14} />
+            <Link href="/contact" data-testid="services-cta">
+              <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
+                Schedule a Consultation
               </span>
             </Link>
           </div>
