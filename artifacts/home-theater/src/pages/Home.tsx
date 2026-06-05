@@ -5,6 +5,7 @@ import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, 
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
+import processImg from "@assets/2026-06-04_22-33-13_1780626958026.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -319,8 +320,9 @@ export default function Home() {
         </div>
       </section>
       {/* PROCESS */}
-      <section className="py-24 md:py-36" data-testid="process-section">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-24 md:py-36 relative overflow-hidden" data-testid="process-section">
+        <img src={processImg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="max-w-2xl mb-20">
               <div className="flex items-center gap-3 mb-6">
