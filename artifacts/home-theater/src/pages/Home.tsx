@@ -250,7 +250,7 @@ export default function Home() {
         {/* Statement */}
         <FadeIn>
           <div className="max-w-3xl mx-auto px-6 py-24 text-center pt-[45px] pb-[45px] pl-[10px] pr-[10px] mt-[0px] mb-[0px]">
-            <h2 className="font-serif text-4xl md:text-5xl italic leading-tight mb-10 text-[#e09d29]">
+            <h2 className="font-serif text-4xl md:text-5xl italic leading-tight mb-10 text-[#d6c1a7]">
               HCG — Redefining Home Entertainment
             </h2>
             <p className="text-[hsl(38_10%_58%)] text-sm md:text-base leading-relaxed mb-6">
