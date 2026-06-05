@@ -321,7 +321,8 @@ export default function Home() {
       </section>
       {/* PROCESS */}
       <section className="py-24 md:py-36 relative overflow-hidden" data-testid="process-section">
-        <img src={processImg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none" />
+        <img src={processImg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none select-none" />
+        <div className="absolute inset-0 bg-gradient-to-tl from-black/80 via-black/30 to-transparent pointer-events-none" />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="max-w-2xl mb-20">
