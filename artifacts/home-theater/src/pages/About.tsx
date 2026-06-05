@@ -25,35 +25,15 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
-const team = [
-  {
-    name: "Marcus Webb",
-    title: "Founder & Principal Designer",
-    bio: "Former THX-certified technician who left corporate AV to build something with no compromises. 22 years of experience across 12 countries.",
-    gradient: "from-amber-950 to-slate-900",
-    initials: "MW",
-  },
-  {
-    name: "Sofia Reyes",
-    title: "Director of Systems Engineering",
-    bio: "ISF Level III certified with a master's degree in acoustical engineering from UT Austin. Responsible for all technical design and calibration.",
-    gradient: "from-slate-900 to-zinc-900",
-    initials: "SR",
-  },
-  {
-    name: "David Thornton",
-    title: "Head of Smart Home Integration",
-    bio: "Control4 Diamond Certified and Crestron Platinum programmer. Designs automation systems for 7 of the 10 most expensive homes in Miami.",
-    gradient: "from-zinc-900 to-gray-900",
-    initials: "DT",
-  },
-  {
-    name: "Priya Nair",
-    title: "Client Relations & Design",
-    bio: "Interior design background meets AV expertise. Priya ensures every installation looks as stunning as it sounds — zero visible hardware unless intended.",
-    gradient: "from-stone-900 to-slate-900",
-    initials: "PN",
-  },
+const serviceAreas = [
+  { county: "Fairfax County", cities: "McLean, Great Falls, Vienna, Reston, Tysons, Burke, Springfield" },
+  { county: "Washington, DC", cities: "Georgetown, Capitol Hill, Dupont Circle, Embassy Row, Chevy Chase DC" },
+  { county: "Montgomery County, MD", cities: "Bethesda, Potomac, Chevy Chase, Rockville, North Bethesda" },
+  { county: "Arlington County", cities: "Arlington, Ballston, Clarendon, Crystal City, Shirlington" },
+  { county: "Loudoun County", cities: "Leesburg, Ashburn, Sterling, Lansdowne, Brambleton" },
+  { county: "Prince William County", cities: "Woodbridge, Gainesville, Haymarket, Lake Ridge" },
+  { county: "Alexandria City", cities: "Old Town, Del Ray, Seminary Hill, Rosemont" },
+  { county: "Beyond the Region", cities: "New York, Miami, Caribbean, and select international engagements" },
 ];
 
 const certifications = [
@@ -179,27 +159,31 @@ export default function About() {
         </div>
       </section>
 
-      {/* TEAM */}
-      <section className="py-24 md:py-32" data-testid="team-section">
+      {/* AREAS WE SERVE */}
+      <section className="py-24 md:py-32" data-testid="areas-section">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <div className="flex items-center gap-3 mb-14">
+            <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Team</span>
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Where We Work</span>
             </div>
+            <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight mb-6">
+              Proudly Serving<br />
+              <span className="italic">Virginia, DC & Maryland</span>
+            </h2>
+            <p className="text-[hsl(38_10%_55%)] text-lg leading-relaxed max-w-2xl mb-16">
+              Home Cinema Group serves discerning homeowners throughout the greater DC Metro region. From the estates of Great Falls to the townhomes of Capitol Hill, we bring the same uncompromising craftsmanship to every project — no matter the zip code.
+            </p>
           </FadeIn>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {team.map((member, i) => (
-              <FadeIn key={member.name} delay={i * 100}>
-                <div data-testid={`team-member-${i}`} className="group">
-                  <div className={`bg-gradient-to-br ${member.gradient} h-56 flex items-center justify-center mb-4 relative overflow-hidden`}>
-                    <div className="w-20 h-20 border border-[hsl(38_75%_52%/0.5)] flex items-center justify-center">
-                      <span className="font-serif text-2xl text-[hsl(38_75%_52%)]">{member.initials}</span>
-                    </div>
-                  </div>
-                  <h3 className="text-[hsl(38_20%_88%)] font-medium text-base mb-0.5">{member.name}</h3>
-                  <p className="text-[hsl(38_75%_52%)] text-xs tracking-wide mb-3">{member.title}</p>
-                  <p className="text-[hsl(38_10%_50%)] text-sm leading-relaxed">{member.bio}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {serviceAreas.map((area, i) => (
+              <FadeIn key={area.county} delay={i * 80}>
+                <div
+                  data-testid={`area-${i}`}
+                  className="border border-[hsl(220_15%_16%)] border-l-2 border-l-[hsl(38_75%_52%)] p-6 hover:border-[hsl(220_15%_22%)] hover:border-l-[hsl(38_75%_60%)] transition-colors duration-300 bg-[hsl(220_15%_8%)]"
+                >
+                  <h3 className="text-[hsl(38_20%_88%)] font-semibold text-base mb-2">{area.county}</h3>
+                  <p className="text-[hsl(38_10%_50%)] text-sm leading-relaxed">{area.cities}</p>
                 </div>
               </FadeIn>
             ))}
