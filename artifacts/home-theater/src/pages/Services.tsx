@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Armchair, ArrowRight, CheckCircle } from "lucide-react";
+import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -84,7 +85,9 @@ export default function Services() {
     <div className="bg-[hsl(220_15%_7%)]">
       {/* HERO */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 30% 50%, hsl(220 20% 12%) 0%, hsl(220 15% 5%) 70%)" }} />
+        <img src={servicesHeroImg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, hsl(220 15% 5% / 0.95) 0%, hsl(220 15% 5% / 0.7) 50%, hsl(220 15% 5% / 0.2) 100%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             <div className="flex items-center gap-3 mb-6">
