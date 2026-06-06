@@ -254,19 +254,22 @@ export default function Home() {
               HCG — Redefining Home Entertainment
             </h2>
             <p className="text-[hsl(38_10%_58%)] text-sm md:text-base leading-relaxed mb-6">
-              For over two decades, Home Cinema Group (HCG) has been transforming homes across the region. What began as a premier basement remodeling company — operating as{" "}
+              For over two decades, Home Cinema Group has been transforming homes across the region. What began as a premier basement remodeling company has evolved into the area's top award-winning home theater design and build firm.
+            </p>
+            <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-6">
+              Whether you are looking for an entertaining, high-end basement finish or a dedicated, luxury home cinema, we design and build spaces tailored entirely to your family's lifestyle.
+            </p>
+            <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
+              <span className="text-[hsl(38_20%_75%)] font-semibold">Our Unique Approach:</span> We specialize exclusively in the architectural construction, sound isolation, and acoustic treatment of the room itself—we do not sell AV hardware. Instead, we collaborate seamlessly with your chosen AV professional, or introduce you to our long-time premier technology partner,{" "}
               <a
                 href="https://www.customworksllc.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[hsl(38_75%_52%)] font-semibold tracking-wide uppercase hover:text-[hsl(38_75%_65%)] transition-colors duration-200"
+                className="text-[hsl(38_75%_52%)] font-semibold hover:text-[hsl(38_75%_65%)] transition-colors duration-200"
               >
                 Custom Works
               </a>
-              {" "}— has evolved into the area's top award-winning home theater design and build firm.
-            </p>
-            <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
-              Whether you are looking for an entertaining, high-end basement finish or a dedicated private cinema, HCG delivers end-to-end design and construction with uncompromising craftsmanship — blending state-of-the-art technology with inspired design so your space looks as incredible as it performs.
+              , to deliver a flawless, turn-key entertainment experience.
             </p>
             <Link href="/contact" data-testid="services-cta">
               <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
