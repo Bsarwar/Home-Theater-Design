@@ -104,9 +104,8 @@ export default function Services() {
           </div>
         </div>
       </section>
-
       {/* SERVICES */}
-      <section className="pb-24 md:pb-36" data-testid="services-list">
+      <section className="pb-24 md:pb-36 pl-[0px] pt-[40px]" data-testid="services-list">
         <div className="max-w-7xl mx-auto px-6 space-y-4">
           {services.map((svc, i) => {
             const Icon = svc.icon;
@@ -142,7 +141,6 @@ export default function Services() {
           })}
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-20 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-3xl mx-auto px-6 text-center">
