@@ -63,7 +63,7 @@ const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen"
 const processSteps = [
   { num: "01", title: "Consultation", desc: "We visit your home, assess the space, and get to know your vision — whether you're starting from scratch or finishing a basement." },
   { num: "02", title: "Design", desc: "Our team produces architectural drawings, acoustic models, 3D renderings, and full material specifications tailored to your space." },
-  { num: "03", title: "Construction", desc: "We build your theater from the ground up — framing, soundproofing, isolation, and custom millwork executed to exacting standards." },
+  { num: "03", title: "Construction", desc: "We build your theater from the framing to finish. We coordinate with the AV company to prewire the room." },
   { num: "04", title: "Systems & Calibration", desc: "We install projection, audio, and lighting, then calibrate every element to reference-grade performance." },
   { num: "05", title: "Handover", desc: "We walk you through your finished theater and remain your dedicated partner for years to come." },
 ];
