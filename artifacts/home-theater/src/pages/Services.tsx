@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
+import dedicatedTheatersImg from "@assets/screen-midlftPO_1780795264703.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -32,7 +33,8 @@ const services = [
     title: "Dedicated Theaters",
     desc: "Our flagship offering — a purpose-built, fully dedicated home theater room designed from the ground up for the ultimate cinematic experience. Every element, from acoustic isolation to display calibration, is engineered specifically for your space.",
     features: ["Full room-within-a-room construction", "Reference-grade projection & display", "Dolby Atmos immersive audio", "Custom seating & tiered risers", "Photorealistic 3D design renderings", "Turnkey installation & calibration"],
-    gradient: "from-amber-950 to-slate-900",
+    gradient: "from-amber-950/80 to-slate-900/90",
+    image: dedicatedTheatersImg,
   },
   {
     icon: Monitor,
@@ -130,11 +132,17 @@ export default function Services() {
                   className="border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300"
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-5">
-                    <div className={`lg:col-span-2 bg-gradient-to-br ${svc.gradient} p-10 flex flex-col justify-between min-h-[220px]`}>
-                      <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
-                      <div>
-                        <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
-                        <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
+                    <div className={`lg:col-span-2 relative p-10 flex flex-col justify-between min-h-[220px] overflow-hidden`}>
+                      {"image" in svc && svc.image && (
+                        <img src={svc.image} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                      )}
+                      <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
+                      <div className="relative z-10 flex flex-col justify-between h-full">
+                        <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
+                        <div>
+                          <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
+                          <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
+                        </div>
                       </div>
                     </div>
                     <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)]">
