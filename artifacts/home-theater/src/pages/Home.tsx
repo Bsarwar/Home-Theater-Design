@@ -7,7 +7,7 @@ import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
-  { src: heroImg1, caption: "Luxury Home Cinema — McLean, VA" },
+  { src: heroImg1, caption: "Award-Winning Theater Design — McLean, VA" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
 ];
 
@@ -129,7 +129,7 @@ export default function Home() {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full px-8 md:px-16 pt-28 pb-32 pl-[90px]">
+        <div className="relative z-10 w-full px-8 md:px-16 pt-28 pb-32">
           <div className="max-w-2xl">
             <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
               <div className="flex items-center gap-3 mb-8">
@@ -153,7 +153,7 @@ export default function Home() {
           {/* SLIDER CONTROLS */}
           <div className={`absolute bottom-10 left-6 right-6 flex items-end justify-between transition-all duration-1000 delay-500 ${heroReady ? "opacity-100" : "opacity-0"}`}>
             {/* Caption + dots */}
-            <div className="flex items-center gap-6 pl-[70px] pr-[70px]">
+            <div className="flex items-center gap-6">
               <div className="flex gap-2">
                 {heroSlides.map((_, i) => (
                   <button
@@ -368,7 +368,7 @@ export default function Home() {
                       </div>
                     ) : (
                       /* Empty spacer to keep grid aligned */
-                      (<div className="w-full" />)
+                      <div className="w-full" />
                     )}
                   </div>
                 </FadeIn>
