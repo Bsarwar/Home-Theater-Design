@@ -302,7 +302,7 @@ export default function Home() {
                 { title: "Media Rooms & TV Walls",        image: heroImg2 },
                 { title: "Theater Design & Consultation", gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
                 { title: "Lighting Design & Control",     gradient: "from-[hsl(35_30%_14%)] to-[hsl(35_40%_7%)]" },
-                { title: "Acoustics Treatment & Sound Isolation", gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
+                { title: "Acoustical Fabric Treatment", gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
                 { title: "AV Systems Integration",        gradient: "from-[hsl(215_22%_16%)] to-[hsl(215_30%_8%)]" },
                 { title: "Sound Isolation",               gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
                 { title: "Star Panel Ceiling",            gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
