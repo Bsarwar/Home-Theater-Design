@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
-import { Monitor, Volume2, Layers, Hammer, Lightbulb, Armchair, ArrowRight, CheckCircle } from "lucide-react";
+import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 
 function useInView(threshold = 0.1) {
@@ -29,45 +29,59 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
 const services = [
   {
     icon: Layers,
-    title: "Theater Design",
-    desc: "Every great theater begins with a great design. Our team produces full architectural drawings, acoustic modeling, 3D renderings, and detailed material specifications — giving you a precise blueprint before a single nail is driven.",
-    features: ["Architectural & spatial planning", "Acoustic room modeling & simulation", "Photorealistic 3D renderings", "Seating layout & sightline analysis", "Equipment specification & scheduling", "Lighting and electrical design"],
+    title: "Dedicated Theaters",
+    desc: "Our flagship offering — a purpose-built, fully dedicated home theater room designed from the ground up for the ultimate cinematic experience. Every element, from acoustic isolation to display calibration, is engineered specifically for your space.",
+    features: ["Full room-within-a-room construction", "Reference-grade projection & display", "Dolby Atmos immersive audio", "Custom seating & tiered risers", "Photorealistic 3D design renderings", "Turnkey installation & calibration"],
     gradient: "from-amber-950 to-slate-900",
   },
   {
-    icon: Hammer,
-    title: "Custom Construction",
-    desc: "We are builders as much as we are designers. Our in-house construction team handles every stage of the build — from structural framing and soundproofing to finish carpentry and custom millwork.",
-    features: ["Structural framing & room-within-a-room builds", "Mass-loaded vinyl & decoupled wall systems", "Acoustic ceiling treatment & isolation", "Custom cabinetry & built-ins", "Equipment rack fabrication", "Paint, trim & final finishes"],
+    icon: Monitor,
+    title: "Media Rooms & TV Walls",
+    desc: "For spaces that need to serve double duty — family room by day, cinematic escape by night. We design sophisticated media rooms and dramatic TV wall installations that deliver a premium experience without sacrificing everyday livability.",
+    features: ["Large-format TV & LED wall systems", "Integrated surround sound", "Custom built-in cabinetry & millwork", "Multi-use lighting control", "Furniture & seating curation", "Cable management & AV integration"],
     gradient: "from-slate-900 to-zinc-900",
   },
   {
-    icon: Monitor,
-    title: "Projection & Display",
-    desc: "From 4K laser projectors to massive LED walls, we specify and calibrate the finest display technology available — optimized for your screen size, throw distance, and ambient light conditions.",
-    features: ["4K & 8K laser projection systems", "Fixed-frame & motorized screens", "Micro-LED & direct-view LED walls", "ISF-certified picture calibration", "Screen material selection & sizing", "Ambient light rejection solutions"],
+    icon: Pencil,
+    title: "Theater Design & Consultation",
+    desc: "Great theaters are born in the planning stage. Our design team delivers complete architectural drawings, acoustic modeling, 3D renderings, and detailed specifications — giving you a precise blueprint before a single nail is driven.",
+    features: ["Architectural & spatial planning", "Acoustic room modeling & simulation", "Photorealistic 3D renderings", "Seating layout & sightline analysis", "Equipment specification & scheduling", "Lighting and electrical design"],
     gradient: "from-zinc-900 to-slate-800",
   },
   {
-    icon: Volume2,
-    title: "Cinema Audio",
-    desc: "A great theater sounds as extraordinary as it looks. We design and tune Dolby Atmos and immersive surround systems engineered precisely for the acoustics of your room.",
-    features: ["Dolby Atmos 7.1.4+ systems", "THX-certified speaker selection", "In-wall & in-ceiling speaker integration", "Subwoofer placement & tuning", "Room correction & acoustic treatment", "Reference-level audio calibration"],
+    icon: Lightbulb,
+    title: "Lighting Design & Control",
+    desc: "Lighting is the unsung hero of the theater experience. We design dedicated lighting systems — aisle lighting, bias lighting, star ceilings, and scene control — that heighten immersion without compromising picture quality.",
+    features: ["LED aisle & step lighting", "Bias lighting behind screens", "Star ceiling & fiber optic systems", "Dedicated dimming & scene control", "Sconce & decorative fixture integration", "Blackout solutions & light sealing"],
     gradient: "from-stone-900 to-slate-900",
   },
   {
-    icon: Lightbulb,
-    title: "Cinema Lighting",
-    desc: "Lighting is the unsung hero of the theater experience. We design dedicated lighting systems — aisle lighting, bias lighting, star ceilings, and scene control — that enhance immersion without compromising picture quality.",
-    features: ["LED aisle & step lighting", "Bias lighting behind screens", "Star ceiling & fiber optic systems", "Dedicated dimming & scene control", "Sconce & decorative fixture integration", "Blackout solutions & light sealing"],
+    icon: Layers,
+    title: "Acoustical Fabric Treatment",
+    desc: "Acoustical fabric wall panels are the cornerstone of a professionally tuned room. We design, fabricate, and install custom fabric-wrapped panels that control reflections, eliminate flutter echo, and add a refined, finished aesthetic.",
+    features: ["Custom fabric-wrapped panel fabrication", "Broadband absorption & diffusion", "Decorative pattern & color options", "Full-wall & wainscot configurations", "Guilford of Maine & acoustical fabric selection", "Integrated with room design & millwork"],
     gradient: "from-gray-900 to-zinc-900",
   },
   {
-    icon: Armchair,
-    title: "Seating & Interiors",
-    desc: "Your seating and interior finishes are the final layer of the experience. We source luxury theater seating, acoustically transparent fabrics, wall panels, and every finish that brings the room to life.",
-    features: ["Luxury recliner & row seating", "Custom upholstery & fabric selection", "Acoustically transparent wall panels", "Tiered riser design & construction", "Carpet, flooring & baseboard details", "Full interior styling consultation"],
+    icon: ShieldCheck,
+    title: "Sound Isolation",
+    desc: "True immersion requires silence from the outside world — and silence for the rest of your home. Our sound isolation systems use mass-loaded vinyl, decoupled framing, and resilient channel construction to contain your theater's sound where it belongs.",
+    features: ["Room-within-a-room framing systems", "Mass-loaded vinyl installation", "Resilient channel & decoupled ceilings", "Acoustic door & window solutions", "HVAC vibration isolation", "STC & IIC rating consultation"],
     gradient: "from-slate-800 to-gray-900",
+  },
+  {
+    icon: Hammer,
+    title: "Architectural Millwork & Elements",
+    desc: "The details make the theater. Our in-house millwork team designs and builds custom cabinetry, equipment bays, column surrounds, coffered ceilings, and every architectural element that transforms a room into a showpiece.",
+    features: ["Custom equipment racks & bays", "Column & soffit construction", "Coffered & tray ceiling systems", "Built-in cabinetry & shelving", "Decorative molding & trim packages", "Paint, wallcovering & finish coordination"],
+    gradient: "from-zinc-900 to-stone-900",
+  },
+  {
+    icon: Sparkles,
+    title: "Star Panel Ceiling",
+    desc: "Our fiber optic star ceiling panels transform any room into a private universe. We design and install custom star field ceilings with adjustable star density, shooting star effects, and integrated color options — the signature finishing touch of a luxury theater.",
+    features: ["Custom fiber optic star panels", "Adjustable star density & placement", "Shooting star & twinkle effects", "RGB color & nebula options", "Integrated with lighting control systems", "Available in flat, coffered & vaulted configurations"],
+    gradient: "from-slate-900 to-indigo-950",
   },
 ];
 
