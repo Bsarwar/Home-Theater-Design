@@ -7,7 +7,7 @@ import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
-  { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
+  { src: heroImg1, caption: "Award-Winning Theater Design — McLean, VA" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
 ];
 
@@ -141,12 +141,6 @@ export default function Home() {
               </h1>
               <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">We design and build award winning bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.</p>
               <div className="flex flex-wrap gap-4">
-                <Link href="/projects" data-testid="hero-cta-projects">
-                  <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
-                    View Our Work
-                    <ArrowRight size={16} />
-                  </span>
-                </Link>
                 <Link href="/contact" data-testid="hero-cta-contact">
                   <span className="inline-flex items-center gap-3 px-8 py-4 border border-white/30 text-white text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-300">
                     Get a Quote
