@@ -150,7 +150,7 @@ export default function Services() {
                       </div>
                       <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
                         <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220_15%_9%)] from-30% via-[hsl(220_15%_9%/0.6)] via-60% to-transparent" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220_15%_9%)] via-[hsl(220_15%_9%/0.3)] to-transparent" />
                       </div>
                     </div>
                   ) : (
