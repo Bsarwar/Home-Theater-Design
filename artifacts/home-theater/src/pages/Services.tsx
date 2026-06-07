@@ -155,18 +155,12 @@ export default function Services() {
                     </div>
                   ) : (
                     <div className="grid grid-cols-1 lg:grid-cols-5">
-                      <div className={`lg:col-span-2 relative p-10 flex flex-col justify-between min-h-[220px] overflow-hidden`}>
-                        <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
-                        <div className="relative z-10 flex flex-col justify-between h-full">
-                          <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
-                          <div>
-                            <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
-                            <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
-                          </div>
+                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)] flex flex-col justify-between min-h-[220px]">
+                        <div>
+                          <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
+                          <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight mb-6">{svc.title}</h2>
+                          <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-6">{svc.desc}</p>
                         </div>
-                      </div>
-                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)]">
-                        <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-8">{svc.desc}</p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {svc.features.map((f) => (
                             <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
@@ -174,6 +168,12 @@ export default function Services() {
                               {f}
                             </div>
                           ))}
+                        </div>
+                      </div>
+                      <div className={`lg:col-span-2 relative min-h-[220px] overflow-hidden`}>
+                        <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
+                        <div className="absolute inset-0 flex items-end p-8">
+                          <Icon className="text-[hsl(38_75%_52%/0.25)]" size={80} strokeWidth={0.8} />
                         </div>
                       </div>
                     </div>
