@@ -4,6 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
+import mediaRoomsImg from "@assets/OUTV1_1780796278458.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -42,6 +43,7 @@ const services = [
     desc: "For spaces that need to serve double duty — family room by day, cinematic escape by night. We design sophisticated media rooms and dramatic TV wall installations that deliver a premium experience without sacrificing everyday livability.",
     features: ["Large-format TV & LED wall systems", "Integrated surround sound", "Custom built-in cabinetry & millwork", "Multi-use lighting control", "Furniture & seating curation", "Cable management & AV integration"],
     gradient: "from-slate-900 to-zinc-900",
+    image: mediaRoomsImg,
   },
   {
     icon: Pencil,
