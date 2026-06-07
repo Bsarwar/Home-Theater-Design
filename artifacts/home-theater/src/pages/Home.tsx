@@ -308,7 +308,7 @@ export default function Home() {
                 { title: "Star Panel Ceiling",            gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
               ].map((card, i) => (
                 <FadeIn key={card.title} delay={i * 70}>
-                  <div className="relative overflow-hidden group cursor-pointer" style={{ aspectRatio: "4/3" }}>
+                  <div className="relative overflow-hidden group cursor-pointer" style={{ aspectRatio: "3/4" }}>
                     {"image" in card && card.image ? (
                       <img src={card.image} alt={card.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     ) : (
