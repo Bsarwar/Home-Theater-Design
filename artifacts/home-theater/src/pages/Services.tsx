@@ -9,6 +9,7 @@ import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_178
 import lightingDesignImg from "@assets/columnP2_1780798832889.jpg";
 import acousticalImg from "@assets/DSC_0300_1780801418760.jpg";
 import soundIsolationImg from "@assets/2026-06-07_00-34-02_1780807045939.jpg";
+import starPanelImg from "@assets/slider_image_1780807099099.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -94,6 +95,7 @@ const services = [
     desc: "Our fiber optic star ceiling panels transform any room into a private universe. We design and install custom star field ceilings with adjustable star density, shooting star effects, and integrated color options — the signature finishing touch of a luxury theater.",
     features: ["Custom fiber optic star panels", "Adjustable star density & placement", "Shooting star & twinkle effects", "RGB color & nebula options", "Integrated with lighting control systems", "Available in flat, coffered & vaulted configurations"],
     gradient: "from-slate-900 to-indigo-950",
+    image: starPanelImg,
   },
 ];
 
