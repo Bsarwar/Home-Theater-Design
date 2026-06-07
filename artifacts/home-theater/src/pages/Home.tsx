@@ -7,7 +7,7 @@ import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
-  { src: heroImg1, caption: "Award-Winning Theater Design — McLean, VA" },
+  { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
 ];
 
@@ -129,18 +129,25 @@ export default function Home() {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 w-full px-8 md:px-16 pt-28 pb-32">
-          <div className="max-w-2xl">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-32 w-full">
+          <div className="max-w-3xl">
             <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
                 <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase font-medium">Since 2005</span>
               </div>
               <h1 className="font-serif text-6xl md:text-8xl font-light leading-[0.9] text-white mb-8 drop-shadow-2xl">
-                <span className="italic text-[hsl(38_75%_52%)]">Award Winning.</span>
+                Cinema.<br />
+                <span className="italic text-[hsl(38_75%_52%)]">Perfected.</span>
               </h1>
               <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">We design and build award winning bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.</p>
               <div className="flex flex-wrap gap-4">
+                <Link href="/projects" data-testid="hero-cta-projects">
+                  <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
+                    View Our Work
+                    <ArrowRight size={16} />
+                  </span>
+                </Link>
                 <Link href="/contact" data-testid="hero-cta-contact">
                   <span className="inline-flex items-center gap-3 px-8 py-4 border border-white/30 text-white text-sm tracking-[0.15em] uppercase font-medium cursor-pointer hover:border-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-300">
                     Get a Quote
@@ -191,6 +198,10 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Scroll indicator */}
+          <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${heroReady ? "opacity-100" : "opacity-0"}`}>
+            <ChevronDown className="text-[hsl(38_75%_52%)] animate-bounce" size={24} />
+          </div>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(38_75%_52%/0.4)] to-transparent" />
