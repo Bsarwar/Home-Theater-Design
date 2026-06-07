@@ -4,8 +4,6 @@ import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
-import mediaRoomsImg from "@assets/OUTV1_1780796278458.jpg";
-import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780796906733.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -44,7 +42,6 @@ const services = [
     desc: "For spaces that need to serve double duty — family room by day, cinematic escape by night. We design sophisticated media rooms and dramatic TV wall installations that deliver a premium experience without sacrificing everyday livability.",
     features: ["Large-format TV & LED wall systems", "Integrated surround sound", "Custom built-in cabinetry & millwork", "Multi-use lighting control", "Furniture & seating curation", "Cable management & AV integration"],
     gradient: "from-slate-900 to-zinc-900",
-    image: mediaRoomsImg,
   },
   {
     icon: Pencil,
@@ -52,7 +49,6 @@ const services = [
     desc: "Great theaters are born in the planning stage. Our design team delivers complete architectural drawings, acoustic modeling, 3D renderings, and detailed specifications — giving you a precise blueprint before a single nail is driven.",
     features: ["Architectural & spatial planning", "Acoustic room modeling & simulation", "Photorealistic 3D renderings", "Seating layout & sightline analysis", "Equipment specification & scheduling", "Lighting and electrical design"],
     gradient: "from-zinc-900 to-slate-800",
-    image: theaterDesignImg,
   },
   {
     icon: Lightbulb,
@@ -153,7 +149,7 @@ export default function Services() {
                         </div>
                       </div>
                       <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] ring-1 ring-[hsl(38_75%_52%/0.2)]">
-                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] opacity-[0.7]" />
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] opacity-[0.6] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px]" />
                       </div>
                     </div>
                   ) : (
