@@ -8,6 +8,7 @@ import mediaRoomsImg from "@assets/OUTV1_1780797904564.jpg";
 import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780798080069.jpg";
 import lightingDesignImg from "@assets/columnP2_1780798832889.jpg";
 import acousticalImg from "@assets/DSC_0300_1780801418760.jpg";
+import soundIsolationImg from "@assets/2026-06-07_00-20-32_1780806090604.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -78,6 +79,7 @@ const services = [
     desc: "True immersion requires silence from the outside world — and silence for the rest of your home. Our sound isolation systems use mass-loaded vinyl, decoupled framing, and resilient channel construction to contain your theater's sound where it belongs.",
     features: ["Room-within-a-room framing systems", "Mass-loaded vinyl installation", "Resilient channel & decoupled ceilings", "Acoustic door & window solutions", "HVAC vibration isolation", "STC & IIC rating consultation"],
     gradient: "from-slate-800 to-gray-900",
+    image: soundIsolationImg,
   },
   {
     icon: Hammer,
