@@ -137,8 +137,7 @@ export default function Home() {
                 <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase font-medium">Since 2005</span>
               </div>
               <h1 className="font-serif text-6xl md:text-8xl font-light leading-[0.9] text-white mb-8 drop-shadow-2xl">
-                Cinema.<br />
-                <span className="italic text-[hsl(38_75%_52%)]">Perfected.</span>
+                <span className="italic text-[hsl(38_75%_52%)]">Award Winning.</span>
               </h1>
               <p className="text-[hsl(38_5%_80%)] text-lg md:text-xl leading-relaxed max-w-xl mb-12 font-light drop-shadow">We design and build award winning bespoke luxury home theaters for clients who demand the very best — across Virginia, DC, Maryland, and beyond.</p>
               <div className="flex flex-wrap gap-4">
@@ -198,10 +197,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Scroll indicator */}
-          <div className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-1000 delay-700 ${heroReady ? "opacity-100" : "opacity-0"}`}>
-            <ChevronDown className="text-[hsl(38_75%_52%)] animate-bounce" size={24} />
-          </div>
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[hsl(38_75%_52%/0.4)] to-transparent" />
