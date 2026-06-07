@@ -132,8 +132,14 @@ export default function Services() {
                   className="border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300"
                 >
                   {"image" in svc && svc.image ? (
-                    <div className="grid grid-cols-1 lg:grid-cols-5">
-                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)] flex flex-col justify-between min-h-[220px]">
+                    <div className="relative min-h-[300px] bg-[hsl(220_15%_9%)]">
+                      {/* Image spanning right ~70%, bleeding left */}
+                      <div className="absolute inset-y-0 right-0 w-[70%] overflow-hidden">
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220_15%_9%)] via-[hsl(220_15%_9%/0.5)] to-transparent" />
+                      </div>
+                      {/* Text content on the left, z above the fade */}
+                      <div className="relative z-10 lg:w-3/5 p-10 flex flex-col justify-between min-h-[300px]">
                         <div>
                           <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
                           <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight mb-6">{svc.title}</h2>
@@ -147,10 +153,6 @@ export default function Services() {
                             </div>
                           ))}
                         </div>
-                      </div>
-                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
-                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220_15%_9%)] via-[hsl(220_15%_9%/0.3)] to-transparent" />
                       </div>
                     </div>
                   ) : (
