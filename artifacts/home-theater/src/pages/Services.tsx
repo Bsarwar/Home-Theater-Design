@@ -10,6 +10,7 @@ import lightingDesignImg from "@assets/columnP2_1780798832889.jpg";
 import acousticalImg from "@assets/DSC_0300_1780801418760.jpg";
 import soundIsolationImg from "@assets/2026-06-07_00-34-02_1780807045939.jpg";
 import starPanelImg from "@assets/Star-panel2_1780807436595.jpg";
+import millworkImg from "@assets/DSC_1332_1780807701498.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -88,6 +89,7 @@ const services = [
     desc: "The details make the theater. Our in-house millwork team designs and builds custom cabinetry, equipment bays, column surrounds, coffered ceilings, and every architectural element that transforms a room into a showpiece.",
     features: ["Custom equipment racks & bays", "Column & soffit construction", "Coffered & tray ceiling systems", "Built-in cabinetry & shelving", "Decorative molding & trim packages", "Paint, wallcovering & finish coordination"],
     gradient: "from-zinc-900 to-stone-900",
+    image: millworkImg,
   },
   {
     icon: Sparkles,
