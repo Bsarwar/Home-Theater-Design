@@ -7,7 +7,7 @@ import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
-  { src: heroImg1, caption: "Award-Winning Theater Design — McLean, VA" },
+  { src: heroImg1, caption: "Luxury Home Cinema — McLean, VA" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
 ];
 
