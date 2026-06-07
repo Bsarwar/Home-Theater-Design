@@ -148,7 +148,7 @@ export default function Services() {
                           ))}
                         </div>
                       </div>
-                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
+                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] ring-1 ring-[hsl(38_75%_52%/0.2)]">
                         <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
                       </div>
                     </div>
