@@ -148,8 +148,9 @@ export default function Services() {
                           ))}
                         </div>
                       </div>
-                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] ring-1 ring-[hsl(38_75%_52%/0.2)]">
-                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] opacity-[0.6] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px]" />
+                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220_15%_9%)] via-[hsl(220_15%_9%/0.3)] to-transparent" />
                       </div>
                     </div>
                   ) : (
@@ -171,9 +172,6 @@ export default function Services() {
                       </div>
                       <div className={`lg:col-span-2 relative min-h-[220px] overflow-hidden`}>
                         <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
-                        <div className="absolute inset-0 flex items-end p-8">
-                          <Icon className="text-[hsl(38_75%_52%/0.25)]" size={80} strokeWidth={0.8} />
-                        </div>
                       </div>
                     </div>
                   )}
