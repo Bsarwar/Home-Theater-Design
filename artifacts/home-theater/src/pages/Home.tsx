@@ -332,7 +332,7 @@ export default function Home() {
       </section>
       {/* PROCESS */}
       <section className="py-24 md:py-36" data-testid="process-section">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-5xl mx-auto px-6">
           <FadeIn>
             <div className="text-center mb-20">
               <div className="flex items-center justify-center gap-3 mb-6">
@@ -346,25 +346,58 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          {/* Timeline row */}
+          {/* Zigzag timeline */}
           <div className="relative">
-            {/* Connecting line across all steps */}
-            <div className="hidden md:block absolute top-[2.25rem] left-[calc(10%)] right-[calc(10%)] h-px bg-[hsl(220_15%_20%)]" />
+            {/* Vertical center line */}
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-[hsl(220_15%_18%)] -translate-x-1/2" />
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-y-12 gap-x-4">
-              {processSteps.map((step, i) => (
-                <FadeIn key={step.num} delay={i * 120}>
-                  <div data-testid={`process-step-${i}`} className="flex flex-col items-center text-center">
-                    {/* Number badge */}
-                    <div className="relative z-10 w-[4.5rem] h-[4.5rem] border border-[hsl(38_75%_52%)] bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center mb-6 shrink-0">
-                      <span className="text-[hsl(38_75%_52%)] font-serif text-2xl font-light leading-none">{step.num}</span>
+            <div className="space-y-0">
+              {processSteps.map((step, i) => {
+                const isLeft = i % 2 === 0;
+                return (
+                  <FadeIn key={step.num} delay={i * 120}>
+                    <div
+                      data-testid={`process-step-${i}`}
+                      className="relative grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[160px]"
+                    >
+                      {/* LEFT SIDE */}
+                      <div className={`flex items-center py-8 ${isLeft ? "md:pr-16 md:justify-end" : "md:pr-16 md:justify-end md:order-none"}`}>
+                        {isLeft ? (
+                          /* Card on left */
+                          <div className="w-full md:max-w-[340px] border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_9%)] p-7 hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300">
+                            <div className="text-[hsl(38_75%_52%)] font-serif text-3xl font-light mb-4">{step.num}</div>
+                            <h3 className="text-[hsl(38_20%_88%)] font-semibold text-xs tracking-[0.2em] uppercase mb-3">{step.title}</h3>
+                            <p className="text-[hsl(38_10%_52%)] text-sm leading-relaxed">{step.desc}</p>
+                          </div>
+                        ) : (
+                          /* Step label on left */
+                          <span className="hidden md:block text-[hsl(38_10%_35%)] text-xs tracking-[0.25em] uppercase">Step {i + 1}</span>
+                        )}
+                      </div>
+
+                      {/* Center dot */}
+                      <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 items-center justify-center w-8 h-8 rounded-full border border-[hsl(38_75%_52%)] bg-[hsl(220_15%_7%)]">
+                        <div className="w-2 h-2 rounded-full bg-[hsl(38_75%_52%)]" />
+                      </div>
+
+                      {/* RIGHT SIDE */}
+                      <div className={`flex items-center py-8 md:pl-16 ${isLeft ? "md:justify-start" : "md:justify-start"}`}>
+                        {!isLeft ? (
+                          /* Card on right */
+                          <div className="w-full md:max-w-[340px] border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_9%)] p-7 hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300">
+                            <div className="text-[hsl(38_75%_52%)] font-serif text-3xl font-light mb-4">{step.num}</div>
+                            <h3 className="text-[hsl(38_20%_88%)] font-semibold text-xs tracking-[0.2em] uppercase mb-3">{step.title}</h3>
+                            <p className="text-[hsl(38_10%_52%)] text-sm leading-relaxed">{step.desc}</p>
+                          </div>
+                        ) : (
+                          /* Step label on right */
+                          <span className="hidden md:block text-[hsl(38_10%_35%)] text-xs tracking-[0.25em] uppercase">Step {i + 1}</span>
+                        )}
+                      </div>
                     </div>
-                    {/* Content */}
-                    <h3 className="text-[hsl(38_20%_88%)] font-semibold text-xs tracking-[0.2em] uppercase mb-3">{step.title}</h3>
-                    <p className="text-[hsl(38_10%_52%)] text-sm leading-relaxed max-w-[180px]">{step.desc}</p>
-                  </div>
-                </FadeIn>
-              ))}
+                  </FadeIn>
+                );
+              })}
             </div>
           </div>
         </div>
