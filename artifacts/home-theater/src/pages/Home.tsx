@@ -124,8 +124,8 @@ export default function Home() {
               />
             </div>
           ))}
-          {/* Solid dark overlay at 60% */}
-          <div className="absolute inset-0 bg-black/60" />
+          {/* Gradient overlay — darker on left where text sits, lighter on right */}
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 40%, rgba(0,0,0,0.25) 100%)" }} />
         </div>
 
         {/* CONTENT */}
