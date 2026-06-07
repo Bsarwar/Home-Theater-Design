@@ -151,7 +151,7 @@ export default function Services() {
                         </div>
                       </div>
                       <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] ring-1 ring-[hsl(38_75%_52%/0.2)]">
-                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] opacity-[0.6] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px]" />
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] opacity-[0.7]" />
                       </div>
                     </div>
                   ) : (
