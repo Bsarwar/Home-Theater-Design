@@ -137,20 +137,13 @@ export default function Services() {
                 >
                   {"image" in svc && svc.image ? (
                     <div className="grid grid-cols-1 lg:grid-cols-5">
-                      <div className="lg:col-span-3 relative p-10 bg-[hsl(220_15%_9%)] flex flex-col justify-between min-h-[220px] overflow-hidden">
-                        <img
-                          src={svc.image}
-                          alt=""
-                          aria-hidden="true"
-                          className="absolute inset-0 w-full h-full object-cover object-right pointer-events-none select-none"
-                          style={{ opacity: 0.1, maskImage: 'linear-gradient(to left, black 0%, transparent 55%)', WebkitMaskImage: 'linear-gradient(to left, black 0%, transparent 55%)' }}
-                        />
-                        <div className="relative z-10">
+                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)] flex flex-col justify-between min-h-[220px]">
+                        <div>
                           <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
                           <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight mb-6">{svc.title}</h2>
                           <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-6">{svc.desc}</p>
                         </div>
-                        <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                           {svc.features.map((f) => (
                             <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
                               <CheckCircle size={13} className="text-[hsl(38_75%_52%)] shrink-0" />
@@ -160,7 +153,7 @@ export default function Services() {
                         </div>
                       </div>
                       <div className="lg:col-span-2 relative overflow-hidden min-h-[300px] ring-1 ring-[hsl(38_75%_52%/0.2)]">
-                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover border-t-[#e09d29] border-r-[#e09d29] border-b-[#e09d29] border-l-[#e09d29] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] opacity-[0.7]" />
                       </div>
                     </div>
                   ) : (
