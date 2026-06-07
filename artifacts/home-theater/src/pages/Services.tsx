@@ -7,7 +7,7 @@ import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
 import mediaRoomsImg from "@assets/OUTV1_1780797904564.jpg";
 import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780798080069.jpg";
 import lightingImg from "@assets/MCblue3_1780798339695.jpg";
-import acousticalImg from "@assets/columnP2_1780798699246.jpg";
+
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -70,7 +70,6 @@ const services = [
     desc: "Acoustical fabric wall panels are the cornerstone of a professionally tuned room. We design, fabricate, and install custom fabric-wrapped panels that control reflections, eliminate flutter echo, and add a refined, finished aesthetic.",
     features: ["Custom fabric-wrapped panel fabrication", "Broadband absorption & diffusion", "Decorative pattern & color options", "Full-wall & wainscot configurations", "Guilford of Maine & acoustical fabric selection", "Integrated with room design & millwork"],
     gradient: "from-gray-900 to-zinc-900",
-    image: acousticalImg,
   },
   {
     icon: ShieldCheck,
