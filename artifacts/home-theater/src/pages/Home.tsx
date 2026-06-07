@@ -334,31 +334,38 @@ export default function Home() {
       <section className="py-24 md:py-36" data-testid="process-section">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <div className="max-w-2xl mb-20">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="text-center mb-20">
+              <div className="flex items-center justify-center gap-3 mb-6">
                 <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
                 <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Process</span>
+                <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
               </div>
               <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
-                From Vision<br />
-                <span className="italic">to Reality</span>
+                From Vision <span className="italic">to Reality</span>
               </h2>
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {processSteps.map((step, i) => (
-              <FadeIn key={step.num} delay={i * 100}>
-                <div data-testid={`process-step-${i}`} className="relative">
-                  {i < processSteps.length - 1 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-[hsl(38_75%_52%/0.4)] to-transparent" />
-                  )}
-                  <div className="text-[hsl(38_75%_52%)] font-serif text-5xl font-light mb-4">{step.num}</div>
-                  <h3 className="text-[hsl(38_20%_88%)] font-medium text-sm tracking-wide uppercase mb-3">{step.title}</h3>
-                  <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              </FadeIn>
-            ))}
+          {/* Timeline row */}
+          <div className="relative">
+            {/* Connecting line across all steps */}
+            <div className="hidden md:block absolute top-[2.25rem] left-[calc(10%)] right-[calc(10%)] h-px bg-[hsl(220_15%_20%)]" />
+
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-y-12 gap-x-4">
+              {processSteps.map((step, i) => (
+                <FadeIn key={step.num} delay={i * 120}>
+                  <div data-testid={`process-step-${i}`} className="flex flex-col items-center text-center">
+                    {/* Number badge */}
+                    <div className="relative z-10 w-[4.5rem] h-[4.5rem] border border-[hsl(38_75%_52%)] bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center mb-6 shrink-0">
+                      <span className="text-[hsl(38_75%_52%)] font-serif text-2xl font-light leading-none">{step.num}</span>
+                    </div>
+                    {/* Content */}
+                    <h3 className="text-[hsl(38_20%_88%)] font-semibold text-xs tracking-[0.2em] uppercase mb-3">{step.title}</h3>
+                    <p className="text-[hsl(38_10%_52%)] text-sm leading-relaxed max-w-[180px]">{step.desc}</p>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
           </div>
         </div>
       </section>
