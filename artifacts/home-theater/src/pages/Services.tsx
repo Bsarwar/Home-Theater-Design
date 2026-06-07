@@ -98,7 +98,7 @@ export default function Services() {
   return (
     <div className="bg-[hsl(220_15%_7%)]">
       {/* HERO */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden border-b border-[hsl(220_15%_18%)]">
         <img src={servicesHeroImg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
         <div className="absolute inset-0 bg-black/60" />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, hsl(220 15% 5% / 0.95) 0%, hsl(220 15% 5% / 0.7) 50%, hsl(220 15% 5% / 0.2) 100%)" }} />
