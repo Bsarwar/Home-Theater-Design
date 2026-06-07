@@ -298,7 +298,7 @@ export default function Home() {
           <div className="lg:w-[70%] flex flex-col">
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 flex-1">
               {[
-                { title: "Home Theater Design", image: heroImg1 },
+                { title: "Dedicated Theater Rooms", image: heroImg1 },
                 { title: "Dedicated Theaters",  image: heroImg2 },
                 { title: "Media Rooms",          gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
                 { title: "TV Walls",             gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
