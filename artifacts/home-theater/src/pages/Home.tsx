@@ -129,8 +129,8 @@ export default function Home() {
         </div>
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-32 w-full">
-          <div className="max-w-3xl">
+        <div className="relative z-10 w-full px-8 md:px-16 pt-28 pb-32">
+          <div className="max-w-2xl">
             <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}>
               <div className="flex items-center gap-3 mb-8">
                 <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
