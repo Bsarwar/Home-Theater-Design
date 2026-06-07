@@ -7,7 +7,7 @@ import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
 import mediaRoomsImg from "@assets/OUTV1_1780797904564.jpg";
 import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780798080069.jpg";
 import lightingImg from "@assets/MCblue3_1780798339695.jpg";
-import acousticalImg from "@assets/columnP2_1780798585413.jpg";
+import acousticalImg from "@assets/columnP2_1780798699246.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
