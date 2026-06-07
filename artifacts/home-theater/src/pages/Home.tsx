@@ -315,8 +315,8 @@ export default function Home() {
                       <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
                     )}
                     <div className="absolute inset-0 bg-black/50 group-hover:bg-black/0 transition-colors duration-500" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3 text-center" style={{ backgroundColor: "#e6ad4d" }}>
-                      <p className="text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
+                    <div className="absolute bottom-0 left-0 right-0 p-3 text-center" style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
+                      <p className="text-[#e6ad4d] text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
                     </div>
                   </div>
                 </FadeIn>
