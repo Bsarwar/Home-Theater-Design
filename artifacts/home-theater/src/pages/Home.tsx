@@ -298,6 +298,8 @@ export default function Home() {
           <div className="lg:w-[70%] flex flex-col">
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 flex-1">
               {[
+                { title: "Lighting Design & Control", gradient: "from-[hsl(35_30%_14%)] to-[hsl(35_40%_7%)]" },
+                { title: "AV Systems Integration",    gradient: "from-[hsl(215_22%_16%)] to-[hsl(215_30%_8%)]" },
                 { title: "Dedicated Theater Rooms", image: heroImg1 },
                 { title: "Media Rooms & TV Walls", image: heroImg2 },
                 { title: "Theater Design & Consultation", gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
