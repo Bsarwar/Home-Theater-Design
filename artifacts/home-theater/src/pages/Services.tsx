@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
-import dedicatedTheatersImg from "@assets/screen-midlftPO_1780795264703.jpg";
+import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -150,7 +150,6 @@ export default function Services() {
                       </div>
                       <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
                         <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
-                        <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
                       </div>
                     </div>
                   ) : (
