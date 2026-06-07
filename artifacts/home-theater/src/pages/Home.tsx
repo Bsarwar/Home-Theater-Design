@@ -307,8 +307,8 @@ export default function Home() {
                 { title: "Architectural Millwork", gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
                 { title: "Star Panel Ceiling",            gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
               ].map((card, i) => (
-                <FadeIn key={card.title} delay={i * 70}>
-                  <div className="relative overflow-hidden group cursor-pointer" style={{ aspectRatio: "3/4" }}>
+                <FadeIn key={card.title} delay={i * 70} className="h-full">
+                  <div className="relative overflow-hidden group cursor-pointer h-48 lg:h-56">
                     {"image" in card && card.image ? (
                       <img src={card.image} alt={card.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                     ) : (
