@@ -131,32 +131,53 @@ export default function Services() {
                   data-testid={`service-item-${i}`}
                   className="border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.3)] transition-colors duration-300"
                 >
-                  <div className="grid grid-cols-1 lg:grid-cols-5">
-                    <div className={`lg:col-span-2 relative p-10 flex flex-col justify-between min-h-[220px] overflow-hidden`}>
-                      {"image" in svc && svc.image && (
-                        <img src={svc.image} alt="" className="absolute inset-0 w-full h-full object-cover" />
-                      )}
-                      <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
-                      <div className="relative z-10 flex flex-col justify-between h-full">
-                        <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
+                  {"image" in svc && svc.image ? (
+                    <div className="grid grid-cols-1 lg:grid-cols-5">
+                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)] flex flex-col justify-between min-h-[220px]">
                         <div>
                           <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
-                          <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
+                          <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight mb-6">{svc.title}</h2>
+                          <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-6">{svc.desc}</p>
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          {svc.features.map((f) => (
+                            <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
+                              <CheckCircle size={13} className="text-[hsl(38_75%_52%)] shrink-0" />
+                              {f}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="lg:col-span-2 relative overflow-hidden min-h-[300px]">
+                        <img src={svc.image} alt={svc.title} className="absolute inset-0 w-full h-full object-cover" />
+                        <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 lg:grid-cols-5">
+                      <div className={`lg:col-span-2 relative p-10 flex flex-col justify-between min-h-[220px] overflow-hidden`}>
+                        <div className={`absolute inset-0 bg-gradient-to-br ${svc.gradient}`} />
+                        <div className="relative z-10 flex flex-col justify-between h-full">
+                          <Icon className="text-[hsl(38_75%_52%)]" size={32} strokeWidth={1.2} />
+                          <div>
+                            <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">0{i + 1}</div>
+                            <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight">{svc.title}</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)]">
+                        <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-8">{svc.desc}</p>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                          {svc.features.map((f) => (
+                            <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
+                              <CheckCircle size={13} className="text-[hsl(38_75%_52%)] shrink-0" />
+                              {f}
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
-                    <div className="lg:col-span-3 p-10 bg-[hsl(220_15%_9%)]">
-                      <p className="text-[hsl(38_10%_60%)] leading-relaxed mb-8">{svc.desc}</p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        {svc.features.map((f) => (
-                          <div key={f} className="flex items-center gap-2 text-sm text-[hsl(38_10%_65%)]">
-                            <CheckCircle size={13} className="text-[hsl(38_75%_52%)] shrink-0" />
-                            {f}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                  )}
                 </div>
               </FadeIn>
             );
