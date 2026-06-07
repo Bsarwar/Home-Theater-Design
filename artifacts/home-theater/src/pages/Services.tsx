@@ -5,6 +5,7 @@ import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pen
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
 import mediaRoomsImg from "@assets/OUTV1_1780796278458.jpg";
+import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780796906733.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -51,6 +52,7 @@ const services = [
     desc: "Great theaters are born in the planning stage. Our design team delivers complete architectural drawings, acoustic modeling, 3D renderings, and detailed specifications — giving you a precise blueprint before a single nail is driven.",
     features: ["Architectural & spatial planning", "Acoustic room modeling & simulation", "Photorealistic 3D renderings", "Seating layout & sightline analysis", "Equipment specification & scheduling", "Lighting and electrical design"],
     gradient: "from-zinc-900 to-slate-800",
+    image: theaterDesignImg,
   },
   {
     icon: Lightbulb,
