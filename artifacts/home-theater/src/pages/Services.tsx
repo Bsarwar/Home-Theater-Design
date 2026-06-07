@@ -6,6 +6,7 @@ import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
 import mediaRoomsImg from "@assets/OUTV1_1780797904564.jpg";
 import theaterDesignImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780798080069.jpg";
+import lightingImg from "@assets/MCblue3_1780798339695.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -60,6 +61,7 @@ const services = [
     desc: "Lighting is the unsung hero of the theater experience. We design dedicated lighting systems — aisle lighting, bias lighting, LED specialty solutions, and scene control — that heighten immersion without compromising picture quality.",
     features: ["LED aisle & step lighting", "Bias lighting behind screens", "LED specialty lighting solutions", "Dedicated dimming & scene control", "Sconce & decorative fixture integration", "Blackout solutions & light sealing"],
     gradient: "from-stone-900 to-slate-900",
+    image: lightingImg,
   },
   {
     icon: Layers,
