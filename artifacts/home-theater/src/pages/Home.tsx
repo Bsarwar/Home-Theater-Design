@@ -283,7 +283,7 @@ export default function Home() {
       <section className="py-0 bg-[#16181d] ml-[0px] mr-[0px] pt-[30px] pb-[30px]" data-testid="why-hcg-section">
         <div className="max-w-6xl mx-auto flex flex-col lg:flex-row min-h-[420px] border-x border-[hsl(220_15%_14%)]">
           {/* Left: heading + body */}
-          <div className="lg:w-[30%] shrink-0 flex flex-col justify-center pl-[35px] pr-[35px] py-12 lg:py-16 border-r border-white">
+          <div className="lg:w-[30%] shrink-0 flex flex-col justify-center pl-[35px] pr-[35px] py-12 lg:py-16 border-r border-[hsl(220_15%_14%)]">
             <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
               <span className="text-[hsl(38_75%_52%)] tracking-[0.3em] uppercase text-[20px]">WHAT WE DO</span>
