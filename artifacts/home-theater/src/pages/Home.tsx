@@ -13,6 +13,7 @@ import soundIsolationHomeImg from "@assets/2026-06-07_00-34-02_1780948524422.jpg
 import millworkHomeImg from "@assets/DSC_1332_1780948646880.jpg";
 import starPanelHomeImg from "@assets/DSC_0227_1780949274882.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
+import featuredProjectsBgImg from "@assets/RR-BLK_1780953060130.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -439,8 +440,10 @@ export default function Home() {
         </div>
       </section>
       {/* FEATURED PROJECTS */}
-      <section className="py-24 md:py-36 bg-[hsl(220_15%_5%)]" data-testid="projects-section">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-24 md:py-36 relative overflow-hidden" data-testid="projects-section">
+        <img src={featuredProjectsBgImg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="relative z-10 max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
               <div>
