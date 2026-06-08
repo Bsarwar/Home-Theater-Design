@@ -10,6 +10,7 @@ import lightingHomeImg from "@assets/DSC00133_48_1780948312450.jpg";
 import acousticsHomeImg from "@assets/DSC_0360_1780948392888.jpg";
 import soundIsolationHomeImg from "@assets/2026-06-07_00-34-02_1780948524422.jpg";
 import millworkHomeImg from "@assets/DSC_1332_1780948646880.jpg";
+import starPanelHomeImg from "@assets/DSC_0227_1780949274882.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
@@ -311,7 +312,7 @@ export default function Home() {
                 { title: "Acoustical Fabric Treatment", image: acousticsHomeImg },
                 { title: "Sound Isolation",                image: soundIsolationHomeImg },
                 { title: "Architectural Millwork", image: millworkHomeImg },
-                { title: "Star Panel Ceiling",            gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
+                { title: "Star Panel Ceiling",            image: starPanelHomeImg },
               ].map((card, i) => (
                 <FadeIn key={card.title} delay={i * 70} className="h-full">
                   <div className="relative overflow-hidden group cursor-pointer h-48 lg:h-56">
