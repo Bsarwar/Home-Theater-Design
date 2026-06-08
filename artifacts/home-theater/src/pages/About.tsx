@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
-import awardsGridImg from "@assets/2026-06-08_19-53-52_1780962925789.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -248,26 +247,24 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* AWARDS */}
+      {/* CERTIFICATIONS */}
       <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <div className="flex items-center justify-center gap-3 mb-10">
-              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Industry Awards &amp; Recognition</span>
-              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-            </div>
+            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-10">Certifications & Accreditations</p>
           </FadeIn>
-          <FadeIn delay={100}>
-            <div className="flex items-center justify-center">
-              <img
-                src={awardsGridImg}
-                alt="Industry Awards & Recognition"
-                className="w-full max-w-4xl"
-                style={{ mixBlendMode: "screen", filter: "brightness(0.95)" }}
-              />
-            </div>
-          </FadeIn>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {certifications.map((cert, i) => (
+              <FadeIn key={cert} delay={i * 50}>
+                <span
+                  data-testid={`cert-${i}`}
+                  className="px-4 py-2 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_55%)] text-xs tracking-[0.1em] uppercase"
+                >
+                  {cert}
+                </span>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
       {/* CTA */}
