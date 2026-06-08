@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
-import aboutDesignerImg from "@assets/Benpic_1780959186114.jpg";
+import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
