@@ -4,6 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
+import mediaRoomsHomeImg from "@assets/DSC_1924_1780947966821.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
@@ -299,7 +300,7 @@ export default function Home() {
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 flex-1">
               {[
                 { title: "Dedicated Theaters",           image: heroImg1 },
-                { title: "Media Rooms & TV Walls",        image: heroImg2 },
+                { title: "Media Rooms & TV Walls",        image: mediaRoomsHomeImg },
                 { title: "Theater Design & Consultation", gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
                 { title: "Lighting Design & Control",     gradient: "from-[hsl(35_30%_14%)] to-[hsl(35_40%_7%)]" },
                 { title: "Acoustical Fabric Treatment", gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
