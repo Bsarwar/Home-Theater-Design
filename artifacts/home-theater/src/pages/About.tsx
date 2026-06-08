@@ -101,22 +101,25 @@ export default function About() {
           <FadeIn>
             <div className="space-y-6 text-[hsl(38_10%_60%)] leading-relaxed text-lg">
               <p>
-                Our story began in 2001 under the name Lifestyle Solutions. Founded as a premier basement finishing company, we spent over a decade transforming underutilized spaces into spectacular family entertainment hubs across Northern Virginia. For us, remodeling was never just about drywall and framing—it was about creating spaces for connection.
-              </p>
-              <p>
-                As the years progressed, one specific room consistently stole the show and left our clients utterly speechless: the custom home theater room.
+                Founded in 2001 as Lifestyle Solutions, we spent over a decade as Northern Virginia's premier basement finishing company. While transforming underutilized spaces into spectacular family entertainment hubs, one room consistently stole the show: the custom home theater.
               </p>
               <p className="font-serif text-xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
-                A Natural Evolution
+                The Power of Specialization
               </p>
               <p>
-                By 2015, the demand for these specialized, high-end entertainment environments had skyrocketed. Homeowners were no longer looking for just a finished basement; they wanted a true, cinematic escape tailored perfectly to their homes.
+                By 2015, the demand for dedicated private cinemas skyrocketed. To deliver the highest level of craftsmanship, we made a strategic decision to focus entirely on what we do best — design and construction — and partnered with Northern Virginia's premier AV integration firm,{" "}
+                <a
+                  href="https://www.customworksllc.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[hsl(38_75%_52%)] font-semibold hover:text-[hsl(38_75%_65%)] transition-colors duration-200"
+                >
+                  Custom Works LLC
+                </a>
+                .
               </p>
               <p>
-                To meet this demand with the absolute highest level of craftsmanship, we evolved. We leaned entirely into our passion for structural and acoustic perfection, transforming our premier remodeling firm into the region's top award-winning home theater design and build specialist.
-              </p>
-              <p>
-                Today, we are proud to operate as <span className="text-[hsl(38_20%_85%)] font-semibold">Home Cinema Group.</span>
+                By letting Custom Works handle the AV design and installation while we focus on the room aesthetics and build, we created a powerhouse combination. This evolution transformed our company into the region's top award-winning home theater design and build specialist, operating today as <span className="text-[hsl(38_20%_85%)] font-semibold">Home Cinema Group.</span>
               </p>
             </div>
           </FadeIn>
