@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
-import aboutDesignerImg from "@assets/Generated_Image_June_08,_2026_-_6_30PM_1780957882383.jpg";
+import aboutDesignerImg from "@assets/Benpic_1780959186114.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -123,6 +123,7 @@ export default function About() {
                 alt="Home Cinema Group designer at work"
                 className="w-full h-96 object-cover object-center"
               />
+              <div className="absolute inset-0 bg-black/45" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-[hsl(38_75%_52%/0.3)]" />
               <div className="absolute -top-4 -left-4 w-16 h-16 border border-[hsl(38_75%_52%/0.15)]" />
             </div>
