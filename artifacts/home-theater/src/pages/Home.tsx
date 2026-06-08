@@ -4,6 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
+import heroImg3 from "@assets/FTheater_1780950606414.jpg";
 import mediaRoomsHomeImg from "@assets/DSC_1924_1780947966821.jpg";
 import theaterDesignHomeImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780948055002.jpg";
 import lightingHomeImg from "@assets/DSC00133_48_1780948312450.jpg";
@@ -16,6 +17,7 @@ import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
+  { src: heroImg3, caption: "EH Home of the Year 2018 — Bronze Winner" },
 ];
 
 function useInView(threshold = 0.15) {
