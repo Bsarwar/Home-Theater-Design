@@ -70,7 +70,7 @@ const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen"
 const processSteps = [
   { num: "01", title: "Consultation", desc: "We visit your home, collect site details and measurements, and go over your vision for the space." },
   { num: "02", title: "Preliminary Design & Pricing", desc: "We provide general pricing for the project and collect a design retainer to move forward." },
-  { num: "03", title: "Design", desc: "Our team produces architectural drawings, acoustic models, 3D renderings, and full material specifications tailored to your space." },
+  { num: "03", title: "Design", desc: "We work with our client to design the aesthetics of the room and create a material list based on the tailored specifications of the space." },
   { num: "04", title: "Construction", desc: "We build your theater from the framing to finish. We coordinate with the AV company to prewire the room." },
   { num: "05", title: "AV Installation", desc: "Once the room is finished and carpeted, the AV company will install the projector, screen, and AV rack." },
   { num: "06", title: "Handover", desc: "We walk you through your finished theater and remain your dedicated partner for years to come." },
