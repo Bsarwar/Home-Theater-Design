@@ -265,7 +265,7 @@ export default function Home() {
               For over two decades, Home Cinema Group has been transforming homes across the region. What began as a premier basement remodeling company has evolved into the area's top award-winning home theater design and build firm.
             </p>
             <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-6">
-              Whether you are looking for an entertaining, high-end basement finish or a dedicated, luxury home cinema, we design and build spaces tailored entirely to your family's lifestyle.
+              Whether you are looking for an entertaining, high-end basement finish or a dedicated, luxury home cinema, we design and build spaces entirely around your family's lifestyle.
             </p>
             <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-10">
               <span className="text-[hsl(38_20%_75%)] font-semibold">Our Unique Approach:</span> We specialize exclusively in the design, construction, sound isolation, and acoustic treatment of the room itself—we do not sell AV hardware. Instead, we collaborate seamlessly with your chosen AV professional, or introduce you to our long-time premier technology partner,{" "}
