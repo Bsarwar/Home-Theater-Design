@@ -63,7 +63,7 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6 ml-10">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} data-testid={`nav-link-${link.label.toLowerCase()}`}>
               <span
@@ -77,16 +77,18 @@ export default function Navbar() {
               </span>
             </Link>
           ))}
+        </nav>
+        <div className="hidden md:flex items-center gap-4 ml-auto">
           <a href="tel:+17036251714" className="flex items-center gap-2 text-[hsl(38_10%_60%)] hover:text-[hsl(38_75%_52%)] transition-colors duration-200">
             <Phone size={13} strokeWidth={1.5} />
             <span className="text-xs tracking-[0.08em] font-medium">(703) 625-1714</span>
           </a>
           <Link href="/contact" data-testid="nav-cta">
-            <span className="ml-2 px-6 py-2.5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-200">
+            <span className="px-6 py-2.5 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-xs tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-200">
               Get a Quote
             </span>
           </Link>
-        </nav>
+        </div>
 
         <button
           data-testid="nav-mobile-toggle"
