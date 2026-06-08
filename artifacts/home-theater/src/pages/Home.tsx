@@ -8,6 +8,7 @@ import mediaRoomsHomeImg from "@assets/DSC_1924_1780947966821.jpg";
 import theaterDesignHomeImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780948055002.jpg";
 import lightingHomeImg from "@assets/DSC00133_48_1780948312450.jpg";
 import acousticsHomeImg from "@assets/DSC_0360_1780948392888.jpg";
+import soundIsolationHomeImg from "@assets/2026-06-07_00-20-32_1780948457337.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
@@ -307,7 +308,7 @@ export default function Home() {
                 { title: "Theater Design & Consultation", image: theaterDesignHomeImg },
                 { title: "Lighting Design & Control",     image: lightingHomeImg },
                 { title: "Acoustical Fabric Treatment", image: acousticsHomeImg },
-                { title: "Sound Isolation",                gradient: "from-[hsl(215_22%_16%)] to-[hsl(215_30%_8%)]" },
+                { title: "Sound Isolation",                image: soundIsolationHomeImg },
                 { title: "Architectural Millwork", gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
                 { title: "Star Panel Ceiling",            gradient: "from-[hsl(240_25%_12%)] to-[hsl(240_35%_6%)]" },
               ].map((card, i) => (
