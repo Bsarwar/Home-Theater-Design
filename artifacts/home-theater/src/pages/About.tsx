@@ -79,7 +79,7 @@ export default function About() {
   return (
     <div className="bg-[hsl(220_15%_7%)]">
       {/* HERO */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-32 pb-20 overflow-hidden border-b border-[hsl(220_15%_18%)]">
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 30%, hsl(220 20% 12%) 0%, hsl(220 15% 5%) 70%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className={`transition-all duration-1000 ${heroReady ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -94,12 +94,11 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* STORY */}
       <section className="pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <FadeIn>
-            <div className="space-y-6 text-[hsl(38_10%_60%)] leading-relaxed text-lg">
+            <div className="space-y-6 text-[hsl(38_10%_60%)] text-lg mt-[30px] mb-[30px]">
               <p>
                 Founded in 2001 as Lifestyle Solutions, we spent over a decade as Northern Virginia's premier basement finishing company. While transforming underutilized spaces into spectacular family entertainment hubs, one room consistently stole the show: the custom home theater.
               </p>
@@ -138,7 +137,6 @@ export default function About() {
           </FadeIn>
         </div>
       </section>
-
       {/* WHO WE WORK WITH */}
       <section className="pb-24 md:pb-32 border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6 pt-24">
@@ -193,7 +191,6 @@ export default function About() {
           </FadeIn>
         </div>
       </section>
-
       {/* VALUES */}
       <section className="py-24 bg-[hsl(220_15%_5%)] border-y border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
@@ -219,7 +216,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* AREAS WE SERVE */}
       <section className="py-24 md:py-32" data-testid="areas-section">
         <div className="max-w-7xl mx-auto px-6">
@@ -251,7 +247,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* CERTIFICATIONS */}
       <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
@@ -272,7 +267,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-20 border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-3xl mx-auto px-6 text-center">
