@@ -99,25 +99,54 @@ export default function About() {
       <section className="pb-24 md:pb-32">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <FadeIn>
-            <div className="space-y-6 text-[hsl(38_10%_60%)] leading-relaxed text-lg">
-              <p>
-                Our story began in 2001 under the name Lifestyle Solutions. Founded as a premier basement finishing company, we spent over a decade transforming underutilized spaces into spectacular family entertainment hubs across Northern Virginia. For us, remodeling was never just about drywall and framing—it was about creating spaces for connection.
+            <div className="space-y-6 text-[hsl(38_10%_60%)] leading-relaxed">
+              <p className="text-lg">
+                Founded in 2001 as Lifestyle Solutions, we spent over a decade as Northern Virginia's premier basement finishing company. While transforming underutilized spaces into spectacular family entertainment hubs, one room consistently stole the show: the custom home theater.
               </p>
-              <p>
-                As the years progressed, one specific room consistently stole the show and left our clients utterly speechless: the custom home theater room.
-              </p>
+
               <p className="font-serif text-xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
-                A Natural Evolution
+                The Power of Specialization
               </p>
               <p>
-                By 2015, the demand for these specialized, high-end entertainment environments had skyrocketed. Homeowners were no longer looking for just a finished basement; they wanted a true, cinematic escape tailored perfectly to their homes.
+                By 2015, the demand for dedicated private cinemas skyrocketed. To deliver the highest level of craftsmanship, we made a strategic decision to focus entirely on what we do best—structural design and construction—and partnered with Northern Virginia's premier AV integration firm, <a href="https://www.customworksllc.com" target="_blank" rel="noopener noreferrer" className="text-[hsl(38_75%_52%)] hover:text-[hsl(38_75%_65%)] transition-colors duration-200">Custom Works LLC</a>.
               </p>
               <p>
-                To meet this demand with the absolute highest level of craftsmanship, we evolved. We leaned entirely into our passion for structural and acoustic perfection, transforming our premier remodeling firm into the region's top award-winning home theater design and build specialist.
+                By letting Custom Works handle the elite electronic engineering while we focus on the environment, we created a powerhouse combination — transforming our company into the region's top award-winning home theater design and build specialist, operating today as <span className="text-[hsl(38_20%_85%)] font-semibold">Home Cinema Group.</span>
               </p>
-              <p>
-                Today, we are proud to operate as <span className="text-[hsl(38_20%_85%)] font-semibold">Home Cinema Group.</span>
+
+              <p className="font-serif text-xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
+                What We Do Best
               </p>
+              <p>We don't sell electronic hardware. Instead, we bring over two decades of structural expertise to the complex architectural and acoustic details that make a theater world-class:</p>
+              <ul className="space-y-2 text-sm">
+                {[
+                  "Acoustical Fabric Treatments for pristine, balanced sound.",
+                  "Advanced Sound Isolation to keep the cinematic thunder contained.",
+                  "Bespoke Millwork & Star Ceilings for a breathtaking visual aesthetic.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-[hsl(38_75%_52%)] shrink-0 mt-2" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <p className="font-serif text-xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
+                Who We Work With
+              </p>
+              <p className="text-sm">Our collaborative, specialized approach allows us to integrate seamlessly with:</p>
+              <ul className="space-y-2 text-sm">
+                {[
+                  "Homeowners wanting a turnkey, elite private cinema.",
+                  "Builders & Architects needing a specialized partner for complex theater layouts.",
+                  "AV Companies looking for a precision-built room to maximize their high-end gear.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <div className="w-1 h-1 rounded-full bg-[hsl(38_75%_52%)] shrink-0 mt-2" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </FadeIn>
 
