@@ -69,10 +69,11 @@ const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen"
 
 const processSteps = [
   { num: "01", title: "Consultation", desc: "We visit your home, collect site details and measurements, and go over your vision for the space." },
-  { num: "02", title: "Design", desc: "Our team produces architectural drawings, acoustic models, 3D renderings, and full material specifications tailored to your space." },
-  { num: "03", title: "Construction", desc: "We build your theater from the framing to finish. We coordinate with the AV company to prewire the room." },
-  { num: "04", title: "AV Installation", desc: "Once the room is finished and carpeted, the AV company will install the projector, screen, and AV rack." },
-  { num: "05", title: "Handover", desc: "We walk you through your finished theater and remain your dedicated partner for years to come." },
+  { num: "02", title: "Preliminary Design & Pricing", desc: "We provide general pricing for the project and collect a design retainer to move forward." },
+  { num: "03", title: "Design", desc: "Our team produces architectural drawings, acoustic models, 3D renderings, and full material specifications tailored to your space." },
+  { num: "04", title: "Construction", desc: "We build your theater from the framing to finish. We coordinate with the AV company to prewire the room." },
+  { num: "05", title: "AV Installation", desc: "Once the room is finished and carpeted, the AV company will install the projector, screen, and AV rack." },
+  { num: "06", title: "Handover", desc: "We walk you through your finished theater and remain your dedicated partner for years to come." },
 ];
 
 export default function Home() {
@@ -371,7 +372,7 @@ export default function Home() {
           {/* Desktop: horizontal zigzag */}
           <div className="hidden md:block">
             {/* 3-row grid: top cards | timeline | bottom cards */}
-            <div className="grid grid-cols-5">
+            <div className="grid grid-cols-6">
 
               {/* ROW 1 — cards for steps 1, 3, 5 (above the line) */}
               {processSteps.map((step, i) => (
