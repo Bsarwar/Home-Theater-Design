@@ -101,18 +101,23 @@ export default function About() {
           <FadeIn>
             <div className="space-y-6 text-[hsl(38_10%_60%)] leading-relaxed text-lg">
               <p>
-                Home Cinema Group was founded in 2005 in Miami, Florida by Marcus Webb — a frustrated THX-certified technician who was tired of watching luxury clients receive mediocre installations from companies that prioritized margins over mastery.
+                Our story began in 2001 under the name Lifestyle Solutions. Founded as a premier basement finishing company, we spent over a decade transforming underutilized spaces into spectacular family entertainment hubs across Northern Virginia. For us, remodeling was never just about drywall and framing—it was about creating spaces for connection.
               </p>
               <p>
-                The premise was simple: build the kind of theater you'd want in your own home, and never stop until it's perfect. Eighteen years and 500+ projects later, that premise hasn't changed.
+                As the years progressed, one specific room consistently stole the show and left our clients utterly speechless: the custom home theater room.
+              </p>
+              <p className="font-serif text-xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
+                A Natural Evolution
               </p>
               <p>
-                Today, our team of 24 engineers, designers, and calibrators serves clients across North America, the Caribbean, and Europe — from intimate 4-seat screening rooms to landmark 40-seat private cinemas. Our work has been featured in Architectural Digest, Robb Report, and Dwell Magazine.
+                By 2015, the demand for these specialized, high-end entertainment environments had skyrocketed. Homeowners were no longer looking for just a finished basement; they wanted a true, cinematic escape tailored perfectly to their homes.
               </p>
-              <p className="font-serif text-2xl text-[hsl(38_20%_85%)] italic border-l-2 border-[hsl(38_75%_52%)] pl-6">
-                "We don't install home theaters. We engineer emotional experiences."
+              <p>
+                To meet this demand with the absolute highest level of craftsmanship, we evolved. We leaned entirely into our passion for structural and acoustic perfection, transforming our premier remodeling firm into the region's top award-winning home theater design and build specialist.
               </p>
-              <p className="text-[hsl(38_10%_45%)] text-sm">— Marcus Webb, Founder</p>
+              <p>
+                Today, we are proud to operate as <span className="text-[hsl(38_20%_85%)] font-semibold">Home Cinema Group.</span>
+              </p>
             </div>
           </FadeIn>
 
