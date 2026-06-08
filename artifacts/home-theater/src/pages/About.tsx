@@ -121,7 +121,7 @@ export default function About() {
               <img
                 src={aboutDesignerImg}
                 alt="Home Cinema Group designer at work"
-                className="w-full h-96 object-cover object-center"
+                className="w-full h-96 object-cover object-center border border-[hsl(38_75%_52%/0.4)]"
               />
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-[hsl(38_75%_52%/0.3)]" />
