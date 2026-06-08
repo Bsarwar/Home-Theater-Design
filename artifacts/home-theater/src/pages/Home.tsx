@@ -6,6 +6,7 @@ import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import mediaRoomsHomeImg from "@assets/DSC_1924_1780947966821.jpg";
 import theaterDesignHomeImg from "@assets/Generated_Image_June_06,_2026_-_9_44PM_1780948055002.jpg";
+import lightingHomeImg from "@assets/DSC00133_48_1780948312450.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
@@ -303,7 +304,7 @@ export default function Home() {
                 { title: "Dedicated Theaters",           image: heroImg1 },
                 { title: "Media Rooms & TV Walls",        image: mediaRoomsHomeImg },
                 { title: "Theater Design & Consultation", image: theaterDesignHomeImg },
-                { title: "Lighting Design & Control",     gradient: "from-[hsl(35_30%_14%)] to-[hsl(35_40%_7%)]" },
+                { title: "Lighting Design & Control",     image: lightingHomeImg },
                 { title: "Acoustical Fabric Treatment", gradient: "from-[hsl(230_18%_16%)] to-[hsl(230_28%_9%)]" },
                 { title: "Sound Isolation",                gradient: "from-[hsl(215_22%_16%)] to-[hsl(215_30%_8%)]" },
                 { title: "Architectural Millwork", gradient: "from-[hsl(210_20%_15%)] to-[hsl(210_28%_8%)]" },
