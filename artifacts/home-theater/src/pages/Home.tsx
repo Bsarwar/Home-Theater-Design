@@ -3,7 +3,6 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
-import dedicatedTheatersCardImg from "@assets/DSC_0149_1780947790042.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
@@ -299,7 +298,7 @@ export default function Home() {
           <div className="lg:w-[70%] flex flex-col">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 flex-1">
               {[
-                { title: "Dedicated Theaters",           image: dedicatedTheatersCardImg },
+                { title: "Dedicated Theaters",           image: heroImg1 },
                 { title: "Media Rooms & TV Walls",        image: heroImg2 },
                 { title: "Theater Design & Consultation", gradient: "from-[hsl(220_20%_18%)] to-[hsl(220_30%_10%)]" },
                 { title: "Lighting Design & Control",     gradient: "from-[hsl(35_30%_14%)] to-[hsl(35_40%_7%)]" },
