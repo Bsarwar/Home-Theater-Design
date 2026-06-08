@@ -35,7 +35,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" data-testid="nav-logo">
           <div className="flex items-center gap-3 cursor-pointer">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -63,11 +63,11 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} data-testid={`nav-link-${link.label.toLowerCase()}`}>
               <span
-                className={`text-sm tracking-[0.12em] uppercase font-medium transition-colors duration-200 cursor-pointer ${
+                className={`text-xs tracking-[0.08em] uppercase font-medium transition-colors duration-200 cursor-pointer whitespace-nowrap ${
                   location === link.href
                     ? "text-[hsl(38_75%_52%)]"
                     : "text-[hsl(38_10%_60%)] hover:text-[hsl(38_20%_88%)]"
