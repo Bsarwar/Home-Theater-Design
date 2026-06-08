@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Users, Zap } from "lucide-react";
+import aboutDesignerImg from "@assets/Generated_Image_June_08,_2026_-_6_30PM_1780957882383.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -117,15 +118,11 @@ export default function About() {
 
           <FadeIn delay={200}>
             <div className="relative">
-              <div
-                className="bg-gradient-to-br from-amber-950 via-slate-900 to-zinc-900 h-96 flex items-center justify-center"
-                style={{ background: "radial-gradient(ellipse at center, hsl(220 20% 15%), hsl(220 15% 8%))" }}
-              >
-                <div className="text-center">
-                  <div className="font-serif text-8xl text-[hsl(38_75%_52%/0.15)] font-light">HCG</div>
-                  <div className="text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mt-4">Est. 2005 — Miami, FL</div>
-                </div>
-              </div>
+              <img
+                src={aboutDesignerImg}
+                alt="Home Cinema Group designer at work"
+                className="w-full h-96 object-cover object-center"
+              />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-[hsl(38_75%_52%/0.3)]" />
               <div className="absolute -top-4 -left-4 w-16 h-16 border border-[hsl(38_75%_52%/0.15)]" />
             </div>
