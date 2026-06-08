@@ -139,6 +139,61 @@ export default function About() {
         </div>
       </section>
 
+      {/* WHO WE WORK WITH */}
+      <section className="pb-24 md:pb-32 border-t border-[hsl(220_15%_14%)]">
+        <div className="max-w-7xl mx-auto px-6 pt-24">
+          <FadeIn>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Clients</span>
+            </div>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] leading-tight mb-10">
+              Who We <span className="italic">Work With</span>
+            </h2>
+            <p className="text-[hsl(38_10%_60%)] text-lg leading-relaxed max-w-2xl mb-12">
+              Our collaborative, specialized approach allows us to integrate seamlessly with:
+            </p>
+          </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-20">
+            {[
+              {
+                label: "Homeowners",
+                desc: "Wanting a turnkey, elite private cinema.",
+              },
+              {
+                label: "Builders & Architects",
+                desc: "Needing a specialized partner for complex theater layouts.",
+              },
+              {
+                label: "AV Companies",
+                desc: "Looking for a precision-built room to maximize their high-end gear.",
+              },
+            ].map((item, i) => (
+              <FadeIn key={item.label} delay={i * 100}>
+                <div className="border border-[hsl(220_15%_16%)] border-l-2 border-l-[hsl(38_75%_52%)] p-8 bg-[hsl(220_15%_8%)] hover:border-[hsl(220_15%_22%)] hover:border-l-[hsl(38_75%_60%)] transition-colors duration-300">
+                  <h3 className="text-[hsl(38_20%_88%)] font-semibold text-base mb-3">{item.label}</h3>
+                  <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+
+          <FadeIn>
+            <div className="border border-[hsl(220_15%_16%)] bg-[hsl(220_15%_9%)] p-10 md:p-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+              <div>
+                <h3 className="font-serif text-3xl md:text-4xl text-[hsl(38_20%_90%)] mb-3">Start Your Project</h3>
+                <p className="text-[hsl(38_10%_60%)] text-lg leading-relaxed max-w-xl">
+                  Have a project in mind? Let's collaborate to build something extraordinary. Please give us a call today.
+                </p>
+              </div>
+              <a href="tel:+17036251714" className="shrink-0 inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold hover:bg-[hsl(38_75%_60%)] transition-colors duration-300 whitespace-nowrap">
+                (703) 625-1714
+              </a>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* VALUES */}
       <section className="py-24 bg-[hsl(220_15%_5%)] border-y border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
