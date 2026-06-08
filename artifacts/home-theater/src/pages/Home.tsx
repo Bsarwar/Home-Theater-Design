@@ -347,7 +347,7 @@ export default function Home() {
       <section className="py-24 md:py-36 overflow-x-hidden relative" data-testid="process-section">
         {/* Background image + overlays */}
         <img src={processBgImg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-[hsl(220_15%_7%/0.88)]" />
+        <div className="absolute inset-0 bg-[hsl(220_15%_7%/0.70)]" />
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, hsl(220 15% 5% / 0.4) 0%, hsl(220 15% 5% / 0.7) 100%)" }} />
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <FadeIn>
