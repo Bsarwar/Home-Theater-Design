@@ -13,7 +13,6 @@ import soundIsolationHomeImg from "@assets/2026-06-07_00-34-02_1780948524422.jpg
 import millworkHomeImg from "@assets/DSC_1332_1780948646880.jpg";
 import starPanelHomeImg from "@assets/DSC_0227_1780949274882.jpg";
 import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
-import processBgImg from "@assets/slider_image_1780953350410.jpg";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -344,12 +343,8 @@ export default function Home() {
         </div>
       </section>
       {/* PROCESS */}
-      <section className="py-24 md:py-36 overflow-x-hidden relative" data-testid="process-section">
-        {/* Background image + overlays */}
-        <img src={processBgImg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
-        <div className="absolute inset-0 bg-[hsl(220_15%_7%/0.70)]" />
-        <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at center, hsl(220 15% 5% / 0.4) 0%, hsl(220 15% 5% / 0.7) 100%)" }} />
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <section className="py-24 md:py-36 overflow-x-hidden" data-testid="process-section">
+        <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="text-center mb-20">
               <div className="flex items-center justify-center gap-3 mb-6">
