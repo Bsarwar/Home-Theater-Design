@@ -259,7 +259,35 @@ export default function About() {
       <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-10">Certifications & Accreditations</p>
+            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-8">Awards</p>
+          </FadeIn>
+          <div className="grid grid-cols-11 gap-3 items-stretch mb-12">
+            {[
+              { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
+              { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
+              { src: award2023Houzz,  alt: "Best of Houzz Service 2023" },
+              { src: award2022Silver, alt: "CEPro Home of the Year 2022 Silver Winner" },
+              { src: award2022Bronze, alt: "CEPro Home of the Year 2022 Bronze Winner" },
+              { src: award2022Houzz,  alt: "Best of Houzz Service 2022" },
+              { src: award2020Bronze, alt: "CEPro Home of the Year 2020 Bronze Winner" },
+              { src: award2019Cedia,  alt: "CE Pro Best Project CEDIA Expo 2019" },
+              { src: award2018Cedia,  alt: "CE Pro Best Project CEDIA Expo 2018" },
+              { src: award2018Bronze, alt: "EH Home of the Year 2018 Bronze Winner" },
+              { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
+            ].map((award, i) => (
+              <FadeIn key={`cert-badge-${award.alt}`} delay={i * 40} className="h-full">
+                <div className="flex items-center justify-center p-3 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 h-full">
+                  <img
+                    src={award.src}
+                    alt={award.alt}
+                    className="w-full h-16 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+          <FadeIn>
+            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-8">Certifications & Accreditations</p>
           </FadeIn>
           <div className="flex flex-wrap items-center justify-center gap-4">
             {certifications.map((cert, i) => (
