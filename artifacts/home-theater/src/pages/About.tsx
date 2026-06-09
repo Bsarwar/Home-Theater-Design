@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Award, Users, Zap } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
-const awardsImg = "/awards-logos.png";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,7 +37,34 @@ const serviceAreas = [
   { county: "Beyond the Region", cities: "New York, Miami, Caribbean, and select international engagements" },
 ];
 
+const certifications = [
+  "CEDIA Certified Installer",
+  "THX Certified",
+  "ISF Level III",
+  "Control4 Diamond",
+  "Crestron Platinum",
+  "Lutron Maestro Certified",
+  "Dolby Atmos Certified",
+  "DTS:X Certified",
+];
 
+const values = [
+  {
+    icon: Award,
+    title: "Uncompromising Excellence",
+    desc: "We refuse to install equipment or designs that we wouldn't have in our own homes. If it doesn't meet our standard, we don't propose it.",
+  },
+  {
+    icon: Users,
+    title: "White-Glove Partnership",
+    desc: "We're not installers — we're partners. Every client has a dedicated project lead who sees them from first call to final calibration.",
+  },
+  {
+    icon: Zap,
+    title: "Obsessive Precision",
+    desc: "Room acoustics, cable routing, ISF calibration — every detail is engineered, not guessed. The difference is visible and audible.",
+  },
+];
 
 export default function About() {
   useSEO({
@@ -165,27 +191,29 @@ export default function About() {
           </FadeIn>
         </div>
       </section>
-      {/* AWARDS */}
+      {/* VALUES */}
       <section className="py-24 bg-[hsl(220_15%_5%)] border-y border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-14">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Recognition</span>
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] leading-tight mb-12">
-              Industry Awards <span className="italic">&amp; Recognition</span>
-            </h2>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <div className="p-2 md:p-4">
-              <img
-                src={awardsImg}
-                alt="Home Cinema Group industry awards and recognition"
-                className="w-full object-contain"
-              />
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Values</span>
             </div>
           </FadeIn>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {values.map((v, i) => {
+              const Icon = v.icon;
+              return (
+                <FadeIn key={v.title} delay={i * 100}>
+                  <div data-testid={`value-${i}`} className="p-8 border border-[hsl(220_15%_16%)]">
+                    <Icon className="text-[hsl(38_75%_52%)] mb-6" size={24} strokeWidth={1.5} />
+                    <h3 className="font-serif text-xl text-[hsl(38_20%_88%)] mb-3">{v.title}</h3>
+                    <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{v.desc}</p>
+                  </div>
+                </FadeIn>
+              );
+            })}
+          </div>
         </div>
       </section>
       {/* AREAS WE SERVE */}
@@ -214,6 +242,26 @@ export default function About() {
                   <h3 className="text-[hsl(38_20%_88%)] font-semibold text-base mb-2">{area.county}</h3>
                   <p className="text-[hsl(38_10%_50%)] text-sm leading-relaxed">{area.cities}</p>
                 </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* CERTIFICATIONS */}
+      <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
+        <div className="max-w-7xl mx-auto px-6">
+          <FadeIn>
+            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-10">Certifications & Accreditations</p>
+          </FadeIn>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            {certifications.map((cert, i) => (
+              <FadeIn key={cert} delay={i * 50}>
+                <span
+                  data-testid={`cert-${i}`}
+                  className="px-4 py-2 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_55%)] text-xs tracking-[0.1em] uppercase"
+                >
+                  {cert}
+                </span>
               </FadeIn>
             ))}
           </div>
