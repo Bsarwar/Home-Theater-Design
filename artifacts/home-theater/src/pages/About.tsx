@@ -118,6 +118,10 @@ export default function About() {
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border border-[hsl(38_75%_52%/0.3)]" />
               <div className="absolute -top-4 -left-4 w-16 h-16 border border-[hsl(38_75%_52%/0.15)]" />
             </div>
+            <div className="mt-6">
+              <p className="text-[hsl(38_20%_85%)] font-semibold text-sm">Behzad Sarwar (Ben)</p>
+              <p className="text-[hsl(38_75%_52%)] text-xs tracking-[0.15em] uppercase mt-0.5">President &amp; Owner</p>
+            </div>
           </FadeIn>
         </div>
       </section>
