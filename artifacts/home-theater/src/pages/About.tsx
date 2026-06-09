@@ -249,7 +249,9 @@ export default function About() {
       <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-8">Awards</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] text-center mb-10">
+              Award-<span className="italic">Winning</span> Work
+            </h2>
           </FadeIn>
           <div className="grid grid-cols-11 gap-3 items-stretch mb-12">
             {[
