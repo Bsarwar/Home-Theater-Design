@@ -319,17 +319,19 @@ export default function Home() {
                 { title: "Star Panel Ceiling",            image: starPanelHomeImg },
               ].map((card, i) => (
                 <FadeIn key={card.title} delay={i * 70} className="h-full">
-                  <div className="relative overflow-hidden group cursor-pointer h-48 lg:h-56">
-                    {"image" in card && card.image ? (
-                      <img src={card.image} alt={card.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-                    ) : (
-                      <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
-                    )}
-                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/0 transition-colors duration-500" />
-                    <div className="absolute bottom-0 left-0 right-0 p-3 text-center" style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
-                      <p className="text-[#e6ad4d] text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
+                  <Link href="/services" className="block h-full">
+                    <div className="relative overflow-hidden group cursor-pointer h-48 lg:h-56">
+                      {"image" in card && card.image ? (
+                        <img src={card.image} alt={card.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                      ) : (
+                        <div className={`absolute inset-0 bg-gradient-to-br ${"gradient" in card ? card.gradient : ""}`} />
+                      )}
+                      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/0 transition-colors duration-500" />
+                      <div className="absolute bottom-0 left-0 right-0 p-3 text-center" style={{ backgroundColor: "rgba(0,0,0,0.6)" }}>
+                        <p className="text-[#e6ad4d] text-xs tracking-[0.15em] uppercase font-semibold leading-tight">{card.title}</p>
+                      </div>
                     </div>
-                  </div>
+                  </Link>
                 </FadeIn>
               ))}
             </div>
