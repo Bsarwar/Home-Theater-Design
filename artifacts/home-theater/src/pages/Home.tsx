@@ -16,7 +16,7 @@ import laurelImg from "@assets/Awardwhite_1780979126834.png";
 import laurelRightImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
 
 const heroSlides = [
-  { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
+  { src: heroImg1, caption: "Luxury Home Cinema — Mclean, VA" },
   { src: heroImg2, caption: "Award-Winning Theater Design — CE Pro Home of the Year 2024" },
   { src: heroImg3, caption: "EH Home of the Year 2018 — Bronze Winner" },
 ];
