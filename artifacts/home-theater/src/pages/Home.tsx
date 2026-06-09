@@ -12,7 +12,7 @@ import acousticsHomeImg from "@assets/DSC_0360_1780948392888.jpg";
 import soundIsolationHomeImg from "@assets/2026-06-07_00-34-02_1780948524422.jpg";
 import millworkHomeImg from "@assets/DSC_1332_1780948646880.jpg";
 import starPanelHomeImg from "@assets/DSC_0227_1780949274882.jpg";
-import laurelImg from "@assets/2026-06-03_15-07-58_1780581176579.jpg";
+import laurelImg from "@assets/Awardwhite_1780979126834.png";
 
 const heroSlides = [
   { src: heroImg1, caption: "Luxury Home Cinema — Palm Beach, FL" },
@@ -222,7 +222,7 @@ export default function Home() {
 
           {/* Left laurel */}
           <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" />
           </div>
 
           {/* Stats */}
@@ -243,7 +243,7 @@ export default function Home() {
 
           {/* Right laurel (mirrored) */}
           <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen", transform: "scaleX(-1)" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "grayscale(1) brightness(2.2)" }} />
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" />
           </div>
 
         </div>
