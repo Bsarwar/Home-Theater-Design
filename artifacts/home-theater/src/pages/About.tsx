@@ -212,11 +212,13 @@ export default function About() {
               { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
             ].map((award, i) => (
               <FadeIn key={award.alt} delay={i * 60}>
-                <img
-                  src={award.src}
-                  alt={award.alt}
-                  className="w-full max-w-[180px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
-                />
+                <div className="flex items-center justify-center p-6 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 w-full h-full">
+                  <img
+                    src={award.src}
+                    alt={award.alt}
+                    className="w-full max-w-[150px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
               </FadeIn>
             ))}
           </div>
