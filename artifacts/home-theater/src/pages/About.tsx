@@ -187,14 +187,13 @@ export default function About() {
               Award-<span className="italic">Winning</span> Work
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-11 gap-3 items-stretch">
+          <div className="grid grid-cols-10 gap-3 items-stretch">
             {[
               { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
               { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
               { src: award2023Houzz,  alt: "Best of Houzz Service 2023" },
               { src: award2022Silver, alt: "CEPro Home of the Year 2022 Silver Winner" },
               { src: award2022Bronze, alt: "CEPro Home of the Year 2022 Bronze Winner" },
-              { src: award2022Houzz,  alt: "Best of Houzz Service 2022" },
               { src: award2020Bronze, alt: "CEPro Home of the Year 2020 Bronze Winner" },
               { src: award2019Cedia,  alt: "CE Pro Best Project CEDIA Expo 2019" },
               { src: award2018Cedia,  alt: "CE Pro Best Project CEDIA Expo 2018" },
