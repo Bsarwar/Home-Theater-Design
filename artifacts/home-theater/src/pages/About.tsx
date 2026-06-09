@@ -288,7 +288,7 @@ export default function About() {
               Work with the best.
             </h2>
             <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">
-              18 years of experience. 500+ completed projects. Zero compromises.
+              25 years in business and 250+ projects.
             </p>
             <Link href="/contact" data-testid="about-cta">
               <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
