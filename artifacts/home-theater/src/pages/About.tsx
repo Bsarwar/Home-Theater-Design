@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
+import ctaBgImg from "@assets/screen-RT2_1780978806702.jpg";
 import award2025Silver from "@assets/2025-Theater-Silver_1780976540110.jpg";
 import award2024Gold from "@assets/2024_Theater_Gold_1780976540110.jpg";
 import award2023Houzz from "@assets/2023_Houzz__1780976540110.jpg";
@@ -281,20 +282,8 @@ export default function About() {
         </div>
       </section>
       {/* CTA */}
-      <section className="py-20 border-t border-[hsl(220_15%_14%)]">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <FadeIn>
-            <h2 className="font-serif text-4xl md:text-5xl text-[hsl(38_20%_90%)] mb-6">
-              Work with the best.
-            </h2>
-            <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">25 years in business and 500+ projects.</p>
-            <Link href="/contact" data-testid="about-cta">
-              <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
-                Start a Conversation <ArrowRight size={14} />
-              </span>
-            </Link>
-          </FadeIn>
-        </div>
+      <section className="relative py-20 border-t border-[hsl(220_15%_14%)] overflow-hidden">
+        <img src={ctaBgImg} alt="" className="absolute inset-0 w-full h-full object-cover" />
       </section>
     </div>
   );
