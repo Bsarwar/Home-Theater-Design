@@ -176,7 +176,7 @@ export default function About() {
         </div>
       </section>
       {/* AREAS WE SERVE */}
-      <section className="py-24 md:py-32" data-testid="areas-section">
+      <section className="py-24 md:py-32 border-t border-[hsl(220_15%_14%)]" data-testid="areas-section">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
             <div className="flex items-center gap-3 mb-6">
