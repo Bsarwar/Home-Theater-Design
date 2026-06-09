@@ -160,7 +160,7 @@ export default function About() {
               },
               {
                 label: "Builders & Architects",
-                desc: "Needing a specialized partner for complex theater layouts.",
+                desc: "Architects and builders, let's team up. If you want to offer your clients high-end, professionally designed theater rooms without the AV headache, we are your go-to partner. Reach out today to discuss how we can work together.",
               },
               {
                 label: "AV Companies",
