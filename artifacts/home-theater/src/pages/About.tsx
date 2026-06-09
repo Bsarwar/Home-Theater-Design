@@ -164,7 +164,7 @@ export default function About() {
               },
               {
                 label: "AV Companies",
-                desc: "Looking for a precision-built room to maximize their high-end gear.",
+                desc: "If your AV company has clients wanting high-end home cinemas, let's collaborate. We handle the specialized room design and construction, while you handle the tech and integration. Increase your margins and offer a true turn-key solution to your clients.",
               },
             ].map((item, i) => (
               <FadeIn key={item.label} delay={i * 100}>
