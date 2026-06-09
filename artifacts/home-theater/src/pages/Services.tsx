@@ -63,7 +63,7 @@ const services = [
     icon: Lightbulb,
     title: "Lighting Design & Control",
     desc: "Lighting is the unsung hero of the theater experience. We design dedicated lighting systems — aisle lighting, bias lighting, LED specialty solutions, and scene control — that heighten immersion without compromising picture quality.",
-    features: ["LED aisle & step lighting", "Bias lighting behind screens", "LED specialty lighting solutions", "Dedicated dimming & scene control", "Sconce & decorative fixture integration", "Blackout solutions & light sealing"],
+    features: ["LED aisle & step lighting", "Bias lighting behind screens", "LED specialty lighting solutions", "Dedicated dimming & scene control", "Sconce & decorative fixture integration", "Indirect Lighting Solutions"],
     gradient: "from-stone-900 to-slate-900",
     image: lightingDesignImg,
   },
