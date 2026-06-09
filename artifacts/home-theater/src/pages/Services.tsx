@@ -78,7 +78,7 @@ const services = [
   {
     icon: ShieldCheck,
     title: "Sound Isolation",
-    desc: "True immersion requires silence from the outside world — and silence for the rest of your home. Our sound isolation systems use mass-loaded vinyl, decoupled framing, and resilient channel construction to contain your theater's sound where it belongs.",
+    desc: "True immersion requires silence from the outside world — and silence for the rest of your home. Our wall system uses Green Glue, resilient channels, and ISO clips to decouple the drywall from the structure, creating a room within a room that keeps your theater's sound where it belongs.",
     features: ["Room-within-a-room framing systems", "Mass-loaded vinyl installation", "Resilient channel & decoupled ceilings", "Acoustic door & window solutions", "HVAC vibration isolation", "STC & IIC rating consultation"],
     gradient: "from-slate-800 to-gray-900",
     image: soundIsolationImg,
