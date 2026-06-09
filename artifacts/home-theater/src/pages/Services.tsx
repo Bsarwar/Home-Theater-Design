@@ -55,7 +55,7 @@ const services = [
     icon: Pencil,
     title: "Theater Design & Consultation",
     desc: "Great theaters are born in the planning stage. Our design team delivers complete architectural drawings, acoustic modeling, 3D renderings, and detailed specifications — giving you a precise blueprint before a single nail is driven.",
-    features: ["Space Planning", "Acoustic room modeling & simulation", "Design & 3D Rendering", "Seating layout & sightline analysis", "HVAC & Electrical Planning & Design", "Lighting and electrical design"],
+    features: ["Space Planning", "Acoustic room modeling & simulation", "Design & 3D Rendering", "Seating layout & sightline analysis", "Equipment specification & scheduling", "Lighting and electrical design"],
     gradient: "from-zinc-900 to-slate-800",
     image: theaterDesignImg,
   },
