@@ -230,20 +230,6 @@ export default function About() {
               Home Cinema Group serves discerning homeowners throughout the greater DC Metro region. From the estates of Great Falls to the townhomes of Capitol Hill, we bring the same uncompromising craftsmanship to every project — no matter the zip code.
             </p>
           </FadeIn>
-          <FadeIn>
-            <div className="mb-10 border border-[hsl(220_15%_16%)] overflow-hidden">
-              <iframe
-                title="Northern Virginia Service Area"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d196096!2d-77.2!3d38.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="420"
-                style={{ border: 0, filter: "grayscale(100%) contrast(1.1) brightness(0.85)", display: "block" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {serviceAreas.map((area, i) => (
               <FadeIn key={area.county} delay={i * 80}>
