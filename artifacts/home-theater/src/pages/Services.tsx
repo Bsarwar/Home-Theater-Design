@@ -71,7 +71,7 @@ const services = [
     icon: Layers,
     title: "Acoustical Fabric Treatment",
     desc: "Acoustical fabric wall panels are the cornerstone of a professionally tuned room. We design, fabricate, and install custom fabric-wrapped panels that control reflections, eliminate flutter echo, and add a refined, finished aesthetic.",
-    features: ["Custom fabric-wrapped panel fabrication", "Broadband absorption & diffusion", "Decorative pattern & color options", "Full-wall & wainscot configurations", "Guilford of Maine & acoustical fabric selection", "Integrated with room design & millwork"],
+    features: ["Custom fabric-wrapped panel fabrication", "Broadband absorption & diffusion", "Decorative pattern & color options", "Full-wall & wainscot configurations", "Fabric Track System to produce clean lines", "Integrated with room design & millwork"],
     gradient: "from-gray-900 to-zinc-900",
     image: acousticalImg,
   },
