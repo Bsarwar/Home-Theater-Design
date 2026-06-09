@@ -47,7 +47,7 @@ const services = [
     icon: Monitor,
     title: "Media Rooms & TV Walls",
     desc: "For spaces that need to serve double duty — family room by day, cinematic escape by night. We design sophisticated media rooms and dramatic TV wall installations that deliver a premium experience without sacrificing everyday livability.",
-    features: ["Large-format TV & LED wall systems", "Integrated surround sound", "Custom built-in cabinetry & millwork", "Multi-use lighting control", "Furniture & seating curation", "Cable management & AV integration"],
+    features: ["Design & 3D Rendering", "Custom Built-In Cabinetry", "TV Wall Cladding", "Trim & Millwork", "Tray Ceilings & Risers", "Electrical & Lighting"],
     gradient: "from-slate-900 to-zinc-900",
     image: mediaRoomsImg,
   },
