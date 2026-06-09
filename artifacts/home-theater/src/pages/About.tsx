@@ -156,7 +156,7 @@ export default function About() {
             {[
               {
                 label: "Homeowners",
-                desc: "Wanting a turnkey, elite private cinema.",
+                desc: "Whether you are looking for a full-service home theater contractor or you are a passionate DIYer needing expert design and consulting to build your own, we are here to help. Reach out to us today, and let's turn your dream cinema into a reality!",
               },
               {
                 label: "Builders & Architects",
