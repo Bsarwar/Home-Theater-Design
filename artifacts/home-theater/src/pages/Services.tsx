@@ -38,7 +38,7 @@ const services = [
   {
     icon: Layers,
     title: "Dedicated Theaters",
-    desc: "Our flagship offering — a purpose-built, fully dedicated home theater room designed from the ground up for the ultimate cinematic experience. Every element, from acoustic isolation to display calibration, is engineered specifically for your space.",
+    desc: "Our flagship offering — a purpose-built, fully dedicated home theater room designed from the ground up for the ultimate cinematic experience. Every element, from acoustic isolation to the finest finishing details, is tailored specifically for your space.",
     features: ["Full room-within-a-room construction", "Reference-grade projection & display", "Dolby Atmos immersive audio", "Custom seating & tiered risers", "Photorealistic 3D design renderings", "Turnkey installation & calibration"],
     gradient: "from-amber-950/80 to-slate-900/90",
     image: dedicatedTheatersImg,
