@@ -222,7 +222,7 @@ export default function Home() {
 
           {/* Left laurel */}
           <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" />
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "brightness(0.45)" }} />
           </div>
 
           {/* Stats */}
@@ -243,7 +243,7 @@ export default function Home() {
 
           {/* Right laurel (mirrored) */}
           <div className="shrink-0 w-20 h-20 overflow-hidden" style={{ mixBlendMode: "screen", transform: "scaleX(-1)" }}>
-            <img src={laurelImg} alt="" className="w-full h-full object-contain" />
+            <img src={laurelImg} alt="" className="w-full h-full object-contain" style={{ filter: "brightness(0.45)" }} />
           </div>
 
         </div>
