@@ -175,44 +175,6 @@ export default function About() {
           </FadeIn>
         </div>
       </section>
-      {/* AWARDS */}
-      <section className="py-24 bg-[hsl(220_15%_5%)] border-y border-[hsl(220_15%_14%)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeIn>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Recognition</span>
-            </div>
-            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] leading-tight mb-14">
-              Award-<span className="italic">Winning</span> Work
-            </h2>
-          </FadeIn>
-          <div className="grid grid-cols-10 gap-3 items-stretch">
-            {[
-              { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
-              { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
-              { src: award2023Houzz,  alt: "Best of Houzz Service 2023" },
-              { src: award2022Silver, alt: "CEPro Home of the Year 2022 Silver Winner" },
-              { src: award2022Bronze, alt: "CEPro Home of the Year 2022 Bronze Winner" },
-              { src: award2020Bronze, alt: "CEPro Home of the Year 2020 Bronze Winner" },
-              { src: award2019Cedia,  alt: "CE Pro Best Project CEDIA Expo 2019" },
-              { src: award2018Cedia,  alt: "CE Pro Best Project CEDIA Expo 2018" },
-              { src: award2018Bronze, alt: "EH Home of the Year 2018 Bronze Winner" },
-              { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
-            ].map((award, i) => (
-              <FadeIn key={award.alt} delay={i * 60} className="h-full">
-                <div className="flex items-center justify-center p-3 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 h-full">
-                  <img
-                    src={award.src}
-                    alt={award.alt}
-                    className="w-full h-20 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
-                  />
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* AREAS WE SERVE */}
       <section className="py-24 md:py-32" data-testid="areas-section">
         <div className="max-w-7xl mx-auto px-6">
