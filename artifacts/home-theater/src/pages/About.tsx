@@ -48,16 +48,6 @@ const serviceAreas = [
   { county: "Beyond the Region", cities: "New York, Miami, Caribbean, and select international engagements" },
 ];
 
-const certifications = [
-  "CEDIA Certified Installer",
-  "THX Certified",
-  "ISF Level III",
-  "Control4 Diamond",
-  "Crestron Platinum",
-  "Lutron Maestro Certified",
-  "Dolby Atmos Certified",
-  "DTS:X Certified",
-];
 
 
 export default function About() {
@@ -283,21 +273,6 @@ export default function About() {
                     className="w-full h-16 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
-              </FadeIn>
-            ))}
-          </div>
-          <FadeIn>
-            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-8">Certifications & Accreditations</p>
-          </FadeIn>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {certifications.map((cert, i) => (
-              <FadeIn key={cert} delay={i * 50}>
-                <span
-                  data-testid={`cert-${i}`}
-                  className="px-4 py-2 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_55%)] text-xs tracking-[0.1em] uppercase"
-                >
-                  {cert}
-                </span>
               </FadeIn>
             ))}
           </div>
