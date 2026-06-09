@@ -14,7 +14,6 @@ import award2019Cedia from "@assets/2019-award_1780976540108.jpg";
 import award2018Cedia from "@assets/2018-award_1780976540108.jpg";
 import award2018Bronze from "@assets/2018_Theater_Bronze_1780976540108.jpg";
 import award2016Silver from "@assets/2016_Theater_Silver_1780976540107.jpg";
-import serviceMapImg from "@assets/nova-service-map_1780978423494.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -246,14 +245,40 @@ export default function About() {
           </div>
         </div>
       </section>
-      {/* SERVICE MAP */}
-      <section className="relative h-96 border-t border-[hsl(220_15%_14%)] overflow-hidden">
-        <img
-          src={serviceMapImg}
-          alt="Northern Virginia service area map"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ filter: "grayscale(100%) brightness(0.35)" }}
-        />
+      {/* CERTIFICATIONS */}
+      <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
+        <div className="max-w-7xl mx-auto px-6">
+          <FadeIn>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] text-center mb-10">
+              Award-<span className="italic">Winning</span> Work
+            </h2>
+          </FadeIn>
+          <div className="grid grid-cols-11 gap-3 items-stretch mb-12">
+            {[
+              { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
+              { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
+              { src: award2023Houzz,  alt: "Best of Houzz Service 2023" },
+              { src: award2022Silver, alt: "CEPro Home of the Year 2022 Silver Winner" },
+              { src: award2022Bronze, alt: "CEPro Home of the Year 2022 Bronze Winner" },
+              { src: award2022Houzz,  alt: "Best of Houzz Service 2022" },
+              { src: award2020Bronze, alt: "CEPro Home of the Year 2020 Bronze Winner" },
+              { src: award2019Cedia,  alt: "CE Pro Best Project CEDIA Expo 2019" },
+              { src: award2018Cedia,  alt: "CE Pro Best Project CEDIA Expo 2018" },
+              { src: award2018Bronze, alt: "EH Home of the Year 2018 Bronze Winner" },
+              { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
+            ].map((award, i) => (
+              <FadeIn key={`cert-badge-${award.alt}`} delay={i * 40} className="h-full">
+                <div className="flex items-center justify-center p-3 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 h-full">
+                  <img
+                    src={award.src}
+                    alt={award.alt}
+                    className="w-full h-16 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              </FadeIn>
+            ))}
+          </div>
+        </div>
       </section>
       {/* CTA */}
       <section className="py-20 border-t border-[hsl(220_15%_14%)]">
