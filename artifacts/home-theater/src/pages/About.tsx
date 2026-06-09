@@ -287,9 +287,7 @@ export default function About() {
             <h2 className="font-serif text-4xl md:text-5xl text-[hsl(38_20%_90%)] mb-6">
               Work with the best.
             </h2>
-            <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">
-              25 years in business and 250+ projects.
-            </p>
+            <p className="text-[hsl(38_10%_60%)] mb-10 leading-relaxed">25 years in business and 500+ projects.</p>
             <Link href="/contact" data-testid="about-cta">
               <span className="inline-flex items-center gap-3 px-8 py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.15em] uppercase font-semibold cursor-pointer hover:bg-[hsl(38_75%_60%)] transition-colors duration-300">
                 Start a Conversation <ArrowRight size={14} />
