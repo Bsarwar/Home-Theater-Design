@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
-import awardsImg from "@assets/2026-06-08_19-53-52_1780973625061.jpg";
+const awardsImg = "/awards-logos.png";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -188,7 +188,7 @@ export default function About() {
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <div className="border border-[hsl(220_15%_16%)] bg-white/5 p-6 md:p-10">
+            <div className="p-2 md:p-4">
               <img
                 src={awardsImg}
                 alt="Home Cinema Group industry awards and recognition"
