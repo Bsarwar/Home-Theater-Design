@@ -39,7 +39,7 @@ const services = [
     icon: Layers,
     title: "Dedicated Theaters",
     desc: "Our flagship offering — a purpose-built, fully dedicated home theater room designed from the ground up for the ultimate cinematic experience. Every element, from acoustic isolation to the finest finishing details, is tailored specifically for your space.",
-    features: ["Design 3D Rendering", "Framing & Construction", "Sound Isolation", "Acoustical Wall Treatment", "Architectural Millwork", "Electrical & Lighting"],
+    features: ["Design & 3D Rendering", "Framing & Construction", "Room Sound Isolation", "Acoustical Wall Treatment", "Architectural Millwork", "Electrical & Lighting"],
     gradient: "from-amber-950/80 to-slate-900/90",
     image: dedicatedTheatersImg,
   },
