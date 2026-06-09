@@ -95,7 +95,7 @@ const services = [
     icon: Sparkles,
     title: "Star Panel Ceiling",
     desc: "Our fiber optic star ceiling panels transform any room into a private universe. We design and install custom star field ceilings with adjustable star density, shooting star effects, and integrated color options — the signature finishing touch of a luxury theater. The reaction is always the same: pure wow. Kids absolutely light up the moment the lights dim and the stars come alive above them.",
-    features: ["Custom fiber optic star panels", "Adjustable star density & placement", "Shooting star & twinkle effects", "Many RGB color options", "Integrated with lighting control systems", "Available in flat, coffered & vaulted configurations"],
+    features: ["Custom fiber optic star panels", "Adjustable star density & placement", "Shooting star & twinkle effects", "App-controlled RGB color options", "Integrated with lighting control systems", "Available in flat, coffered & vaulted configurations"],
     gradient: "from-slate-900 to-indigo-950",
     image: starPanelImg,
   },
