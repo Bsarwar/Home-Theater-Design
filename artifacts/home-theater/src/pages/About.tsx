@@ -1,8 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
-import { ArrowRight, Award, Users, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
+import award2025Silver from "@assets/2025-Theater-Silver_1780976540110.jpg";
+import award2024Gold from "@assets/2024_Theater_Gold_1780976540110.jpg";
+import award2023Houzz from "@assets/2023_Houzz__1780976540110.jpg";
+import award2022Silver from "@assets/2022_Theater_Silver_1780976540109.jpg";
+import award2022Bronze from "@assets/2022_Theater_Bronze_1780976540109.jpg";
+import award2022Houzz from "@assets/2022_Houzz__1780976540109.jpg";
+import award2020Bronze from "@assets/2020_Theater_Bronze_1780976540108.jpg";
+import award2019Cedia from "@assets/2019-award_1780976540108.jpg";
+import award2018Cedia from "@assets/2018-award_1780976540108.jpg";
+import award2018Bronze from "@assets/2018_Theater_Bronze_1780976540108.jpg";
+import award2016Silver from "@assets/2016_Theater_Silver_1780976540107.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -48,23 +59,6 @@ const certifications = [
   "DTS:X Certified",
 ];
 
-const values = [
-  {
-    icon: Award,
-    title: "Uncompromising Excellence",
-    desc: "We refuse to install equipment or designs that we wouldn't have in our own homes. If it doesn't meet our standard, we don't propose it.",
-  },
-  {
-    icon: Users,
-    title: "White-Glove Partnership",
-    desc: "We're not installers — we're partners. Every client has a dedicated project lead who sees them from first call to final calibration.",
-  },
-  {
-    icon: Zap,
-    title: "Obsessive Precision",
-    desc: "Room acoustics, cable routing, ISF calibration — every detail is engineered, not guessed. The difference is visible and audible.",
-  },
-];
 
 export default function About() {
   useSEO({
@@ -191,28 +185,40 @@ export default function About() {
           </FadeIn>
         </div>
       </section>
-      {/* VALUES */}
+      {/* AWARDS */}
       <section className="py-24 bg-[hsl(220_15%_5%)] border-y border-[hsl(220_15%_14%)]">
         <div className="max-w-7xl mx-auto px-6">
           <FadeIn>
-            <div className="flex items-center gap-3 mb-14">
+            <div className="flex items-center gap-3 mb-6">
               <div className="h-px w-12 bg-[hsl(38_75%_52%)]" />
-              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Our Values</span>
+              <span className="text-[hsl(38_75%_52%)] text-xs tracking-[0.3em] uppercase">Recognition</span>
             </div>
+            <h2 className="font-serif text-4xl md:text-5xl font-light text-[hsl(38_20%_90%)] leading-tight mb-14">
+              Award-<span className="italic">Winning</span> Work
+            </h2>
           </FadeIn>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((v, i) => {
-              const Icon = v.icon;
-              return (
-                <FadeIn key={v.title} delay={i * 100}>
-                  <div data-testid={`value-${i}`} className="p-8 border border-[hsl(220_15%_16%)]">
-                    <Icon className="text-[hsl(38_75%_52%)] mb-6" size={24} strokeWidth={1.5} />
-                    <h3 className="font-serif text-xl text-[hsl(38_20%_88%)] mb-3">{v.title}</h3>
-                    <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{v.desc}</p>
-                  </div>
-                </FadeIn>
-              );
-            })}
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+            {[
+              { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
+              { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
+              { src: award2023Houzz,  alt: "Best of Houzz Service 2023" },
+              { src: award2022Silver, alt: "CEPro Home of the Year 2022 Silver Winner" },
+              { src: award2022Bronze, alt: "CEPro Home of the Year 2022 Bronze Winner" },
+              { src: award2022Houzz,  alt: "Best of Houzz Service 2022" },
+              { src: award2020Bronze, alt: "CEPro Home of the Year 2020 Bronze Winner" },
+              { src: award2019Cedia,  alt: "CE Pro Best Project CEDIA Expo 2019" },
+              { src: award2018Cedia,  alt: "CE Pro Best Project CEDIA Expo 2018" },
+              { src: award2018Bronze, alt: "EH Home of the Year 2018 Bronze Winner" },
+              { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
+            ].map((award, i) => (
+              <FadeIn key={award.alt} delay={i * 60}>
+                <img
+                  src={award.src}
+                  alt={award.alt}
+                  className="w-full max-w-[180px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                />
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>
