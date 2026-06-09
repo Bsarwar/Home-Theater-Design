@@ -197,7 +197,7 @@ export default function About() {
               Award-<span className="italic">Winning</span> Work
             </h2>
           </FadeIn>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center justify-items-center">
+          <div className="grid grid-cols-11 gap-3 items-stretch">
             {[
               { src: award2025Silver, alt: "CEPro Home of the Year 2025 Silver Winner" },
               { src: award2024Gold,   alt: "CEPro Home of the Year 2024 Gold Winner" },
@@ -211,12 +211,12 @@ export default function About() {
               { src: award2018Bronze, alt: "EH Home of the Year 2018 Bronze Winner" },
               { src: award2016Silver, alt: "EH Home of the Year 2016 Silver Winner" },
             ].map((award, i) => (
-              <FadeIn key={award.alt} delay={i * 60}>
-                <div className="flex items-center justify-center p-6 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 w-full h-full">
+              <FadeIn key={award.alt} delay={i * 60} className="h-full">
+                <div className="flex items-center justify-center p-3 bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] hover:border-[hsl(220_15%_24%)] transition-colors duration-300 h-full">
                   <img
                     src={award.src}
                     alt={award.alt}
-                    className="w-full max-w-[150px] object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                    className="w-full h-20 object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
               </FadeIn>
