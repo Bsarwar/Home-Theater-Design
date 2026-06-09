@@ -79,7 +79,7 @@ const services = [
     icon: ShieldCheck,
     title: "Sound Isolation",
     desc: "True immersion requires silence from the outside world — and silence for the rest of your home. Our wall system uses Green Glue, resilient channels, and ISO clips to decouple the drywall from the structure, creating a room within a room that keeps your theater's sound where it belongs. These systems can also be implemented in music rooms or recording studios.",
-    features: ["Room-within-a-room framing systems", "Acoustical Mineral Wool in all cavities", "Resilient channel & decoupled ceilings", "Acoustic door & window solutions", "HVAC vibration isolation", "STC & IIC rating consultation"],
+    features: ["Room-within-a-room framing systems", "Acoustical Mineral Wool in all cavities", "Resilient channel & decoupled ceilings", "Acoustic door & window solutions", "HVAC vibration isolation", "Recording Studios, Music Rooms, Drum Rooms & Theaters"],
     gradient: "from-slate-800 to-gray-900",
     image: soundIsolationImg,
   },
