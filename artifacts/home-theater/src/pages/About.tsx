@@ -38,16 +38,6 @@ const serviceAreas = [
   { county: "Beyond the Region", cities: "New York, Miami, Caribbean, and select international engagements" },
 ];
 
-const certifications = [
-  "CEDIA Certified Installer",
-  "THX Certified",
-  "ISF Level III",
-  "Control4 Diamond",
-  "Crestron Platinum",
-  "Lutron Maestro Certified",
-  "Dolby Atmos Certified",
-  "DTS:X Certified",
-];
 
 
 export default function About() {
@@ -224,26 +214,6 @@ export default function About() {
                   <h3 className="text-[hsl(38_20%_88%)] font-semibold text-base mb-2">{area.county}</h3>
                   <p className="text-[hsl(38_10%_50%)] text-sm leading-relaxed">{area.cities}</p>
                 </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* CERTIFICATIONS */}
-      <section className="py-16 bg-[hsl(220_15%_5%)] border-t border-[hsl(220_15%_14%)]">
-        <div className="max-w-7xl mx-auto px-6">
-          <FadeIn>
-            <p className="text-center text-[hsl(38_10%_45%)] text-xs tracking-[0.3em] uppercase mb-10">Certifications & Accreditations</p>
-          </FadeIn>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            {certifications.map((cert, i) => (
-              <FadeIn key={cert} delay={i * 50}>
-                <span
-                  data-testid={`cert-${i}`}
-                  className="px-4 py-2 border border-[hsl(220_15%_20%)] text-[hsl(38_10%_55%)] text-xs tracking-[0.1em] uppercase"
-                >
-                  {cert}
-                </span>
               </FadeIn>
             ))}
           </div>
