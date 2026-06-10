@@ -67,7 +67,7 @@ const awards = [
     image: theater7Img,
     project: "Blade Runner Theater — Vienna, Virginia",
     year: "2025",
-    description: "When a devoted \"Blade Runner\" fan envisioned a home theater that combined cinematic storytelling with cutting-edge technology, Lifestyle Solutions LLC brought the vision to life. Collaborating with Custom Works LLC, the team integrated Triad speakers, JL Audio subwoofers, and advanced AV components with bold, film-inspired design elements. Smart LED lighting responds dynamically to sound, producing synchronized light shows that enhance every moment — a high-performance convergence of cinema and aesthetics.",
+    description: "This Vienna, Virginia theater was built around a single vision: a space as bold and cinematic as the film that inspired it. Our team designed and constructed the room itself — the acoustics, isolation, star ceiling, and signature LED cove lighting — while our long-time technology partner Custom Works LLC handled the full AV integration. The result is a purpose-built cinema where every detail, from the fabric walls to the synchronized light system, serves the experience.",
     highlights: ["Triad speakers & JL Audio subwoofers", "Smart LED lighting synced to sound", "JVC projection & Seymour Screen Excellence", "Brands: Marantz · Panasonic · Torus Power · AudioControl · URC · Fortress · Lutron · Strong"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Winner",
