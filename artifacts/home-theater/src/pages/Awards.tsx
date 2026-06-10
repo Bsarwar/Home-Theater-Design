@@ -194,7 +194,7 @@ export default function Awards() {
               >
                 <div className="flex flex-col lg:flex-row min-h-[320px]">
 
-                  {/* LEFT — room photo with award icon overlay */}
+                  {/* LEFT — room photo with overlays */}
                   <div className="relative lg:w-[55%] min-h-[260px] lg:min-h-0 overflow-hidden bg-[hsl(220_15%_5%)]">
                     <img
                       src={item.image}
@@ -213,26 +213,36 @@ export default function Awards() {
                       </div>
                     </div>
 
+                    {/* Award badge — top-right corner */}
+                    <div className="absolute top-4 right-4 z-10">
+                      <div className="bg-black/75 border border-[hsl(38_75%_52%/0.4)] backdrop-blur-sm p-3">
+                        <AwardBadge
+                          org={item.awardOrg}
+                          year={item.year}
+                          category={item.awardCategory.split("—")[1]?.trim() ?? item.awardCategory}
+                          color={item.badgeColor}
+                        />
+                      </div>
+                    </div>
+
                     {/* Index number */}
                     <div className="absolute bottom-4 left-5 z-10">
                       <span className="font-serif text-5xl font-light text-white/10 select-none">0{i + 1}</span>
                     </div>
                   </div>
 
-                  {/* RIGHT — project info + award badge */}
-                  <div className="lg:w-[45%] bg-[hsl(220_15%_9%)] flex flex-col lg:flex-row">
-
-                    {/* Info panel */}
-                    <div className="flex-1 p-8 lg:p-10 flex flex-col justify-between">
+                  {/* RIGHT — full-width project info */}
+                  <div className="lg:w-[45%] bg-[hsl(220_15%_9%)]">
+                    <div className="p-8 lg:p-10 h-full flex flex-col justify-between">
                       <div>
                         <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-2">{item.year} · {item.awardOrg}</div>
                         <h2 className="font-serif text-2xl md:text-3xl text-[hsl(38_20%_90%)] leading-tight mb-2">{item.awardCategory}</h2>
                         <div className="text-[hsl(38_10%_55%)] text-sm mb-5 tracking-wide">{item.project}</div>
                         <p className="text-[hsl(38_10%_60%)] text-sm leading-relaxed mb-6">{item.description}</p>
-                        <div className="space-y-2">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                           {item.highlights.map((h) => (
-                            <div key={h} className="flex items-center gap-2 text-xs text-[hsl(38_10%_65%)]">
-                              <div className="w-1 h-1 rounded-full bg-[hsl(38_75%_52%)] shrink-0" />
+                            <div key={h} className="flex items-start gap-2 text-xs text-[hsl(38_10%_65%)]">
+                              <div className="w-1 h-1 rounded-full bg-[hsl(38_75%_52%)] shrink-0 mt-1.5" />
                               {h}
                             </div>
                           ))}
@@ -242,17 +252,6 @@ export default function Awards() {
                         <p className="text-[hsl(38_10%_45%)] text-xs leading-relaxed italic">{item.publicationNote}</p>
                       </div>
                     </div>
-
-                    {/* Award badge panel */}
-                    <div className="lg:w-36 shrink-0 flex items-center justify-center p-6 border-t lg:border-t-0 lg:border-l border-[hsl(220_15%_14%)] bg-[hsl(220_15%_7%)]">
-                      <AwardBadge
-                        org={item.awardOrg}
-                        year={item.year}
-                        category={item.awardCategory.split("—")[1]?.trim() ?? item.awardCategory}
-                        color={item.badgeColor}
-                      />
-                    </div>
-
                   </div>
                 </div>
               </div>
