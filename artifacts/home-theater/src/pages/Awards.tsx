@@ -70,7 +70,7 @@ const awards = [
     description: "When a devoted \"Blade Runner\" fan envisioned a home theater that combined cinematic storytelling with cutting-edge technology, Lifestyle Solutions LLC brought the vision to life. Collaborating with Custom Works LLC, the team integrated Triad speakers, JL Audio subwoofers, and advanced AV components with bold, film-inspired design elements. Smart LED lighting responds dynamically to sound, producing synchronized light shows that enhance every moment — a high-performance convergence of cinema and aesthetics.",
     highlights: ["Triad speakers & JL Audio subwoofers", "Smart LED lighting synced to sound", "JVC projection & Seymour Screen Excellence", "Brands: Marantz · Panasonic · Torus Power · AudioControl · URC · Fortress · Lutron · Strong"],
     awardOrg: "CE Pro",
-    awardCategory: "Home of the Year — Winner",
+    awardCategory: "Home of the Year — Winner 2025",
     badgeColor: "gold" as const,
     publication: "CE Pro Magazine",
     publicationNote: "Featured in CE Pro November/December 2025 — \"Bold Ode to Blade Runner.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works LLC.",
