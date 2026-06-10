@@ -65,15 +65,15 @@ function AwardBadge({ org, year, category, color = "gold" }: { org: string; year
 const awards = [
   {
     image: theater7Img,
-    project: "Northern VA — Dedicated Home Theater",
+    project: "Bold Ode to Blade Runner — Bristow, Virginia",
     year: "2025",
-    description: "A stunning dedicated home theater featuring a fiber optic star panel ceiling, vibrant RGB LED cove lighting, custom acoustical fabric wall panels with decorative millwork inlays, and tiered leather seating — recognized by CE Pro as a winner in their 2025 Home of the Year competition.",
-    highlights: ["Fiber optic star panel ceiling", "Custom RGB LED cove lighting", "Acoustical fabric wall treatment", "Tiered recliner seating"],
+    description: "When a devoted \"Blade Runner\" fan envisioned a home theater that combined cinematic storytelling with cutting-edge technology, Lifestyle Solutions LLC brought the vision to life. Collaborating with Custom Works LLC, the team integrated Triad speakers, JL Audio subwoofers, and advanced AV components with bold, film-inspired design elements. Smart LED lighting responds dynamically to sound, producing synchronized light shows that enhance every moment — a high-performance convergence of cinema and aesthetics.",
+    highlights: ["Triad speakers & JL Audio subwoofers", "Smart LED lighting synced to sound", "JVC projection & Seymour Screen Excellence", "Brands: Marantz · Panasonic · Torus Power · AudioControl · URC · Fortress · Lutron · Strong"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Winner",
     badgeColor: "gold" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "CE Pro's Home of the Year competition is the industry's most prestigious recognition program for custom electronics professionals.",
+    publicationNote: "Featured in CE Pro November/December 2025 — \"Bold Ode to Blade Runner.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works LLC.",
   },
   {
     image: theater3Img,
