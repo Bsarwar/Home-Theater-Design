@@ -335,7 +335,7 @@ export default function Home() {
                 </FadeIn>
               ))}
             </div>
-            <div className="px-4 pb-4 pt-2 border-t border-[hsl(220_15%_14%)]">
+            <div className="px-4 pt-2 border-t border-[hsl(220_15%_14%)] mt-[20px] mb-[20px] pb-[0px]">
               <Link href="/services">
                 <span className="inline-flex items-center gap-2 text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase font-medium cursor-pointer hover:gap-4 transition-all duration-300">
                   Explore All Services <ArrowRight size={12} />
@@ -394,7 +394,7 @@ export default function Home() {
                       </div>
                     ) : (
                       /* Empty spacer to keep grid aligned */
-                      <div className="w-full" />
+                      (<div className="w-full" />)
                     )}
                   </div>
                 </FadeIn>
