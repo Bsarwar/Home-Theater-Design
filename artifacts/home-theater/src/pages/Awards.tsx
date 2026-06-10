@@ -10,7 +10,6 @@ import theater4Img from "@assets/DSC_1804_1780715585519.jpg";
 import theater5Img from "@assets/screen--frontPO_1780795877779.jpg";
 import theater6Img from "@assets/DSC_1924_1780947966821.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
-import theater7bImg from "@assets/Screenc1p_1781110372808.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -66,7 +65,6 @@ function AwardBadge({ org, year, category, color = "gold" }: { org: string; year
 const awards = [
   {
     image: theater7Img,
-    image2: theater7bImg,
     project: "Blade Runner Theater — Vienna, Virginia",
     year: "2025",
     description: "Our client, an avid Blade Runner fan, came to us with a clear mission: build a theater that felt as immersive and cinematic as the film itself. We designed and constructed the room from the ground up — acoustics, sound isolation, fiber optic star ceiling, and the signature LED cove lighting that gives the space its dramatic glow. Design elements from the film were woven into the space, including the iconic Frank Lloyd Wright Ennis House tile pattern featured in the apartment scene. Our technology partner Custom Works LLC handled the full AV integration. The result is a purpose-built cinema where every detail, from the fabric walls to the architectural accents, honors the vision.",
@@ -196,25 +194,13 @@ export default function Awards() {
               >
                 <div className="flex flex-col lg:flex-row min-h-[320px]">
 
-                  {/* LEFT — room photo(s) with overlays */}
+                  {/* LEFT — room photo with overlays */}
                   <div className="relative lg:w-[55%] min-h-[260px] lg:min-h-0 overflow-hidden bg-[hsl(220_15%_5%)]">
-                    {"image2" in item && item.image2 ? (
-                      /* Split: two photos stacked */
-                      <div className="absolute inset-0 flex flex-col">
-                        <div className="flex-1 overflow-hidden">
-                          <img src={item.image} alt={item.project} className="w-full h-full object-cover" />
-                        </div>
-                        <div className="flex-1 overflow-hidden border-t border-[hsl(220_15%_5%)]">
-                          <img src={item.image2} alt={item.project} className="w-full h-full object-cover" />
-                        </div>
-                      </div>
-                    ) : (
-                      <img
-                        src={item.image}
-                        alt={item.project}
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      />
-                    )}
+                    <img
+                      src={item.image}
+                      alt={item.project}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
                     {/* Dark vignette so overlay reads */}
                     <div className="absolute inset-0 bg-black/30" />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 55%, hsl(220 15% 7%) 100%)" }} />
