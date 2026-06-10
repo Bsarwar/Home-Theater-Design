@@ -67,7 +67,7 @@ const awards = [
     image: theater7Img,
     project: "Blade Runner Theater — Vienna, Virginia",
     year: "2025",
-    description: "This Vienna, Virginia theater was built around a single vision: a space as bold and cinematic as the film that inspired it. Our team designed and constructed the room itself — the acoustics, isolation, star ceiling, and signature LED cove lighting — while our long-time technology partner Custom Works LLC handled the full AV integration. The result is a purpose-built cinema where every detail, from the fabric walls to the synchronized light system, serves the experience.",
+    description: "Our client, an avid Blade Runner fan, came to us with a clear mission: build a theater that felt as immersive and cinematic as the film itself. We designed and constructed the room from the ground up — acoustics, sound isolation, fiber optic star ceiling, and the signature LED cove lighting that gives the space its dramatic glow. Our technology partner Custom Works LLC handled the full AV integration. The result is a purpose-built cinema where every detail, from the fabric walls to the light system, honors the vision.",
     highlights: ["Triad speakers & JL Audio subwoofers", "Smart LED lighting synced to sound", "JVC projection & Seymour Screen Excellence", "Brands: Marantz · Panasonic · Torus Power · AudioControl · URC · Fortress · Lutron · Strong"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Winner",
