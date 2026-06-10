@@ -9,6 +9,7 @@ import theater3Img from "@assets/FTheater_1780950606414.jpg";
 import theater4Img from "@assets/DSC_1804_1780715585519.jpg";
 import theater5Img from "@assets/screen--frontPO_1780795877779.jpg";
 import theater6Img from "@assets/DSC_1924_1780947966821.jpg";
+import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -62,6 +63,18 @@ function AwardBadge({ org, year, category, color = "gold" }: { org: string; year
 }
 
 const awards = [
+  {
+    image: theater7Img,
+    project: "Northern VA — Dedicated Home Theater",
+    year: "2025",
+    description: "A stunning dedicated home theater featuring a fiber optic star panel ceiling, vibrant RGB LED cove lighting, custom acoustical fabric wall panels with decorative millwork inlays, and tiered leather seating — recognized by CE Pro as a winner in their 2025 Home of the Year competition.",
+    highlights: ["Fiber optic star panel ceiling", "Custom RGB LED cove lighting", "Acoustical fabric wall treatment", "Tiered recliner seating"],
+    awardOrg: "CE Pro",
+    awardCategory: "Home of the Year — Winner",
+    badgeColor: "gold" as const,
+    publication: "CE Pro Magazine",
+    publicationNote: "CE Pro's Home of the Year competition is the industry's most prestigious recognition program for custom electronics professionals.",
+  },
   {
     image: theater3Img,
     project: "Leesburg, VA — Dedicated Theater",
