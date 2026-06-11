@@ -91,7 +91,7 @@ const awards = [
     image: theater2Img,
     project: "\"Nautilus\" Themed Theater — Warrenton, VA",
     year: "2024",
-    description: "When a family of avid Disney fans approached us to build their dream theater, the brief was clear: bring 20,000 Leagues Under the Sea to life. We immersed ourselves in the film, studying every detail of the Nautilus to ensure the finished room felt authentic — from the custom thematic décor to the architectural layout. Custom Works AV joined the project as our integration partner, crafting solutions to conceal all technology within the themed environment so that not a speaker grille or projector mount breaks the illusion. The result is a space that is as visually captivating as it is sonically breathtaking.",
+    description: "When a couple of devoted Disney fans approached us to build their dream theater, the brief was clear: bring 20,000 Leagues Under the Sea to life. We immersed ourselves in the film, studying every detail of the Nautilus to ensure the finished room felt authentic — from the custom thematic décor to the architectural layout. Custom Works AV joined the project as our integration partner, crafting solutions to conceal all technology within the themed environment so that not a speaker grille or projector mount breaks the illusion. The result is a space that is as visually captivating as it is sonically breathtaking.",
     highlights: ["Sony VPLXW5000ES laser projector", "Seymour Screen Excellence 120\" Neo Enlightor acoustic screen", "16 Triad In-Wall & In-Ceiling Bronze Dolby Atmos speakers", "JL Audio 12\" subwoofer", "URC controls · 4K Apple TV · Octane Seating", "AV integration by Custom Works AV"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Gold Winner",
