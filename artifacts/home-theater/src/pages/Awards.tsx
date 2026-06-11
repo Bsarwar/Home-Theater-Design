@@ -9,7 +9,7 @@ import theater3Img from "@assets/FTheater_1780950606414.jpg";
 import theater4Img from "@assets/DSC_1804_1780715585519.jpg";
 import theater5Img from "@assets/screen--frontPO_1780795877779.jpg";
 import theater6Img from "@assets/DSC_1924_1780947966821.jpg";
-import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
+import theater7Img from "@assets/Screenmidrt3P_1781172716031.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
