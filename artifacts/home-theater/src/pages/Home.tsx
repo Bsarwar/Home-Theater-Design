@@ -265,7 +265,7 @@ export default function Home() {
               HCG — Redefining Home Entertainment
             </h2>
             <p className="text-[hsl(38_10%_58%)] text-sm md:text-base leading-relaxed mb-6">
-              For over two decades, Home Cinema Group has been transforming homes across the region. What began as a premier basement remodeling company has evolved into the area's top award-winning home theater design and build firm.
+              For over two decades, Home Cinema Group has been transforming homes across NoVA. What began as a premier basement remodeling company has evolved into the area's top award-winning home theater design and build firm.
             </p>
             <p className="text-[hsl(38_10%_50%)] text-sm md:text-base leading-relaxed mb-6">
               Whether you are looking for an entertaining, high-end basement finish or a dedicated, luxury home cinema, we design and build spaces entirely around your family's lifestyle.
