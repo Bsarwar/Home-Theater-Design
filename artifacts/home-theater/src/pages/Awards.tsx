@@ -79,7 +79,7 @@ const awards = [
     image: theater3Img,
     project: "Family Oasis Theater — Great Falls, VA",
     year: "2025",
-    description: "In the heart of Northern Virginia, a retired couple set out to build their dream home — a sprawling 20,000-square-foot family gathering place. One room had to stand apart: the theater. Our team designed and built the room from the ground up, creating a dedicated cinema worthy of the estate. In collaboration with Custom Works LLC, the space was equipped with Triad Gold speakers, dual JL Audio Fathom subwoofers, a 150-inch Seymour Screen, and a JVC NZ900 4K projector for a truly reference-grade experience.",
+    description: "A Great Falls couple building their dream estate knew the theater had to be something special — the crown jewel of a 20,000-square-foot family home. We designed and built the dedicated cinema from scratch, handling every aspect of the room: acoustics, sound isolation, fabric wall treatment, and finish. Custom Works LLC integrated a world-class AV system to complete the vision, delivering a space that performs as beautifully as it looks.",
     highlights: ["Triad Gold speakers for immersive audio", "Two JL Audio Fathom subwoofers + in-wall sub", "150-inch Seymour Screen Excellence", "JVC NZ900 4K projector · URC remotes", "Brands: JVC · Marantz · Panasonic · Torus Power · Straight Wire · AudioControl · Lutron · Strong · Fortress"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Silver Winner",
