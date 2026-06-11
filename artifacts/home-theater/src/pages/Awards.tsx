@@ -89,7 +89,7 @@ const awards = [
   },
   {
     image: theater2Img,
-    project: "\"Nautilus\" Themed Theater — McLean, VA",
+    project: "\"Nautilus\" Themed Theater — Warrenton, VA",
     year: "2024",
     description: "Our clients — avid Disney fans with a deep love for 20,000 Leagues Under the Sea — wanted their theater to be a private cinematic adventure aboard the Nautilus. Translating that vision into a fully realized themed space required extensive research, design consultations, and multiple iterations to ensure every detail, from décor to layout, reflected the film's imaginative world. We partnered with Custom Works AV, who discreetly integrated the AV technology without disrupting the thematic design — concealing speakers, projectors, and components while delivering commercial-quality performance.",
     highlights: ["Sony VPLXW5000ES laser projector", "Seymour Screen Excellence 120\" Neo Enlightor acoustic screen", "16 Triad In-Wall & In-Ceiling Bronze Dolby Atmos speakers", "JL Audio 12\" subwoofer", "URC controls · 4K Apple TV · Octane Seating", "AV integration by Custom Works AV"],
