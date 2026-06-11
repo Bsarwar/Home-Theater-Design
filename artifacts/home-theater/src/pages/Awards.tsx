@@ -79,7 +79,7 @@ const awards = [
     image: theater3Img,
     project: "Family Oasis Theater — Great Falls, VA",
     year: "2025",
-    description: "A Great Falls couple building their dream estate knew the theater had to be something special — the crown jewel of a 20,000-square-foot home designed as a central gathering hub for extended family and grandkids. Seating for everyone was a must, so we specified three rows of Fortress seating — the finest luxury cinema line available — including two premium loungers. We designed and built the dedicated cinema from scratch, handling every aspect of the room: acoustics, sound isolation, fabric wall treatment, and finish. Custom Works LLC integrated a world-class AV system to complete the vision, delivering a space that performs as beautifully as it looks.",
+    description: "A Great Falls couple building their dream estate knew the theater had to be something special — the crown jewel of a 20,000-square-foot home designed as a central gathering hub for extended family and grandkids. Seating for everyone was a must. Custom Works LLC handled the full AV integration and furnished the room with three rows of Fortress seating — the finest luxury cinema line available — including two premium loungers. We designed and built the dedicated cinema from scratch, handling every aspect of the room construction: acoustics, sound isolation, fabric wall treatment, and finish.",
     highlights: ["Three rows of Fortress luxury cinema seating", "Includes 2 premium Fortress loungers", "Triad Gold speakers for immersive audio", "Two JL Audio Fathom subwoofers + in-wall sub", "150-inch Seymour Screen Excellence", "JVC NZ900 4K projector · URC remotes"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Silver Winner",
