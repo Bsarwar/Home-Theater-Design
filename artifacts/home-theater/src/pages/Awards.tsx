@@ -94,7 +94,7 @@ const awards = [
     description: "Our clients — avid Disney fans with a deep love for 20,000 Leagues Under the Sea — wanted their theater to be a private cinematic adventure aboard the Nautilus. Translating that vision into a fully realized themed space required extensive research, design consultations, and multiple iterations to ensure every detail, from décor to layout, reflected the film's imaginative world. We partnered with Custom Works AV, who discreetly integrated the AV technology without disrupting the thematic design — concealing speakers, projectors, and components while delivering commercial-quality performance.",
     highlights: ["Sony VPLXW5000ES laser projector", "Seymour Screen Excellence 120\" Neo Enlightor acoustic screen", "16 Triad In-Wall & In-Ceiling Bronze Dolby Atmos speakers", "JL Audio 12\" subwoofer", "URC controls · 4K Apple TV · Octane Seating", "AV integration by Custom Works AV"],
     awardOrg: "CE Pro",
-    awardCategory: "Best Home Theater Under $100K — Gold",
+    awardCategory: "Home of the Year — Gold Winner",
     badgeColor: "gold" as const,
     publication: "CE Pro Magazine",
     publicationNote: "CE Pro 2024 Home of the Year — \"Due Diligence Deep Dive Drives 'Nautilus' Themed Theater.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works AV.",
