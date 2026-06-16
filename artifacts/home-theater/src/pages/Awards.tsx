@@ -115,7 +115,7 @@ const awards = [
     image: theater4Img,
     project: "Simply Slim Home Theater — Stafford, VA",
     year: "2022",
-    description: "An unfinished room full of mechanicals became the starting point. We navigated the ductwork, flipped the room's orientation to hide all equipment behind a new wall, and built out the space from scratch. The client's custom furniture set the design tone — warm, cozy, and classy — and we matched it with trim work and fabric wall panels that concealed the recessed Triad speakers throughout. Custom Works AV completed the integration, delivering the well-appointed home theater of the owners' dreams.",
+    description: "A very tight, slim unfinished room full of mechanicals became the starting point. We navigated the ductwork, flipped the room's orientation to hide all equipment behind a new wall, and built out the space from scratch. The client's custom furniture set the design tone — warm, cozy, and classy — and we matched it with trim work and fabric wall panels that concealed the recessed Triad speakers throughout. Custom Works AV completed the integration, delivering the well-appointed home theater of the owners' dreams.",
     highlights: ["Sony 4K projector · Screen Innovations 120\" Zero Edge Slate screen", "Recessed Triad speakers — concealed in fabric wall panels", "Two JL Audio subwoofers · 11-channel Marantz AVR", "Room orientation flipped to fully conceal AV equipment", "Custom trim work & fabric panels throughout", "AV integration by Custom Works AV"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Bronze Winner",
