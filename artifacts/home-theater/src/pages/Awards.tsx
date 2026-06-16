@@ -137,7 +137,7 @@ const awards = [
   },
   {
     image: theater6Img,
-    project: "Arlington, VA — Media Room & Bar",
+    project: "The Cavalier Theater — Aldie, VA",
     year: "2019",
     description: "A dramatic media room and wet bar combination built for a high-profile Arlington residence. The project combined a precision-tuned surround system with custom millwork, under-cabinet lighting, and a full bar installation — all functioning as one cohesive entertainment environment.",
     highlights: ["Custom wet bar integration", "Surround sound with bar seating", "Under-cabinet LED lighting", "Automated scene control"],
