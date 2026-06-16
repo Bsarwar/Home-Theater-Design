@@ -6,7 +6,7 @@ import awardsHeroImg from "@assets/FTheater_1780950606414.jpg";
 import theater1Img from "@assets/BR_1781626855491.jpg";
 import theater2Img from "@assets/10k_Theater_1_1780573606798.png";
 import theater3Img from "@assets/Screenmidrt3P_1781173087335.jpg";
-import theater4Img from "@assets/DSC_1804_1780715585519.jpg";
+import theater4Img from "@assets/MM_1781640063188.png";
 import theater5Img from "@assets/screen--frontPO_1780795877779.jpg";
 import theater6Img from "@assets/DSC_1924_1780947966821.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
