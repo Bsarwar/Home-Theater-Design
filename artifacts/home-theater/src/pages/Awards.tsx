@@ -4,7 +4,7 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, Award, Star } from "lucide-react";
 import awardsHeroImg from "@assets/FTheater_1780950606414.jpg";
 import theater1Img from "@assets/LMp4_1780573575270.jpg";
-import theater2Img from "@assets/10k_Theater_1_1780573606798.png";
+import theater2Img from "@assets/MR_1781625306864.jpg";
 import theater3Img from "@assets/Screenmidrt3P_1781173087335.jpg";
 import theater4Img from "@assets/DSC_1804_1780715585519.jpg";
 import theater5Img from "@assets/screen--frontPO_1780795877779.jpg";
