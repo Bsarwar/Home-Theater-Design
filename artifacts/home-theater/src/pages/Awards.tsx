@@ -8,7 +8,7 @@ import theater2Img from "@assets/10k_Theater_1_1780573606798.png";
 import theater3Img from "@assets/Screenmidrt3P_1781173087335.jpg";
 import theater4Img from "@assets/MM_1781640063188.png";
 import theater5Img from "@assets/DSC_1696a_1781641592539.jpg";
-import theater6Img from "@assets/DSC_1924_1780947966821.jpg";
+import theater6Img from "@assets/screen1_1781642188062.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 
 function useInView(threshold = 0.1) {
