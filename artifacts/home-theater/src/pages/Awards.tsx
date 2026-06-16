@@ -125,7 +125,7 @@ const awards = [
   },
   {
     image: theater5Img,
-    project: "Alexandria, VA — Screening Room",
+    project: "Modern Flair Home Theater — McLean, VA",
     year: "2020",
     description: "A sleek, minimalist screening room built inside a historic Alexandria townhome. The design challenge was extraordinary — delivering full cinema performance within strict structural constraints while maintaining the home's architectural character.",
     highlights: ["Reference-grade projection", "Concealed acoustic panels", "Motorized blackout shades", "Hidden wiring & AV rack"],
