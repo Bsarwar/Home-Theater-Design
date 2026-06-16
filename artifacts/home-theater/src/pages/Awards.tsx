@@ -11,6 +11,7 @@ import theater5Img from "@assets/DSC_1696a_1781641592539.jpg";
 import theater6Img from "@assets/screen1_1781642188062.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 import theater8Img from "@assets/FTheater_1781652183272.jpg";
+import theater9Img from "@assets/FCB1_1781653437804.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -159,6 +160,18 @@ const awards = [
     badgeColor: "bronze" as const,
     publication: "Electronic House Magazine",
     publicationNote: "CE Pro August 2018 — \"Redesigned Room Plans Produce Refined Results.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
+  },
+  {
+    image: theater9Img,
+    project: "NEON Home Theater — Bristow, VA",
+    year: "2017",
+    description: "A client who knew exactly what he wanted: big lights and big sound. Lifestyle Solutions and Custom Works AV collaborated to deliver both. Lifestyle Solutions handled the full design, build-out, and acoustical engineering — decoupling the ceiling and walls for maximum sound isolation — while Custom Works AV designed and installed the A/V system. Acoustical fabric-wrapped panels float off the walls with LIFX color-changing LED strips glowing between each row, controlled by URC and operable via iPad. The result is a compact but immersive theater with Dolby Atmos audio, a 120-inch Zero Edge screen, Sony 4K projection, and an eye-catching star ceiling and custom carpet that complete the NEON identity.",
+    highlights: ["Sony 4K VPL-HW675ES projector", "120\" SI Zero Edge Pure White screen", "Dolby Atmos via Triad InRoom Gold", "JL Audio Fathom V2 dual 12\" subs", "LIFX LED panels + URC control", "Torus Power conditioning"],
+    awardOrg: "EH Publishing",
+    awardCategory: "Home of the Year — Silver",
+    badgeColor: "silver" as const,
+    publication: "Electronic House Magazine",
+    publicationNote: "CE Pro 2017 — \"Lights, Action Are Star Attractions to Compact Home Theater.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
 ];
 
