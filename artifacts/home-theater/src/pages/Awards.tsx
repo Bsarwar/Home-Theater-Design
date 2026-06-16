@@ -129,10 +129,10 @@ const awards = [
     year: "2020",
     description: "A sleek, minimalist screening room built inside a historic Alexandria townhome. The design challenge was extraordinary — delivering full cinema performance within strict structural constraints while maintaining the home's architectural character.",
     highlights: ["Reference-grade projection", "Concealed acoustic panels", "Motorized blackout shades", "Hidden wiring & AV rack"],
-    awardOrg: "Electronic House",
+    awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Bronze",
     badgeColor: "bronze" as const,
-    publication: "Electronic House Magazine",
+    publication: "CE Pro Magazine",
     publicationNote: "Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
