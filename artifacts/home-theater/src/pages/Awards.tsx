@@ -152,7 +152,7 @@ const awards = [
     image: theater8Img,
     project: "Modern Fusion Home Theater — Nokesville, VA",
     year: "2018",
-    description: "When the owner of this custom home spent more than two years building his dream house, contractor issues left the theater space unfinished. Lifestyle Solutions and Custom Works stepped in to get it done right — starting by reframing the room itself. The original layout was too large for the selected screen and seating, so they converted it from a square to a more acoustically ideal rectangle and solved a 14-inch ceiling pitch with custom-angle shadow boxes. The client requested signature Lifestyle Solutions design elements he had admired in other projects: tall 3D column panels, a fiber optic star ceiling, and URC lighting and A/V control.",
+    description: "One of the largest theater spaces Lifestyle Solutions has built — a massive room beneath a three-car garage with 12-foot ceilings. When contractor issues left the space unfinished after two years of home construction, Lifestyle Solutions and Custom Works stepped in to complete it. Even with a 160-inch screen, the original square footprint was oversized for ideal acoustics, so the team reframed the room to a more proportional rectangle and addressed a sloped floor with custom-angled shadow boxes. Vertical LED cascading panels flanking the screen give the room an expansive, cinematic grandeur — making even this extraordinary space feel as large as it truly is.",
     highlights: ["160\" Screen Innovations screen", "Sony 4K projector", "URC whole-room control", "Triad speakers + JL Audio subs", "Yamaha & Parasound electronics", "Palliser seating · SnapAV rack"],
     awardOrg: "EH Publishing",
     awardCategory: "Home of the Year — Bronze",
