@@ -13,6 +13,7 @@ import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 import theater8Img from "@assets/FTheater_1781652183272.jpg";
 import theater9Img from "@assets/FCB1_1781653437804.jpg";
 import ceprocover from "@assets/2024-11-27_12-42-34_1781654216399.jpg";
+import cepro2017cover from "@assets/2026-06-16_19-49-53_1781654297270.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -304,7 +305,7 @@ export default function Awards() {
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(220_15%_14%)]">
             {[
-              { name: "Electronic House", sub: "Home of the Year", cover: null },
+              { name: "Electronic House", sub: "Home of the Year", cover: cepro2017cover },
               { name: "CE Pro", sub: "Home of the Year", cover: ceprocover },
               { name: "CEDIA", sub: "Global Awards", cover: null },
               { name: "Custom Home", sub: "Best Theater", cover: null },
