@@ -12,6 +12,7 @@ import theater6Img from "@assets/screen1_1781642188062.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 import theater8Img from "@assets/FTheater_1781652183272.jpg";
 import theater9Img from "@assets/FCB1_1781653437804.jpg";
+import ceprocover from "@assets/2024-11-27_12-42-34_1781654216399.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -303,15 +304,25 @@ export default function Awards() {
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(220_15%_14%)]">
             {[
-              { name: "Electronic House", sub: "Home of the Year" },
-              { name: "CE Pro", sub: "Home of the Year" },
-              { name: "CEDIA", sub: "Global Awards" },
-              { name: "Custom Home", sub: "Best Theater" },
+              { name: "Electronic House", sub: "Home of the Year", cover: null },
+              { name: "CE Pro", sub: "Home of the Year", cover: ceprocover },
+              { name: "CEDIA", sub: "Global Awards", cover: null },
+              { name: "Custom Home", sub: "Best Theater", cover: null },
             ].map((pub, i) => (
               <FadeIn key={pub.name} delay={i * 80}>
                 <div className="bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center py-10 px-6 text-center hover:bg-[hsl(220_15%_9%)] transition-colors duration-300">
-                  <div className="w-10 h-10 border border-[hsl(38_75%_52%/0.4)] flex items-center justify-center mb-4">
-                    <Star size={16} className="text-[hsl(38_75%_52%)]" />
+                  <div className="w-24 h-32 mb-4 flex items-center justify-center overflow-hidden">
+                    {pub.cover ? (
+                      <img
+                        src={pub.cover}
+                        alt={`${pub.name} magazine cover`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full border border-[hsl(38_75%_52%/0.4)] flex items-center justify-center">
+                        <Star size={20} className="text-[hsl(38_75%_52%)]" />
+                      </div>
+                    )}
                   </div>
                   <div className="font-serif text-[hsl(38_20%_80%)] text-base mb-1">{pub.name}</div>
                   <div className="text-[hsl(38_10%_45%)] text-[10px] tracking-[0.15em] uppercase">{pub.sub}</div>
