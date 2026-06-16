@@ -12,7 +12,6 @@ import theater6Img from "@assets/screen1_1781642188062.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
 import theater8Img from "@assets/FTheater_1781652183272.jpg";
 import theater9Img from "@assets/FCB1_1781653437804.jpg";
-import ceproMagImg from "@assets/2024-11-27_12-42-34_1781653993985.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -303,29 +302,14 @@ export default function Awards() {
             </div>
           </FadeIn>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(220_15%_14%)]">
-            {/* CE Pro — magazine cover */}
-            <FadeIn delay={80}>
-              <div className="relative bg-[hsl(220_15%_7%)] overflow-hidden group h-full min-h-[220px]">
-                <img
-                  src={ceproMagImg}
-                  alt="CE Pro Magazine"
-                  className="absolute inset-0 w-full h-full object-cover object-top opacity-40 group-hover:opacity-55 transition-opacity duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_5%)] via-[hsl(220_15%_5%/0.5)] to-transparent" />
-                <div className="relative flex flex-col items-center justify-end h-full py-8 px-6 text-center">
-                  <div className="font-serif text-[hsl(38_20%_88%)] text-lg mb-1">CE Pro</div>
-                  <div className="text-[hsl(38_75%_52%)] text-[10px] tracking-[0.2em] uppercase">Home of the Year</div>
-                </div>
-              </div>
-            </FadeIn>
-            {/* Other publications */}
             {[
-              { name: "Electronic House", sub: "Home of the Year", delay: 0 },
-              { name: "CEDIA", sub: "Global Awards", delay: 160 },
-              { name: "EH Publishing", sub: "Home of the Year", delay: 240 },
-            ].map((pub) => (
-              <FadeIn key={pub.name} delay={pub.delay}>
-                <div className="bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center py-10 px-6 text-center hover:bg-[hsl(220_15%_9%)] transition-colors duration-300 min-h-[220px]">
+              { name: "Electronic House", sub: "Home of the Year" },
+              { name: "CE Pro", sub: "Home of the Year" },
+              { name: "CEDIA", sub: "Global Awards" },
+              { name: "Custom Home", sub: "Best Theater" },
+            ].map((pub, i) => (
+              <FadeIn key={pub.name} delay={i * 80}>
+                <div className="bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center py-10 px-6 text-center hover:bg-[hsl(220_15%_9%)] transition-colors duration-300">
                   <div className="w-10 h-10 border border-[hsl(38_75%_52%/0.4)] flex items-center justify-center mb-4">
                     <Star size={16} className="text-[hsl(38_75%_52%)]" />
                   </div>
