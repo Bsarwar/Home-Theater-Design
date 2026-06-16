@@ -103,7 +103,7 @@ const awards = [
     image: theater1Img,
     project: "Rustic Colors Home Theater — Fairfax Station, VA",
     year: "2022",
-    description: "Not every great theater starts with a grand canvas. A small, odd-shaped unfinished basement became the challenge — and the opportunity. Our clients, who had relocated to be near their kids and grandkids, wanted a room the whole family could love. We developed a warm earth-tone palette with a custom fiber optic star ceiling to make the space feel far larger than it is. Fabric-wrapped trim panels conceal the in-wall Triad speakers throughout, while the walls were fully decoupled for sound isolation. Custom Works AV completed the integration.",
+    description: "Not every great theater starts with a grand canvas. A small, odd-shaped unfinished basement became the challenge — and the opportunity. Our clients, who had relocated to be near their kids and grandkids, wanted a room the whole family could love. We developed a warm earth-tone palette with a custom fiber optic star ceiling to make the space feel far larger than it is. Fabric-wrapped trim panels conceal the in-wall Triad speakers throughout, while the walls were fully decoupled for sound isolation. Custom Works AV completed the integration — delivering bass performance that has to be felt to be believed.",
     highlights: ["Sony 4K projector · Screen Innovations Zero Edge screen", "In-wall Triad Dolby Atmos speakers — fully concealed", "Two JL Audio subwoofers (adjacent room, space-saving)", "Marantz AV receiver · Sony Blu-ray · WattBox power", "URC controls · decoupled walls for sound isolation", "AV integration by Custom Works AV"],
     awardOrg: "CE Pro",
     awardCategory: "Home of the Year — Silver Winner",
