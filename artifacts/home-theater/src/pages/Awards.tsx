@@ -154,10 +154,10 @@ const awards = [
     year: "2018",
     description: "When the owner of this custom home spent more than two years building his dream house, contractor issues left the theater space unfinished. Lifestyle Solutions and Custom Works stepped in to get it done right — starting by reframing the room itself. The original layout was too large for the selected screen and seating, so they converted it from a square to a more acoustically ideal rectangle and solved a 14-inch ceiling pitch with custom-angle shadow boxes. The client requested signature Lifestyle Solutions design elements he had admired in other projects: tall 3D column panels, a fiber optic star ceiling, and URC lighting and A/V control.",
     highlights: ["160\" Screen Innovations screen", "Sony 4K projector", "URC whole-room control", "Triad speakers + JL Audio subs", "Yamaha & Parasound electronics", "Palliser seating · SnapAV rack"],
-    awardOrg: "CE Pro",
-    awardCategory: "Best Project Award — Bronze",
+    awardOrg: "EH Publishing",
+    awardCategory: "Home of the Year — Bronze",
     badgeColor: "bronze" as const,
-    publication: "CE Pro Magazine",
+    publication: "Electronic House Magazine",
     publicationNote: "CE Pro August 2018 — \"Redesigned Room Plans Produce Refined Results.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
 ];
