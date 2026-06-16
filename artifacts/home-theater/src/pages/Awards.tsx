@@ -139,13 +139,13 @@ const awards = [
     image: theater6Img,
     project: "The Cavalier Theater — Aldie, VA",
     year: "2019",
-    description: "A dramatic media room and wet bar combination built for a high-profile Arlington residence. The project combined a precision-tuned surround system with custom millwork, under-cabinet lighting, and a full bar installation — all functioning as one cohesive entertainment environment.",
-    highlights: ["Custom wet bar integration", "Surround sound with bar seating", "Under-cabinet LED lighting", "Automated scene control"],
+    description: "Built for a passionate UVA Cavaliers fan who wanted the very best in projection, audio, and automation — plus the biggest screen possible. He contracted Lifestyle Solutions and Custom Works to design and build a room capable of watching multiple sporting events simultaneously. His wife shaped the aesthetics, collaborating closely with Lifestyle Solutions to create the warm, rustic character of the space. The result: a 133-inch screen, Sony 4K projector with AVPro quad-view multiviewer, 11-channel Dolby Atmos sound, and two rows of Palliser seating for eight.",
+    highlights: ["133\" Screen Innovations Slate screen", "Sony 4K projector + AVPro quad-view", "11-ch Marantz Dolby Atmos receiver", "11 Triad Silver Series speakers", "Sunfire HRS12 dual subwoofers", "Two rows of Palliser seating (8 seats)"],
     awardOrg: "CE Pro",
     awardCategory: "Best Project Award — Bronze",
     badgeColor: "bronze" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
+    publicationNote: "CE Pro 2019 — \"UVA Fan Scores Sweet Sports Viewing Space.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
 ];
 
