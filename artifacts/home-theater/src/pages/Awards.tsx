@@ -106,7 +106,7 @@ const awards = [
     description: "A sprawling luxury cinema for a Great Falls estate, complete with a full raised stage, custom riser construction, and a 180-inch projection surface. Featured in Custom Home magazine as a benchmark of residential entertainment design.",
     highlights: ["180-inch projection screen", "Raised performance stage", "Custom leather seating for 12", "Hidden equipment room"],
     awardOrg: "CE Pro",
-    awardCategory: "Best Home Theater — Featured",
+    awardCategory: "Home of the Year — Silver Winner",
     badgeColor: "silver" as const,
     publication: "CE Pro Magazine",
     publicationNote: "CE Pro magazine spotlights the most innovative and beautifully designed custom residences, including dedicated entertainment spaces.",
