@@ -139,7 +139,7 @@ const awards = [
     image: theater6Img,
     project: "The Cavalier Theater — Aldie, VA",
     year: "2019",
-    description: "Built for a passionate UVA Cavaliers fan who wanted the very best in projection, audio, and automation — plus the biggest screen possible. He contracted Lifestyle Solutions and Custom Works to design and build a room capable of watching multiple sporting events simultaneously. His wife shaped the aesthetics, collaborating closely with Lifestyle Solutions to create the warm, rustic character of the space. The result: a 133-inch screen, Sony 4K projector with AVPro quad-view multiviewer, 11-channel Dolby Atmos sound, and two rows of Palliser seating for eight.",
+    description: "Built for a passionate UVA Cavaliers fan who wanted the very best in projection, audio, and automation — plus the biggest screen possible. He contracted Lifestyle Solutions and Custom Works to design and build a room capable of watching multiple sporting events simultaneously. His wife collaborated closely with Lifestyle Solutions and partner Robert Baden Woodwork to source specialty cypress lumber, crafting the exposed ceiling beams and custom bar counter that define the room's warm, rustic character. The result: a 133-inch screen, Sony 4K projector with AVPro quad-view multiviewer, 11-channel Dolby Atmos sound, and two rows of Palliser seating for eight.",
     highlights: ["133\" Screen Innovations Slate screen", "Sony 4K projector + AVPro quad-view", "11-ch Marantz Dolby Atmos receiver", "11 Triad Silver Series speakers", "Sunfire HRS12 dual subwoofers", "Two rows of Palliser seating (8 seats)"],
     awardOrg: "CE Pro",
     awardCategory: "Best Project Award — Bronze",
