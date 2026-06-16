@@ -101,7 +101,7 @@ const awards = [
   },
   {
     image: theater1Img,
-    project: "Great Falls, VA — Luxury Home Cinema",
+    project: "Rustic Colors Home Theater — Fairfax Station, VA",
     year: "2022",
     description: "A sprawling luxury cinema for a Great Falls estate, complete with a full raised stage, custom riser construction, and a 180-inch projection surface. Featured in Custom Home magazine as a benchmark of residential entertainment design.",
     highlights: ["180-inch projection screen", "Raised performance stage", "Custom leather seating for 12", "Hidden equipment room"],
