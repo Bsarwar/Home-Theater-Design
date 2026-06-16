@@ -113,7 +113,7 @@ const awards = [
   },
   {
     image: theater4Img,
-    project: "Potomac, MD — Estate Media Room",
+    project: "Simply Slim Home Theater — Stafford, VA",
     year: "2022",
     description: "A grand estate media room designed to serve as the social heart of the home — accommodating family movie nights, sports viewing, and formal screenings alike. Recognized by CE Pro as a standout example of multi-use entertainment design.",
     highlights: ["LED video wall system", "Integrated bar & lounge seating", "Blackout window solutions", "Multi-zone audio"],
