@@ -10,6 +10,7 @@ import theater4Img from "@assets/MM_1781640063188.png";
 import theater5Img from "@assets/DSC_1696a_1781641592539.jpg";
 import theater6Img from "@assets/screen1_1781642188062.jpg";
 import theater7Img from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
+import theater8Img from "@assets/FTheater_1781652183272.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -146,6 +147,18 @@ const awards = [
     badgeColor: "bronze" as const,
     publication: "CE Pro Magazine",
     publicationNote: "CE Pro 2019 — \"UVA Fan Scores Sweet Sports Viewing Space.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
+  },
+  {
+    image: theater8Img,
+    project: "Modern Fusion Home Theater — Gainesville, VA",
+    year: "2018",
+    description: "When the owner of this custom home spent more than two years building his dream house, contractor issues left the theater space unfinished. Lifestyle Solutions and Custom Works stepped in to get it done right — starting by reframing the room itself. The original layout was too large for the selected screen and seating, so they converted it from a square to a more acoustically ideal rectangle and solved a 14-inch ceiling pitch with custom-angle shadow boxes. The client requested signature Lifestyle Solutions design elements he had admired in other projects: tall 3D column panels, a fiber optic star ceiling, and URC lighting and A/V control.",
+    highlights: ["160\" Screen Innovations screen", "Sony 4K projector", "URC whole-room control", "Triad speakers + JL Audio subs", "Yamaha & Parasound electronics", "Palliser seating · SnapAV rack"],
+    awardOrg: "CE Pro",
+    awardCategory: "Best Project Award — Bronze",
+    badgeColor: "bronze" as const,
+    publication: "CE Pro Magazine",
+    publicationNote: "CE Pro August 2018 — \"Redesigned Room Plans Produce Refined Results.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
 ];
 
