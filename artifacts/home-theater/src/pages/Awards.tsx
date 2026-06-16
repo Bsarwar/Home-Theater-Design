@@ -73,7 +73,7 @@ const awards = [
     awardCategory: "Home of the Year — Silver Winner",
     badgeColor: "silver" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "Featured in CE Pro November/December 2025 — \"Bold Ode to Blade Runner.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works LLC.",
+    publicationNote: "Featured in CE Pro November/December 2025 — \"Bold Ode to Blade Runner.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater3Img,
@@ -85,7 +85,7 @@ const awards = [
     awardCategory: "Home of the Year — Silver Winner",
     badgeColor: "silver" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "Featured in CE Pro 2025 — \"Custom Entertainment Oasis in Family Estate.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works LLC.",
+    publicationNote: "Featured in CE Pro 2025 — \"Custom Entertainment Oasis in Family Estate.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater2Img,
@@ -97,7 +97,7 @@ const awards = [
     awardCategory: "Home of the Year — Gold Winner",
     badgeColor: "gold" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "CE Pro 2024 Home of the Year — \"Due Diligence Deep Dive Drives 'Nautilus' Themed Theater.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works AV.",
+    publicationNote: "CE Pro 2024 Home of the Year — \"Due Diligence Deep Dive Drives 'Nautilus' Themed Theater.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater1Img,
@@ -109,7 +109,7 @@ const awards = [
     awardCategory: "Home of the Year — Silver Winner",
     badgeColor: "silver" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "CE Pro 2022 — \"Small but Mighty Cinematic Space.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works AV.",
+    publicationNote: "CE Pro 2022 — \"Small but Mighty Cinematic Space.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater4Img,
@@ -121,7 +121,7 @@ const awards = [
     awardCategory: "Home of the Year — Bronze Winner",
     badgeColor: "bronze" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "CE Pro 2022 — \"Head of Its Class.\" Systems Design & Installation by Lifestyle Solutions LLC, Bristow, Virginia, in collaboration with Custom Works AV.",
+    publicationNote: "CE Pro 2022 — \"Head of Its Class.\" Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater5Img,
@@ -133,7 +133,7 @@ const awards = [
     awardCategory: "Home of the Year — Silver",
     badgeColor: "silver" as const,
     publication: "Electronic House Magazine",
-    publicationNote: "Selected as a silver winner for exceptional integration of high-performance technology within a historically sensitive residential setting.",
+    publicationNote: "Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
   {
     image: theater6Img,
@@ -145,7 +145,7 @@ const awards = [
     awardCategory: "Best Entertainment Space",
     badgeColor: "gold" as const,
     publication: "CE Pro Magazine",
-    publicationNote: "Honored for seamlessly blending high-performance AV with luxury hospitality design in a residential setting.",
+    publicationNote: "Room design and construction by Lifestyle Solutions LLC, Bristow, Virginia. AV design and installation by Custom Works AV.",
   },
 ];
 
