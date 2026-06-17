@@ -309,6 +309,7 @@ const projects: Project[] = [
   {
     title: "The Next Galaxy Theater",
     type: "Dedicated Theaters",
+    tags: ["Star Ceiling"],
     location: "Aldie, VA",
     year: "2026",
     size: "Willowsford Modern Theater — Blue LED Cove, Star Ceiling & Velvet Screen Wall",
@@ -651,6 +652,7 @@ const projects: Project[] = [
   {
     title: "Rustic Colors Home Theater",
     type: "Dedicated Theaters",
+    tags: ["Star Ceiling"],
     location: "Fairfax Station, VA",
     year: "2022",
     size: "CE Pro Home of the Year — Silver Winner",
