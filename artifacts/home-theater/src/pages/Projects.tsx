@@ -4,6 +4,28 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
+// Blade Runner Theater — Vienna, Virginia (2025 CE Pro Silver)
+import brScreenLeftPlaying from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
+import brScreenLeftBlank from "@assets/ScreenLFTp_1781706241333.jpg";
+import brScreenLeftPlaying2 from "@assets/ScreenLFTp.2jpg_1781706241333.jpg";
+import brScreenFrontBlank from "@assets/ScreenBf_1781706241332.jpg";
+import brScreenFrontPlaying from "@assets/ScreenBfP_1781706241332.jpg";
+import brScreenFrontFull from "@assets/ScreenPF_1781706241333.jpg";
+import brScreenRightBlank from "@assets/RtscreenB2_1781706241331.jpg";
+import brScreenRightPlaying from "@assets/RtscreenB2p_1781706241331.jpg";
+import brScreenSideBlank from "@assets/screenRTFB_1781706241334.jpg";
+import brScreenSidePlaying from "@assets/screenRTFBp_1781706241334.jpg";
+import brScreenFrontRight from "@assets/ScreenFRP_1781706241333.jpg";
+import brDoorWall from "@assets/door-wall_1781706241330.jpg";
+import brTheaterDoor from "@assets/theater-door_1781706241335.jpg";
+import brSideWall from "@assets/side-wall_1781706241335.jpg";
+import brSidewallLeft from "@assets/sidewall-LFT_1781706241335.jpg";
+import brSidewallLeftPurple from "@assets/sidewallP1_1781706241335.jpg";
+import brSeating4 from "@assets/seating-4_1781706241334.jpg";
+import brSeatingOverview from "@assets/SeatingP2_1781706241334.jpg";
+import brSeatingFront from "@assets/seatsf3_1781706241335.jpg";
+import brTileDetail from "@assets/tile-detail_1781706241336.jpg";
+import brTileLeftDetail from "@assets/tileleft2_1781706241336.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -56,9 +78,27 @@ const projects: Project[] = [
     featured: true,
     image: portfolioImg1,
     gallery: [
-      { src: portfolioImg1, label: "Screen Wall" },
-      { src: portfolioImg1, label: "Star Ceiling" },
-      { src: portfolioImg1, label: "Side View" },
+      { src: brScreenLeftPlaying, label: "Blade Runner Theater Vienna — Screen Wall Left View Playing" },
+      { src: brScreenFrontPlaying, label: "Blade Runner Theater Vienna — Front View Full Seating Playing" },
+      { src: brScreenRightPlaying, label: "Blade Runner Theater Vienna — Screen Wall Right View Playing" },
+      { src: brScreenSidePlaying, label: "Blade Runner Theater Vienna — Side Angle Screen View Playing" },
+      { src: brScreenLeftBlank, label: "Blade Runner Theater Vienna — Screen Wall Left View" },
+      { src: brScreenLeftPlaying2, label: "Blade Runner Theater Vienna — Left Side Screen with Movie" },
+      { src: brScreenFrontBlank, label: "Blade Runner Theater Vienna — Front View Full Seating" },
+      { src: brScreenFrontFull, label: "Blade Runner Theater Vienna — Full Room Front View" },
+      { src: brScreenRightBlank, label: "Blade Runner Theater Vienna — Screen Wall Right View" },
+      { src: brScreenSideBlank, label: "Blade Runner Theater Vienna — Side Angle Screen" },
+      { src: brScreenFrontRight, label: "Blade Runner Theater Vienna — Screen Front Right Angle" },
+      { src: brSeatingFront, label: "Blade Runner Theater Vienna — Luxury Leather Seating Front Row" },
+      { src: brSeating4, label: "Blade Runner Theater Vienna — Theater Seating and LED Lighting" },
+      { src: brSeatingOverview, label: "Blade Runner Theater Vienna — Full Seating Overview" },
+      { src: brDoorWall, label: "Blade Runner Theater Vienna — Door Wall LED Lighting Design" },
+      { src: brTheaterDoor, label: "Blade Runner Theater Vienna — Custom Theater Entry Door" },
+      { src: brSideWall, label: "Blade Runner Theater Vienna — Side Wall Acoustic Panels" },
+      { src: brSidewallLeft, label: "Blade Runner Theater Vienna — Left Side Wall LED Detail" },
+      { src: brSidewallLeftPurple, label: "Blade Runner Theater Vienna — Left Side Wall Purple Lighting" },
+      { src: brTileDetail, label: "Blade Runner Theater Vienna — Custom Acoustic Tile Detail" },
+      { src: brTileLeftDetail, label: "Blade Runner Theater Vienna — Left Wall Acoustic Tile Design" },
     ],
   },
   {
