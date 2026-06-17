@@ -41,12 +41,12 @@ type Project = {
   gallery: GalleryItem[];
 };
 
-const filters = ["All", "Private Cinema", "Screening Room", "Basement Build", "Commercial"];
+const filters = ["All", "Dedicated Theaters", "Media Room", "TV Walls", "Themed Theaters", "Commercial", "Star Panel Ceiling", "Design Elements"];
 
 const projects: Project[] = [
   {
     title: "Great Falls Estate",
-    type: "Private Cinema",
+    type: "Dedicated Theaters",
     location: "Great Falls, VA",
     year: "2024",
     size: "14-Seat Private Cinema — Full Build",
@@ -62,7 +62,7 @@ const projects: Project[] = [
   },
   {
     title: "Award-Winning Theater — CE Pro 2024",
-    type: "Private Cinema",
+    type: "Dedicated Theaters",
     location: "Northern Virginia",
     year: "2024",
     size: "CE Pro Home of the Year — Best Home Theater",
@@ -78,7 +78,7 @@ const projects: Project[] = [
   },
   {
     title: "Georgetown Rowhouse",
-    type: "Screening Room",
+    type: "Media Room",
     location: "Washington, DC",
     year: "2023",
     size: "10-Seat Dedicated Screening Room",
@@ -92,7 +92,7 @@ const projects: Project[] = [
   },
   {
     title: "Bethesda Estate",
-    type: "Private Cinema",
+    type: "Dedicated Theaters",
     location: "Bethesda, MD",
     year: "2023",
     size: "16-Seat Home Cinema — Room-Within-Room Build",
@@ -106,7 +106,7 @@ const projects: Project[] = [
   },
   {
     title: "McLean Colonial",
-    type: "Basement Build",
+    type: "Dedicated Theaters",
     location: "McLean, VA",
     year: "2023",
     size: "Full Basement Theater — Framing to Finish",
@@ -120,7 +120,7 @@ const projects: Project[] = [
   },
   {
     title: "Chevy Chase Manor",
-    type: "Screening Room",
+    type: "Media Room",
     location: "Chevy Chase, MD",
     year: "2023",
     size: "8-Seat Luxury Screening Room",
@@ -134,7 +134,7 @@ const projects: Project[] = [
   },
   {
     title: "Vienna Estate",
-    type: "Private Cinema",
+    type: "Dedicated Theaters",
     location: "Vienna, VA",
     year: "2022",
     size: "12-Seat Cinema — Custom Millwork & Star Ceiling",
@@ -162,7 +162,7 @@ const projects: Project[] = [
   },
   {
     title: "Falls Church Residence",
-    type: "Basement Build",
+    type: "Dedicated Theaters",
     location: "Falls Church, VA",
     year: "2022",
     size: "Finished Basement — 6-Seat Family Cinema",
@@ -176,7 +176,7 @@ const projects: Project[] = [
   },
   {
     title: "Potomac Manor",
-    type: "Private Cinema",
+    type: "Dedicated Theaters",
     location: "Potomac, MD",
     year: "2021",
     size: "18-Seat Estate Cinema — Full Design & Build",
@@ -190,7 +190,7 @@ const projects: Project[] = [
   },
   {
     title: "Leesburg Farmhouse",
-    type: "Screening Room",
+    type: "Media Room",
     location: "Leesburg, VA",
     year: "2021",
     size: "Converted Barn Theater — Custom Acoustic Build",
@@ -204,7 +204,7 @@ const projects: Project[] = [
   },
   {
     title: "Capitol Hill Townhouse",
-    type: "Basement Build",
+    type: "Dedicated Theaters",
     location: "Washington, DC",
     year: "2021",
     size: "Urban Basement Theater — 6-Seat Build",
