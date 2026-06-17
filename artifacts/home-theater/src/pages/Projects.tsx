@@ -60,6 +60,22 @@ import foScreenMidRightPlaying from "@assets/Screenmidrt3P_1781715978129.jpg";
 import foScreenRight from "@assets/ScreetRT_1781715978129.jpg";
 import foSeatingLeft from "@assets/Seating-LFT2_1781715978129.jpg";
 import foSeatingRight from "@assets/Seating-RT2_1781715978129.jpg";
+import foClosetOpen from "@assets/closet_1781716221977.jpg";
+import foClosetClosed from "@assets/closet-2_1781716221978.jpg";
+import foColumnSconce from "@assets/column2_1781716221978.jpg";
+import foColumnsRight from "@assets/Columns-RT_1781716221978.jpg";
+import foDoorRearWall from "@assets/door_1781716221978.jpg";
+import foDoorSwitch from "@assets/door-switch_1781716221979.jpg";
+import foRackRoom from "@assets/rack2_1781716221979.jpg";
+import foRackAV from "@assets/Rack-AV_1781716221979.jpg";
+import foRearCounter from "@assets/Rear-Counter2_1781716221979.jpg";
+import foLightingKeypad from "@assets/remote3_1781716221980.jpg";
+import foControl4Tablet from "@assets/remotes_1781716221980.jpg";
+import foControl4Remote from "@assets/remotes2_1781716221980.jpg";
+import foCrystalSconce from "@assets/sconce_1781716221980.jpg";
+import foStarCeilingView from "@assets/stars2_1781716221980.jpg";
+import foStepsLeft from "@assets/steps-lft2_1781716221981.jpg";
+import foStepsRight from "@assets/steps-RT_1781716221981.jpg";
 import ntCabinets from "@assets/cabinets_1781713824645.jpg";
 import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
 import ntDoor1 from "@assets/door-1_1781713824646.jpg";
@@ -267,6 +283,22 @@ const projects: Project[] = [
       { src: foScreenFront1, label: "Family Oasis Theater Great Falls VA — Screen Wall Close-Up Blank Screen Gold Accent Pillar Sconce Detail" },
       { src: foScreenFront2, label: "Family Oasis Theater Great Falls VA — Screen Wall Detail Blank Screen Custom Millwork Gold Accent" },
       { src: foScreenFrontSpiderman, label: "Family Oasis Theater Great Falls VA — Screen Wall Playing Spider-Man Gold Accent Pillar Luxury Finish" },
+      { src: foStarCeilingView, label: "Family Oasis Theater Great Falls VA — Rear View Fiber Optic Star Ceiling Projector Overhead Full Seating Rows" },
+      { src: foStepsLeft, label: "Family Oasis Theater Great Falls VA — Left Aisle Tiered Steps LED Step Lighting Crystal Sconces Blue Star Ceiling" },
+      { src: foStepsRight, label: "Family Oasis Theater Great Falls VA — Right Aisle Tiered Steps LED Step Lighting Gold Accent Pillar Star Ceiling" },
+      { src: foColumnsRight, label: "Family Oasis Theater Great Falls VA — Right Side Columns Gold Accent Sconces Control Counter Star Ceiling" },
+      { src: foDoorRearWall, label: "Family Oasis Theater Great Falls VA — Rear Entry Door Gold Ring Pull Handle Seating Rows Star Ceiling" },
+      { src: foDoorSwitch, label: "Family Oasis Theater Great Falls VA — Entry Door Gold Ring Handle Lutron Lighting Keypad Smart Home Control" },
+      { src: foRearCounter, label: "Family Oasis Theater Great Falls VA — Rear Credenza Cabinet Gold Hardware Custom Millwork Star Ceiling" },
+      { src: foColumnSconce, label: "Family Oasis Theater Great Falls VA — Gold Accent Pillar Crystal Sconce Detail Custom Millwork Close-Up" },
+      { src: foCrystalSconce, label: "Family Oasis Theater Great Falls VA — Crystal Gold Sconce Light Fixture Detail Luxury Home Theater Design" },
+      { src: foClosetOpen, label: "Family Oasis Theater Great Falls VA — Hidden AV Closet Door Open Behind Acoustic Panel Wall" },
+      { src: foClosetClosed, label: "Family Oasis Theater Great Falls VA — Hidden AV Closet Door Closed Seamless Acoustic Panel Integration" },
+      { src: foRackRoom, label: "Family Oasis Theater Great Falls VA — AV Equipment Rack Visible Through Hidden Closet Door" },
+      { src: foRackAV, label: "Family Oasis Theater Great Falls VA — Full AV Rack Torus Power Conditioner JL Audio AudioControl Amplifiers" },
+      { src: foLightingKeypad, label: "Family Oasis Theater Great Falls VA — Lutron Lighting Keypad Smart Thermostat Automated Control System" },
+      { src: foControl4Tablet, label: "Family Oasis Theater Great Falls VA — Control4 Touchscreen Tablet AV Control System Granite Counter" },
+      { src: foControl4Remote, label: "Family Oasis Theater Great Falls VA — Control4 Touchscreen and Universal Remote Smart Home Automation" },
     ],
   },
   {
