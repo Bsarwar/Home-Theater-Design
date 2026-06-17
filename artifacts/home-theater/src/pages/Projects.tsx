@@ -4,7 +4,6 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/LMp4_1780573575270.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
-import portfolioImg3 from "@assets/ScreenPF_1781704704383.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -75,21 +74,6 @@ const projects: Project[] = [
       { src: portfolioImg2, label: "Screen & Stage" },
       { gradient: "from-slate-900 via-zinc-800 to-gray-900", label: "Acoustic Panels" },
       { gradient: "from-zinc-800 via-slate-900 to-gray-900", label: "Seating Detail" },
-    ],
-  },
-  {
-    title: "Star Ceiling Theater",
-    type: "Star Ceiling",
-    location: "Northern Virginia",
-    year: "2023",
-    size: "8-Seat Dedicated Theater — Star Panel Ceiling & LED Cove Lighting",
-    gradient: "from-indigo-950 via-slate-900 to-gray-900",
-    featured: true,
-    image: portfolioImg3,
-    gallery: [
-      { src: portfolioImg3, label: "Full Room View" },
-      { src: portfolioImg3, label: "Star Ceiling Detail" },
-      { src: portfolioImg3, label: "Screen Wall" },
     ],
   },
   {
