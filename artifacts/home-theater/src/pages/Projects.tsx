@@ -258,6 +258,20 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "The Cavalier Theater",
+    type: "Dedicated Theaters",
+    location: "Aldie, VA",
+    year: "2019",
+    size: "CE Pro Best Project Award — Bronze Winner",
+    gradient: "from-stone-900 via-neutral-800 to-stone-900",
+    featured: false,
+    gallery: [
+      { gradient: "from-stone-900 via-neutral-800 to-stone-900", label: "Main Theater View" },
+      { gradient: "from-neutral-900 via-stone-800 to-neutral-900", label: "Screen Wall" },
+      { gradient: "from-stone-900 via-neutral-900 to-stone-900", label: "Seating" },
+    ],
+  },
+  {
     title: "Family Oasis Theater",
     type: "Dedicated Theaters",
     location: "Great Falls, VA",
