@@ -192,6 +192,24 @@ import lfScreen3Pur from "@assets/screen3pur_1781724174884.jpg";
 import lfScreen10 from "@assets/screen10_1781724174884.jpg";
 import lfScreen10P from "@assets/screen10P_1781724174884.jpg";
 import rcCover from "@assets/MR_1781724538133.jpg";
+import rcHallway from "@assets/hallway1_1781724717019.jpg";
+import rcHighL from "@assets/High_L_1781724717019.jpg";
+import rcLightPic from "@assets/Light_pic_1781724717019.jpg";
+import rcML2 from "@assets/ML2_1781724717019.jpg";
+import rcMM from "@assets/MM_1781724717019.jpg";
+import rcMR2 from "@assets/MR_1781724717020.jpg";
+import rcTile from "@assets/tile_1781724717020.jpg";
+import rcBar from "@assets/Bar_1781724717020.jpg";
+import rcBL from "@assets/BL_1781724717020.jpg";
+import rcBR from "@assets/BR_1781724717020.jpg";
+import rcCouch2 from "@assets/Counch_2_1781724717021.jpg";
+import rcCouch from "@assets/Counch_1781724717021.jpg";
+import rcDoor from "@assets/Door_1781724717021.jpg";
+import rcDSC0883 from "@assets/DSC_0883_1781724717021.jpg";
+import rcDSC0894 from "@assets/DSC_0894_1781724717021.jpg";
+import rcFL from "@assets/FL_1781724717021.jpg";
+import rcFm2 from "@assets/Fm2_1781724717022.jpg";
+import rcFR from "@assets/FR_1781724717022.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
 import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
@@ -656,6 +674,24 @@ const projects: Project[] = [
     image: rcCover,
     gallery: [
       { src: rcCover, label: "Rustic Colors Home Theater Fairfax Station VA — Star Ceiling Tan Leather Recliners 300 Film Playing Warm Wood Trim Wall Sconces" },
+      { src: rcFm2, label: "Rustic Colors Home Theater Fairfax Station VA — Symmetric Full Room View Leather Sofa Recliners Star Ceiling Dual Wall Sconces" },
+      { src: rcFL, label: "Rustic Colors Home Theater Fairfax Station VA — Wide Room View Leather Sofa Front Row Recliners Star Ceiling Blue LED Accent" },
+      { src: rcHighL, label: "Rustic Colors Home Theater Fairfax Station VA — Screen Playing Everest Film Tan Leather Sofa Star Ceiling Blue LED Acoustic Panels" },
+      { src: rcMM, label: "Rustic Colors Home Theater Fairfax Station VA — Screen Playing Mad Max Furiosa Leather Sofa Star Ceiling Acoustic Panels" },
+      { src: rcMR2, label: "Rustic Colors Home Theater Fairfax Station VA — Screen Playing 300 Film Leather Sofa Star Ceiling Blue LED Wall Sconces" },
+      { src: rcML2, label: "Rustic Colors Home Theater Fairfax Station VA — Blank Screen Wide View Tan Leather Seating Star Ceiling Blue LED Acoustic Panels" },
+      { src: rcFR, label: "Rustic Colors Home Theater Fairfax Station VA — Rear Right Wide View Leather Sofa Recliners Star Ceiling Blue LED Step Lighting" },
+      { src: rcCouch, label: "Rustic Colors Home Theater Fairfax Station VA — Front Leather Sofa Rear View Back Row Recliners Star Ceiling Blue LED" },
+      { src: rcCouch2, label: "Rustic Colors Home Theater Fairfax Station VA — Back Row Tan Leather Recliners Wall Sconce Star Ceiling Projector Visible" },
+      { src: rcBL, label: "Rustic Colors Home Theater Fairfax Station VA — Granite Bar Ledge Tufted Leather Bar Stools Screen Background Star Ceiling Blue LED" },
+      { src: rcBR, label: "Rustic Colors Home Theater Fairfax Station VA — Bar Ledge Right Angle Tufted Tan Leather Stools Granite Countertop Star Ceiling" },
+      { src: rcTile, label: "Rustic Colors Home Theater Fairfax Station VA — Rear Bar Seating Granite Ledge Leather Stools Projector Star Ceiling Blue LED" },
+      { src: rcDSC0883, label: "Rustic Colors Home Theater Fairfax Station VA — Bar Seating Area Tufted Leather Stools Granite Bar Acoustic Panels Side Wall" },
+      { src: rcBar, label: "Rustic Colors Home Theater Fairfax Station VA — Adjacent Bar Area Backlit Liquor Cabinet Wood Bar Stools Wall TV Theater Entry Doors" },
+      { src: rcHallway, label: "Rustic Colors Home Theater Fairfax Station VA — Side Aisle View Leather Recliners Ottoman Blue LED Step Lighting Star Ceiling Wall Sconce" },
+      { src: rcLightPic, label: "Rustic Colors Home Theater Fairfax Station VA — Wall Sconce Detail Warm Amber Light Fabric Acoustic Panels Wood Trim Molding" },
+      { src: rcDoor, label: "Rustic Colors Home Theater Fairfax Station VA — Entry Double Doors Wood Acoustic Panels Wainscoting Keypad Control Panel" },
+      { src: rcDSC0894, label: "Rustic Colors Home Theater Fairfax Station VA — Step Lighting Detail Blue LED Stair Lights Patterned Diamond Carpet" },
     ],
   },
   {
