@@ -26,6 +26,27 @@ import brSeatingOverview from "@assets/SeatingP2_1781706241334.jpg";
 import brSeatingFront from "@assets/seatsf3_1781706241335.jpg";
 import brTileDetail from "@assets/tile-detail_1781706241336.jpg";
 import brTileLeftDetail from "@assets/tileleft2_1781706241336.jpg";
+// The Nautilus Theater — Warrenton, Virginia (2024 CE Pro Gold)
+import ntMainRoom from "@assets/10k_Theater_1_1780573606798.png";
+import ntScreenAV from "@assets/screen_AV_1780573562709.jpg";
+import ntScreenFront from "@assets/screen--frontPO_1780795877779.jpg";
+import ntScreenMidLeft from "@assets/screen-midlftPO_1780795264703.jpg";
+import ntScreenMidRight from "@assets/Screenmidrt3P_1781173087335.jpg";
+import ntScreenLeft2 from "@assets/LFTscreen2_1781175559387.jpg";
+import ntScreenLeftPlaying from "@assets/ScreenLFTp.2jpg_1781108324880.jpg";
+import ntScreenRightPlaying from "@assets/screenRTFBp_1780715372518.jpg";
+import ntScreen1 from "@assets/screen1_1781642188062.jpg";
+import ntFullRoom1 from "@assets/FTheater_1780950606414.jpg";
+import ntFullRoom2 from "@assets/FTheater_1781652183272.jpg";
+import ntSeatingDsc from "@assets/DSC_1804_1780715585519.jpg";
+import ntBackRow from "@assets/BR_1781626855491.jpg";
+import ntML2 from "@assets/ML2_1781625828357.jpg";
+import ntColumn from "@assets/columnP2_1780798832889.jpg";
+import ntStarPanel from "@assets/Star-panel2_1780807436595.jpg";
+import ntDsc0300 from "@assets/DSC_0300_1780801418760.jpg";
+import ntDsc1332 from "@assets/DSC_1332_1780807701498.jpg";
+import ntSlider from "@assets/slider_image_1780807099099.jpg";
+import ntOutdoor from "@assets/OUTV1_1780797904564.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -102,19 +123,36 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Award-Winning Theater — CE Pro 2024",
+    title: "The Nautilus Theater",
     type: "Dedicated Theaters",
-    location: "Northern Virginia",
+    tags: ["Dedicated Theaters", "Themed Theaters", "Star Ceiling"],
+    location: "Warrenton, VA",
     year: "2024",
-    size: "CE Pro Home of the Year — Best Home Theater",
+    size: "CE Pro Home of the Year — Gold Winner",
     gradient: "from-slate-900 via-zinc-800 to-gray-900",
     featured: true,
-    image: portfolioImg2,
+    image: ntMainRoom,
     gallery: [
-      { src: portfolioImg2, label: "Full Room View" },
-      { src: portfolioImg2, label: "Screen & Stage" },
-      { gradient: "from-slate-900 via-zinc-800 to-gray-900", label: "Acoustic Panels" },
-      { gradient: "from-zinc-800 via-slate-900 to-gray-900", label: "Seating Detail" },
+      { src: ntMainRoom, label: "Nautilus Theater Warrenton Virginia — Full Room Overview" },
+      { src: ntScreenFront, label: "Nautilus Theater Warrenton Virginia — Screen Wall Front View" },
+      { src: ntScreenMidLeft, label: "Nautilus Theater Warrenton Virginia — Screen Wall Mid Left View" },
+      { src: ntScreenMidRight, label: "Nautilus Theater Warrenton Virginia — Screen Wall Mid Right View" },
+      { src: ntScreenLeft2, label: "Nautilus Theater Warrenton Virginia — Left View Screen Wall" },
+      { src: ntScreenLeftPlaying, label: "Nautilus Theater Warrenton Virginia — Screen Playing Film" },
+      { src: ntScreenRightPlaying, label: "Nautilus Theater Warrenton Virginia — Right Angle Screen Playing" },
+      { src: ntScreenAV, label: "Nautilus Theater Warrenton Virginia — Screen and AV System" },
+      { src: ntScreen1, label: "Nautilus Theater Warrenton Virginia — Screen Wall Detail" },
+      { src: ntFullRoom1, label: "Nautilus Theater Warrenton Virginia — Theater Seating Overview" },
+      { src: ntFullRoom2, label: "Nautilus Theater Warrenton Virginia — Tiered Seating Full View" },
+      { src: ntSeatingDsc, label: "Nautilus Theater Warrenton Virginia — Luxury Seating Row Detail" },
+      { src: ntBackRow, label: "Nautilus Theater Warrenton Virginia — Back Row Seating" },
+      { src: ntML2, label: "Nautilus Theater Warrenton Virginia — Seating Side View" },
+      { src: ntColumn, label: "Nautilus Theater Warrenton Virginia — Custom Column and Millwork" },
+      { src: ntStarPanel, label: "Nautilus Theater Warrenton Virginia — Star Ceiling Panel Detail" },
+      { src: ntDsc0300, label: "Nautilus Theater Warrenton Virginia — Room Interior View" },
+      { src: ntDsc1332, label: "Nautilus Theater Warrenton Virginia — Interior Detail" },
+      { src: ntSlider, label: "Nautilus Theater Warrenton Virginia — Side Wall Detail" },
+      { src: ntOutdoor, label: "Nautilus Theater Warrenton Virginia — Outdoor Theater View" },
     ],
   },
   {
