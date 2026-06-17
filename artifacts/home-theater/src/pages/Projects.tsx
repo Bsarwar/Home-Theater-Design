@@ -992,7 +992,6 @@ export default function Projects() {
                         <div className="absolute inset-0 flex items-center justify-center opacity-20">
                           <div className="w-24 h-24 border border-[hsl(38_75%_52%)] rounded-full" />
                         </div>
-                        <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_7%)] via-transparent to-transparent opacity-60" />
                       </>
                     )}
                     {project.featured && (
