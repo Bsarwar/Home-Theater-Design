@@ -110,6 +110,23 @@ import brSeatingOverview from "@assets/SeatingP2_1781706241334.jpg";
 import brSeatingFront from "@assets/seatsf3_1781706241335.jpg";
 import brTileDetail from "@assets/tile-detail_1781706241336.jpg";
 import brTileLeftDetail from "@assets/tileleft2_1781706241336.jpg";
+// The Cavalier Theater — Aldie, Virginia (2019 CE Pro Bronze)
+import cvSeatingFront from "@assets/DSC_1290_1781717628775.jpg";
+import cvSeatingRearBar from "@assets/DSC_1296_1781717612505.jpg";
+import cvSeatingRearLeft from "@assets/DSC_1311_1781717628775.jpg";
+import cvSeatingRearRight from "@assets/DSC_1314_1781717628775.jpg";
+import cvSideViewDoor from "@assets/DSC_1328_1781717612506.jpg";
+import cvBarnDoorInside from "@assets/DSC_1333_1781717655474.jpg";
+import cvBarnDoorPurple from "@assets/DSC_1334_1781717628775.jpg";
+import cvWideRearBar from "@assets/DSC_1337_1781717612506.jpg";
+import cvBarnDoorExterior from "@assets/DSC_1341_1781717655475.jpg";
+import cvBarnDoorThrough from "@assets/DSC_1344_1781717655475.jpg";
+import cvBarnDoorOpen from "@assets/DSC_1347_1781717655475.jpg";
+import cvSeatingPurpleSide from "@assets/DSC_1350_1781717628776.jpg";
+import cvAcousticPanelDetail from "@assets/DSC_1362_1781717612506.jpg";
+import cvScreenUVA from "@assets/front_1781717612506.jpg";
+import cvScreenFootball from "@assets/screen1_1781717612507.jpg";
+import cvScreenIronMan from "@assets/screen-2_1781717612507.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -265,10 +282,24 @@ const projects: Project[] = [
     size: "CE Pro Best Project Award — Bronze Winner",
     gradient: "from-stone-900 via-neutral-800 to-stone-900",
     featured: false,
+    image: cvSeatingFront,
     gallery: [
-      { gradient: "from-stone-900 via-neutral-800 to-stone-900", label: "Main Theater View" },
-      { gradient: "from-neutral-900 via-stone-800 to-neutral-900", label: "Screen Wall" },
-      { gradient: "from-stone-900 via-neutral-900 to-stone-900", label: "Seating" },
+      { src: cvSeatingFront, label: "Cavalier Theater Aldie VA — Full Seating View Two Rows Leather Recliners Rustic Beam Ceiling Blue LED Step Lighting" },
+      { src: cvScreenUVA, label: "Cavalier Theater Aldie VA — Screen Wall Playing UVA National Champions Basketball Acoustic Panels Wood Frame" },
+      { src: cvScreenFootball, label: "Cavalier Theater Aldie VA — Wide Rear Bar View Screen Playing UVA Football Rustic Wood Beam Ceiling Full Seating" },
+      { src: cvScreenIronMan, label: "Cavalier Theater Aldie VA — Left Side Angle Screen Playing Iron Man Avengers Acoustic Treatment Wood Frame" },
+      { src: cvWideRearBar, label: "Cavalier Theater Aldie VA — Rear Bar Counter View Full Room Barn Door Entry Blue Accent LED Beam Ceiling" },
+      { src: cvSeatingRearBar, label: "Cavalier Theater Aldie VA — Rear Bar Counter Leather Recliners Screen Wall Acoustic Panels Rustic Millwork" },
+      { src: cvSeatingRearLeft, label: "Cavalier Theater Aldie VA — Rear Left View Barn Door Entry Tiered Seating Rustic Beam Ceiling Blue LED" },
+      { src: cvSeatingRearRight, label: "Cavalier Theater Aldie VA — Rear Right View Tiered Leather Seating Acoustic Side Walls Beam Ceiling Projector" },
+      { src: cvSideViewDoor, label: "Cavalier Theater Aldie VA — Left Side View Screen Barn Door Entry Leather Recliners Sconce Lighting Blue Accent" },
+      { src: cvBarnDoorPurple, label: "Cavalier Theater Aldie VA — Barn Door Entry Purple LED Step Lighting Custom Millwork Tiered Seating" },
+      { src: cvBarnDoorInside, label: "Cavalier Theater Aldie VA — Interior Barn Door Purple LED Aisle Steps Side Niche Sconce Custom Woodwork" },
+      { src: cvSeatingPurpleSide, label: "Cavalier Theater Aldie VA — Side Angle Seating Purple LED Under-Row Lighting Rustic Walnut Post Beam Detail" },
+      { src: cvAcousticPanelDetail, label: "Cavalier Theater Aldie VA — Acoustic Panel Wood Frame Detail Screen Edge Blue LED Accent Barn Door" },
+      { src: cvBarnDoorExterior, label: "Cavalier Theater Aldie VA — Rustic Sliding Barn Door Entry Blue Accent Wall Wainscoting Hardwood Floor" },
+      { src: cvBarnDoorThrough, label: "Cavalier Theater Aldie VA — Through Barn Door Handle Detail Screen Wall Visible Acoustic Panels Custom Entry" },
+      { src: cvBarnDoorOpen, label: "Cavalier Theater Aldie VA — Open Barn Door From Game Room Foosball Table Purple LED Theater Visible" },
     ],
   },
   {
