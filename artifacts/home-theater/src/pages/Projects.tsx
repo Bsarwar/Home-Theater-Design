@@ -246,7 +246,7 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
       onClick={onClose}
     >
       <div
-        className="relative w-[90vw] max-w-6xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col h-[85vh]"
+        className="relative w-[96vw] max-w-7xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col h-[94vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -415,7 +415,7 @@ export default function Projects() {
                   onClick={() => setOpenProject(project)}
                   className="group border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.4)] transition-all duration-300 cursor-pointer"
                 >
-                  <div className={`h-52 relative overflow-hidden ${!project.image ? `bg-gradient-to-br ${project.gradient}` : ""}`}>
+                  <div className={`h-72 relative overflow-hidden ${!project.image ? `bg-gradient-to-br ${project.gradient}` : ""}`}>
                     {project.image ? (
                       <>
                         <img
