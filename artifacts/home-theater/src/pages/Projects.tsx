@@ -246,7 +246,7 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col max-h-[90vh]"
+        className="relative w-[90vw] max-w-6xl bg-[hsl(220_15%_7%)] border border-[hsl(220_15%_16%)] flex flex-col h-[85vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -283,7 +283,7 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
             {project.gallery.map((item, i) => (
               <div key={i} className="h-full flex-shrink-0" style={{ width: `${100 / project.gallery.length}%` }}>
                 {"src" in item ? (
-                  <img src={item.src} alt={item.label} className="w-full h-full object-cover" />
+                  <img src={item.src} alt={item.label} className="w-full h-full object-contain" />
                 ) : (
                   <div className={`w-full h-full bg-gradient-to-br ${item.gradient} flex items-center justify-center`}>
                     <div className="text-center opacity-30">
