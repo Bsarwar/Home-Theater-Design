@@ -158,6 +158,23 @@ import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
 import ngCover from "@assets/screen--frontPO_1781721515887.jpg";
 import lfCover from "@assets/screen25P_1781723544474.jpg";
+import lfScreen13 from "@assets/screen13_1781724152796.jpg";
+import lfScreen15 from "@assets/screen15_1781724152796.jpg";
+import lfScreen17 from "@assets/screen17_1781724152796.jpg";
+import lfScreen17B from "@assets/screen17B_1781724152796.jpg";
+import lfScreen21 from "@assets/screen21_1781724152797.jpg";
+import lfScreen22 from "@assets/screen22_1781724152797.jpg";
+import lfScreen22P from "@assets/screen22P_1781724152797.jpg";
+import lfScreen25 from "@assets/screen25_1781724152797.jpg";
+import lfScreen25P from "@assets/screen25P_1781724152798.jpg";
+import lfScreen27 from "@assets/screen27_1781724152798.jpg";
+import lfScreenP1 from "@assets/ScreenP1_1781724152798.jpg";
+import lfSeating1B2 from "@assets/Seating1B_(2)_1781724152798.jpg";
+import lfSeating1B3 from "@assets/seating1B_(3)_1781724152799.jpg";
+import lfSeating1G from "@assets/seating1g_1781724152799.jpg";
+import lfSeating2 from "@assets/Seating2_1781724152799.jpg";
+import lfSeatingP5 from "@assets/SeatingP5_1781724152799.jpg";
+import lfSeatingP6 from "@assets/seatingP6_1781724152800.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
 import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
@@ -319,7 +336,24 @@ const projects: Project[] = [
     featured: false,
     image: lfCover,
     gallery: [
-      { src: lfCover, label: "Luminous Fusion Home Theater Aldie VA — Indirect Linear LED Columns Blue Cove Ceiling Mountain Climber Film Leather Seats Tiered" },
+      { src: lfCover,      label: "Luminous Fusion Home Theater Aldie VA — Blue Cove Ceiling Tiered Seating Mountain Climber Film Screen Linear LED Column Uplighting" },
+      { src: lfScreen25P,  label: "Luminous Fusion Home Theater Aldie VA — Blue LED Cove Ceiling Tiered Leather Recliners Mountain Climber 4K Projection Wide Angle" },
+      { src: lfScreen25,   label: "Luminous Fusion Home Theater Aldie VA — Full Seating View Blue Cove LED Tiered Rows Leather Recliners Blank Screen Ready" },
+      { src: lfScreen13,   label: "Luminous Fusion Home Theater Aldie VA — Front Symmetric View Purple Blue LED Cove Blank Projection Screen Acoustic Panels" },
+      { src: lfScreen15,   label: "Luminous Fusion Home Theater Aldie VA — Side Angle Blue LED Cove Ceiling Projection Screen Right Wall Acoustic Panel Columns" },
+      { src: lfScreen17,   label: "Luminous Fusion Home Theater Aldie VA — Side Angle Purple LED Cove Ceiling Projection Screen Column Uplighting Acoustic Wall Panels" },
+      { src: lfScreen17B,  label: "Luminous Fusion Home Theater Aldie VA — Purple LED Cove Cinematic Moment Blade Runner 2049 Playing Screen Column Uplighting" },
+      { src: lfScreen21,   label: "Luminous Fusion Home Theater Aldie VA — Front View Blue Cyan LED Cove Three Leather Recliners Projection Screen Interior Door Control Panel" },
+      { src: lfScreen27,   label: "Luminous Fusion Home Theater Aldie VA — Left Angle Blue LED Cove Blank Screen Column Uplighting Leather Seating Interior Door" },
+      { src: lfScreenP1,   label: "Luminous Fusion Home Theater Aldie VA — Rear Left Angle Purple LED Cove Seating Rows Projection Screen Acoustic Column Panels" },
+      { src: lfSeating1B2, label: "Luminous Fusion Home Theater Aldie VA — Rear View Purple LED Tiered Seating Two Rows Leather Recliners Acoustic Wall Panels Bar Shelf" },
+      { src: lfSeating1B3, label: "Luminous Fusion Home Theater Aldie VA — Rear View Blue Teal LED Tiered Seating Two Rows Leather Recliners Projector Ceiling Mount" },
+      { src: lfSeating2,   label: "Luminous Fusion Home Theater Aldie VA — Rear View Blue LED Tiered Seating Rows Leather Recliners Acoustic Panels Bar Area Side View" },
+      { src: lfSeatingP5,  label: "Luminous Fusion Home Theater Aldie VA — Purple LED Side View Leather Recliners Tiered Rows Accent Fuzzy Chair Saucer Seat" },
+      { src: lfSeatingP6,  label: "Luminous Fusion Home Theater Aldie VA — Purple LED Seating Area Leather Recliners Accent Saucer Chair Bar Niche Acoustic Column Panels" },
+      { src: lfSeating1G,  label: "Luminous Fusion Home Theater Aldie VA — Green LED Color Mood Tiered Seating Two Rows Leather Recliners Acoustic Wall Column Panels" },
+      { src: lfScreen22,   label: "Luminous Fusion Home Theater Aldie VA — Black and White Classic View Leather Recliners Projection Screen Linear LED Column Uplighting" },
+      { src: lfScreen22P,  label: "Luminous Fusion Home Theater Aldie VA — Black and White Motorcycle Film Playing Screen Leather Recliners Linear LED Columns" },
     ],
   },
   {
