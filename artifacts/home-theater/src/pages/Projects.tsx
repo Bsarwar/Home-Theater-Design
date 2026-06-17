@@ -41,7 +41,7 @@ type Project = {
   gallery: GalleryItem[];
 };
 
-const filters = ["All", "Dedicated Theaters", "Media Room", "TV Walls", "Themed Theaters", "Commercial", "Star Panel Ceiling", "Design Elements"];
+const filters = ["All", "Dedicated Theaters", "Media Room", "TV Walls", "Themed Theaters", "Commercial", "Star Ceiling", "Design Elements"];
 
 const projects: Project[] = [
   {
