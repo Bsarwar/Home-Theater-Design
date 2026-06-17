@@ -156,6 +156,20 @@ import gtRightFrontBlue from "@assets/RF_1781720165750.jpg";
 import gtSconceDetail from "@assets/sconce2_1781720165750.jpg";
 import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
+import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
+import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
+import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
+import gtDoorEntry from "@assets/Door-1_1781720321602.jpg";
+import gtSconceClose from "@assets/DSC_2327_10_10_1781720321602.jpg";
+import gtSeatsSconces from "@assets/DSC_2332_12_12_1781720321603.jpg";
+import gtAvRackClose from "@assets/DSC_2367_22_23_1781720321603.jpg";
+import gtSconceWall from "@assets/DSC_2386_28_28_1781720321603.jpg";
+import gtSconceScreen from "@assets/DSC_2418_40_40_1781720321603.jpg";
+import gtCandyDetail from "@assets/DSC_2419_41_41_1781720321603.jpg";
+import gtStarPanelFront from "@assets/Starpanel_1781720321604.jpg";
+import gtStarCeilingUp from "@assets/Star-panel2_1781720321604.jpg";
+import gtStarPanelSeats from "@assets/Star-pannel_1781720321604.jpg";
+import gtStepLighting from "@assets/Steps_1781720321604.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -436,6 +450,20 @@ const projects: Project[] = [
       { src: gtRightFrontBw,        label: "Golden Touch Home Theater McLean VA — Black White Right Angle Crystal Sconces Leather Seats Star Ceiling Marble Counter" },
       { src: gtLeftRearBw,          label: "Golden Touch Home Theater McLean VA — Black White Left Rear View Multiple Seat Rows Star Ceiling Door Back Wall Acoustic Panels" },
       { src: gtSeatingBwRear,       label: "Golden Touch Home Theater McLean VA — Black White Rear View Two Rows Leather Seats Star Ceiling Projector Crystal Sconce Wainscoting" },
+      { src: gtStarCeilingUp,       label: "Golden Touch Home Theater McLean VA — Fiber Optic Star Ceiling Close-Up Blue LED Cove Shooting Stars Projector Constellation Pattern" },
+      { src: gtStarPanelFront,      label: "Golden Touch Home Theater McLean VA — Star Ceiling Overhead Rear View Blue LED Cove Projector Crystal Sconce Gold Trim Leather Seats" },
+      { src: gtStarPanelSeats,      label: "Golden Touch Home Theater McLean VA — Star Ceiling Rear Perspective Blue LED Leather Seats Gold Trim Crystal Sconce Projector" },
+      { src: gtBarControl4,         label: "Golden Touch Home Theater McLean VA — Marble Bar Close-Up Control4 Touchscreen Remote Crystal Sconces Gold Trim Acoustic Panels" },
+      { src: gtBarStools,           label: "Golden Touch Home Theater McLean VA — Marble Bar With Velvet Barstools Blue LED Star Ceiling Crystal Sconces Gold Trim" },
+      { src: gtBarLength,           label: "Golden Touch Home Theater McLean VA — Marble Counter Bar Full Length Perspective Velvet Stools Crystal Sconces Blue LED Star Ceiling" },
+      { src: gtCandyDetail,         label: "Golden Touch Home Theater McLean VA — Candy Cabinet Detail Harry Potter Poster Gold Pulls Dots Mini Duds Whoppers Sour Patch" },
+      { src: gtAvRackClose,         label: "Golden Touch Home Theater McLean VA — AV Equipment Rack Close-Up JL Audio Torus Power Amplifiers Candy Cabinet Gold Trim" },
+      { src: gtSeatsSconces,        label: "Golden Touch Home Theater McLean VA — Side Rear View Leather Seats Crystal Sconces Blue LED Star Ceiling Marble Bar Gold Trim" },
+      { src: gtSconceClose,         label: "Golden Touch Home Theater McLean VA — Crystal Wall Sconce Close-Up Gold Trim Acoustic Panels Blue LED Star Ceiling Edge" },
+      { src: gtSconceWall,          label: "Golden Touch Home Theater McLean VA — Dual Crystal Sconces Side Wall Gold Trim Acoustic Panels Blue LED Ceiling Edge" },
+      { src: gtSconceScreen,        label: "Golden Touch Home Theater McLean VA — Crystal Sconce By Screen Gold Trim Corner Acoustic Panel Blue LED Ceiling" },
+      { src: gtDoorEntry,           label: "Golden Touch Home Theater McLean VA — Custom Acoustic Double Door Gold Trim Blue LED Step Lighting Lutron Keypad" },
+      { src: gtStepLighting,        label: "Golden Touch Home Theater McLean VA — Tiered Step Detail Blue LED Under-Step Lighting Carpeted Riser Gold Trim Door" },
     ],
   },
   {
