@@ -191,6 +191,7 @@ import lfScreen3Blue from "@assets/screen3blue_1781724174883.jpg";
 import lfScreen3Pur from "@assets/screen3pur_1781724174884.jpg";
 import lfScreen10 from "@assets/screen10_1781724174884.jpg";
 import lfScreen10P from "@assets/screen10P_1781724174884.jpg";
+import rcCover from "@assets/MR_1781724538133.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
 import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
@@ -652,8 +653,9 @@ const projects: Project[] = [
     credit: "Custom Works — AV Design & Install",
     gradient: "from-amber-950 via-stone-900 to-orange-950",
     featured: false,
+    image: rcCover,
     gallery: [
-      { gradient: "from-amber-950 via-stone-900 to-orange-950", label: "Rustic Colors Home Theater Fairfax Station VA — Main Theater View Warm Tones Custom Design" },
+      { src: rcCover, label: "Rustic Colors Home Theater Fairfax Station VA — Star Ceiling Tan Leather Recliners 300 Film Playing Warm Wood Trim Wall Sconces" },
     ],
   },
   {
