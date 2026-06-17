@@ -156,6 +156,7 @@ import gtRightFrontBlue from "@assets/RF_1781720165750.jpg";
 import gtSconceDetail from "@assets/sconce2_1781720165750.jpg";
 import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
+import ngCover from "@assets/ScreenFB5_1781721422957.jpg";
 import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
 import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
 import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
@@ -221,8 +222,9 @@ const projects: Project[] = [
     credit: "Custom Works — AV Design & Install",
     gradient: "from-indigo-950 via-slate-900 to-indigo-950",
     featured: false,
+    image: ngCover,
     gallery: [
-      { gradient: "from-indigo-950 via-slate-900 to-indigo-950", label: "The Next Galaxy Theater Aldie VA — Full Room View" },
+      { src: ngCover, label: "The Next Galaxy Theater Aldie VA — Blue LED Cove Lighting Fiber Optic Star Ceiling Marble Bar Screen Velvet Curtains Leather Seats" },
     ],
   },
   {
