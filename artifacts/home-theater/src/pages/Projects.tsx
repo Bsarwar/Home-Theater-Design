@@ -198,18 +198,6 @@ import ngGym2 from "@assets/gym2_1781722873073.jpg";
 import ngGym3 from "@assets/gym3_1781722873073.jpg";
 import ngGym4 from "@assets/gym4_1781722873074.jpg";
 import ngSaunaDetail from "@assets/DSC00044_77_1781722873073.jpg";
-import ngAvRack2 from "@assets/av-rack_1781723794827.jpg";
-import ngBar2 from "@assets/bar2_1781723794827.jpg";
-import ngBar4 from "@assets/bar4_1781723794827.jpg";
-import ngBar5 from "@assets/bar5_1781723794827.jpg";
-import ngColumn2 from "@assets/column2_1781723794828.jpg";
-import ngColumn4 from "@assets/column4_1781723794828.jpg";
-import ngColumnP1 from "@assets/columnP1_1781723794828.jpg";
-import ngColumnP2 from "@assets/columnP2_1781723794828.jpg";
-import ngColumnsB1 from "@assets/columnsB1_1781723794829.jpg";
-import ngDoor1 from "@assets/door1_1781723794829.jpg";
-import ngDoorP1 from "@assets/doorP1_1781723794829.jpg";
-import ngProjector1 from "@assets/projector1_1781723794829.jpg";
 import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
 import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
 import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
@@ -318,18 +306,6 @@ const projects: Project[] = [
       { src: ngGym3,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Built-In Cabinets Cedar Wood Slat Wall Home Wellness Room" },
       { src: ngGym4,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Close-Up Glass Door Cedar Interior Wood Panel Accent Wall" },
       { src: ngSaunaDetail,    label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Entry Detail Warm Cedar Wood Slat Panels Track Lighting Wellness Suite" },
-      { src: ngAvRack2,        label: "Willowsford Modern Theater Aldie VA — AV Rack Cabinet Open Blue LED Collectibles Display Marble Counter Bar Area" },
-      { src: ngBar2,           label: "Willowsford Modern Theater Aldie VA — Bar Area Whiskey Barrel Serving Station Blue LED Column Uplighting Charcoal Cabinetry" },
-      { src: ngBar4,           label: "Willowsford Modern Theater Aldie VA — Full Bar Counter Width Collectibles Display Cabinet Marble Top Whiskey Barrel Blue Cove" },
-      { src: ngBar5,           label: "Willowsford Modern Theater Aldie VA — Bar Counter Leather Seating View Blue LED Column Uplighting Tiered Step Risers" },
-      { src: ngColumn2,        label: "Willowsford Modern Theater Aldie VA — Right Side Wall Blue LED Column Uplighting Acoustic Panels Leather Recliners Tiered Seating" },
-      { src: ngColumn4,        label: "Willowsford Modern Theater Aldie VA — Side Wall Entry Door Blue LED Column Uplighting Acoustic Panels Leather Recliner Rows" },
-      { src: ngColumnP1,       label: "Willowsford Modern Theater Aldie VA — Side Wall Entry Door Purple LED Column Uplighting Leather Seats Tiered Risers Cove Lighting" },
-      { src: ngColumnP2,       label: "Willowsford Modern Theater Aldie VA — Right Acoustic Wall Purple LED Column Uplighting Leather Seating Rows Tiered Riser Cove" },
-      { src: ngColumnsB1,      label: "Willowsford Modern Theater Aldie VA — Right Wall Blue Teal LED Column Uplighting Acoustic Panels Leather Seating Rear View Cove" },
-      { src: ngDoor1,          label: "Willowsford Modern Theater Aldie VA — Entry Door Close-Up Blue LED Column Strip Step Lighting Acoustic Wall Panels Carpet" },
-      { src: ngDoorP1,         label: "Willowsford Modern Theater Aldie VA — Open Entry Door View Into Purple LED Theater Acoustic Panels Projection Screen Carpet" },
-      { src: ngProjector1,     label: "Willowsford Modern Theater Aldie VA — Projector Housing Ceiling View Purple LED Cove Recessed Lighting Bar Whiskey Barrel Below" },
     ],
   },
   {
