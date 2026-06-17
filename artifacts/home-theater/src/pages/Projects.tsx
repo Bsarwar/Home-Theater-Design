@@ -181,6 +181,22 @@ import ngScreen7PO from "@assets/screen7PO_1781722645018.jpg";
 import ngScreenFB2 from "@assets/ScreenFB2_1781722645019.jpg";
 import ngScreenFB2B from "@assets/ScreenFB2B_1781722645019.jpg";
 import ngScreenFB3 from "@assets/ScreenFB3_1781722645019.jpg";
+import ngBackwall from "@assets/backwall_1781722873072.jpg";
+import ngBackWall from "@assets/back-wall_1781722873072.jpg";
+import ngCounter2 from "@assets/counter2_1781722873072.jpg";
+import ngCounter4 from "@assets/counter4_1781722873072.jpg";
+import ngLFTwall2 from "@assets/LFTwall2_1781722873074.jpg";
+import ngLFTwall3 from "@assets/LFTwall3_1781722873074.jpg";
+import ngProjector from "@assets/projector_1781722873075.jpg";
+import ngProjector2 from "@assets/projector2_1781722873075.jpg";
+import ngProjectorBlk from "@assets/projector-blk_1781722873075.jpg";
+import ngRack from "@assets/rack_1781722873075.jpg";
+import ngRack3 from "@assets/rack3_1781722873076.jpg";
+import ngGym1 from "@assets/gym1_1781722873073.jpg";
+import ngGym2 from "@assets/gym2_1781722873073.jpg";
+import ngGym3 from "@assets/gym3_1781722873073.jpg";
+import ngGym4 from "@assets/gym4_1781722873074.jpg";
+import ngSaunaDetail from "@assets/DSC00044_77_1781722873073.jpg";
 import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
 import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
 import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
@@ -273,6 +289,22 @@ const projects: Project[] = [
       { src: ngScreenFB2,      label: "Willowsford Modern Theater Aldie VA — Marble Bar Foreground Screen Background Blue LED Cove Star Ceiling Remote Control" },
       { src: ngScreenFB3,      label: "Willowsford Modern Theater Aldie VA — Marble Bar Foreground Velvet Curtain Screen Wall Purple Blue LED Cove Star Ceiling" },
       { src: ngScreenFB2B,     label: "Willowsford Modern Theater Aldie VA — Marble Bar Monochrome View Screen Star Ceiling Acoustic Panels Elegant Design" },
+      { src: ngProjector,      label: "Willowsford Modern Theater Aldie VA — Projector Housing Above Bar LED Soundwave Pattern Slatted Wood Blue LED Strips" },
+      { src: ngProjector2,     label: "Willowsford Modern Theater Aldie VA — Projector Wall Wide View Back Row Seats Marble Bar LED Soundwave Star Ceiling" },
+      { src: ngProjectorBlk,   label: "Willowsford Modern Theater Aldie VA — Projector Bar Entry Door Monochrome Marble Bar Seating Rows LED Strips Star Ceiling" },
+      { src: ngBackwall,       label: "Willowsford Modern Theater Aldie VA — Back Wall Close-Up Projector Housing Marble Bar LED Soundwave Slatted Wood Seats" },
+      { src: ngBackWall,       label: "Willowsford Modern Theater Aldie VA — Back Wall Wide Entry Door LED Strips Marble Bar Seating Rows Blue Step Lighting" },
+      { src: ngCounter2,       label: "Willowsford Modern Theater Aldie VA — Marble Counter Wide View Screen Background Slatted Back Wall LED Strips Star Ceiling" },
+      { src: ngCounter4,       label: "Willowsford Modern Theater Aldie VA — Marble Counter Right End Close-Up LED Strips Slatted Wood Back Wall Star Ceiling" },
+      { src: ngLFTwall2,       label: "Willowsford Modern Theater Aldie VA — Left Acoustic Wall Seating Rows Back Bar LED Strips Star Ceiling Blue Cove" },
+      { src: ngLFTwall3,       label: "Willowsford Modern Theater Aldie VA — Left Wall Acoustic Panels LED Corner Strip Step Lighting Entry Door Star Ceiling" },
+      { src: ngRack,           label: "Willowsford Modern Theater Aldie VA — AV Equipment Rack Amplifiers Processor Torus Power Conditioning Blu-ray Utility Room" },
+      { src: ngRack3,          label: "Willowsford Modern Theater Aldie VA — AV Rack Wide View Equipment Room Amplifiers Processor Home Theater Tech Install" },
+      { src: ngGym1,           label: "Willowsford Modern Theater Aldie VA — Home Gym Clearlight Infrared Sauna Peloton Bike Wood Panel Wall Track Lighting" },
+      { src: ngGym2,           label: "Willowsford Modern Theater Aldie VA — Home Gym Infrared Sauna Glass Door Cedar Wood Panel Wall Open Floor Plan" },
+      { src: ngGym3,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Built-In Cabinets Cedar Wood Slat Wall Home Wellness Room" },
+      { src: ngGym4,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Close-Up Glass Door Cedar Interior Wood Panel Accent Wall" },
+      { src: ngSaunaDetail,    label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Entry Detail Warm Cedar Wood Slat Panels Track Lighting Wellness Suite" },
     ],
   },
   {
