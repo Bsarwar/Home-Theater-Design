@@ -644,6 +644,19 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Rustic Colors Home Theater",
+    type: "Dedicated Theaters",
+    location: "Fairfax Station, VA",
+    year: "2022",
+    size: "CE Pro Home of the Year — Silver Winner",
+    credit: "Custom Works — AV Design & Install",
+    gradient: "from-amber-950 via-stone-900 to-orange-950",
+    featured: false,
+    gallery: [
+      { gradient: "from-amber-950 via-stone-900 to-orange-950", label: "Rustic Colors Home Theater Fairfax Station VA — Main Theater View Warm Tones Custom Design" },
+    ],
+  },
+  {
     title: "Vienna Estate",
     type: "Dedicated Theaters",
     location: "Vienna, VA",
