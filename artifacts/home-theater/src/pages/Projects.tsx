@@ -156,7 +156,8 @@ import gtRightFrontBlue from "@assets/RF_1781720165750.jpg";
 import gtSconceDetail from "@assets/sconce2_1781720165750.jpg";
 import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
-import ngCover from "@assets/ScreenFB5_1781721422957.jpg";
+import ngCover from "@assets/screen--frontPO_1781721515887.jpg";
+import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
 import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
 import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
@@ -224,7 +225,8 @@ const projects: Project[] = [
     featured: false,
     image: ngCover,
     gallery: [
-      { src: ngCover, label: "The Next Galaxy Theater Aldie VA — Blue LED Cove Lighting Fiber Optic Star Ceiling Marble Bar Screen Velvet Curtains Leather Seats" },
+      { src: ngCover,    label: "The Next Galaxy Theater Aldie VA — Screen Wall Mountain Climber Film Blue LED Cove Star Ceiling Velvet Curtains Acoustic Panels" },
+      { src: ngBarView,  label: "The Next Galaxy Theater Aldie VA — Marble Bar View Blue LED Cove Star Ceiling Screen Velvet Curtains Leather Seats" },
     ],
   },
   {
