@@ -599,7 +599,7 @@ const projects: Project[] = [
     tags: ["Star Ceiling"],
     location: "McLean, VA",
     year: "2023",
-    size: "Dark Elegance — Gold Trim Millwork & Fiber Optic Star Ceiling",
+    size: "Dark Elegance & Gold Trims Work",
     credit: "Custom Works — AV Design & Install",
     gradient: "from-yellow-950 via-stone-900 to-yellow-950",
     featured: false,
