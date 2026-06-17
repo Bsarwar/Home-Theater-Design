@@ -192,11 +192,11 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "McLean Colonial",
+    title: "Family Oasis Theater",
     type: "Dedicated Theaters",
-    location: "McLean, VA",
-    year: "2023",
-    size: "Full Basement Theater — Framing to Finish",
+    location: "Great Falls, VA",
+    year: "2025",
+    size: "CE Pro Home of the Year — Silver Winner",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
     gallery: [
