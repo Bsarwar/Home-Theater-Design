@@ -365,6 +365,20 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Golden Touch Home Theater",
+    type: "Dedicated Theaters",
+    location: "McLean, VA",
+    year: "2023",
+    size: "CE Pro Award Winner — AV Design & Installation by Custom Works",
+    gradient: "from-yellow-950 via-stone-900 to-yellow-950",
+    featured: false,
+    gallery: [
+      { gradient: "from-yellow-950 via-stone-900 to-yellow-950", label: "Main Theater View" },
+      { gradient: "from-stone-900 via-yellow-950 to-stone-900", label: "Screen Wall" },
+      { gradient: "from-yellow-950 via-stone-900 to-yellow-950", label: "Seating" },
+    ],
+  },
+  {
     title: "Vienna Estate",
     type: "Dedicated Theaters",
     location: "Vienna, VA",
