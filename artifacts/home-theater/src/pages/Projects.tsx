@@ -177,11 +177,11 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Georgetown Rowhouse",
-    type: "Media Room",
-    location: "Washington, DC",
-    year: "2023",
-    size: "10-Seat Dedicated Screening Room",
+    title: "Modern Fusion Home Theater",
+    type: "Dedicated Theaters",
+    location: "Nokesville, VA",
+    year: "2018",
+    size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
     featured: false,
     gallery: [
