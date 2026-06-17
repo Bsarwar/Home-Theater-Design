@@ -144,7 +144,6 @@ import gtScreenMadMax from "@assets/Screen-LT3_1781720087191.jpg";
 import gtSideViewBw from "@assets/Side_view_2_1781720087191.jpg";
 import gtWholeRt from "@assets/whole_rt_1781720087192.jpg";
 import gtWholeTheater from "@assets/Whole-Theater_1781720087192.jpg";
-import gtWholeInterstellar2 from "@assets/Whole-Theater3_1781720087192.jpg";
 import gtSeatingBwRear from "@assets/FM2_1781720165748.jpg";
 import gtSeatingBlueRear from "@assets/FM3_1781720165749.jpg";
 import gtLeftRearBw from "@assets/LF2_1781720165749.jpg";
@@ -423,7 +422,6 @@ const projects: Project[] = [
     image: gtCover,
     gallery: [
       { src: gtCover,               label: "Golden Touch Home Theater McLean VA — Side Angle Everest On Screen Gold Trim Millwork Fiber Optic Star Ceiling Candy Cabinet" },
-      { src: gtWholeInterstellar2,  label: "Golden Touch Home Theater McLean VA — Full Room View Interstellar Playing Blue LED Star Ceiling Leather Seating Gold Accent Millwork" },
       { src: gtWholeTheater,        label: "Golden Touch Home Theater McLean VA — Whole Theater Overview AV Rack Candy Cabinet Blank Screen Blue LED Star Ceiling" },
       { src: gtWholeRt,             label: "Golden Touch Home Theater McLean VA — Wide Angle Right Side Blue LED Cove Leather Recliners Candy Cabinet Gold Trim Panels" },
       { src: gtScreen300,           label: "Golden Touch Home Theater McLean VA — 300 Spartans On Screen Leather Seating Blue LED Star Ceiling Gold Trim Acoustic Panels" },
