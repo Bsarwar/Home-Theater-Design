@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
-import { Link, useSearch } from "wouter";
+import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
@@ -541,19 +541,10 @@ export default function Projects() {
     canonical: "https://homecinemagroup.com/projects",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
   });
-  const search = useSearch();
   const [activeFilter, setActiveFilter] = useState("All");
   const [heroReady, setHeroReady] = useState(false);
   const [openProject, setOpenProject] = useState<Project | null>(null);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
-  useEffect(() => {
-    const params = new URLSearchParams(search);
-    const name = params.get("open");
-    if (name) {
-      const match = projects.find((p) => p.title.toLowerCase() === name.toLowerCase());
-      if (match) setOpenProject(match);
-    }
-  }, [search]);
 
   const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.type === activeFilter || (p.tags ?? []).includes(activeFilter));
 

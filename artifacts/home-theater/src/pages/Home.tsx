@@ -57,9 +57,9 @@ const serviceCards = [
 ];
 
 const projects = [
-  { title: "Great Falls Estate", type: "Dedicated Theater", location: "Great Falls, VA", image: heroImg1, projectLink: "/projects?open=Family+Oasis+Theater" },
-  { title: "Award-Winning Theater — CE Pro 2024", type: "Dedicated Theater", location: "Northern Virginia", image: heroImg2, projectLink: "/projects?open=Nautilus+Theater" },
-  { title: "EH Home of the Year 2018", type: "Dedicated Theater", location: "Nokesville, VA", image: heroImg3, projectLink: "/projects?open=Modern+Fusion+Home+Theater" },
+  { title: "Great Falls Estate", type: "Dedicated Theater", location: "Great Falls, VA", image: heroImg1 },
+  { title: "Award-Winning Theater — CE Pro 2024", type: "Dedicated Theater", location: "Northern Virginia", image: heroImg2 },
+  { title: "EH Home of the Year 2018", type: "Dedicated Theater", location: "Nokesville, VA", image: heroImg3 },
 ];
 
 const testimonials = [
@@ -467,7 +467,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {projects.map((project, i) => (
               <FadeIn key={project.title} delay={i * 80}>
-                <Link href={project.projectLink}>
+                <Link href="/projects">
                   <div
                     data-testid={`project-card-${i}`}
                     className="group cursor-pointer border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.4)] transition-all duration-300"
