@@ -310,7 +310,7 @@ export default function Awards() {
               { name: "Electronic House", sub: "Home of the Year", cover: cepro2017cover },
               { name: "CE Pro", sub: "Home of the Year", cover: ceprocover },
               { name: "CEDIA", sub: "Home of the Year", cover: cepro2025cover },
-              { name: "Houzz", sub: "Best of Service 2023", cover: houzzBadge },
+              { name: "Commercial Integrator", sub: "Featured Project", cover: houzzBadge },
             ].map((pub, i) => (
               <FadeIn key={pub.name} delay={i * 80}>
                 <div className="bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center py-10 px-6 text-center hover:bg-[hsl(220_15%_9%)] transition-colors duration-300">
