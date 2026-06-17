@@ -415,6 +415,7 @@ const projects: Project[] = [
   {
     title: "Golden Touch Home Theater",
     type: "Dedicated Theaters",
+    tags: ["Star Ceiling"],
     location: "McLean, VA",
     year: "2023",
     size: "Dark Elegance — Gold Trim Millwork & Fiber Optic Star Ceiling",
