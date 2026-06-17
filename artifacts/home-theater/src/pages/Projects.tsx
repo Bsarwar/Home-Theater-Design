@@ -4,6 +4,27 @@ import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
+// Nautilus Theater — Warrenton, Virginia (2024 CE Pro Gold)
+import ntScreenFrontBlank from "@assets/screen1_1781713607622.jpg";
+import ntScreenFrontPlaying from "@assets/screen1a_1781713607622.jpg";
+import ntScreenFrontPlaying2 from "@assets/screen1B_1781713607623.jpg";
+import ntScreenWallCloseup from "@assets/screen2a_1781713607623.jpg";
+import ntScreenLeftSeating from "@assets/ScreenLFT_1781713607623.jpg";
+import ntScreenLeftDune from "@assets/ScreenLFT2_1781713607623.jpg";
+import ntScreenLeftAvatar from "@assets/LFTscreen2_1781713607620.jpg";
+import ntScreenRightAngle from "@assets/RTscreen_1781713607622.jpg";
+import ntScreen300Film from "@assets/RTscreen2_1781713607622.jpg";
+import ntScreenRightSeating from "@assets/screenRT_1781713607624.jpg";
+import ntScreenMandalorian from "@assets/screenRT2_1781713607624.jpg";
+import ntBwFullRoom from "@assets/Theater-BW_1781713607625.jpg";
+import ntBwLeftView from "@assets/Screen-LT-BW_1781713607624.jpg";
+import ntBwRightView from "@assets/Screen-RT-BW_1781713607624.jpg";
+import ntBwSeatingHatch from "@assets/Seating-BW_1781713607625.jpg";
+import ntSeatingFront from "@assets/Seating-Front_1781713607625.jpg";
+import ntSeatingLeftPurple from "@assets/Seating-LFT_1781713607625.jpg";
+import ntSeatingRightHatch from "@assets/Seating-RT_1781713607625.jpg";
+import ntLightSwitch from "@assets/LightSW_1781713607621.jpg";
+import ntProjectorHousing from "@assets/projectior-box_1781713607621.jpg";
 // Blade Runner Theater — Vienna, Virginia (2025 CE Pro Silver)
 import brScreenLeftPlaying from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import brScreenLeftBlank from "@assets/ScreenLFTp_1781706241333.jpg";
@@ -109,12 +130,28 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Gold Winner",
     gradient: "from-slate-900 via-zinc-800 to-gray-900",
     featured: true,
-    image: portfolioImg2,
+    image: ntScreenFrontBlank,
     gallery: [
-      { src: portfolioImg2, label: "Full Room View" },
-      { src: portfolioImg2, label: "Screen & Stage" },
-      { gradient: "from-slate-900 via-zinc-800 to-gray-900", label: "Acoustic Panels" },
-      { gradient: "from-zinc-800 via-slate-900 to-gray-900", label: "Seating Detail" },
+      { src: ntScreenFrontBlank, label: "Nautilus Theater Warrenton VA — Screen Wall Front View" },
+      { src: ntScreenFrontPlaying, label: "Nautilus Theater Warrenton VA — Screen Playing Underwater Film" },
+      { src: ntScreenFrontPlaying2, label: "Nautilus Theater Warrenton VA — Screen Front View Playing" },
+      { src: ntScreenWallCloseup, label: "Nautilus Theater Warrenton VA — Screen Wall Close-Up Purple Lighting" },
+      { src: ntScreenRightAngle, label: "Nautilus Theater Warrenton VA — Screen Wall Right Angle Full Room" },
+      { src: ntScreen300Film, label: "Nautilus Theater Warrenton VA — Screen Playing 300 Film" },
+      { src: ntScreenLeftSeating, label: "Nautilus Theater Warrenton VA — Left View Seating and Screen" },
+      { src: ntScreenLeftDune, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Dune" },
+      { src: ntScreenLeftAvatar, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Avatar" },
+      { src: ntScreenRightSeating, label: "Nautilus Theater Warrenton VA — Right View Seating and Screen" },
+      { src: ntScreenMandalorian, label: "Nautilus Theater Warrenton VA — Right View Screen Playing Mandalorian" },
+      { src: ntSeatingFront, label: "Nautilus Theater Warrenton VA — Luxury Leather Seating Rear View" },
+      { src: ntSeatingLeftPurple, label: "Nautilus Theater Warrenton VA — Seating Left Angle Purple Lighting" },
+      { src: ntSeatingRightHatch, label: "Nautilus Theater Warrenton VA — Seating Right Angle Submarine Hatch Door" },
+      { src: ntProjectorHousing, label: "Nautilus Theater Warrenton VA — Custom Submarine Projector Housing" },
+      { src: ntLightSwitch, label: "Nautilus Theater Warrenton VA — Submarine Porthole Light Switch Detail" },
+      { src: ntBwFullRoom, label: "Nautilus Theater Warrenton VA — Black and White Full Room View" },
+      { src: ntBwLeftView, label: "Nautilus Theater Warrenton VA — Black and White Left View" },
+      { src: ntBwRightView, label: "Nautilus Theater Warrenton VA — Black and White Right Angle View" },
+      { src: ntBwSeatingHatch, label: "Nautilus Theater Warrenton VA — Black and White Seating and Hatch Door" },
     ],
   },
   {
