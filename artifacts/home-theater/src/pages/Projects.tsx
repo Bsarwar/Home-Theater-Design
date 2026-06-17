@@ -137,6 +137,7 @@ const projects: Project[] = [
   {
     title: "The Nautilus Theater",
     type: "Dedicated Theaters",
+    tags: ["Themed Theaters", "Star Ceiling"],
     location: "Warrenton, VA",
     year: "2024",
     size: "CE Pro Home of the Year — Gold Winner",
