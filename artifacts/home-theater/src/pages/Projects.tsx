@@ -26,6 +26,20 @@ import ntSeatingRightHatch from "@assets/Seating-RT_1781713607625.jpg";
 import ntLightSwitch from "@assets/LightSW_1781713607621.jpg";
 import ntProjectorHousing from "@assets/projectior-box_1781713607621.jpg";
 import mfhtMain from "@assets/FTheater_1781714591308.jpg";
+// Modern Fusion Home Theater — Nokesville, Virginia (2018 EH Bronze)
+import mfhtFrontLeftPurple from "@assets/FL-pur_1781715255322.jpg";
+import mfhtFrontBlueLighting from "@assets/Front-Blu_1781715255322.jpg";
+import mfhtFrontPurpleLighting from "@assets/Front-Pur_1781715255323.jpg";
+import mfhtFrontTealBlue from "@assets/Front-tblu_1781715255323.jpg";
+import mfhtFrontAvatar from "@assets/front-tpur_1781715255323.jpg";
+import mfhtFullSeating from "@assets/Fseating_1781715255323.jpg";
+import mfhtSideAngle300 from "@assets/FTheater_1781715255324.jpg";
+import mfhtEquipmentRack from "@assets/rack_2_1781715255324.jpg";
+import mfhtRightLeftPurple from "@assets/Rl-Purp_1781715255324.jpg";
+import mfhtRearLeftBar from "@assets/RL-tblk_1781715255324.jpg";
+import mfhtRearRightBlue from "@assets/RR-BLK_1781715255325.jpg";
+import mfhtRearRightWhite from "@assets/RR-Wh_1781715255325.jpg";
+import mfhtSideFrontBlue from "@assets/SFR_-Blu_1781715255325.jpg";
 import ntCabinets from "@assets/cabinets_1781713824645.jpg";
 import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
 import ntDoor1 from "@assets/door-1_1781713824646.jpg";
@@ -186,9 +200,22 @@ const projects: Project[] = [
     size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
     featured: false,
-    image: mfhtMain,
+    image: mfhtFrontAvatar,
     gallery: [
-      { src: mfhtMain, label: "Modern Fusion Home Theater Nokesville VA — Screen Wall Playing 300 Film" },
+      { src: mfhtFrontAvatar, label: "Modern Fusion Home Theater Nokesville VA — Front View Playing Avatar Twilight Purple Lighting" },
+      { src: mfhtFrontPurpleLighting, label: "Modern Fusion Home Theater Nokesville VA — Screen Wall Symmetric View Purple Accent Lighting Star Ceiling" },
+      { src: mfhtFrontBlueLighting, label: "Modern Fusion Home Theater Nokesville VA — Screen Wall Symmetric View Blue Accent Lighting Fiber Optic Star Ceiling" },
+      { src: mfhtFrontTealBlue, label: "Modern Fusion Home Theater Nokesville VA — Front Screen Wall Teal Blue Immersive Lighting" },
+      { src: mfhtFrontLeftPurple, label: "Modern Fusion Home Theater Nokesville VA — Front Left Angle View Purple Violet Ambient Lighting Leather Recliners" },
+      { src: mfhtRightLeftPurple, label: "Modern Fusion Home Theater Nokesville VA — Right Side View Tiered Seating Platform Purple Ambient Lighting" },
+      { src: mfhtRearLeftBar, label: "Modern Fusion Home Theater Nokesville VA — Rear Left Angle Granite Bar Counter Star Ceiling Star Field" },
+      { src: mfhtRearRightWhite, label: "Modern Fusion Home Theater Nokesville VA — Rear Right Angle Tiered Platform White Purple Lighting" },
+      { src: mfhtRearRightBlue, label: "Modern Fusion Home Theater Nokesville VA — Rear Right Angle Blue Grey Ambient Lighting Tiered Seating" },
+      { src: mfhtSideFrontBlue, label: "Modern Fusion Home Theater Nokesville VA — Side Front View Full Seating Rows Blue Ambient Lighting" },
+      { src: mfhtFullSeating, label: "Modern Fusion Home Theater Nokesville VA — Full Seating Rows From Rear Star Ceiling Overhead Projector Visible" },
+      { src: mfhtSideAngle300, label: "Modern Fusion Home Theater Nokesville VA — Side Angle Screen Playing 300 Film EH Home of the Year Bronze Winner" },
+      { src: mfhtMain, label: "Modern Fusion Home Theater Nokesville VA — Left Side Angle Screen Playing 300 Film EH Bronze Winner 2018" },
+      { src: mfhtEquipmentRack, label: "Modern Fusion Home Theater Nokesville VA — AV Equipment Rack Parasound Amplifiers Professional Installation" },
     ],
   },
   {
