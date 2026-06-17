@@ -32,6 +32,7 @@ type GalleryItem = { src: string; label: string } | { gradient: string; label: s
 type Project = {
   title: string;
   type: string;
+  tags?: string[];
   location: string;
   year: string;
   size: string;
@@ -47,6 +48,7 @@ const projects: Project[] = [
   {
     title: "Blade Runner Theater",
     type: "Dedicated Theaters",
+    tags: ["Dedicated Theaters", "Themed Theaters", "Star Ceiling"],
     location: "Vienna, Virginia",
     year: "2025",
     size: "CE Pro Home of the Year — Silver Winner",
@@ -359,7 +361,7 @@ export default function Projects() {
   const [openProject, setOpenProject] = useState<Project | null>(null);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 
-  const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.type === activeFilter);
+  const filtered = activeFilter === "All" ? projects : projects.filter((p) => p.type === activeFilter || (p.tags ?? []).includes(activeFilter));
 
   return (
     <div className="bg-[hsl(220_15%_7%)]">
