@@ -369,7 +369,7 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "McLean, VA",
     year: "2023",
-    size: "AV Design & Installation by Custom Works",
+    size: "Custom Works — AV Design & Install",
     gradient: "from-yellow-950 via-stone-900 to-yellow-950",
     featured: false,
     gallery: [
