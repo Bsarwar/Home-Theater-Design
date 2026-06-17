@@ -274,7 +274,7 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
         </div>
 
         {/* Main Image */}
-        <div className="relative flex-1 min-h-0 overflow-hidden" style={{ minHeight: "480px", maxHeight: "700px" }}>
+        <div className="relative flex-1 min-h-0 overflow-hidden">
           {"src" in current ? (
             <img
               src={current.src}
