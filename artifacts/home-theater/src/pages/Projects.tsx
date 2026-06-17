@@ -175,6 +175,22 @@ import lfSeating1G from "@assets/seating1g_1781724152799.jpg";
 import lfSeating2 from "@assets/Seating2_1781724152799.jpg";
 import lfSeatingP5 from "@assets/SeatingP5_1781724152799.jpg";
 import lfSeatingP6 from "@assets/seatingP6_1781724152800.jpg";
+import lfAvRack from "@assets/av-rack_1781724174880.jpg";
+import lfBar2 from "@assets/bar2_1781724174880.jpg";
+import lfBar4 from "@assets/bar4_1781724174880.jpg";
+import lfBar5 from "@assets/bar5_1781724174881.jpg";
+import lfColumn2 from "@assets/column2_1781724174881.jpg";
+import lfColumn4 from "@assets/column4_1781724174882.jpg";
+import lfColumnP1 from "@assets/columnP1_1781724174882.jpg";
+import lfColumnP2 from "@assets/columnP2_1781724174882.jpg";
+import lfColumnsB1 from "@assets/columnsB1_1781724174882.jpg";
+import lfDoor1 from "@assets/door1_1781724174883.jpg";
+import lfDoorP1 from "@assets/doorP1_1781724174883.jpg";
+import lfProjector1 from "@assets/projector1_1781724174883.jpg";
+import lfScreen3Blue from "@assets/screen3blue_1781724174883.jpg";
+import lfScreen3Pur from "@assets/screen3pur_1781724174884.jpg";
+import lfScreen10 from "@assets/screen10_1781724174884.jpg";
+import lfScreen10P from "@assets/screen10P_1781724174884.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
 import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
@@ -353,7 +369,23 @@ const projects: Project[] = [
       { src: lfSeatingP6,  label: "Luminous Fusion Home Theater Aldie VA — Purple LED Seating Area Leather Recliners Accent Saucer Chair Bar Niche Acoustic Column Panels" },
       { src: lfSeating1G,  label: "Luminous Fusion Home Theater Aldie VA — Green LED Color Mood Tiered Seating Two Rows Leather Recliners Acoustic Wall Column Panels" },
       { src: lfScreen22,   label: "Luminous Fusion Home Theater Aldie VA — Black and White Classic View Leather Recliners Projection Screen Linear LED Column Uplighting" },
-      { src: lfScreen22P,  label: "Luminous Fusion Home Theater Aldie VA — Black and White Motorcycle Film Playing Screen Leather Recliners Linear LED Columns" },
+      { src: lfScreen22P,   label: "Luminous Fusion Home Theater Aldie VA — Black and White Motorcycle Film Playing Screen Leather Recliners Linear LED Columns" },
+      { src: lfScreen3Blue, label: "Luminous Fusion Home Theater Aldie VA — Screen Wall Close Up Blue LED Cove Ceiling Acoustic Panels Interior Door Right Side" },
+      { src: lfScreen3Pur,  label: "Luminous Fusion Home Theater Aldie VA — Screen Wall Close Up Purple LED Cove Ceiling Acoustic Panels Interior Door Right Side" },
+      { src: lfScreen10,    label: "Luminous Fusion Home Theater Aldie VA — Green LED Mood Symmetric Front View Blank Projection Screen Column Uplighting Cove" },
+      { src: lfScreen10P,   label: "Luminous Fusion Home Theater Aldie VA — Green LED Cove Ceiling Avatar Film Playing 4K Projection Screen Column Uplighting" },
+      { src: lfColumn2,     label: "Luminous Fusion Home Theater Aldie VA — Side Wall Blue LED Column Uplighting Tiered Seating Leather Recliners Acoustic Panels" },
+      { src: lfColumn4,     label: "Luminous Fusion Home Theater Aldie VA — Blue LED Column Uplighting Interior Door Right Seating Row Cove Ceiling Detail" },
+      { src: lfColumnP1,    label: "Luminous Fusion Home Theater Aldie VA — Purple LED Column Uplighting Door Left Tiered Seating Two Rows Bar Niche Background" },
+      { src: lfColumnP2,    label: "Luminous Fusion Home Theater Aldie VA — Purple LED Column Uplighting Side Wall Detail Tiered Seating Rows Acoustic Panels" },
+      { src: lfColumnsB1,   label: "Luminous Fusion Home Theater Aldie VA — Blue Teal LED Column Uplighting Side Wall Tiered Seating Rows Bar Area Background" },
+      { src: lfBar2,        label: "Luminous Fusion Home Theater Aldie VA — Wet Bar Niche Whiskey Barrel Bar Top Beer Tap Handles Blue LED Column Uplighting" },
+      { src: lfBar4,        label: "Luminous Fusion Home Theater Aldie VA — Bar Cabinet Wall Blue LED Cove Display Glass Cabinet Figurines Whiskey Barrel" },
+      { src: lfBar5,        label: "Luminous Fusion Home Theater Aldie VA — Bar Counter Close Up Blue LED Cove Whiskey Barrel Beer Taps Leather Seating Row" },
+      { src: lfAvRack,      label: "Luminous Fusion Home Theater Aldie VA — AV Equipment Rack Open Cabinet Amplifiers Processors Blue LED Cove Bar Display" },
+      { src: lfProjector1,  label: "Luminous Fusion Home Theater Aldie VA — Ceiling Mount 4K Projector Purple LED Cove Bar Shelf Bon Jovi Display Seating Edge" },
+      { src: lfDoor1,       label: "Luminous Fusion Home Theater Aldie VA — Entry Door Detail Blue LED Cove Ceiling Tiered Step Lighting Control Panel Wall" },
+      { src: lfDoorP1,      label: "Luminous Fusion Home Theater Aldie VA — Entry Hallway Door Open Purple LED Cove Visible From Outside Theater Reveal" },
     ],
   },
   {
