@@ -191,20 +191,6 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Modern Fusion Home Theater",
-    type: "Dedicated Theaters",
-    location: "Nokesville, VA",
-    year: "2018",
-    size: "EH Publishing Home of the Year — Bronze Winner",
-    gradient: "from-zinc-900 via-stone-800 to-slate-900",
-    featured: false,
-    gallery: [
-      { gradient: "from-zinc-900 via-stone-800 to-slate-900", label: "Main Room" },
-      { gradient: "from-stone-800 via-zinc-900 to-slate-900", label: "Entry Lobby" },
-      { gradient: "from-slate-900 via-stone-800 to-zinc-900", label: "Rear Row" },
-    ],
-  },
-  {
     title: "McLean Colonial",
     type: "Dedicated Theaters",
     location: "McLean, VA",
