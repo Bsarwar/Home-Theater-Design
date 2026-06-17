@@ -126,6 +126,7 @@ import cvSeatingPurpleSide from "@assets/DSC_1350_1781717628776.jpg";
 import cvAcousticPanelDetail from "@assets/DSC_1362_1781717612506.jpg";
 import cvScreenUVA from "@assets/front_1781717612506.jpg";
 import cvScreenFootball from "@assets/screen1_1781717612507.jpg";
+import cvCoverBarFootball from "@assets/screen1_1781717808705.jpg";
 import cvScreenIronMan from "@assets/screen-2_1781717612507.jpg";
 
 function useInView(threshold = 0.1) {
@@ -282,7 +283,7 @@ const projects: Project[] = [
     size: "CE Pro Best Project Award — Bronze Winner",
     gradient: "from-stone-900 via-neutral-800 to-stone-900",
     featured: false,
-    image: cvSeatingFront,
+    image: cvCoverBarFootball,
     gallery: [
       { src: cvSeatingFront, label: "Cavalier Theater Aldie VA — Full Seating View Two Rows Leather Recliners Rustic Beam Ceiling Blue LED Step Lighting" },
       { src: cvScreenUVA, label: "Cavalier Theater Aldie VA — Screen Wall Playing UVA National Champions Basketball Acoustic Panels Wood Frame" },
