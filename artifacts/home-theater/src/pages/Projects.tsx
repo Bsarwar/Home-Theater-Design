@@ -143,6 +143,7 @@ const projects: Project[] = [
     featured: true,
     image: ntScreenFrontBlank,
     gallery: [
+      { src: ntScreenLeftAvatar, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Avatar" },
       { src: ntScreenFrontBlank, label: "Nautilus Theater Warrenton VA — Screen Wall Front View" },
       { src: ntScreenFrontPlaying, label: "Nautilus Theater Warrenton VA — Screen Playing Underwater Film" },
       { src: ntScreenFrontPlaying2, label: "Nautilus Theater Warrenton VA — Screen Front View Playing" },
@@ -151,7 +152,6 @@ const projects: Project[] = [
       { src: ntScreen300Film, label: "Nautilus Theater Warrenton VA — Screen Playing 300 Film" },
       { src: ntScreenLeftSeating, label: "Nautilus Theater Warrenton VA — Left View Seating and Screen" },
       { src: ntScreenLeftDune, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Dune" },
-      { src: ntScreenLeftAvatar, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Avatar" },
       { src: ntScreenRightSeating, label: "Nautilus Theater Warrenton VA — Right View Seating and Screen" },
       { src: ntScreenMandalorian, label: "Nautilus Theater Warrenton VA — Right View Screen Playing Mandalorian" },
       { src: ntSeatingFront, label: "Nautilus Theater Warrenton VA — Luxury Leather Seating Rear View" },
