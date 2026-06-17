@@ -296,16 +296,8 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
             ))}
           </div>
 
-          {/* Overlay gradient bottom */}
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[hsl(220_15%_7%)] to-transparent pointer-events-none" />
-
-          {/* Image label */}
-          <div className="absolute bottom-4 left-6 text-[hsl(38_10%_60%)] text-xs tracking-widest uppercase pointer-events-none">
-            {project.gallery[active].label}
-          </div>
-
           {/* Counter */}
-          <div className="absolute bottom-4 right-6 text-[hsl(38_10%_45%)] text-xs tabular-nums pointer-events-none">
+          <div className="absolute bottom-3 right-4 text-[hsl(38_10%_45%)] text-xs tabular-nums pointer-events-none bg-black/50 px-2 py-0.5">
             {active + 1} / {project.gallery.length}
           </div>
 
@@ -327,6 +319,29 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
             </>
           )}
         </div>
+
+        {/* Thumbnails */}
+        {project.gallery.length > 1 && (
+          <div className="flex gap-2 px-4 py-3 border-t border-[hsl(220_15%_14%)] overflow-x-auto scrollbar-none shrink-0 bg-[hsl(220_15%_5%)]">
+            {project.gallery.map((item, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`shrink-0 w-20 h-14 relative overflow-hidden border-2 transition-all duration-200 ${
+                  active === i
+                    ? "border-[hsl(38_75%_52%)] opacity-100"
+                    : "border-[hsl(220_15%_18%)] opacity-50 hover:opacity-80 hover:border-[hsl(220_15%_30%)]"
+                }`}
+              >
+                {"src" in item ? (
+                  <img src={item.src} alt="" className="w-full h-full object-cover" />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${item.gradient}`} />
+                )}
+              </button>
+            ))}
+          </div>
+        )}
 
       </div>
     </div>
