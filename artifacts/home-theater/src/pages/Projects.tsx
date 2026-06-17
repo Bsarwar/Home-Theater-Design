@@ -236,7 +236,7 @@ const projects: Project[] = [
     year: "2018",
     size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
-    featured: false,
+    featured: true,
     tags: ["Star Ceiling"],
     image: mfhtCover,
     gallery: [
