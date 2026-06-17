@@ -213,6 +213,19 @@ const filters = ["All", "Dedicated Theaters", "Media Room", "TV Walls", "Themed 
 
 const projects: Project[] = [
   {
+    title: "The Next Galaxy Theater",
+    type: "Dedicated Theaters",
+    location: "Aldie, VA",
+    year: "2026",
+    size: "Willowsford Escape",
+    credit: "Custom Works — AV Design & Install",
+    gradient: "from-indigo-950 via-slate-900 to-indigo-950",
+    featured: false,
+    gallery: [
+      { gradient: "from-indigo-950 via-slate-900 to-indigo-950", label: "The Next Galaxy Theater Aldie VA — Full Room View" },
+    ],
+  },
+  {
     title: "Blade Runner Theater",
     type: "Dedicated Theaters",
     tags: ["Dedicated Theaters", "Themed Theaters", "Star Ceiling"],
