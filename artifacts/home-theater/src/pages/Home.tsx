@@ -464,26 +464,25 @@ export default function Home() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {projects.map((project, i) => (
               <FadeIn key={project.title} delay={i * 80}>
-                <Link href="/projects" key={project.title}>
+                <Link href="/projects">
                   <div
                     data-testid={`project-card-${i}`}
-                    className={`relative overflow-hidden group cursor-pointer ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
+                    className="group cursor-pointer border border-[hsl(220_15%_14%)] overflow-hidden hover:border-[hsl(38_75%_52%/0.4)] transition-all duration-300"
                   >
-                    <div className={`relative overflow-hidden ${i === 0 ? "h-72 md:h-full min-h-[350px]" : "h-48 md:h-56"}`}>
+                    <div className="h-64 relative overflow-hidden">
                       <img
                         src={project.image}
                         alt={project.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_5%)] via-transparent to-transparent opacity-80" />
-                    <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-1">{project.type}</div>
-                      <div className="font-serif text-xl text-[hsl(38_20%_90%)]">{project.title}</div>
-                      <div className="text-[hsl(38_10%_55%)] text-xs mt-1">{project.location}</div>
+                    <div className="p-5 bg-[hsl(220_15%_9%)]">
+                      <div className="text-[hsl(38_75%_52%)] text-[10px] tracking-[0.2em] uppercase mb-1">{project.type}</div>
+                      <div className="font-serif text-lg text-[hsl(38_20%_90%)] group-hover:text-[hsl(38_75%_52%)] transition-colors duration-300">{project.title}</div>
+                      <div className="text-[hsl(38_10%_50%)] text-xs mt-1">{project.location}</div>
                     </div>
                   </div>
                 </Link>
