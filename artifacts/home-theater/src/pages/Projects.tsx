@@ -146,6 +146,16 @@ import gtWholeRt from "@assets/whole_rt_1781720087192.jpg";
 import gtWholeTheater from "@assets/Whole-Theater_1781720087192.jpg";
 import gtWholeInterstellar from "@assets/Whole-Theater2_1781720087192.jpg";
 import gtWholeInterstellar2 from "@assets/Whole-Theater3_1781720087192.jpg";
+import gtSeatingBwRear from "@assets/FM2_1781720165748.jpg";
+import gtSeatingBlueRear from "@assets/FM3_1781720165749.jpg";
+import gtLeftRearBw from "@assets/LF2_1781720165749.jpg";
+import gtLeftRearBlue from "@assets/LF3_1781720165749.jpg";
+import gtLeftRearBlue2 from "@assets/LF4_1781720165749.jpg";
+import gtRightFrontBw from "@assets/R2F_1781720165749.jpg";
+import gtRightFrontBlue from "@assets/RF_1781720165750.jpg";
+import gtSconceDetail from "@assets/sconce2_1781720165750.jpg";
+import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
+import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -416,6 +426,16 @@ const projects: Project[] = [
       { src: gtBlueLedEmpty,        label: "Golden Touch Home Theater McLean VA — Blank Screen Blue LED Cove Lighting Star Ceiling Gold Trim Marble Counter Leather Seats" },
       { src: gtBwSideBlackPanther,  label: "Golden Touch Home Theater McLean VA — Black White Side Angle Black Panther On Screen Marble Counter Star Ceiling Gold Trim Molding" },
       { src: gtSideViewBw,          label: "Golden Touch Home Theater McLean VA — Black White Side View Multiple Leather Seat Rows Blank Screen Crystal Sconces Star Ceiling" },
+      { src: gtSideBlankScreen,     label: "Golden Touch Home Theater McLean VA — Side View Blank Screen Blue LED Cove Star Ceiling Gold Trim Crystal Sconces Multiple Seat Rows" },
+      { src: gtSeatingBlueRear,     label: "Golden Touch Home Theater McLean VA — Rear View Two Rows Leather Seats Blue LED Star Ceiling Gold Trim Projector Crystal Sconce" },
+      { src: gtLeftRearBlue,        label: "Golden Touch Home Theater McLean VA — Left Rear Angle Leather Seats Blue LED Star Ceiling Gold Trim Crystal Sconce Door Acoustic Panels" },
+      { src: gtLeftRearBlue2,       label: "Golden Touch Home Theater McLean VA — Left Perspective Blue LED Cove Star Ceiling Gold Trim Leather Recliners Projector Door" },
+      { src: gtRightFrontBlue,      label: "Golden Touch Home Theater McLean VA — Right To Front Angle Blue LED Star Ceiling Gold Trim Crystal Sconces Leather Seats Marble Bar" },
+      { src: gtSeatViewWide,        label: "Golden Touch Home Theater McLean VA — Wide Angle Rear View Blue LED Star Ceiling Gold Trim Tiered Leather Seating Step Lighting" },
+      { src: gtSconceDetail,        label: "Golden Touch Home Theater McLean VA — Crystal Wall Sconce Detail Gold Trim Acoustic Panels Blue LED Star Ceiling Leather Seats" },
+      { src: gtRightFrontBw,        label: "Golden Touch Home Theater McLean VA — Black White Right Angle Crystal Sconces Leather Seats Star Ceiling Marble Counter" },
+      { src: gtLeftRearBw,          label: "Golden Touch Home Theater McLean VA — Black White Left Rear View Multiple Seat Rows Star Ceiling Door Back Wall Acoustic Panels" },
+      { src: gtSeatingBwRear,       label: "Golden Touch Home Theater McLean VA — Black White Rear View Two Rows Leather Seats Star Ceiling Projector Crystal Sconce Wainscoting" },
     ],
   },
   {
