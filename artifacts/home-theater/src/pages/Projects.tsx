@@ -25,6 +25,7 @@ import ntSeatingLeftPurple from "@assets/Seating-LFT_1781713607625.jpg";
 import ntSeatingRightHatch from "@assets/Seating-RT_1781713607625.jpg";
 import ntLightSwitch from "@assets/LightSW_1781713607621.jpg";
 import ntProjectorHousing from "@assets/projectior-box_1781713607621.jpg";
+import mfhtMain from "@assets/FTheater_1781714591308.jpg";
 import ntCabinets from "@assets/cabinets_1781713824645.jpg";
 import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
 import ntDoor1 from "@assets/door-1_1781713824646.jpg";
@@ -184,10 +185,9 @@ const projects: Project[] = [
     size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
     featured: false,
+    image: mfhtMain,
     gallery: [
-      { gradient: "from-gray-900 via-slate-800 to-zinc-900", label: "Main Room" },
-      { gradient: "from-slate-800 via-gray-900 to-zinc-900", label: "Screen Wall" },
-      { gradient: "from-zinc-900 via-slate-800 to-gray-900", label: "Side View" },
+      { src: mfhtMain, label: "Modern Fusion Home Theater Nokesville VA — Screen Wall Playing 300 Film" },
     ],
   },
   {
