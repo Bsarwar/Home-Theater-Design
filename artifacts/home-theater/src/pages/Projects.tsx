@@ -43,6 +43,23 @@ import mfhtRearRightWhite from "@assets/RR-Wh_1781715255325.jpg";
 import mfhtSideFrontBlue from "@assets/SFR_-Blu_1781715255325.jpg";
 // Family Oasis Theater — Great Falls, Virginia (2025 CE Pro Silver)
 import foScreenLeftStarTrek from "@assets/Screen-LFT2p_1781715830565.jpg";
+import foScreenLeft1 from "@assets/Screen_LFT1_1781715978125.jpg";
+import foScreenLeft2a from "@assets/Screen_LFT2a_1781715978126.jpg";
+import foScreenLeft2b from "@assets/Screen_LFT2b_1781715978126.jpg";
+import foScreenCenter1 from "@assets/Screenc1_1781715978126.jpg";
+import foScreenCenter1Wolverine from "@assets/Screenc1p_1781715978127.jpg";
+import foScreenCenter2 from "@assets/screenc2_1781715978127.jpg";
+import foScreenCenter3 from "@assets/screenc3_1781715978127.jpg";
+import foScreenFront1 from "@assets/screenfront_1781715978127.jpg";
+import foScreenFront2 from "@assets/screenfront2_1781715978127.jpg";
+import foScreenFrontSpiderman from "@assets/screenfrontP_1781715978128.jpg";
+import foScreenLeft2Playing from "@assets/Screen-LFT2p_1781715978128.jpg";
+import foScreenMidLeft from "@assets/screen-MidLFT_1781715978128.jpg";
+import foScreenMidRight from "@assets/Screenmidrt3_1781715978128.jpg";
+import foScreenMidRightPlaying from "@assets/Screenmidrt3P_1781715978129.jpg";
+import foScreenRight from "@assets/ScreetRT_1781715978129.jpg";
+import foSeatingLeft from "@assets/Seating-LFT2_1781715978129.jpg";
+import foSeatingRight from "@assets/Seating-RT2_1781715978129.jpg";
 import ntCabinets from "@assets/cabinets_1781713824645.jpg";
 import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
 import ntDoor1 from "@assets/door-1_1781713824646.jpg";
@@ -230,9 +247,26 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Silver Winner",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
-    image: foScreenLeftStarTrek,
+    image: foSeatingLeft,
     gallery: [
-      { src: foScreenLeftStarTrek, label: "Family Oasis Theater Great Falls VA — Left Side Angle Screen Playing Star Trek Blue Star Ceiling Accent Lighting" },
+      { src: foSeatingLeft, label: "Family Oasis Theater Great Falls VA — Full Seating View Chaise Lounger Leather Recliners Tiered Platform Blue Star Ceiling" },
+      { src: foScreenLeft2a, label: "Family Oasis Theater Great Falls VA — Left Side View Full Seating Rows Blank Screen Blue Fiber Optic Star Ceiling" },
+      { src: foScreenLeft2b, label: "Family Oasis Theater Great Falls VA — Left Side Angle Seating Rows Gold Accent Pillars Blue Star Ceiling Lighting" },
+      { src: foScreenLeftStarTrek, label: "Family Oasis Theater Great Falls VA — Left Side Angle Screen Playing Star Trek Into Darkness Blue Star Ceiling" },
+      { src: foScreenLeft2Playing, label: "Family Oasis Theater Great Falls VA — Left Angle Screen Playing Star Trek Into Darkness Leather Recliners" },
+      { src: foScreenLeft1, label: "Family Oasis Theater Great Falls VA — Left Side Close View Blank Screen Gold Accent Pillar Chaise Lounger" },
+      { src: foScreenCenter3, label: "Family Oasis Theater Great Falls VA — Center Front View All Seating Rows Blue Star Ceiling Sconce Lighting" },
+      { src: foScreenCenter1, label: "Family Oasis Theater Great Falls VA — Symmetric Front View Blank Screen Blue Star Ceiling Leather Seats" },
+      { src: foScreenCenter1Wolverine, label: "Family Oasis Theater Great Falls VA — Front View Screen Playing X-Men Wolverine Blue Star Ceiling" },
+      { src: foScreenCenter2, label: "Family Oasis Theater Great Falls VA — Front View Screen Wall Ottoman Seating Blue Star Ceiling" },
+      { src: foScreenMidLeft, label: "Family Oasis Theater Great Falls VA — Mid Left Angle Seating Rows Gold Accent Pillars Blue Star Ceiling" },
+      { src: foScreenMidRight, label: "Family Oasis Theater Great Falls VA — Mid Right Angle Seating Rows Blank Screen Blue Star Ceiling" },
+      { src: foScreenMidRightPlaying, label: "Family Oasis Theater Great Falls VA — Mid Right Angle Screen Playing Sin City Film Noir Blue Star Ceiling" },
+      { src: foScreenRight, label: "Family Oasis Theater Great Falls VA — Right Side View Full Seating Rows Blue Fiber Optic Star Ceiling" },
+      { src: foSeatingRight, label: "Family Oasis Theater Great Falls VA — Rear Right View Chaise Lounger Tiered Seating Platform Star Ceiling" },
+      { src: foScreenFront1, label: "Family Oasis Theater Great Falls VA — Screen Wall Close-Up Blank Screen Gold Accent Pillar Sconce Detail" },
+      { src: foScreenFront2, label: "Family Oasis Theater Great Falls VA — Screen Wall Detail Blank Screen Custom Millwork Gold Accent" },
+      { src: foScreenFrontSpiderman, label: "Family Oasis Theater Great Falls VA — Screen Wall Playing Spider-Man Gold Accent Pillar Luxury Finish" },
     ],
   },
   {
