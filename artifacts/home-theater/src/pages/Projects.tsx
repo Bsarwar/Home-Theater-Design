@@ -41,6 +41,8 @@ import mfhtRearLeftBar from "@assets/RL-tblk_1781715255324.jpg";
 import mfhtRearRightBlue from "@assets/RR-BLK_1781715255325.jpg";
 import mfhtRearRightWhite from "@assets/RR-Wh_1781715255325.jpg";
 import mfhtSideFrontBlue from "@assets/SFR_-Blu_1781715255325.jpg";
+// Family Oasis Theater — Great Falls, Virginia (2025 CE Pro Silver)
+import foScreenLeftStarTrek from "@assets/Screen-LFT2p_1781715830565.jpg";
 import ntCabinets from "@assets/cabinets_1781713824645.jpg";
 import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
 import ntDoor1 from "@assets/door-1_1781713824646.jpg";
@@ -228,10 +230,9 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Silver Winner",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
+    image: foScreenLeftStarTrek,
     gallery: [
-      { gradient: "from-gray-900 via-neutral-800 to-gray-900", label: "Finished Theater" },
-      { gradient: "from-neutral-800 via-gray-900 to-neutral-900", label: "Framing Stage" },
-      { gradient: "from-gray-900 via-neutral-900 to-gray-800", label: "Complete View" },
+      { src: foScreenLeftStarTrek, label: "Family Oasis Theater Great Falls VA — Left Side Angle Screen Playing Star Trek Blue Star Ceiling Accent Lighting" },
     ],
   },
   {
