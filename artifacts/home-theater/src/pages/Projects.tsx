@@ -141,10 +141,10 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Gold Winner",
     gradient: "from-slate-900 via-zinc-800 to-gray-900",
     featured: true,
-    image: ntScreenFrontBlank,
+    image: ntScreenLeftAvatar,
     gallery: [
-      { src: ntScreenLeftAvatar, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Avatar" },
       { src: ntScreenFrontBlank, label: "Nautilus Theater Warrenton VA — Screen Wall Front View" },
+      { src: ntScreenLeftAvatar, label: "Nautilus Theater Warrenton VA — Left View Screen Playing Avatar" },
       { src: ntScreenFrontPlaying, label: "Nautilus Theater Warrenton VA — Screen Playing Underwater Film" },
       { src: ntScreenFrontPlaying2, label: "Nautilus Theater Warrenton VA — Screen Front View Playing" },
       { src: ntScreenWallCloseup, label: "Nautilus Theater Warrenton VA — Screen Wall Close-Up Purple Lighting" },
