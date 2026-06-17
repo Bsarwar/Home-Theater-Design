@@ -130,6 +130,22 @@ import cvCoverBarFootball from "@assets/screen1_1781717808705.jpg";
 import cvScreenIronMan from "@assets/screen-2_1781717612507.jpg";
 // Golden Touch Home Theater — McLean, Virginia (2023)
 import gtCover from "@assets/LM45_1781719864541.jpg";
+import gtBwSideBlackPanther from "@assets/LM1_1781720087189.jpg";
+import gtBlueLedEmpty from "@assets/LM2_1781720087189.jpg";
+import gtCandyCabinetBlue from "@assets/LM3_1781720087189.jpg";
+import gtScreenEverest from "@assets/LM45_1781720087190.jpg";
+import gtScreenFrontEmpty from "@assets/Screen_Front_1781720087190.jpg";
+import gtScreenLftSeats from "@assets/Screen_LFT_3_1781720087190.jpg";
+import gtScreenLft4 from "@assets/Screen_LFT4_1781720087190.jpg";
+import gtMarbleBarSide from "@assets/Screen_LT2_1781720087190.jpg";
+import gtAvRackFootball from "@assets/screen-AV2_1781720087191.jpg";
+import gtScreen300 from "@assets/Screen-LFT-4_1781720087191.jpg";
+import gtScreenMadMax from "@assets/Screen-LT3_1781720087191.jpg";
+import gtSideViewBw from "@assets/Side_view_2_1781720087191.jpg";
+import gtWholeRt from "@assets/whole_rt_1781720087192.jpg";
+import gtWholeTheater from "@assets/Whole-Theater_1781720087192.jpg";
+import gtWholeInterstellar from "@assets/Whole-Theater2_1781720087192.jpg";
+import gtWholeInterstellar2 from "@assets/Whole-Theater3_1781720087192.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -383,7 +399,23 @@ const projects: Project[] = [
     featured: false,
     image: gtCover,
     gallery: [
-      { src: gtCover, label: "Golden Touch Home Theater McLean VA — Side Angle Screen Playing Everest Film Black Gold Trim Star Ceiling Candy Cabinet" },
+      { src: gtCover,               label: "Golden Touch Home Theater McLean VA — Side Angle Everest On Screen Gold Trim Millwork Fiber Optic Star Ceiling Candy Cabinet" },
+      { src: gtWholeInterstellar,   label: "Golden Touch Home Theater McLean VA — Wide Angle Interstellar On Screen Blue LED Cove Star Ceiling AV Rack Door Open Gold Trim" },
+      { src: gtWholeInterstellar2,  label: "Golden Touch Home Theater McLean VA — Full Room View Interstellar Playing Blue LED Star Ceiling Leather Seating Gold Accent Millwork" },
+      { src: gtWholeTheater,        label: "Golden Touch Home Theater McLean VA — Whole Theater Overview AV Rack Candy Cabinet Blank Screen Blue LED Star Ceiling" },
+      { src: gtWholeRt,             label: "Golden Touch Home Theater McLean VA — Wide Angle Right Side Blue LED Cove Leather Recliners Candy Cabinet Gold Trim Panels" },
+      { src: gtScreen300,           label: "Golden Touch Home Theater McLean VA — 300 Spartans On Screen Leather Seating Blue LED Star Ceiling Gold Trim Acoustic Panels" },
+      { src: gtScreenMadMax,        label: "Golden Touch Home Theater McLean VA — Mad Max Fury Road On Screen Marble Counter Bar Leather Seats Blue LED Star Ceiling Gold Trim" },
+      { src: gtScreenEverest,       label: "Golden Touch Home Theater McLean VA — Everest Film On Screen Candy Cabinet Marble Top Blue LED Fiber Optic Ceiling Gold Millwork" },
+      { src: gtAvRackFootball,      label: "Golden Touch Home Theater McLean VA — AV Equipment Rack Football Game On Screen Candy Cabinet Blue LED Star Ceiling Gold Trim" },
+      { src: gtMarbleBarSide,       label: "Golden Touch Home Theater McLean VA — Marble Counter Bar Side View Blank Screen Blue LED Cove Gold Trim Leather Seats" },
+      { src: gtScreenFrontEmpty,    label: "Golden Touch Home Theater McLean VA — Front View Blank Screen Blue LED Star Ceiling Candy Cabinet Crystal Wall Sconce Gold Trim" },
+      { src: gtScreenLftSeats,      label: "Golden Touch Home Theater McLean VA — Left Angle Blank Screen Leather Seat Row Blue LED Star Ceiling Gold Trim Acoustic Panels" },
+      { src: gtScreenLft4,          label: "Golden Touch Home Theater McLean VA — Left Perspective Blank Screen Blue LED Cove Leather Recliners Gold Accent Millwork" },
+      { src: gtCandyCabinetBlue,    label: "Golden Touch Home Theater McLean VA — Candy Cabinet Colorful Drawer Labels Marble Top Blank Screen Blue LED Star Ceiling Gold Trim" },
+      { src: gtBlueLedEmpty,        label: "Golden Touch Home Theater McLean VA — Blank Screen Blue LED Cove Lighting Star Ceiling Gold Trim Marble Counter Leather Seats" },
+      { src: gtBwSideBlackPanther,  label: "Golden Touch Home Theater McLean VA — Black White Side Angle Black Panther On Screen Marble Counter Star Ceiling Gold Trim Molding" },
+      { src: gtSideViewBw,          label: "Golden Touch Home Theater McLean VA — Black White Side View Multiple Leather Seat Rows Blank Screen Crystal Sconces Star Ceiling" },
     ],
   },
   {
