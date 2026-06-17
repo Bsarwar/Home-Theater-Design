@@ -377,7 +377,7 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "McLean, VA",
     year: "2023",
-    size: "Custom Works — AV Design & Install",
+    size: "Dark Elegance — Gold Trim Millwork, Star Ceiling & Custom Snack Bar",
     credit: "Custom Works — AV Design & Install",
     gradient: "from-yellow-950 via-stone-900 to-yellow-950",
     featured: false,
