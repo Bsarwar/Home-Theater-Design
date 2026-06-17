@@ -59,6 +59,7 @@ import foScreenMidRight from "@assets/Screenmidrt3_1781715978128.jpg";
 import foScreenMidRightPlaying from "@assets/Screenmidrt3P_1781715978129.jpg";
 import foScreenRight from "@assets/ScreetRT_1781715978129.jpg";
 import foSeatingLeft from "@assets/Seating-LFT2_1781715978129.jpg";
+import foScreenLeftPlaying from "@assets/Screen-LFT2p_1781716503732.jpg";
 import foSeatingRight from "@assets/Seating-RT2_1781715978129.jpg";
 import foClosetOpen from "@assets/closet_1781716221977.jpg";
 import foClosetClosed from "@assets/closet-2_1781716221978.jpg";
@@ -263,7 +264,7 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Silver Winner",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
-    image: foSeatingLeft,
+    image: foScreenLeftPlaying,
     gallery: [
       { src: foSeatingLeft, label: "Family Oasis Theater Great Falls VA — Full Seating View Chaise Lounger Leather Recliners Tiered Platform Blue Star Ceiling" },
       { src: foScreenLeft2a, label: "Family Oasis Theater Great Falls VA — Left Side View Full Seating Rows Blank Screen Blue Fiber Optic Star Ceiling" },
