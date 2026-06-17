@@ -25,6 +25,17 @@ import ntSeatingLeftPurple from "@assets/Seating-LFT_1781713607625.jpg";
 import ntSeatingRightHatch from "@assets/Seating-RT_1781713607625.jpg";
 import ntLightSwitch from "@assets/LightSW_1781713607621.jpg";
 import ntProjectorHousing from "@assets/projectior-box_1781713607621.jpg";
+import ntCabinets from "@assets/cabinets_1781713824645.jpg";
+import ntDetailWall from "@assets/Detal-wall-1_1781713824646.jpg";
+import ntDoor1 from "@assets/door-1_1781713824646.jpg";
+import ntDoor2 from "@assets/door2_1781713824646.jpg";
+import ntDoor3 from "@assets/door3_1781713824646.jpg";
+import ntDoorBw from "@assets/door-BW_1781713824647.jpg";
+import ntLightSwitch2 from "@assets/LightSW_1781713824647.jpg";
+import ntTheaterEntry from "@assets/Theater-entry_1781713824647.jpg";
+import ntTheaterEntry2 from "@assets/Theater-entry2_1781713824647.jpg";
+import ntWallDetails from "@assets/wall-details_1781713824648.jpg";
+import ntWallDetails2 from "@assets/wall-details-2_1781713824648.jpg";
 // Blade Runner Theater — Vienna, Virginia (2025 CE Pro Silver)
 import brScreenLeftPlaying from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import brScreenLeftBlank from "@assets/ScreenLFTp_1781706241333.jpg";
@@ -152,6 +163,17 @@ const projects: Project[] = [
       { src: ntBwLeftView, label: "Nautilus Theater Warrenton VA — Black and White Left View" },
       { src: ntBwRightView, label: "Nautilus Theater Warrenton VA — Black and White Right Angle View" },
       { src: ntBwSeatingHatch, label: "Nautilus Theater Warrenton VA — Black and White Seating and Hatch Door" },
+      { src: ntTheaterEntry, label: "Nautilus Theater Warrenton VA — Submarine Hatch Entry Door From Outside" },
+      { src: ntTheaterEntry2, label: "Nautilus Theater Warrenton VA — Entry Hatch Door Close-Up With Porthole" },
+      { src: ntDoor1, label: "Nautilus Theater Warrenton VA — Interior Submarine Hatch Door and Screen Wall" },
+      { src: ntDoor2, label: "Nautilus Theater Warrenton VA — Interior Hatch Door With Nautical Decor" },
+      { src: ntDoor3, label: "Nautilus Theater Warrenton VA — Hatch Door Porthole and Wheel Close-Up" },
+      { src: ntDoorBw, label: "Nautilus Theater Warrenton VA — Black and White Hatch Door Detail" },
+      { src: ntWallDetails, label: "Nautilus Theater Warrenton VA — Side Wall Detail With Seating and Hatch" },
+      { src: ntWallDetails2, label: "Nautilus Theater Warrenton VA — Side Wall Rivet Detail and Seating" },
+      { src: ntDetailWall, label: "Nautilus Theater Warrenton VA — Wall Sconce Lighting and Rivet Panel Detail" },
+      { src: ntCabinets, label: "Nautilus Theater Warrenton VA — Built-In Cabinet and Side Wall Detail" },
+      { src: ntLightSwitch2, label: "Nautilus Theater Warrenton VA — Submarine Gauge and Toggle Switch Detail" },
     ],
   },
   {
