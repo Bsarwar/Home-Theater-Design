@@ -158,6 +158,21 @@ import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
 import ngCover from "@assets/screen--frontPO_1781721515887.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
+import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
+import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
+import ngScreenMidLft from "@assets/screen-midlft_1781722611128.jpg";
+import ngScreenMidLftPO from "@assets/screen-midlftPO_1781722611128.jpg";
+import ngScreenRT2 from "@assets/screen-RT2_1781722611128.jpg";
+import ngScreenRT2PO from "@assets/screen-RT2PO_1781722611129.jpg";
+import ngScreenRtBlue2 from "@assets/screenrtblue2_1781722611129.jpg";
+import ngSeating3 from "@assets/seating3_1781722611129.jpg";
+import ngSeatingCenter2 from "@assets/seating-center2_1781722611129.jpg";
+import ngSeatingLft from "@assets/seating-lft_1781722611129.jpg";
+import ngSeatingLft7 from "@assets/seating-lft7_1781722611130.jpg";
+import ngSeatsBack2 from "@assets/seats-back2_1781722611130.jpg";
+import ngSteps3 from "@assets/steps3_1781722611130.jpg";
+import ngWallRT from "@assets/wall-RT_1781722611130.jpg";
+import ngWallRT4 from "@assets/wall-RT4_1781722611131.jpg";
 import gtBarControl4 from "@assets/Bar-1_1781720321602.jpg";
 import gtBarStools from "@assets/Bar-2_1781720321602.jpg";
 import gtBarLength from "@assets/Bar-3_1781720321602.jpg";
@@ -225,8 +240,23 @@ const projects: Project[] = [
     featured: false,
     image: ngCover,
     gallery: [
-      { src: ngCover,    label: "The Next Galaxy Theater Aldie VA — Screen Wall Mountain Climber Film Blue LED Cove Star Ceiling Velvet Curtains Acoustic Panels" },
-      { src: ngBarView,  label: "The Next Galaxy Theater Aldie VA — Marble Bar View Blue LED Cove Star Ceiling Screen Velvet Curtains Leather Seats" },
+      { src: ngCover,          label: "Willowsford Modern Theater Aldie VA — Screen Wall Mountain Climber Film Blue LED Cove Star Ceiling Velvet Curtains" },
+      { src: ngScreenFrontPO,  label: "Willowsford Modern Theater Aldie VA — Front Screen Wall Mountain Climber Projection Blue LED Cove Acoustic Panels" },
+      { src: ngScreenFront,    label: "Willowsford Modern Theater Aldie VA — Front Screen Wall Blank Blue LED Cove Star Ceiling Clean Modern Design" },
+      { src: ngScreenMidLftPO, label: "Willowsford Modern Theater Aldie VA — Mid-Left View Avatar Film Playing Leather Seats Blue LED Star Ceiling" },
+      { src: ngScreenMidLft,   label: "Willowsford Modern Theater Aldie VA — Mid-Left Angle Blank Screen Leather Recliners Blue LED Cove Star Ceiling" },
+      { src: ngScreenRT2PO,    label: "Willowsford Modern Theater Aldie VA — Right Angle Star Wars Lightsaber Film Leather Seating Blue Purple LED Cove" },
+      { src: ngScreenRT2,      label: "Willowsford Modern Theater Aldie VA — Right Angle Blank Screen Leather Seat Rows Blue LED Cove Star Ceiling" },
+      { src: ngScreenRtBlue2,  label: "Willowsford Modern Theater Aldie VA — Right Side View Screen Wall Blue LED Cove Lighting Leather Seats Carpet" },
+      { src: ngWallRT,         label: "Willowsford Modern Theater Aldie VA — Full Room Right Acoustic Wall Panels Blue LED Cove Ceiling Leather Seating" },
+      { src: ngWallRT4,        label: "Willowsford Modern Theater Aldie VA — Left Acoustic Panel Wall Close-Up Blue LED Star Ceiling Leather Rows" },
+      { src: ngSeatingLft,     label: "Willowsford Modern Theater Aldie VA — Left Side Seating Rows LED Step Lighting Back Bar Projector Star Ceiling" },
+      { src: ngSeatingLft7,    label: "Willowsford Modern Theater Aldie VA — Left Seating Entry Door Marble Bar LED Step Lighting Blue Cove" },
+      { src: ngSeatingCenter2, label: "Willowsford Modern Theater Aldie VA — Center Rear View Full Leather Seating LED Columns Back Bar Star Ceiling" },
+      { src: ngSeating3,       label: "Willowsford Modern Theater Aldie VA — Rear Full Seating Arrangement Back Wall LED Vertical Strips Bar Counter" },
+      { src: ngSeatsBack2,     label: "Willowsford Modern Theater Aldie VA — Back Row Leather Seats Projector Housing LED Vertical Strips Slatted Wood Bar" },
+      { src: ngSteps3,         label: "Willowsford Modern Theater Aldie VA — Entry Hall Steps Blue LED Step Lighting Entry Door Star Ceiling" },
+      { src: ngBarView,        label: "Willowsford Modern Theater Aldie VA — Marble Bar View Blue LED Cove Star Ceiling Screen Velvet Curtains" },
     ],
   },
   {
