@@ -57,9 +57,9 @@ const serviceCards = [
 ];
 
 const projects = [
-  { title: "Great Falls Estate", type: "Private Cinema", location: "Great Falls, VA", gradient: "from-slate-900 via-amber-950 to-slate-900" },
-  { title: "Georgetown Townhouse", type: "Dedicated Theater", location: "Washington, DC", gradient: "from-gray-900 via-zinc-800 to-gray-900" },
-  { title: "McLean Residence", type: "Luxury Screening Room", location: "McLean, VA", gradient: "from-slate-800 via-gray-900 to-slate-900" },
+  { title: "Great Falls Estate", type: "Dedicated Theater", location: "Great Falls, VA", image: heroImg1 },
+  { title: "Award-Winning Theater — CE Pro 2024", type: "Dedicated Theater", location: "Northern Virginia", image: heroImg2 },
+  { title: "EH Home of the Year 2018", type: "Dedicated Theater", location: "Nokesville, VA", image: heroImg3 },
 ];
 
 const testimonials = [
@@ -467,27 +467,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map((project, i) => (
               <FadeIn key={project.title} delay={i * 80}>
-                <div
-                  data-testid={`project-card-${i}`}
-                  className={`relative overflow-hidden group cursor-pointer ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
-                >
+                <Link href="/projects" key={project.title}>
                   <div
-                    className={`bg-gradient-to-br ${project.gradient} flex items-center justify-center ${i === 0 ? "h-72 md:h-full min-h-[350px]" : "h-48 md:h-56"}`}
+                    data-testid={`project-card-${i}`}
+                    className={`relative overflow-hidden group cursor-pointer ${i === 0 ? "md:col-span-2 md:row-span-2" : ""}`}
                   >
-                    <div className="text-center p-8">
-                      <div className="w-16 h-16 border border-[hsl(38_75%_52%/0.4)] flex items-center justify-center mx-auto mb-4">
-                        <Play className="text-[hsl(38_75%_52%)]" size={20} />
-                      </div>
-                      <div className="font-serif text-2xl text-[hsl(38_20%_88%)] opacity-60">{project.title}</div>
+                    <div className={`relative overflow-hidden ${i === 0 ? "h-72 md:h-full min-h-[350px]" : "h-48 md:h-56"}`}>
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_5%)] via-transparent to-transparent opacity-80" />
+                    <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                      <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-1">{project.type}</div>
+                      <div className="font-serif text-xl text-[hsl(38_20%_90%)]">{project.title}</div>
+                      <div className="text-[hsl(38_10%_55%)] text-xs mt-1">{project.location}</div>
                     </div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220_15%_5%)] via-transparent to-transparent opacity-80" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="text-[hsl(38_75%_52%)] text-xs tracking-[0.2em] uppercase mb-1">{project.type}</div>
-                    <div className="font-serif text-xl text-[hsl(38_20%_90%)]">{project.title}</div>
-                    <div className="text-[hsl(38_10%_55%)] text-xs mt-1">{project.location}</div>
-                  </div>
-                </div>
+                </Link>
               </FadeIn>
             ))}
           </div>
