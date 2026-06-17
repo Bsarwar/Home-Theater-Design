@@ -191,11 +191,11 @@ const projects: Project[] = [
     ],
   },
   {
-    title: "Bethesda Estate",
+    title: "Modern Fusion Home Theater",
     type: "Dedicated Theaters",
-    location: "Bethesda, MD",
-    year: "2023",
-    size: "16-Seat Home Cinema — Room-Within-Room Build",
+    location: "Nokesville, VA",
+    year: "2018",
+    size: "EH Publishing Home of the Year — Bronze",
     gradient: "from-zinc-900 via-stone-800 to-slate-900",
     featured: false,
     gallery: [
