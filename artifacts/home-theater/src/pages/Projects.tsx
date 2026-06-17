@@ -33,7 +33,6 @@ import mfhtFrontPurpleLighting from "@assets/Front-Pur_1781715255323.jpg";
 import mfhtFrontTealBlue from "@assets/Front-tblu_1781715255323.jpg";
 import mfhtFrontAvatar from "@assets/front-tpur_1781715255323.jpg";
 import mfhtFullSeating from "@assets/Fseating_1781715255323.jpg";
-import mfhtSideAngle300 from "@assets/FTheater_1781715255324.jpg";
 import mfhtEquipmentRack from "@assets/rack_2_1781715255324.jpg";
 import mfhtRightLeftPurple from "@assets/Rl-Purp_1781715255324.jpg";
 import mfhtRearLeftBar from "@assets/RL-tblk_1781715255324.jpg";
@@ -213,7 +212,6 @@ const projects: Project[] = [
       { src: mfhtRearRightBlue, label: "Modern Fusion Home Theater Nokesville VA — Rear Right Angle Blue Grey Ambient Lighting Tiered Seating" },
       { src: mfhtSideFrontBlue, label: "Modern Fusion Home Theater Nokesville VA — Side Front View Full Seating Rows Blue Ambient Lighting" },
       { src: mfhtFullSeating, label: "Modern Fusion Home Theater Nokesville VA — Full Seating Rows From Rear Star Ceiling Overhead Projector Visible" },
-      { src: mfhtSideAngle300, label: "Modern Fusion Home Theater Nokesville VA — Side Angle Screen Playing 300 Film EH Home of the Year Bronze Winner" },
       { src: mfhtMain, label: "Modern Fusion Home Theater Nokesville VA — Left Side Angle Screen Playing 300 Film EH Bronze Winner 2018" },
       { src: mfhtEquipmentRack, label: "Modern Fusion Home Theater Nokesville VA — AV Equipment Rack Parasound Amplifiers Professional Installation" },
     ],
