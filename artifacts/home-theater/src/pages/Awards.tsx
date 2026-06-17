@@ -309,7 +309,7 @@ export default function Awards() {
             {[
               { name: "Electronic House", sub: "Home of the Year", cover: cepro2017cover },
               { name: "CE Pro", sub: "Home of the Year", cover: ceprocover },
-              { name: "CEDIA", sub: "Global Awards", cover: cepro2025cover },
+              { name: "CEDIA", sub: "Home of the Year", cover: cepro2025cover },
               { name: "Houzz", sub: "Best of Service 2023", cover: houzzBadge },
             ].map((pub, i) => (
               <FadeIn key={pub.name} delay={i * 80}>
