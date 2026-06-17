@@ -128,6 +128,8 @@ import cvScreenUVA from "@assets/front_1781717612506.jpg";
 import cvScreenFootball from "@assets/screen1_1781717612507.jpg";
 import cvCoverBarFootball from "@assets/screen1_1781717808705.jpg";
 import cvScreenIronMan from "@assets/screen-2_1781717612507.jpg";
+// Golden Touch Home Theater — McLean, Virginia (2023)
+import gtCover from "@assets/LM45_1781719864541.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -379,10 +381,9 @@ const projects: Project[] = [
     credit: "Custom Works — AV Design & Install",
     gradient: "from-yellow-950 via-stone-900 to-yellow-950",
     featured: false,
+    image: gtCover,
     gallery: [
-      { gradient: "from-yellow-950 via-stone-900 to-yellow-950", label: "Main Theater View" },
-      { gradient: "from-stone-900 via-yellow-950 to-stone-900", label: "Screen Wall" },
-      { gradient: "from-yellow-950 via-stone-900 to-yellow-950", label: "Seating" },
+      { src: gtCover, label: "Golden Touch Home Theater McLean VA — Side Angle Screen Playing Everest Film Black Gold Trim Star Ceiling Candy Cabinet" },
     ],
   },
   {
