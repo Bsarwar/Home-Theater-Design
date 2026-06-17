@@ -219,7 +219,7 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "Aldie, VA",
     year: "2026",
-    size: "Willowsford Escape",
+    size: "Loudoun County Estate — Star Ceiling, Blue LED Cove & Velvet Surround",
     credit: "Custom Works — AV Design & Install",
     gradient: "from-indigo-950 via-slate-900 to-indigo-950",
     featured: false,
