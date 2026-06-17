@@ -480,7 +480,6 @@ export default function Home() {
                       />
                     </div>
                     <div className="p-5 bg-[hsl(220_15%_9%)]">
-                      <div className="text-[hsl(38_75%_52%)] text-[10px] tracking-[0.2em] uppercase mb-1">{project.type}</div>
                       <div className="font-serif text-lg text-[hsl(38_20%_90%)] group-hover:text-[hsl(38_75%_52%)] transition-colors duration-300">{project.title}</div>
                       <div className="text-[hsl(38_10%_50%)] text-xs mt-1">{project.location}</div>
                     </div>
