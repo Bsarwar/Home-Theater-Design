@@ -157,6 +157,7 @@ import gtSconceDetail from "@assets/sconce2_1781720165750.jpg";
 import gtSeatViewWide from "@assets/seat_view_1781720165750.jpg";
 import gtSideBlankScreen from "@assets/side_1781720165750.jpg";
 import ngCover from "@assets/screen--frontPO_1781721515887.jpg";
+import lfCover from "@assets/screen25P_1781723544474.jpg";
 import ngBarView from "@assets/ScreenFB5_1781721422957.jpg";
 import ngScreenFront from "@assets/screen--front_1781722611127.jpg";
 import ngScreenFrontPO from "@assets/screen--frontPO_1781722611128.jpg";
@@ -305,6 +306,20 @@ const projects: Project[] = [
       { src: ngGym3,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Built-In Cabinets Cedar Wood Slat Wall Home Wellness Room" },
       { src: ngGym4,           label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Close-Up Glass Door Cedar Interior Wood Panel Accent Wall" },
       { src: ngSaunaDetail,    label: "Willowsford Modern Theater Aldie VA — Infrared Sauna Entry Detail Warm Cedar Wood Slat Panels Track Lighting Wellness Suite" },
+    ],
+  },
+  {
+    title: "Luminous Fusion Home Theater",
+    type: "Dedicated Theaters",
+    location: "Aldie, VA",
+    year: "2026",
+    size: "Indirect Linear LEDs — Blue Cove Ceiling, Column Uplighting & Tiered Seating",
+    credit: "Custom Works — AV Design & Install",
+    gradient: "from-blue-950 via-slate-900 to-blue-950",
+    featured: false,
+    image: lfCover,
+    gallery: [
+      { src: lfCover, label: "Luminous Fusion Home Theater Aldie VA — Indirect Linear LED Columns Blue Cove Ceiling Mountain Climber Film Leather Seats Tiered" },
     ],
   },
   {
