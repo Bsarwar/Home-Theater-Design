@@ -273,33 +273,39 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
           </button>
         </div>
 
-        {/* Main Image */}
+        {/* Slider */}
         <div className="relative flex-1 min-h-0 overflow-hidden">
-          {"src" in current ? (
-            <img
-              src={current.src}
-              alt={current.label}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className={`w-full h-full bg-gradient-to-br ${current.gradient} flex items-center justify-center`}>
-              <div className="text-center opacity-30">
-                <Images size={48} className="text-[hsl(38_75%_52%)] mx-auto mb-3" />
-                <p className="text-[hsl(38_10%_60%)] text-sm tracking-widest uppercase">{current.label}</p>
+          {/* Track */}
+          <div
+            className="flex h-full transition-transform duration-500 ease-in-out"
+            style={{ width: `${project.gallery.length * 100}%`, transform: `translateX(-${active * (100 / project.gallery.length)}%)` }}
+          >
+            {project.gallery.map((item, i) => (
+              <div key={i} className="h-full flex-shrink-0" style={{ width: `${100 / project.gallery.length}%` }}>
+                {"src" in item ? (
+                  <img src={item.src} alt={item.label} className="w-full h-full object-cover" />
+                ) : (
+                  <div className={`w-full h-full bg-gradient-to-br ${item.gradient} flex items-center justify-center`}>
+                    <div className="text-center opacity-30">
+                      <Images size={48} className="text-[hsl(38_75%_52%)] mx-auto mb-3" />
+                      <p className="text-[hsl(38_10%_60%)] text-sm tracking-widest uppercase">{item.label}</p>
+                    </div>
+                  </div>
+                )}
               </div>
-            </div>
-          )}
+            ))}
+          </div>
 
           {/* Overlay gradient bottom */}
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[hsl(220_15%_7%)] to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[hsl(220_15%_7%)] to-transparent pointer-events-none" />
 
           {/* Image label */}
-          <div className="absolute bottom-4 left-6 text-[hsl(38_10%_60%)] text-xs tracking-widest uppercase">
-            {current.label}
+          <div className="absolute bottom-4 left-6 text-[hsl(38_10%_60%)] text-xs tracking-widest uppercase pointer-events-none">
+            {project.gallery[active].label}
           </div>
 
           {/* Counter */}
-          <div className="absolute bottom-4 right-6 text-[hsl(38_10%_45%)] text-xs tabular-nums">
+          <div className="absolute bottom-4 right-6 text-[hsl(38_10%_45%)] text-xs tabular-nums pointer-events-none">
             {active + 1} / {project.gallery.length}
           </div>
 
