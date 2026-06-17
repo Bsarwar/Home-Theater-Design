@@ -314,6 +314,7 @@ const projects: Project[] = [
     location: "Great Falls, VA",
     year: "2025",
     size: "CE Pro Home of the Year — Silver Winner",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
     tags: ["Star Ceiling"],
