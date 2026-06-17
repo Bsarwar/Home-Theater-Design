@@ -195,7 +195,7 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "Nokesville, VA",
     year: "2018",
-    size: "EH Publishing Home of the Year — Bronze",
+    size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-zinc-900 via-stone-800 to-slate-900",
     featured: false,
     gallery: [
