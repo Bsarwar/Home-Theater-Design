@@ -274,7 +274,7 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
         </div>
 
         {/* Main Image */}
-        <div className="relative flex-1 min-h-0 overflow-hidden" style={{ minHeight: "340px", maxHeight: "500px" }}>
+        <div className="relative flex-1 min-h-0 overflow-hidden" style={{ minHeight: "480px", maxHeight: "700px" }}>
           {"src" in current ? (
             <img
               src={current.src}
@@ -322,31 +322,6 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
           )}
         </div>
 
-        {/* Thumbnails */}
-        {project.gallery.length > 1 && (
-          <div className="flex gap-2 px-6 py-4 border-t border-[hsl(220_15%_14%)] overflow-x-auto scrollbar-none shrink-0">
-            {project.gallery.map((item, i) => (
-              <button
-                key={i}
-                onClick={() => setActive(i)}
-                className={`shrink-0 w-16 h-12 relative overflow-hidden border-2 transition-all duration-200 ${
-                  active === i
-                    ? "border-[hsl(38_75%_52%)]"
-                    : "border-[hsl(220_15%_18%)] opacity-60 hover:opacity-90 hover:border-[hsl(220_15%_28%)]"
-                }`}
-              >
-                {"src" in item ? (
-                  <img src={item.src} alt={item.label} className="w-full h-full object-cover" />
-                ) : (
-                  <div className={`w-full h-full bg-gradient-to-br ${item.gradient}`} />
-                )}
-                {active === i && (
-                  <div className="absolute inset-x-0 bottom-0 h-0.5 bg-[hsl(38_75%_52%)]" />
-                )}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
     </div>
   );
