@@ -237,6 +237,7 @@ const projects: Project[] = [
     size: "EH Publishing Home of the Year — Bronze Winner",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
     featured: false,
+    tags: ["Star Ceiling"],
     image: mfhtCover,
     gallery: [
       { src: mfhtCover, label: "Modern Fusion Home Theater Nokesville VA — Side Angle Playing 300 Film Purple Star Ceiling EH Home of the Year Bronze Winner 2018" },
@@ -264,6 +265,7 @@ const projects: Project[] = [
     size: "CE Pro Home of the Year — Silver Winner",
     gradient: "from-gray-900 via-neutral-800 to-gray-900",
     featured: false,
+    tags: ["Star Ceiling"],
     image: foScreenLeftPlaying,
     gallery: [
       { src: foSeatingLeft, label: "Family Oasis Theater Great Falls VA — Full Seating View Chaise Lounger Leather Recliners Tiered Platform Blue Star Ceiling" },
