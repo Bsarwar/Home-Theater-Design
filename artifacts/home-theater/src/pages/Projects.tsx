@@ -160,6 +160,7 @@ type Project = {
   location: string;
   year: string;
   size: string;
+  credit?: string;
   gradient: string;
   featured: boolean;
   image?: string;
@@ -175,7 +176,8 @@ const projects: Project[] = [
     tags: ["Dedicated Theaters", "Themed Theaters", "Star Ceiling"],
     location: "Vienna, Virginia",
     year: "2025",
-    size: "CE Pro Home of the Year — Silver Winner · Custom Works AV Design & Install",
+    size: "CE Pro Home of the Year — Silver Winner",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-violet-950 via-slate-900 to-indigo-950",
     featured: true,
     image: portfolioImg1,
@@ -209,7 +211,8 @@ const projects: Project[] = [
     tags: ["Themed Theaters", "Star Ceiling"],
     location: "Warrenton, VA",
     year: "2024",
-    size: "CE Pro Home of the Year — Gold Winner · Custom Works AV Design & Install",
+    size: "CE Pro Home of the Year — Gold Winner",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-slate-900 via-zinc-800 to-gray-900",
     featured: true,
     image: ntScreenLeftAvatar,
@@ -252,7 +255,8 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "Nokesville, VA",
     year: "2018",
-    size: "EH Publishing Home of the Year — Bronze Winner · Custom Works AV Design & Install",
+    size: "EH Publishing Home of the Year — Bronze Winner",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-gray-900 via-slate-800 to-zinc-900",
     featured: true,
     tags: ["Star Ceiling"],
@@ -280,7 +284,8 @@ const projects: Project[] = [
     type: "Dedicated Theaters",
     location: "Aldie, VA",
     year: "2019",
-    size: "CE Pro Best Project Award — Bronze Winner · Custom Works AV Design & Install",
+    size: "CE Pro Best Project Award — Bronze Winner",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-stone-900 via-neutral-800 to-stone-900",
     featured: false,
     image: cvCoverBarFootball,
@@ -370,6 +375,7 @@ const projects: Project[] = [
     location: "McLean, VA",
     year: "2023",
     size: "Custom Works — AV Design & Install",
+    credit: "Custom Works — AV Design & Install",
     gradient: "from-yellow-950 via-stone-900 to-yellow-950",
     featured: false,
     gallery: [
@@ -702,6 +708,9 @@ export default function Projects() {
                       <span>{project.location}</span>
                     </div>
                     <p className="text-[hsl(38_10%_45%)] text-xs">{project.size}</p>
+                    {project.credit && (
+                      <p className="text-[hsl(38_10%_38%)] text-[10px] mt-1 tracking-wide">{project.credit}</p>
+                    )}
                   </div>
                 </div>
               </FadeIn>
