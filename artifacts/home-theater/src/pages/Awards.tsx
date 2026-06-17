@@ -16,6 +16,7 @@ import ceprocover from "@assets/2024-11-27_12-42-34_1781654216399.jpg";
 import cepro2017cover from "@assets/2026-06-16_19-49-53_1781654297270.jpg";
 import cepro2025cover from "@assets/2025-12-09_21-53-40_1781654425189.jpg";
 import houzzBadge from "@assets/2023-Houzz-_1781655120311.jpg";
+import eh2016Badge from "@assets/20203-Houzz-_1781655254405.jpg";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -305,14 +306,15 @@ export default function Awards() {
               </p>
             </div>
           </FadeIn>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[hsl(220_15%_14%)]">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-px bg-[hsl(220_15%_14%)]">
             {[
               { name: "Electronic House", sub: "Home of the Year", cover: cepro2017cover },
               { name: "CE Pro", sub: "Home of the Year", cover: ceprocover },
               { name: "CEDIA", sub: "Global Awards", cover: cepro2025cover },
               { name: "Houzz", sub: "Best of Service 2023", cover: houzzBadge },
+              { name: "Electronic House", sub: "Home of the Year 2016 Silver", cover: eh2016Badge },
             ].map((pub, i) => (
-              <FadeIn key={pub.name} delay={i * 80}>
+              <FadeIn key={i} delay={i * 80}>
                 <div className="bg-[hsl(220_15%_7%)] flex flex-col items-center justify-center py-10 px-6 text-center hover:bg-[hsl(220_15%_9%)] transition-colors duration-300">
                   <div className="w-24 h-32 mb-4 flex items-center justify-center overflow-hidden">
                     {pub.cover ? (
