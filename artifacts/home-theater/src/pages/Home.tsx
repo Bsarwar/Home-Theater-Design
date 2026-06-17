@@ -13,6 +13,7 @@ import soundIsolationHomeImg from "@assets/2026-06-07_00-34-02_1780948524422.jpg
 import millworkHomeImg from "@assets/DSC_1332_1780948646880.jpg";
 import starPanelHomeImg from "@assets/DSC_0227_1780949274882.jpg";
 import laurelImg from "@assets/Awardwhite_1780979126834.png";
+import ProjectSlider from "@/components/ProjectSlider";
 
 
 const heroSlides = [
@@ -69,6 +70,57 @@ const testimonials = [
 ];
 
 const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen", "Screen Innovations", "Paradigm", "Anthem", "Seymour"];
+
+const featuredSlides = [
+  {
+    src: heroImg1,
+    tag: "Featured Project",
+    title: "McLean Estate Private Cinema",
+    description: "14-seat dedicated theater with full acoustic isolation, motorized drapes, and Dolby Atmos 9.2.6 surround. Custom fabric wall panels and coffered ceiling.",
+  },
+  {
+    src: heroImg2,
+    tag: "CE Pro Home of the Year 2024",
+    title: "Great Falls Award-Winning Theater",
+    description: "Gold-award-winning design featuring a 4K laser projector, Stewart Filmscreen, and bespoke tiered seating built for a discerning film enthusiast.",
+  },
+  {
+    src: heroImg3,
+    tag: "EH Home of the Year 2018",
+    title: "Nokesville Modern Fusion Theater",
+    description: "Bronze-winning home cinema with vibrant LED cove lighting, premium acoustic treatment, and a fully integrated Lutron lighting control system.",
+  },
+  {
+    src: millworkHomeImg,
+    tag: "Custom Millwork",
+    title: "Willowsford Custom Millwork & Cabinetry",
+    description: "Floor-to-ceiling custom millwork with integrated speaker baffles, concealed equipment bays, and hand-finished trim throughout the theater surround.",
+  },
+  {
+    src: starPanelHomeImg,
+    tag: "Star Panel Ceiling",
+    title: "Fiber-Optic Star Ceiling Installation",
+    description: "Handcrafted fiber-optic star ceiling with 800+ individually placed points of light — a signature element of our most exclusive theater builds.",
+  },
+  {
+    src: acousticsHomeImg,
+    tag: "Acoustic Engineering",
+    title: "Full Sound Isolation & Acoustic Design",
+    description: "Double-wall room-within-a-room framing, resilient channel, mass-loaded vinyl, and precision bass trap placement for a completely silent acoustic environment.",
+  },
+  {
+    src: lightingHomeImg,
+    tag: "Lighting & Control",
+    title: "Lutron Scene Lighting & Automation",
+    description: "Fully programmable scene lighting with Lutron Homeworks QS integration — one touch transforms the room from bright lounge to full cinema mode.",
+  },
+  {
+    src: mediaRoomsHomeImg,
+    tag: "Media Room",
+    title: "Aldie Family Media Room",
+    description: "Open-plan media room designed for family use, featuring a 120\" screen, surround sound, custom built-in cabinetry, and a wet bar pass-through.",
+  },
+];
 
 const processSteps = [
   { num: "01", title: "Consultation", desc: "We visit your home, collect site details and measurements, and go over your vision for the space." },
@@ -249,6 +301,29 @@ export default function Home() {
 
         </div>
       </section>
+      {/* FEATURED PROJECT SLIDER */}
+      <section className="w-full bg-black">
+        <div className="max-w-[1600px] mx-auto">
+          <div className="px-6 pt-14 pb-6 flex items-end justify-between">
+            <div>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="h-px w-8 bg-[hsl(38_75%_52%)]" />
+                <span className="text-[hsl(38_75%_52%)] text-[10px] tracking-[0.3em] uppercase">Portfolio Highlights</span>
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl text-[hsl(38_20%_90%)] font-light">
+                Featured <span className="italic text-[hsl(38_75%_52%)]">Projects</span>
+              </h2>
+            </div>
+            <Link href="/projects">
+              <span className="hidden sm:inline-flex items-center gap-2 text-[hsl(38_75%_52%)] text-xs tracking-[0.15em] uppercase hover:text-[hsl(38_75%_65%)] transition-colors duration-200 cursor-pointer">
+                View All <ArrowRight size={12} />
+              </span>
+            </Link>
+          </div>
+          <ProjectSlider slides={featuredSlides} autoPlayMs={5500} aspectRatio="aspect-[16/7]" />
+        </div>
+      </section>
+
       {/* SERVICES OVERVIEW */}
       <section data-testid="services-section" className="bg-[hsl(220_15%_5%)]">
         {/* Ticker bar */}
