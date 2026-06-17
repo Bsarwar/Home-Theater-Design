@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
-import portfolioImg1 from "@assets/LMp4_1780573575270.jpg";
+import portfolioImg1 from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
 
 function useInView(threshold = 0.1) {
@@ -45,19 +45,18 @@ const filters = ["All", "Dedicated Theaters", "Media Room", "TV Walls", "Themed 
 
 const projects: Project[] = [
   {
-    title: "Great Falls Estate",
+    title: "Blade Runner Theater",
     type: "Dedicated Theaters",
-    location: "Great Falls, VA",
-    year: "2024",
-    size: "14-Seat Private Cinema — Full Build",
-    gradient: "from-amber-950 via-stone-900 to-slate-900",
+    location: "Vienna, Virginia",
+    year: "2025",
+    size: "CE Pro Home of the Year — Silver Winner",
+    gradient: "from-violet-950 via-slate-900 to-indigo-950",
     featured: true,
     image: portfolioImg1,
     gallery: [
-      { src: portfolioImg1, label: "Main Theater" },
-      { src: portfolioImg1, label: "Rear Seating" },
       { src: portfolioImg1, label: "Screen Wall" },
-      { gradient: "from-amber-950 via-stone-900 to-slate-900", label: "Projection Booth" },
+      { src: portfolioImg1, label: "Star Ceiling" },
+      { src: portfolioImg1, label: "Side View" },
     ],
   },
   {
