@@ -4,6 +4,8 @@ import { Facebook, Instagram, Youtube, Linkedin, ChevronDown } from "lucide-reac
 
 const inputCls = "bg-[hsl(220_15%_11%)] border border-[hsl(220_15%_22%)] text-[hsl(38_10%_80%)] placeholder-[hsl(38_10%_38%)] text-sm px-3 py-2.5 w-full focus:outline-none focus:border-[hsl(38_75%_52%)] transition-colors duration-200";
 
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/bsarwar1@outlook.com";
+
 export default function Footer() {
   const [form, setForm] = useState({
     firstName: "", lastName: "",
@@ -13,10 +15,44 @@ export default function Footer() {
     subscribe: false,
   });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSent(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: `${form.firstName} ${form.lastName}`,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          "Project Type": form.projectType,
+          "Street Address": form.streetAddress || "Not provided",
+          "Zip Code": form.zipCode || "Not provided",
+          "Newsletter Opt-in": form.subscribe ? "Yes" : "No",
+          _subject: `New Quote Request from ${form.firstName} ${form.lastName} — Home Cinema Group`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success === "true" || data.success === true) {
+        setSent(true);
+      } else {
+        setError("Something went wrong. Please try again or call us directly.");
+      }
+    } catch {
+      setError("Unable to send. Please try again or call us directly.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -211,12 +247,17 @@ export default function Footer() {
                   </span>
                 </label>
 
+                {error && (
+                  <p className="text-red-400 text-xs pt-1">{error}</p>
+                )}
+
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="w-full bg-[hsl(38_75%_52%)] border border-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm font-bold py-3 hover:bg-[hsl(38_75%_60%)] hover:border-[hsl(38_75%_60%)] transition-colors duration-200 mt-1"
+                  disabled={loading}
+                  className="w-full bg-[hsl(38_75%_52%)] border border-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm font-bold py-3 hover:bg-[hsl(38_75%_60%)] hover:border-[hsl(38_75%_60%)] transition-colors duration-200 mt-1 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Submit
+                  {loading ? "Sending…" : "Submit"}
                 </button>
               </form>
             )}
