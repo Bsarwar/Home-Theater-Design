@@ -245,7 +245,7 @@ export default function Contact() {
               <h3 className="font-serif text-xl text-[hsl(38_20%_90%)] mb-6">Contact Information</h3>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, label: "Address", value: "Bristow, VA" },
+                  { icon: MapPin, label: "Address", value: "1800 Tysons Blvd, Suite 300\nMcLean, VA 22102" },
                   { icon: Phone, label: "Phone", value: "(703) 625-1714" },
                   { icon: Mail, label: "Email", value: "info@homecinemagroup.com" },
                   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am – 6pm\nSat: By appointment" },
