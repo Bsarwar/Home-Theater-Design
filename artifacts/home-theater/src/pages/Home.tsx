@@ -81,7 +81,7 @@ const processSteps = [
 
 export default function Home() {
   useSEO({
-    title: "Home Cinema Group — Luxury Home Theater Design & Build | McLean, VA",
+    title: "Home Cinema Group | Theater Design & Build",
     description: "Home Cinema Group designs and builds bespoke luxury home theaters across Virginia, DC, and Maryland. Award-winning cinematic spaces since 2005. CEDIA-certified.",
     canonical: "https://homecinemagroup.com/",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
