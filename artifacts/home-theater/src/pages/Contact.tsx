@@ -24,6 +24,8 @@ function FadeIn({ children, delay = 0, className = "" }: { children: React.React
   );
 }
 
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/bsarwar1@outlook.com";
+
 const projectTypes = [
   "New Home Theater — Full Design & Build",
   "Basement Theater Conversion",
@@ -42,6 +44,8 @@ export default function Contact() {
   });
   const [heroReady, setHeroReady] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [form, setForm] = useState({ name: "", email: "", phone: "", projectType: "", message: "" });
 
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
@@ -50,9 +54,39 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          "Project Type": form.projectType,
+          message: form.message,
+          _subject: `New Inquiry from ${form.name} — Home Cinema Group`,
+          _template: "table",
+          _captcha: "false",
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success === "true" || data.success === true) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please try again or call us directly.");
+      }
+    } catch {
+      setError("Unable to send your message. Please try again or call (703) 625-1714.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -76,6 +110,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+
       {/* CONTACT GRID */}
       <section className="pb-24 md:pb-36">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-5 gap-12">
@@ -184,12 +219,19 @@ export default function Contact() {
                       />
                     </div>
 
+                    {error && (
+                      <p className="text-red-400 text-sm border border-red-400/30 bg-red-400/10 px-4 py-3">
+                        {error}
+                      </p>
+                    )}
+
                     <button
                       data-testid="button-submit"
                       type="submit"
-                      className="w-full py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold hover:bg-[hsl(38_75%_60%)] transition-colors duration-300"
+                      disabled={loading}
+                      className="w-full py-4 bg-[hsl(38_75%_52%)] text-[hsl(220_15%_7%)] text-sm tracking-[0.2em] uppercase font-bold hover:bg-[hsl(38_75%_60%)] transition-colors duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      Send Inquiry
+                      {loading ? "Sending…" : "Send Inquiry"}
                     </button>
                   </form>
                 </>
