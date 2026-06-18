@@ -71,7 +71,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[hsl(38_20%_88%)] text-xs tracking-[0.2em] uppercase font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              {["Theater Design", "Custom Construction", "Projection & Display", "Cinema Audio", "Cinema Lighting", "Seating & Interiors"].map((item) => (
+              {["Dedicated Theaters", "Media Rooms & TV Walls", "Theater Design & Consultation", "Lighting Design & Control", "Acoustical Fabric Treatment", "Sound Isolation", "Architectural Millwork & Elements", "Star Panel Ceiling"].map((item) => (
                 <li key={item}>
                   <Link href="/services">
                     <span className="text-[hsl(38_10%_55%)] text-sm hover:text-[hsl(38_75%_52%)] transition-colors duration-200 cursor-pointer">{item}</span>
