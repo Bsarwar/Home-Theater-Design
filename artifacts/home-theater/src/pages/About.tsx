@@ -45,7 +45,7 @@ const serviceAreas = [
   { county: "Loudoun County", cities: "Leesburg, Ashburn, Sterling, Lansdowne, Brambleton" },
   { county: "Prince William County", cities: "Woodbridge, Gainesville, Haymarket, Lake Ridge" },
   { county: "Alexandria City", cities: "Old Town, Del Ray, Seminary Hill, Rosemont" },
-  { county: "Beyond the Region", cities: "New York, Miami, Caribbean, and select international engagements" },
+  { county: "Beyond the Region", cities: "East Coast on select projects & Design services Throughout the US" },
 ];
 
 
