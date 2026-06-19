@@ -155,8 +155,8 @@ export default function About() {
                 desc: "AV companies that want to offer high-end home cinemas to their clients — we would love to collaborate with you. We handle the specialized room design and construction while you handle the technology and integration, increasing your margins and offering a true turnkey solution to your clients.",
               },
             ].map((item, i) => (
-              <FadeIn key={item.label} delay={i * 100}>
-                <div className="border border-[hsl(220_15%_16%)] border-l-2 border-l-[hsl(38_75%_52%)] p-8 bg-[hsl(220_15%_8%)] hover:border-[hsl(220_15%_22%)] hover:border-l-[hsl(38_75%_60%)] transition-colors duration-300">
+              <FadeIn key={item.label} delay={i * 100} className="h-full">
+                <div className="h-full border border-[hsl(220_15%_16%)] border-l-2 border-l-[hsl(38_75%_52%)] p-8 bg-[hsl(220_15%_8%)] hover:border-[hsl(220_15%_22%)] hover:border-l-[hsl(38_75%_60%)] transition-colors duration-300">
                   <h3 className="text-[hsl(38_20%_88%)] font-semibold text-base mb-3">{item.label}</h3>
                   <p className="text-[hsl(38_10%_55%)] text-sm leading-relaxed">{item.desc}</p>
                 </div>
