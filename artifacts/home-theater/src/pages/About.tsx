@@ -192,7 +192,7 @@ export default function About() {
               <span className="italic">Virginia, DC & Maryland</span>
             </h2>
             <p className="text-[hsl(38_10%_55%)] text-lg leading-relaxed max-w-2xl mb-16">
-              Home Cinema Group serves discerning homeowners throughout the greater DC Metro region. From the estates of Great Falls to the townhomes of Capitol Hill, we bring the same uncompromising craftsmanship to every project — no matter the zip code.
+              Home Cinema Group serves discerning homeowners throughout the greater DC Metro region. From the townhomes to mega mansions, we bring the same uncompromising craftsmanship to every project — no matter the size of your project or your location.
             </p>
           </FadeIn>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
