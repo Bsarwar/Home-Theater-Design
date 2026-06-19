@@ -65,7 +65,7 @@ const projects = [
 const testimonials = [
   { quote: "Home Cinema Group built us an extraordinary private theater in our Great Falls home. The acoustic design, the picture quality, the craftsmanship — it is simply beyond anything we imagined.", name: "Robert & Jennifer Ashford", title: "Private Residence, Great Falls, VA", rating: 5 },
   { quote: "From the first design meeting to the final calibration, the team was meticulous, professional, and genuinely passionate. Our theater is the showpiece of our home.", name: "Mark Donovan", title: "Private Residence, McLean, VA", rating: 5 },
-  { quote: "We interviewed four theater builders. Home Cinema Group was the only team that truly understood what we wanted. The finished result exceeded every expectation.", name: "Sarah Whitmore", title: "Principal, Whitmore Architecture — Washington, DC", rating: 5 },
+  { quote: "We interviewed four theater builders. Home Cinema Group was the only team that truly understood what we wanted. The finished result exceeded every expectation.", name: "Sarah Whitmore", title: "Principle Architecture — Washington, DC", rating: 5 },
 ];
 
 const brands = ["Sony", "Dolby", "JBL", "Klipsch", "Epson", "Stewart Filmscreen", "Screen Innovations", "Paradigm", "Anthem", "Seymour"];
