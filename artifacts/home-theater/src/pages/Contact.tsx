@@ -46,7 +46,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [form, setForm] = useState({ name: "", email: "", phone: "", projectType: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", phone: "", address: "", projectType: "", message: "" });
 
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);
 
@@ -67,6 +67,7 @@ export default function Contact() {
           name: form.name,
           email: form.email,
           phone: form.phone || "Not provided",
+          address: form.address || "Not provided",
           "Project Type": form.projectType,
           message: form.message,
           _subject: `New Inquiry from ${form.name} — Home Cinema Group`,
@@ -166,19 +167,35 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    <div>
-                      <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
-                        Phone Number
-                      </label>
-                      <input
-                        data-testid="input-phone"
-                        type="tel"
-                        name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        placeholder="(703) 000-0000"
-                        className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
-                      />
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                          Phone Number
+                        </label>
+                        <input
+                          data-testid="input-phone"
+                          type="tel"
+                          name="phone"
+                          value={form.phone}
+                          onChange={handleChange}
+                          placeholder="(703) 000-0000"
+                          className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-[hsl(38_10%_65%)] text-xs tracking-[0.15em] uppercase mb-2">
+                          Address
+                        </label>
+                        <input
+                          data-testid="input-address"
+                          type="text"
+                          name="address"
+                          value={form.address}
+                          onChange={handleChange}
+                          placeholder="City, State or full address"
+                          className="w-full bg-[hsl(220_15%_10%)] border border-[hsl(220_15%_18%)] text-[hsl(38_20%_85%)] px-4 py-3 text-sm outline-none focus:border-[hsl(38_75%_52%)] transition-colors placeholder-[hsl(38_10%_35%)]"
+                        />
+                      </div>
                     </div>
 
                     <div className="relative">
