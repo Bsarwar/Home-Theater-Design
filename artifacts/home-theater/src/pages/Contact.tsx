@@ -37,8 +37,8 @@ const projectTypes = [
 
 export default function Contact() {
   useSEO({
-    title: "Contact Home Cinema Group — Free Home Theater Consultation | McLean, VA",
-    description: "Ready to build your dream home theater? Contact our McLean, VA design team for a free consultation. Serving Virginia, DC, Maryland, and beyond.",
+    title: "Contact Home Cinema Group — Free Home Theater Consultation | Bristow, VA",
+    description: "Ready to build your dream home theater? Contact our Bristow, VA design team for a free consultation. Serving Virginia, DC, Maryland, and beyond.",
     canonical: "https://homecinemagroup.com/contact",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
   });
@@ -245,7 +245,7 @@ export default function Contact() {
               <h3 className="font-serif text-xl text-[hsl(38_20%_90%)] mb-6">Contact Information</h3>
               <div className="space-y-5">
                 {[
-                  { icon: MapPin, label: "Address", value: "1800 Tysons Blvd, Suite 300\nMcLean, VA 22102" },
+                  { icon: MapPin, label: "Address", value: "Bristow, VA" },
                   { icon: Phone, label: "Phone", value: "(703) 625-1714" },
                   { icon: Mail, label: "Email", value: "info@homecinemagroup.com" },
                   { icon: Clock, label: "Hours", value: "Mon–Fri: 9am – 6pm\nSat: By appointment" },
