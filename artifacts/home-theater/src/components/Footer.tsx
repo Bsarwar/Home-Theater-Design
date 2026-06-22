@@ -126,6 +126,7 @@ export default function Footer() {
                 { label: "Projects", href: "/projects" },
                 { label: "Contact", href: "/contact" },
                 { label: "Get a Quote", href: "/contact" },
+                { label: "Sitemap", href: "/sitemap" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link href={item.href}>

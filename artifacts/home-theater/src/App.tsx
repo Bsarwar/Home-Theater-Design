@@ -11,6 +11,7 @@ import Projects from "@/pages/Projects";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import Awards from "@/pages/Awards";
+import Sitemap from "@/pages/Sitemap";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ function Router() {
           <Route path="/awards" component={Awards} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/sitemap" component={Sitemap} />
           <Route component={NotFound} />
         </Switch>
       </main>
