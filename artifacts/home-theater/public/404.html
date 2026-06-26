@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Home Cinema Group</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+    body {
+      background: hsl(220, 15%, 7%);
+      color: hsl(38, 20%, 88%);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .eyebrow-line { width: 3rem; height: 1px; background: hsl(38, 75%, 52%); }
+    .eyebrow-text {
+      font-size: 0.65rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: hsl(38, 75%, 52%);
+      font-family: Georgia, serif;
+    }
+    h1 {
+      font-size: clamp(4rem, 15vw, 9rem);
+      font-weight: 300;
+      line-height: 1;
+      color: hsl(38, 75%, 52%);
+      font-style: italic;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 300;
+      color: hsl(38, 20%, 88%);
+      margin-bottom: 1.25rem;
+    }
+    p {
+      font-size: 1.1rem;
+      color: hsl(38, 10%, 55%);
+      max-width: 26rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+      font-family: Georgia, serif;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2.5rem;
+      background: hsl(38, 75%, 52%);
+      color: hsl(220, 15%, 7%);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-decoration: none;
+      font-family: Georgia, serif;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: hsl(38, 75%, 60%); }
+    .divider {
+      width: 1px;
+      height: 4rem;
+      background: hsl(220, 15%, 18%);
+      margin: 2.5rem auto 0;
+    }
+    .brand {
+      margin-top: 2rem;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: hsl(38, 10%, 40%);
+      font-family: Georgia, serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="eyebrow">
+    <div class="eyebrow-line"></div>
+    <span class="eyebrow-text">Error 404</span>
+    <div class="eyebrow-line"></div>
+  </div>
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
+  <p>The page you're looking for doesn't exist or has been moved. Let us guide you back to the main stage.</p>
+  <a href="/" class="btn">Return to Homepage</a>
+  <div class="divider"></div>
+  <p class="brand">Home Cinema Group &mdash; a Lifestyle Solution Company</p>
+</body>
+</html>

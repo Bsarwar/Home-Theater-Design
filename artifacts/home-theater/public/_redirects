@@ -1,1 +1,18 @@
-/*    /index.html   200
+# 1. Redirect WordPress & spam bot paths back to homepage
+/wp-content/*  /  301!
+/wp-includes/* /  301!
+/wp-admin/*    /  301!
+/domain/*      /  301!
+/site/*        /  301!
+
+# 2. All valid SPA routes → index.html (200 rewrite)
+/              /index.html  200
+/services      /index.html  200
+/projects      /index.html  200
+/awards        /index.html  200
+/about         /index.html  200
+/contact       /index.html  200
+/sitemap       /index.html  200
+
+# 3. Everything else → real 404
+/*             /404.html    404
