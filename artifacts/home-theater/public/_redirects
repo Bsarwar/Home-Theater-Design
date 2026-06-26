@@ -16,10 +16,10 @@
 /awards-press              /index.html  200
 /awards                    /index.html  200
 
-# 4. Sitemap and robots (serve static files directly)
-/sitemap                   /index.html  200
-/sitemap.xml               /sitemap.xml  200
-/robots.txt                /robots.txt   200
+# 4. Static Search Engine Files (Allow bots to read your maps directly)
+/sitemap.xml               /sitemap.xml                 200
+/sitemap                   /sitemap.xml                 301
+/robots.txt                /robots.txt                  200
 
 # 5. Serve the homepage
 /                          /index.html  200
