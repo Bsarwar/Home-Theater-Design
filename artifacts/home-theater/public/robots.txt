@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Explicitly block historical WordPress junk from burning your crawl budget
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php
+
+
 Sitemap: https://homecinemagroup.com/sitemap.xml

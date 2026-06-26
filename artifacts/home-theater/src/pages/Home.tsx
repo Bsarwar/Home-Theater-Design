@@ -504,7 +504,7 @@ export default function Home() {
               </div>
               <h2 className="font-serif text-5xl md:text-6xl font-light text-[hsl(38_20%_90%)] leading-tight">
                 What Our<br />
-                <span className="italic">Clients Say</span>
+                <span className="italic">Clients Says</span>
               </h2>
             </div>
           </FadeIn>
