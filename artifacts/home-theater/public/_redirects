@@ -16,8 +16,13 @@
 /awards-press              /index.html  200
 /awards                    /index.html  200
 
-# 4. Serve the homepage
+# 4. Sitemap and robots (serve static files directly)
+/sitemap                   /index.html  200
+/sitemap.xml               /sitemap.xml  200
+/robots.txt                /robots.txt   200
+
+# 5. Serve the homepage
 /                          /index.html  200
 
-# 5. Stop the soft 404 trap and send a hard, real 404 status for invalid paths
+# 6. Stop the soft 404 trap and send a hard, real 404 status for invalid paths
 /*                         /404.html    404
