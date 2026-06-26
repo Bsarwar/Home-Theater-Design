@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Play, Star, Award, Users, Layers, Volume2, Hammer, Monitor } from "lucide-react";
 import heroImg1 from "@assets/LMp4_1780573575270.jpg";
 import heroImg2 from "@assets/10k_Theater_1_1780573606798.png";
@@ -80,11 +81,13 @@ const processSteps = [
 ];
 
 export default function Home() {
+  const { jsonLd } = ROUTE_METADATA["/"];
   useSEO({
     title: "Home Cinema Group | Theater Design & Build",
     description: "Home Cinema Group designs and builds bespoke luxury home theaters across Virginia, DC, and Maryland. Award-winning cinematic spaces since 2005. CEDIA-certified.",
     canonical: "https://homecinemagroup.com/",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
+    jsonLd,
   });
   const [heroReady, setHeroReady] = useState(false);
   const [slide, setSlide] = useState(0);

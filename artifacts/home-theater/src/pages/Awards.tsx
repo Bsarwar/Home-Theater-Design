@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 import { ArrowRight, Award, Star } from "lucide-react";
 import awardsHeroImg from "@assets/FTheater_1780950606414.jpg";
 import theater1Img from "@assets/BR_1781626855491.jpg";
@@ -180,11 +181,13 @@ const awards = [
 ];
 
 export default function Awards() {
+  const { jsonLd } = ROUTE_METADATA["/awards"];
   useSEO({
     title: "Awards & Press | Home Cinema Group",
     description: "Home Cinema Group's award-winning home theater projects — recognized by Electronic House, CE Pro, CEDIA, and Custom Home magazine.",
     canonical: "https://homecinemagroup.com/awards",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
+    jsonLd,
   });
   const [heroReady, setHeroReady] = useState(false);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);

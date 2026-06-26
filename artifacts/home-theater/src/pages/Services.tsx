@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 import { Monitor, Volume2, Layers, Hammer, Lightbulb, Sparkles, ShieldCheck, Pencil, ArrowRight, CheckCircle } from "lucide-react";
 import servicesHeroImg from "@assets/DSC_1804_1780715585519.jpg";
 import dedicatedTheatersImg from "@assets/screen--frontPO_1780795877779.jpg";
@@ -102,11 +103,13 @@ const services = [
 ];
 
 export default function Services() {
+  const { jsonLd } = ROUTE_METADATA["/services"];
   useSEO({
     title: "Home Theater Design & Construction Services | Home Cinema Group",
     description: "From custom theater design and projection systems to cinema audio, lighting, and seating — explore our full suite of luxury home theater services.",
     canonical: "https://homecinemagroup.com/services",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
+    jsonLd,
   });
   const [heroReady, setHeroReady] = useState(false);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);

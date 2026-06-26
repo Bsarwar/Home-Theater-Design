@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Phone, Mail, MapPin, Clock, ChevronDown } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 
 function useInView(threshold = 0.1) {
   const ref = useRef<HTMLDivElement>(null);
@@ -36,11 +37,13 @@ const projectTypes = [
 ];
 
 export default function Contact() {
+  const { jsonLd } = ROUTE_METADATA["/contact"];
   useSEO({
     title: "Contact Home Cinema Group — Free Home Theater Consultation | Bristow, VA",
     description: "Ready to build your dream home theater? Contact our Bristow, VA design team for a free consultation. Serving Virginia, DC, Maryland, and beyond.",
     canonical: "https://homecinemagroup.com/contact",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
+    jsonLd,
   });
   const [heroReady, setHeroReady] = useState(false);
   const [submitted, setSubmitted] = useState(false);

@@ -5,6 +5,7 @@ interface SEOProps {
   description: string;
   canonical?: string;
   ogImage?: string;
+  jsonLd?: object | object[];
 }
 
 function setMeta(name: string, content: string, attr: "name" | "property" = "name") {
@@ -27,7 +28,19 @@ function setLink(rel: string, href: string) {
   el.setAttribute("href", href);
 }
 
-export function useSEO({ title, description, canonical, ogImage }: SEOProps) {
+function setJsonLd(data: object | object[]) {
+  const id = "route-jsonld";
+  let el = document.getElementById(id) as HTMLScriptElement | null;
+  if (!el) {
+    el = document.createElement("script");
+    el.id = id;
+    el.type = "application/ld+json";
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
+export function useSEO({ title, description, canonical, ogImage, jsonLd }: SEOProps) {
   useEffect(() => {
     document.title = title;
 
@@ -48,5 +61,9 @@ export function useSEO({ title, description, canonical, ogImage }: SEOProps) {
       setMeta("og:url", canonical, "property");
       setLink("canonical", canonical);
     }
-  }, [title, description, canonical, ogImage]);
+
+    if (jsonLd) {
+      setJsonLd(jsonLd);
+    }
+  }, [title, description, canonical, ogImage, jsonLd]);
 }

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 import { ArrowRight } from "lucide-react";
 import aboutDesignerImg from "@assets/Benpic_1780959496082.jpg";
 import award2025Silver from "@assets/2025-Theater-Silver_1780976540110.jpg";
@@ -51,11 +52,13 @@ const serviceAreas = [
 
 
 export default function About() {
+  const { jsonLd } = ROUTE_METADATA["/about"];
   useSEO({
     title: "About Home Cinema Group — Luxury Home Theater Specialists Since 2005",
     description: "Since 2005, Home Cinema Group has been designing and building extraordinary home theaters across Virginia, DC, and Maryland. CEDIA-certified, award-winning craftsmanship.",
     canonical: "https://homecinemagroup.com/about",
     ogImage: "https://homecinemagroup.com/opengraph.jpg",
+    jsonLd,
   });
   const [heroReady, setHeroReady] = useState(false);
   useEffect(() => { setTimeout(() => setHeroReady(true), 100); }, []);

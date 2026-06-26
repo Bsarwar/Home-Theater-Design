@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/useSEO";
+import { ROUTE_METADATA } from "@/lib/routeMetadata";
 import { ArrowRight, MapPin, Tag, X, ChevronLeft, ChevronRight, Images } from "lucide-react";
 import portfolioImg1 from "@assets/ScreenLFTp.2jpg_1781705806812.jpg";
 import portfolioImg2 from "@assets/10k_Theater_1_1780573606798.png";
@@ -815,12 +816,8 @@ function GalleryModal({ project, onClose }: { project: Project; onClose: () => v
 }
 
 export default function Projects() {
-  useSEO({
-    title: "Home Theater Portfolio — Luxury Cinema Projects | Home Cinema Group",
-    description: "Browse our portfolio of luxury home theater builds across Virginia, DC, and Maryland. Award-winning private cinemas, screening rooms, and basement theaters.",
-    canonical: "https://homecinemagroup.com/projects",
-    ogImage: "https://homecinemagroup.com/opengraph.jpg",
-  });
+  const { title, description, canonical, ogImage, jsonLd } = ROUTE_METADATA["/projects"];
+  useSEO({ title, description, canonical, ogImage, jsonLd });
   const [activeFilter, setActiveFilter] = useState("All");
   const [heroReady, setHeroReady] = useState(false);
   const [openProject, setOpenProject] = useState<Project | null>(null);

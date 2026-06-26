@@ -23,8 +23,28 @@ publicDir = "artifacts/home-theater/dist/public"
 serve = "static"
 
 [[services.production.rewrites]]
-from = "/*"
+from = "/"
 to = "/index.html"
+
+[[services.production.rewrites]]
+from = "/services"
+to = "/services/index.html"
+
+[[services.production.rewrites]]
+from = "/projects"
+to = "/projects/index.html"
+
+[[services.production.rewrites]]
+from = "/awards"
+to = "/awards/index.html"
+
+[[services.production.rewrites]]
+from = "/about"
+to = "/about/index.html"
+
+[[services.production.rewrites]]
+from = "/contact"
+to = "/contact/index.html"
 
 [services.env]
 PORT = "25624"
